@@ -115,8 +115,11 @@ def send():
     msg["From"] = os.environ["SMTP_USER"]
     msg["To"] = os.environ["MAIL_TO"]
     msg["Subject"] = os.environ.get("MAIL_SUBJECT", f"新闻联播晨读｜{day}")
-    msg.set_content(html.unescape(re.sub(r"<[^>]+>", " ", Path(os.environ["RUNNER_TEMP"], "mail.html").read_text())))
-    msg.add_alternative(Path(os.environ["RUNNER_TEMP"], "mail.html").read_text(), subtype="html")
+    content = Path(os.environ["RUNNER_TEMP"], "mail.html").read_text()
+    plain = re.sub(r"<(style|script)\b[^>]*>.*?</\1>", "", content, flags=re.I | re.S)
+    plain = re.sub(r"<br\s*/?>|</(?:p|li|h[1-6]|section)>", "\n", plain, flags=re.I)
+    msg.set_content(html.unescape(re.sub(r"<[^>]+>", "", plain)).strip())
+    msg.add_alternative(content, subtype="html")
     with smtplib.SMTP_SSL(os.environ["SMTP_HOST"], 465, context=ssl.create_default_context(), timeout=45) as smtp:
         smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
         smtp.send_message(msg)
