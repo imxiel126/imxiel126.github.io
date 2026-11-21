@@ -78,6 +78,7 @@ def generate():
     full_url = next(url for url, title in parser.items.items() if stamp in title)
     reports = [(url, title) for url, title in parser.items.items() if url != full_url]
     section("本期节目", f"<p>央视节目单收录 {len(reports)} 条分段报道。</p>" + link(full_url, "观看完整节目"))
+    overview = []
     detailed = 0
     for url, title in reports:
         try:
@@ -86,6 +87,8 @@ def generate():
             excerpts = []
         if excerpts:
             detailed += 1
+        lead = re.split(r'(?<=[。！？])', excerpts[0][1])[0] if excerpts else '正文暂缺'
+        overview.append(f'<li><strong>{escape(title)}</strong>：{escape(lead)}</li>')
         body = "".join(
             (f"<h3>{escape(heading)}</h3>" if heading else "") + f"<p>{escape(text)}</p>"
             for heading, text in excerpts
@@ -93,6 +96,7 @@ def generate():
         section(title, (body or "<p>本条正文暂未取得，请查看央视原报道。</p>") + link(url, "央视原文与视频"))
     if not detailed:
         raise ValueError("本期所有分条正文均未取得")
+    sections.insert(0, "<section><h2>全期速览</h2><ol>" + "".join(overview) + "</ol></section>")
     article = prefix + f"<main><header><h1>新闻联播晨读</h1><p>{day} 播出</p></header>" + "".join(sections)
     public.mkdir(exist_ok=True)
     archive = public / "archive"
@@ -110,8 +114,8 @@ def send():
     msg = EmailMessage()
     msg["From"] = os.environ["SMTP_USER"]
     msg["To"] = os.environ["MAIL_TO"]
-    msg["Subject"] = f"新闻联播晨读｜{day}"
-    msg.set_content("阅读本期晨报：https://imxiel126.github.io/")
+    msg["Subject"] = os.environ.get("MAIL_SUBJECT", f"新闻联播晨读｜{day}")
+    msg.set_content(html.unescape(re.sub(r"<[^>]+>", " ", Path(os.environ["RUNNER_TEMP"], "mail.html").read_text())))
     msg.add_alternative(Path(os.environ["RUNNER_TEMP"], "mail.html").read_text(), subtype="html")
     with smtplib.SMTP_SSL(os.environ["SMTP_HOST"], 465, context=ssl.create_default_context(), timeout=45) as smtp:
         smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
