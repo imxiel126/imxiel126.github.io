@@ -20,8 +20,6 @@ jobs:
         run: test ! -f ".sent/$ISSUE_DATE" || echo "sent=true" >> "$GITHUB_OUTPUT"
       - name: 整理晨报
         if: steps.check.outputs.sent != 'true'
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python3 scripts/daily.py generate
       - name: 发布网页和归档
         if: steps.check.outputs.sent != 'true'
