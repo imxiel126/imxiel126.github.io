@@ -1,0 +1,65 @@
+name: 新闻联播晨读
+on:
+  schedule:
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+concurrency:
+  group: morning-news
+  cancel-in-progress: false
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: 确定播出日期
+        run: echo "ISSUE_DATE=$(TZ=Asia/Shanghai date -d yesterday +%F)" >> "$GITHUB_ENV"
+      - name: 检查投递记录
+        id: check
+        run: test ! -f ".sent/$ISSUE_DATE" || echo "sent=true" >> "$GITHUB_OUTPUT"
+      - name: 整理晨报
+        if: steps.check.outputs.sent != 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 scripts/daily.py generate
+      - name: 发布网页和归档
+        if: steps.check.outputs.sent != 'true'
+        run: |
+          git config user.name 'News Digest'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add index.html archive
+          git diff --cached --quiet || git commit -m "晨读 $ISSUE_DATE"
+          git push
+      - name: 邮件投递
+        if: steps.check.outputs.sent != 'true'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          python3 scripts/daily.py send
+          mkdir -p .sent
+          touch ".sent/$ISSUE_DATE"
+          git add ".sent/$ISSUE_DATE"
+          git commit -m "记录投递 $ISSUE_DATE"
+          git push
+      - name: 打包公开网页
+        if: always() && hashFiles('archive/*.html') != ''
+        run: mkdir -p site && cp -R index.html archive site/
+      - uses: actions/upload-pages-artifact@v3
+        if: always() && hashFiles('archive/*.html') != ''
+        with:
+          path: site
+  deploy:
+    needs: digest
+    if: always() && !cancelled()
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
