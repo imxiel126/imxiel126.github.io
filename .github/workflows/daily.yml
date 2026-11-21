@@ -17,7 +17,7 @@ jobs:
         run: echo "ISSUE_DATE=$(TZ=Asia/Shanghai date -d yesterday +%F)" >> "$GITHUB_ENV"
       - name: 检查投递记录
         id: check
-        run: test ! -f ".sent/$ISSUE_DATE" || echo "sent=true" >> "$GITHUB_OUTPUT"
+        run: test ! -f ".sent/details-$ISSUE_DATE" || echo "sent=true" >> "$GITHUB_OUTPUT"
       - name: 整理晨报
         if: steps.check.outputs.sent != 'true'
         run: python3 scripts/daily.py generate
@@ -39,8 +39,8 @@ jobs:
         run: |
           python3 scripts/daily.py send
           mkdir -p .sent
-          touch ".sent/$ISSUE_DATE"
-          git add ".sent/$ISSUE_DATE"
+          touch ".sent/details-$ISSUE_DATE"
+          git add ".sent/details-$ISSUE_DATE"
           git commit -m "记录投递 $ISSUE_DATE"
           git push
       - name: 打包公开网页

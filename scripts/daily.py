@@ -1,6 +1,7 @@
 import datetime as dt
 import html
 import os
+import re
 import shutil
 import smtplib
 import ssl
@@ -31,6 +32,34 @@ class Listings(HTMLParser):
             self.items[url] = title.removeprefix("[视频]")
 
 
+def extract_details(url):
+    page = subprocess.check_output(["curl", "-fsSL", "--retry", "2", "--max-time", "30", url]).decode()
+    area = re.search(r'<div\b[^>]*\bid="content_area"[^>]*>(.*?)</div>', page, re.S)
+    if not area:
+        return []
+    groups = [("", [])]
+    for raw in re.findall(r"<p\b[^>]*>(.*?)</p>", area[1], re.S):
+        text = html.unescape(re.sub(r"<[^>]*>", "", raw)).strip()
+        text = re.sub(r"^央视网消息\s*[（(]新闻联播[）)]\s*[：:]\s*", "", text)
+        if not text:
+            continue
+        if re.fullmatch(r"\s*<strong>[^<]+</strong>\s*", raw):
+            groups.append((text, []))
+        else:
+            groups[-1][1].append(text)
+    excerpts = []
+    for heading, paragraphs in groups:
+        if not paragraphs:
+            continue
+        sentences = re.findall(r"[^。！？]+[。！？]|[^。！？]+$", paragraphs[0])
+        lead = "".join(sentences[:2])
+        if len(paragraphs) > 1 and not heading:
+            following = re.split(r"(?<=[。！？])", paragraphs[1])
+            lead += next((line for line in following if line and line not in lead), "")
+        excerpts.append((heading, lead))
+    return excerpts
+
+
 def generate():
     parser = Listings()
     parser.feed(subprocess.check_output(["curl", "-fsSL", "--retry", "3", "--max-time", "60", source]).decode())
@@ -38,7 +67,6 @@ def generate():
         raise ValueError("当期节目单未核实")
     template = Path("scripts/first-issue.html").read_text()
     prefix = template.split("<main>", 1)[0]
-    import re
     prefix = re.sub(r"<title>.*?</title>", "<title>新闻联播晨读 · " + str(day) + "</title>", prefix)
     sections = []
     def section(title, body):
@@ -50,7 +78,21 @@ def generate():
     full_url = next(url for url, title in parser.items.items() if stamp in title)
     reports = [(url, title) for url, title in parser.items.items() if url != full_url]
     section("本期节目", f"<p>央视节目单收录 {len(reports)} 条分段报道。</p>" + link(full_url, "观看完整节目"))
-    section("按播出顺序回看", "<ol>" + "".join("<li>" + link(url, title) + "</li>" for url, title in reports) + "</ol>")
+    detailed = 0
+    for url, title in reports:
+        try:
+            excerpts = extract_details(url)
+        except (subprocess.CalledProcessError, UnicodeError):
+            excerpts = []
+        if excerpts:
+            detailed += 1
+        body = "".join(
+            (f"<h3>{escape(heading)}</h3>" if heading else "") + f"<p>{escape(text)}</p>"
+            for heading, text in excerpts
+        )
+        section(title, (body or "<p>本条正文暂未取得，请查看央视原报道。</p>") + link(url, "央视原文与视频"))
+    if not detailed:
+        raise ValueError("本期所有分条正文均未取得")
     article = prefix + f"<main><header><h1>新闻联播晨读</h1><p>{day} 播出</p></header>" + "".join(sections)
     public.mkdir(exist_ok=True)
     archive = public / "archive"
