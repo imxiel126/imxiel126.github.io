@@ -151,6 +151,7 @@ function moveSocial(main){
  main.append(details);
 }
 function ready(){
+ if(!["/","/index.html"].includes(location.pathname))return;
  const main=document.querySelector("body.site-news main");if(!main||document.getElementById("morning-highlights"))return;
  const header=main.querySelector(":scope > header");if(!header)return;
  buildNav(header,main);
