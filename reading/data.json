@@ -1,7 +1,7 @@
 {
-  "schema": 1,
+  "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T14:47:28.065202+00:00",
+  "updated": "2026-11-23T14:51:19.606328+00:00",
   "books": [
     {
       "id": "41807702",
@@ -22,7 +22,35 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "《精准拉伸训练——脊椎平衡术》所介绍的运动方法是按照脊椎的结构，从激活脊椎整体开始，依次对颈椎、胸椎、腰椎、骶骨、尾骨进行松解、激活和复位，以松解脊椎整体结束。该功法共有11个动作，简单易学，既可整套练习，也可以拆分成一个或几个动作分解练习。通过有针对性的通过身体各部位不同幅度、不同角度、不同力度的精准组合动作，环节和调治由于脊椎病诱发的身体病痛。《精准拉伸训练——脊椎平衡术》适用于久坐的办公室一族、久站状态的工作人员，喜欢玩手机的低头族，对于颈椎、胸椎、腰椎、骶骨和尾骨有不适症状的人群也有较好的运动指导作用。",
+        "publisher": "化学工业出版社",
+        "rating": 0.0,
+        "ratingCount": 7,
+        "keywords": [
+          "拉伸",
+          "颈椎",
+          "医学健康",
+          "健康"
+        ],
+        "terms": [
+          {
+            "name": "拉伸",
+            "definition": "通过改变关节或肌肉长度位置进行柔韧性练习。"
+          },
+          {
+            "name": "颈椎",
+            "definition": "位于颈部的七块椎骨及其相关结构的统称。"
+          }
+        ],
+        "quote": null,
+        "review": {
+          "text": "看似简单的动作，想做正确，还是需要时间的。需要慢慢练 脊椎的养护太重要了，慢慢来，时间会给你想要的～",
+          "author": "quan",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "33867124",
@@ -43,7 +71,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "【《老婆请安分》漫画各平台已上线，欢迎关注哦~】 “我想回家。” “你可能回不去了。” “为什么？” “因为这里离你家很远。” “有多远？” “一千二百多年那么远。” 许青看着眼前来自唐朝的少女，脸上带有一丝同情：“你所熟悉的一切，都已经变成历史。” 亲朋，好友，敌人，全部沉寂在一千二百年前。 ——— 日常文，单女主 （已有完本精品，质量保证。）",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 2685,
+        "keywords": [
+          "男生小说",
+          "奇幻异界"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "数人世相逢，百年欢笑，能得几回又。",
+          "highlights": 650
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "40453176",
@@ -64,7 +108,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "【新书《满唐华彩》已发】 终宋一朝都未收复燕云，终宋一朝皆被外敌欺侮……南宋将亡之际，那些终宋一朝都没能达成的伟业，他要做到。",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 1662,
+        "keywords": [
+          "男生小说",
+          "历史架空"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "“因为我不会像你们……你们所有人活得都像狗。我不一样，我是冠军。”",
+          "highlights": 493
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "3300015133",
@@ -85,7 +145,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "《高效论证：美国大学最实用的逻辑训练课》是将《论证是一门学问》中的规则应用到配套习题中，并给出活动指导、论证导图及解析的完整读本，旨在为读者提供一部完整的、快速掌握论证规则和技能的实用练习辅导手册！本书的内容包括： ▲《论证是一门学问》全文，辅以大量的深入说明和65套练习题。 ▲习题 编自报纸、哲学著作、文学著作、电影、youtube视频等多种来源。 ▲规则运用 将《论证是一门学问》中的规则应用到习题中。 ▲延伸练习 介绍学生可自行或与同学共同完成的批判性思维练习，或者给出对应链接。 ▲活动指导 介绍多种专为学生设",
+        "publisher": "天地出版社",
+        "rating": null,
+        "ratingCount": 61,
+        "keywords": [
+          "哲学宗教",
+          "逻辑学"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "校保卫处的校园安保肯定干得很不错。",
+          "highlights": 216
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "837932",
@@ -106,7 +182,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "他是巴菲特的导师与人生合伙人，他是当今最伟大的投资思想家，他是伯克希尔·哈撒韦51年间19.2%年复合增长率的奇迹缔造者。理解商业社会和投资本质，必读这本书！本书全面收录了查理·芒格的个人传记与投资哲学，以及过去20年来芒格主要的公开演讲和媒体访谈，是每一个投资者不可不读的必备工具书。查理·芒格在商业社会取得了巨大的成功，他的独特思维方式，他对商业伦理的“洁癖”，他对终身学习的强调，可以给我们每一个普通人带来启迪。",
+        "publisher": "中信出版集团",
+        "rating": null,
+        "ratingCount": 29787,
+        "keywords": [
+          "个人成长",
+          "励志成长"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "查理论吸引客户：“关键是把手头的事情做好……把手头的事情做好。把已经拥有的客户照顾好，其他的自然会来找你。”",
+          "highlights": 33912
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "823420",
@@ -127,7 +219,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "畅销全球20年，常年高居逻辑类图书榜首。 这是一本足以彻底改变你思维世界的小书。美国著名逻辑学家、哲学教授D.Q.麦克伦尼， 将一门宽广、深奥的逻辑科学以贴近生活、通俗易懂、妙趣横生的语言娓娓道来。它既没有刻板的理论教条，也不是正规的教科书，而是一本必不可多得的现实指南。 作者在书中告诉我们，生活中，逻辑无处不在。无论我们是有意还是无意，逻辑无时不在服 务于我们的生活。然而逻辑到底是什么，也许并没有太多的人有很清楚的概念。作者以其简练而又充满趣味的笔触，将逻辑学活化为一种艺术，从它的基本原理，到论证，到非逻辑思维的",
+        "publisher": "浙江人民出版社",
+        "rating": null,
+        "ratingCount": 7780,
+        "keywords": [
+          "哲学宗教",
+          "逻辑学"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "不要想当然地认为你的听众会领悟你没有直接表达的意思。",
+          "highlights": 7359
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "561816",
@@ -148,7 +256,27 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "掌天毒之珠，承邪神之血，修逆天之力，一代邪神，君临天下！网游大神火星引力转型之作。",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 24254,
+        "keywords": [
+          "男生小说",
+          "奇幻异界"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "三年，已经三年了！你知道这三年我是怎么过的吗！”",
+          "highlights": 495
+        },
+        "review": {
+          "text": "情节精彩，人物塑造鲜明，虽然迎合大众加入了不少“俗”主题（如美食），但还算自洽。次次反转都有根有据，文笔也不错",
+          "author": "汉斯",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "648963",
@@ -169,7 +297,27 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "天地初开，太古混乱。 灵长之战后，时空人祖、九巫、始佛、幽冥、大魔神相继出世，开创道法，威临八方，众生朝迎，世人尊为始祖。 天尊无敌当世，始祖名传古今。 但，皆不可得长生…… ………… 张若尘自逆境中崛起，从平凡中非凡，在这一条满是英才、妖魔、美人的长生路上，走出一个崭新的大世。",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 98991,
+        "keywords": [
+          "男生小说",
+          "东方玄幻"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "“池瑶，我视你为挚爱，你为何要杀我？”",
+          "highlights": 2669
+        },
+        "review": {
+          "text": "20年开始看陪伴了4年多 感谢 完结真的泪目了 希望作者赶紧发新书",
+          "author": ".",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "3300181368",
@@ -190,7 +338,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "电屏幕24小时悬在墙面，“战争即和平”的标语刻进街头，记忆能被橡皮擦般篡改，连“二加二等于几”都成了需要屈服的命题——这是一个连思想都被监控的世界。 有人选择沉默顺从，有人却藏在壁龛里写下“打倒老大哥”。温斯顿的反抗微小如烛火，从一本秘密日记开始，在谎言织就的网里寻找人性的余温，却终究逃不过极权的围猎。 它从不是遥远的虚构，而是一面照妖镜。照见真相被扭曲的危险，也照见每一个人心中，对自由与独立思考的本能坚守。",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 1529,
+        "keywords": [
+          "文学",
+          "外国文学"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "这酒散发出一股令人作呕的油腻气味，如同中国的米酒。",
+          "highlights": 3078
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "33483909",
@@ -211,7 +375,23 @@
       "excerpts": [],
       "summary": "",
       "summary_hash": "",
-      "guide": {}
+      "guide": {
+        "intro": "罗翔推荐。长达四十年的恶女编年史，被网友称为“被嫌弃的松子的黑化”、“更现实版的《都挺好》”。铃木阳子死了，死在独居的公寓里。正确说来，是铃木阳子几个月前死了。因为发现她时，遗体不但遭到屋内的十一只猫啃食殆尽，连猫也全数饿死了。铃木阳子显然是“孤独死”的最佳范例，但这名女子为何落到这步田地？她的亲人、朋友、同事在哪里？她的人生轨迹又是怎样的？本书以两起相对独立的死亡事件为线索，牵出了三起相互交织的案件，讲述了女主人公阳子在时代裹挟中的个人挣扎，从平庸一步步滑落到不可救药的深渊。故事发生在2014年的日本都市。本书分",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 73757,
+        "keywords": [
+          "精品小说",
+          "女性小说"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "那女人曾经与你在同一家应召站工作，花名叫树里——没错，就是我。",
+          "highlights": 60540
+        },
+        "review": null,
+        "checkedOn": "2026-11-23"
+      }
     },
     {
       "id": "34424286",
@@ -2533,7 +2713,7 @@
       "category": "哲学宗教-逻辑学",
       "finished": false,
       "lastRead": 1770625864,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2554,7 +2734,7 @@
       "category": "男生小说-东方玄幻",
       "finished": false,
       "lastRead": 1770481861,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2575,7 +2755,7 @@
       "category": "心理-心理学研究",
       "finished": false,
       "lastRead": 1770481813,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2596,7 +2776,7 @@
       "category": "心理-心理学应用",
       "finished": false,
       "lastRead": 1770307656,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2617,7 +2797,7 @@
       "category": "政治军事-政治",
       "finished": false,
       "lastRead": 1770025989,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2638,7 +2818,7 @@
       "category": "哲学宗教-哲学读物",
       "finished": false,
       "lastRead": 1770025963,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2659,7 +2839,7 @@
       "category": "科学技术-科学科普",
       "finished": false,
       "lastRead": 1770025931,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2680,7 +2860,7 @@
       "category": "经济理财-理财",
       "finished": false,
       "lastRead": 1770025413,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2701,7 +2881,7 @@
       "category": "精品小说-社会小说",
       "finished": false,
       "lastRead": 1770025407,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2722,7 +2902,7 @@
       "category": "心理-心理学应用",
       "finished": false,
       "lastRead": 1770025368,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2743,7 +2923,7 @@
       "category": "文学-经典作品",
       "finished": false,
       "lastRead": 1770020070,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2764,7 +2944,7 @@
       "category": "经济理财-财经",
       "finished": false,
       "lastRead": 1769674362,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2785,7 +2965,7 @@
       "category": "经济理财-商业",
       "finished": false,
       "lastRead": 1769400405,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2806,7 +2986,7 @@
       "category": "心理-积极心理学",
       "finished": false,
       "lastRead": 1769158134,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2827,7 +3007,7 @@
       "category": "男生小说-都市小说",
       "finished": false,
       "lastRead": 1769053106,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2848,7 +3028,7 @@
       "category": "女生小说-悬疑推理",
       "finished": false,
       "lastRead": 1769053052,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2869,7 +3049,7 @@
       "category": "男生小说-奇幻异界",
       "finished": false,
       "lastRead": 1769052941,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2890,7 +3070,7 @@
       "category": "男生小说-异术超能",
       "finished": false,
       "lastRead": 1769052885,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2911,7 +3091,7 @@
       "category": "男生小说-都市小说",
       "finished": false,
       "lastRead": 1769052843,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2932,7 +3112,7 @@
       "category": "男生小说-仙侠武侠",
       "finished": false,
       "lastRead": 1769052795,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2953,7 +3133,7 @@
       "category": "男生小说-东方玄幻",
       "finished": false,
       "lastRead": 1769052778,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2974,7 +3154,7 @@
       "category": "经济理财-商业",
       "finished": false,
       "lastRead": 1768985955,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2995,7 +3175,7 @@
       "category": "政治军事-政治",
       "finished": false,
       "lastRead": 1768919362,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3016,7 +3196,7 @@
       "category": "精品小说-社会小说",
       "finished": true,
       "lastRead": 1768919323,
-      "progress": null,
+      "progress": 100,
       "notes": {
         "highlights": 1,
         "thoughts": 0,
@@ -3037,7 +3217,7 @@
       "category": "男生小说-东方玄幻",
       "finished": false,
       "lastRead": 1768817812,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3058,7 +3238,7 @@
       "category": "男生小说-仙侠武侠",
       "finished": false,
       "lastRead": 1768816452,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3079,7 +3259,7 @@
       "category": "男生小说-历史架空",
       "finished": false,
       "lastRead": 1768816438,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3100,7 +3280,7 @@
       "category": "男生小说-奇幻异界",
       "finished": false,
       "lastRead": 1768816426,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3121,7 +3301,7 @@
       "category": "经济理财-商业",
       "finished": false,
       "lastRead": 1768622941,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3142,7 +3322,7 @@
       "category": "政治军事-政治",
       "finished": false,
       "lastRead": 1768551780,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3163,7 +3343,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1768551748,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3184,7 +3364,7 @@
       "category": "社会文化-法律",
       "finished": false,
       "lastRead": 1768551741,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3205,7 +3385,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1768551722,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3226,7 +3406,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1768551707,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3247,7 +3427,7 @@
       "category": "个人成长-认知思维",
       "finished": false,
       "lastRead": 1768551189,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3268,7 +3448,7 @@
       "category": "教育学习-教育",
       "finished": false,
       "lastRead": 1768551049,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3289,7 +3469,7 @@
       "category": "教育学习-教育",
       "finished": false,
       "lastRead": 1768551035,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3310,7 +3490,7 @@
       "category": "心理-心理学研究",
       "finished": false,
       "lastRead": 1768446112,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -3331,7 +3511,7 @@
       "category": "心理-积极心理学",
       "finished": false,
       "lastRead": 1768445246,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 1,
         "thoughts": 0,
@@ -3352,7 +3532,7 @@
       "category": "历史-历史读物",
       "finished": false,
       "lastRead": 1768357163,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -5177,5 +5357,6 @@
       ]
     }
   },
-  "privacy": "Public opt-in snapshot; no private shelf entries; note text only from approved books."
+  "privacy": "Public opt-in snapshot; no private shelf entries; note text only from approved books.",
+  "guideSource": "WeRead book information, popular highlights, public recommended reviews; small excerpts only"
 }
