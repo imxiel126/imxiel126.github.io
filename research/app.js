@@ -1,6 +1,6 @@
 (()=>{"use strict";
 const $=id=>document.getElementById(id), names={hydrogen:"氢能",papers:"前沿论文",energy:"能源科技",policy:"政策与标准"};
-const state={items:[],filter:"all",search:"",shown:8};
+const state={items:[],filter:"hydrogen",search:"",shown:8};
 const node=(tag,value,cls)=>{const n=document.createElement(tag);if(value!==undefined)n.textContent=String(value);if(cls)n.className=cls;return n;};
 const safeUrl=(raw,allow)=>{try{const u=new URL(raw);if(u.protocol!=="https:")return"";if(allow==="doi"&&u.hostname!=="doi.org")return"";if(allow==="blog"&&(u.hostname!=="xie-l.github.io"))return"";return u.href;}catch{return"";}};
 const trim=(value,limit)=>{const s=String(value||"").trim();return s.length>limit?s.slice(0,limit)+"…":s;};
