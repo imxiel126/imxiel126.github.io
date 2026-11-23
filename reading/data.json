@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:41:27.916625+00:00",
+  "updated": "2026-11-23T15:48:01.271836+00:00",
   "books": [
     {
       "id": "41807702",
@@ -4865,9 +4865,14 @@
           "逻辑学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "逻辑学是研究用于区分正确推理与不正确推理的方法和原理的学问。",
+          "highlights": 4114
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4899,9 +4904,14 @@
           "东方玄幻"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "‘盏茶的功夫杀了你，还把你骨灰给扬喽！’",
+          "highlights": 5876
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4939,9 +4949,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "拥有另一种语言，就是拥有另一个灵魂。 ——查理大帝",
+          "highlights": 576
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4973,9 +4988,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "停止向世界描述你的监狱”，是你走向自由的第一步；最终当你学会“允许一切发生”，生活便自然生出了最珍贵的松弛感。",
+          "highlights": 3536
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5007,9 +5027,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "即认为存在一个自古代起就统治或企图统治世界的犹太秘密社团",
+          "highlights": 165
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5041,9 +5066,14 @@
           "哲学读物"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "祈求上天赐予我平静的心，接受不可改变的事，给我勇气改变可以改变的事，并赐予我分辨这两者的智慧。 ——古罗马皇帝奥勒留",
+          "highlights": 3015
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5075,9 +5105,14 @@
           "科学科普"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "本杰明·拉什，美国开国元勋，他希望你能猛猛排便。",
+          "highlights": 1248
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5109,9 +5144,14 @@
           "理财"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "投资的最后就是克服人性，克服贪婪和恐惧的人性，这是投资者最难做到的。",
+          "highlights": 896
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5143,9 +5183,14 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "大约十分钟后，布尔金睡着了。可是伊凡·伊凡内奇在不断地翻身、叹气。后来他起来，又走了出去，坐在门边，点起烟斗。",
+          "highlights": 930
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5177,9 +5222,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "头脑冷静，思维清晰；能够集中注意力而不易分神。",
+          "highlights": 90
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5211,9 +5261,18 @@
           "经典作品"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "我们被抬进同一辆救护车，向医院驶去。途中，他死了。",
+          "highlights": 612
+        },
+        "review": {
+          "text": "真刀啊😭😭 午后微微颠簸的地铁里，我流下了心痛的泪水🥹🥹 已经很久没有看这样的书了，这才读了二十分钟而已，接下去我估计会泪流满面吧😱😱",
+          "author": "素籽",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5245,9 +5304,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "人们很容易犯下这样的错误：总以为自己足够强大，根本不会倒下。事实并非如此。",
+          "highlights": 357
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5285,9 +5349,14 @@
             "definition": "研究及构建具备感知、推理、学习等能力系统的领域。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "在他看来，开公司的目的不是赚钱，而是创造不同，这样利润自然会来。",
+          "highlights": 221
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5325,9 +5394,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "人生需要更深层的意义，这种意义的本质反复出现在过去的伟大故事当中，而那些故事往往讨论的都是在痛苦中成长，而不是追求快乐。",
+          "highlights": 9522
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5359,9 +5433,14 @@
           "都市小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "知道了，谁要是诱惑我，我就砍死她！”",
+          "highlights": 896
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5393,9 +5472,18 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "霍老爷终于听到了动静从后院赶了过来，看到眼前这一幕时，他没发出一点声音，就软绵绵的倒在地上，晕死了过去。",
+          "highlights": 54
+        },
+        "review": {
+          "text": "文笔很好的一本书，情节紧凑，案件新颖，这么大的篇幅虽没有环环相扣但主线一直贯穿，推荐。",
+          "author": "Xin Zhang",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5427,9 +5515,18 @@
           "奇幻异界"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "有的人死了，但没有完全死……",
+          "highlights": 1708
+        },
+        "review": {
+          "text": "作为一本爽文，还真是从头爽到尾，就是星空篇的遮天味有点浓了，不如前面蓝星好玩",
+          "author": "L'stranger",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5461,9 +5558,14 @@
           "异术超能"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "千里路途我只陪他一程，从此风雪艳阳我都不再过问。",
+          "highlights": 3298
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5495,9 +5597,18 @@
           "都市小说"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "王谦不能给她提供任何事业上的帮助，所以他被抛弃了。",
+          "highlights": 238
+        },
+        "review": {
+          "text": "无意翻着看看，没想到是很不错的一本书，一天就看完了，等着更新，希望能多更一些。",
+          "author": "傅晚飞",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5529,9 +5640,14 @@
           "仙侠武侠"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "修士开脉之后，分为九重法道，各为明气、玄光、化丹、元婴、象相、凡蜕、真阳、炼神、至人。",
+          "highlights": 560
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5563,9 +5679,14 @@
           "东方玄幻"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "因为看见，所以恐惧。",
+          "highlights": 2538
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5597,9 +5718,18 @@
           "商业"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "但是，只要想到家庭的困境，他就会瞬间充满力量，他知道自己不能垮掉，他没有忘记父亲临终前的话，他要挑起家庭的重担。",
+          "highlights": 85
+        },
+        "review": {
+          "text": "今日打卡完《李嘉诚传：逆境与抉择》读懂李嘉诚的「逆境与抉择」，真正拉开差距的，从来不是运气，而是低谷时的沉淀，与关键时刻的清醒。",
+          "author": "新瀚力·黄高衍",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5631,9 +5761,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "成就他人的强大终将使自己一蹶不振，因为无论通过智谋还是武力去扶植，都会在被扶植者心中悄然埋下不信任的种子。",
+          "highlights": 396
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5665,9 +5800,18 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "小红因为出血过多，外加心情崩溃，躺在床上奄奄一息，口中不停在呼唤自己的孩子。经过寒夜之后，小红陷入昏迷，天不明就死了。",
+          "highlights": 112
+        },
+        "review": {
+          "text": "好书！有历史文化背景，有社会生活深度，故事情节传奇，人物鲜活生动。作者笔触矫健，叙事流畅，百多万字的文本，读来却没有冗长的感觉，实在是值得一读赏析。",
+          "author": "颜家利",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
