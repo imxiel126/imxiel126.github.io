@@ -41,7 +41,7 @@ list.slice(0,12).forEach(x=>{const article=node("article",undefined,"research-wr
 function init(data){
 const a=data.academic||{}, news=Array.isArray(data.news)?data.news:[],articles=Array.isArray(data.writing)?data.writing:[];
 const stamp=data.synced_at?new Date(data.synced_at):null;
-$("sync-status").textContent=stamp&&!Number.isNaN(stamp.getTime())?"公开资料已同步 · "+new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(stamp):"已载入公开研究资料";
+$("sync-status").textContent=stamp&&!Number.isNaN(stamp.getTime())?"公开资料内容更新 · "+new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(stamp):"已载入公开研究资料";
 metrics(a);state.items=news;renderNews();writing(articles);
 }
 $("research-tabs").addEventListener("click",event=>{const b=event.target.closest("button[data-type]");if(!b)return;state.filter=b.dataset.type;state.shown=8;document.querySelectorAll(".research-tab").forEach(x=>{const active=x===b;x.classList.toggle("active",active);x.setAttribute("aria-pressed",String(active));});renderNews();});
