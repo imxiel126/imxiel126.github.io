@@ -10,7 +10,7 @@
    - 明确接受公开阅读偏好后添加 Repository variable `WEREAD_PUBLIC_ENABLED` = `true`
    - 可选添加 Repository secret `OPENAI_API_KEY` 启用 AI 导读（产生独立 API 费用）
 3. 进入 **Actions → 微信读书阅读中心自动同步 → Run workflow** 首次运行。
-4. 后续每天约北京时间 09:15 自动更新，GitHub Actions 定时触发可能延后。
+4. 后续每天计划北京时间 09:17 更新，并在 11:47 追加一次补偿同步，GitHub Actions 定时触发可能延后。
 
 ## 发布范围
 
@@ -53,10 +53,24 @@ AI 导读仅基于公开的书籍简介和获准公开的个人想法，不能�
 
 ## 每日私人阅读邮件
 
-- 触发方式：`.github/workflows/weread-mail.yml`；每天 UTC 14:00，即北京时间 **22:00**。也支持手动运行；GitHub Actions 定时触发可能延迟。
+- 触发方式：`.github/workflows/weread-mail.yml`；每天 UTC 14:07 和 14:37，即北京时间 **22:07** 和 **22:37 补偿运行**。也支持手动运行；GitHub Actions 定时触发可能延迟。
 - 只使用原有的 `WEREAD_API_KEY` 与 `SMTP_HOST`、`SMTP_USER`、`SMTP_PASSWORD` Repository Secrets。收件人从 `WEREAD_MAIL_TO` Secret 读取，未设置时回退到 `MAIL_TO` Secret；脚本会核对收件地址是否与事先明确指定的邮箱一致，不会误发到别处。邮箱明文不保存在公开仓库。
 - 内容：当天阅读/收听**总时长**（来自 `/readdata/detail` 的本周每日分桶，单位秒）；书架中当天最后阅读时间有记录的书籍（最多详细列出 6 本）、官方简要内容介绍和主题词、简短公开热门划线、简短公开读者评论；对于个人新划线，只取当天创建的少量短摘录用于发送到本人邮箱。
 - **重要口径**：官方此接口没有提供“今天各本书精确阅读时长”；邮件不将全周时长或某本累计时间误写为今天的每本书时长。当天总时间仅截至发送时（22:00 左右），不包含之后阅读。
 - 安全：不提交邮件正文、个人划线、阅读历史详情或收件人地址到 GitHub。GitHub 只保存空文件 `.sent/weread-mail-YYYY-MM-DD` 防止当日重复发送。
 - 禁用方式：在 GitHub Actions 禁用该 workflow，或移除 `WEREAD_MAIL_TO` / `MAIL_TO` 与相关 SMTP 密钥。直接编辑计划时间需要了解 UTC 时区。
 - 失败排查：运行记录中的 `Recipient secret missing or does not match...` 表示需要在 Actions Secrets 中正确配置 `WEREAD_MAIL_TO`；SMTP 错误表示需要检查现有邮件发信授权码。
+
+## 自动更新可靠性与故障提醒（2026-11-23）
+
+**真正每日变化的内容**：微信读书公开书架、统计与知识卡由 Actions 同步；阅读思考库的 2000 条原创卡片在访问网页时按北京时间日期自动轮换，不需要每天把相同数据重新提交 GitHub。
+
+- `reading` 每日主运行 09:17，补偿运行 11:47。每次会自动合并 GitHub 上已有的更完整知识卡，避免并发写入丢失。
+- 阅读私人邮件每天计划 22:07，22:37 补偿运行。若已存在当日发送标记则跳过第二次发送。
+- 新闻联播晨读每天计划 07:37，08:47 补偿运行。
+- 研究资料每 6 小时轮询。页面发布产物名称含 GitHub run ID + attempt，以减少重复产物冲突。
+- `.github/workflows/daily-health.yml` 每天北京时间 11:44 和 23:44 核查阅读数据时间、最近一日新闻归档、2000 条思考卡轮换程序、研究同步时间、晚间邮件标记及线上访问；故障尝试向指定邮箱发送提醒，不发布私人内容。
+- GitHub Actions 的 schedule 是**尽力执行**，官方允许延迟、偶尔跳过；公开仓库超过 60 天无活动时计划任务可能被停用。健康检查本身也依赖 GitHub，不能替代独立的第三方可用性监控。
+- 知乎、小红书个性化推荐流来自一次性授权浏览器数据的页面抓取，不等于平台官方自动 API；不能承诺每日自动刷新登录态推荐流。可随时打开对应平台查看实时推荐。
+
+查看：https://github.com/imxiel126/imxiel126.github.io/actions
