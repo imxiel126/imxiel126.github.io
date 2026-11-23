@@ -9,8 +9,11 @@ on:
       - 'scripts/daily.py'
       - '.github/workflows/social-pages.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '15 */3 * * *' # 约每三小时补偿一次发布，防止暂时性部署失败
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 concurrency:
@@ -49,5 +52,37 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      - name: 等待 Pages 部署产物可被读取
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          url = ('https://api.github.com/repos/' + os.environ['GH_REPOSITORY']
+                 + '/actions/runs/' + os.environ['GH_RUN_ID'] + '/artifacts?per_page=100')
+          req = urllib.request.Request(url, headers={
+              'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+              'Accept': 'application/vnd.github+json',
+              'User-Agent': 'pages-artifact-check',
+          })
+          for attempt in range(12):
+              try:
+                  with urllib.request.urlopen(req, timeout=15) as resp:
+                      data = json.load(resp)
+                  matches = [a for a in data.get('artifacts', [])
+                             if a.get('name') == 'github-pages' and not a.get('expired')]
+                  if len(matches) == 1:
+                      print('Found exactly one Pages artifact:', matches[0]['id'])
+                      break
+                  print('Pages artifact not ready (count=%s), retry %d' %
+                        (len(matches), attempt + 1))
+              except Exception as error:
+                  print('Artifact index not ready:', str(error))
+              time.sleep(5)
+          else:
+              raise SystemExit('Pages artifact not available after 60 seconds')
+          PY
       - id: deployment
         uses: actions/deploy-pages@v4
