@@ -20,14 +20,14 @@ from pathlib import Path
 
 FILE = Path("social/recommendations.json")
 TOPICS = [
-    ("zhihu", "site:zhuanlan.zhihu.com/p/ 科研 方法 论文", "科研方法"),
-    ("zhihu", "site:zhihu.com/question/ 计量 校准 检测", "计量与检测"),
-    ("zhihu", "site:zhuanlan.zhihu.com/p/ 电解水 氢能", "氢能"),
-    ("zhihu", "site:zhihu.com/question/ AI 研究 机器学习", "人工智能"),
-    ("xiaohongshu", "site:xiaohongshu.com/explore/ 科研 笔记", "科研方法"),
-    ("xiaohongshu", "site:xiaohongshu.com/explore/ 氢能 电解水", "氢能"),
-    ("xiaohongshu", "site:xiaohongshu.com/explore/ 计量 检测", "计量与检测"),
-    ("xiaohongshu", "site:xiaohongshu.com/explore/ 读书 笔记", "读书与成长"),
+    ("zhihu", "site:zhihu.com 科研方法 文献阅读", "科研方法"),
+    ("zhihu", "site:zhihu.com 计量校准 检测", "计量与检测"),
+    ("zhihu", "site:zhihu.com 电解水制氢 催化剂", "氢能"),
+    ("zhihu", "site:zhihu.com 机器学习 科研", "人工智能"),
+    ("xiaohongshu", "site:xiaohongshu.com 科研笔记 文献", "科研方法"),
+    ("xiaohongshu", "site:xiaohongshu.com 氢能 电解水", "氢能"),
+    ("xiaohongshu", "site:xiaohongshu.com 计量 检测", "计量与检测"),
+    ("xiaohongshu", "site:xiaohongshu.com 读书 笔记", "读书与成长"),
 ]
 MAX_RESULTS_PER_QUERY = 5
 MAX_PUBLIC_SEARCH_RESULTS = 40
@@ -80,7 +80,9 @@ def get_public_results(topic: tuple[str, str, str]) -> list[dict]:
         logging.warning("Public RSS unavailable (%s): %s", label, exc)
         return []
     discovered = []
-    for entry in root.findall(".//item")[:MAX_RESULTS_PER_QUERY]:
+    entries = root.findall(".//item")
+    logging.info("%s: RSS returned %d items", label, len(entries))
+    for entry in entries[:MAX_RESULTS_PER_QUERY]:
         link = public_link((entry.findtext("link") or "").strip(), platform)
         title = clean(entry.findtext("title") or "", 105)
         if not link or not title:
