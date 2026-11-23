@@ -23,3 +23,15 @@ AI 导读仅基于公开的书籍简介和获准公开的个人想法，不能�
 停止更新可删除变量；已经公开的数据也应从 Git 历史、站点产物和第三方缓存中核查清理。
 
 技术依赖：腾讯官方 WeRead Agent API Gateway，Skill version 1.0.6。
+
+## GitHub Pages 发布来源
+
+本站的每日新闻工作流和阅读同步工作流都使用 `actions/deploy-pages@v4` 主动发布。
+如果 Pages 页面还设置为 **Deploy from a branch**，请在
+**Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。
+不要选择 GitHub 的默认 Jekyll 模板；本仓库已经有自己的发布工作流。
+发布脚本同时包含 `archive`、`notes`、`reading` 和 `library`，避免覆盖现有栏目。
+
+首次同步若显示 **skipped**，检查 Repository variable `WEREAD_PUBLIC_ENABLED` 是否严格等于小写 `true`；
+若同步报错 `Missing WEREAD_API_KEY`，检查是否把密钥存入 **Repository secret** 而非 Variable。
+请先审核公开数据范围：非私密书架条目、阅读进度、读书笔记数量和阅读统计会进入公开 Git 历史，不能视为私密备份。
