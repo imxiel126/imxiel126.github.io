@@ -43,7 +43,7 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          for folder in archive notes reading library social research assets; do
+          for folder in archive notes reading library social research learn assets; do
             if [ -d "$folder" ]; then cp -R "$folder" site/; fi
           done
           test -s site/research/index.html
