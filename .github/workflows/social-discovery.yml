@@ -1,0 +1,49 @@
+name: 公开社交内容发现与首页发布
+on:
+  schedule:
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - name: 从公开搜索索引发现内容（不读取账号推荐流）
+        run: |
+          python3 -m py_compile scripts/social_discover.py
+          python3 scripts/social_discover.py
+      - name: 保存已发现的公开内容
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add social/recommendations.json
+          if ! git diff --cached --quiet; then
+            git commit -m '更新公开社交内容发现'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: 构建包含首页推荐模块的完整网站
+        run: |
+          mkdir -p site
+          cp index.html site/
+          for folder in archive notes reading library social assets; do
+            if [ -d "$folder" ]; then cp -R "$folder" site/; fi
+          done
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
