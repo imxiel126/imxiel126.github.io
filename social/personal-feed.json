@@ -1,8 +1,288 @@
 {
   "schema_version": 1,
   "source": "local_authorized_browser",
-  "updated_at": "2026-11-23T15:34:09.195Z",
+  "updated_at": "2026-11-23T15:34:16.038Z",
   "items": [
+    {
+      "platform": "zhihu",
+      "title": "为什么 GPT 先起飞，Claude 现在却断档领先？他们有独特的训练方法吗？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2100991081307453217/answer/2101636862989420276",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "钱学森为什么说他一生最大的成就是系统科学研究？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/12646046530/answer/2104709167084787666",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "关于地方回族与伊斯兰教之间的阶段性考察分析报告（二〇二六年六月九日）",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2100644387294335342",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么绿皮火车又火了？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2005995071858816619/answer/2105587916302989306",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "男生怎么快速提升颜值？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/310185291/answer/2038566924846641854",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "如何看待Anthropic？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2009617201540405001/answer/2107428989853880389",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么老有老兵说新兵一年不如一年？",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2093849142980362733",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "如何评价赵本山在《走马上任》原声演唱的推广曲《慌啥子嘛》？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2104898849722602172/answer/2107601733379793903",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "福耀科技大学单方面毁约教职offer，不打算办下去了吗？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/655970356/answer/2100152378838331398",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "基层为什么越来越累？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/1976644702850810014/answer/2092645029982499483",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么感觉BLG夺冠没什么热度？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2105625093791540441/answer/2106356847703872444",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "可不可以莫名其妙地教我一个知识?",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2072260638768997299/answer/2079668541184386272",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "二十年里，哪些城市换市委书记最勤？",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2107123390343598932",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么现在纣王的口碑反转了？",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2076408504278173049",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么中餐中很少吃到层次感这种体验？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2029943991794409979/answer/2031468411201569033",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "南京无门槛的「零元面馆」为什么招来那么多质疑与批评？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2104559437331568051/answer/2106082101871259694",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "如何评价方博也要参加德国乒乓球甲级联赛？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2107160503395140068/answer/2107520902174921469",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "那些老干部为啥都长寿？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/24992247/answer/2105997627582048117",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "没老伴的晚年靠什么熬过每一天？",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2078533613713413737",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么老板多数是销售出身，而不是市场出身？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/21648437/answer/2108101379520738452",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "前裁判称梅西用球砸对手面部应被罚下，塔皮亚黄牌判罚不当，这说法符合足球规则吗？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2107989177509865082/answer/2108118185069262381",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "可以莫名其妙教一个技能吗？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2064331020208493441/answer/2093795065168663779",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "如何看待清华特等奖学金答辩中，候选人被问「为什么三年绩点越来越低」？大学生的优秀到底应该如何评判？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2105681388028392901/answer/2106295793485361739",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "为什么济南是副省级城市，县处级干部是合肥的一百倍左右，gdp会被合肥甩开呢？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2074169058522556310/answer/2108168376161931729",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "李子柒当选四川文联副主席，如何理解她的这一职务，可能带来哪些影响？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2107187453836650425/answer/2107789764359348613",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "本届深圳APEC会议的意义是什么？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2103975417191339159/answer/2106720610600724079",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.578Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "雷军 APEC 现场挨个发名片引热议，为啥仍要用这种传统方式介绍自己？名片在数字化时代还有多大价值？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2106298717351273704/answer/2107179854332534829",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "如何看待ai冲击下的数理科研？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2092665947337273576/answer/2106374323753822169",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "社会现在是什么样子了?",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2087804107331580236",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "可能是今年高盛最好的中国报告",
+      "summary": "",
+      "url": "https://zhuanlan.zhihu.com/p/2105774805609980883",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "给县委组织部部长当联络员？值得去吗？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2085129114487474041/answer/2108280534401017095",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "如何评价英伟达董事会宣布恢复黄仁勋职务？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2108320558865831371/answer/2108329489709129924",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "怎么样看待最近几年的反腐成效？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2083138079116862726/answer/2105426724884312933",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "旅游是不是要趁年轻玩才有意思？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/1933533927240340096/answer/2098247355921348134",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
+    {
+      "platform": "zhihu",
+      "title": "谷爱凌称「没有谁会因吃苦而获奖，不要歌颂牺牲」，如何评价这一观点？",
+      "summary": "",
+      "url": "https://www.zhihu.com/question/2102027001586511991/answer/2102887363592696176",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:12.577Z"
+    },
     {
       "platform": "xiaohongshu",
       "title": "姐妹们 留不留！！！",
