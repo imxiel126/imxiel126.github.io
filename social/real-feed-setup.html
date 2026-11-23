@@ -8,7 +8,7 @@
 <main class="setup"><div style="font-size:12px;letter-spacing:.13em;color:#286a5b">MY RECOMMENDATIONS · CONNECT</div>
 <h1>连接你真正看到的知乎、小红书推荐</h1>
 <p class="lead">这里的「推荐」特指你登录后进入平台推荐页时看到的个性化内容，不是关键词搜索、热榜或同主题文章。</p>
-<div class="notice"><strong>当前状态：等待你本人授权浏览器同步。</strong><p>仅有公开主页地址不能取得你的个性化推荐流。浏览器同步扩展目前已写入 GitHub 仓库，但尚未安装或连接，不会自动采集推荐。</p></div>
+<div class="notice"><strong id="real-sync-state">正在核对 GitHub 推荐同步状态…</strong><p id="real-sync-details">这里的状态来自 GitHub 上实际同步的数据文件，不读取或展示你的 Token。</p><p><a href="/#personal-recommendations">返回首页查看推荐内容 ↗</a></p></div>
 <h2>一次性开启浏览器端同步</h2>
 <ol>
 <li>在 <a href="https://github.com/imxiel126/imxiel126.github.io" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>中点击 Code → Download ZIP，解压下载文件。</li>
@@ -20,4 +20,23 @@
 <div class="notice"><strong>重要隐私提醒</strong><p>你看到的推荐可能暴露个人兴趣与阅读偏好。同步后的卡片标题、链接及短摘要会进入公开仓库，且 Git 历史可能保留。程序不读取 Cookie、密码或私信。只有浏览器打开并实际浏览推荐页时才会更新，不能承诺全天实时同步；平台页面升级也可能使采集失效。</p></div>
 <p>程序源代码和技术说明均可在 GitHub 查看。建议先检查代码、确认公开范围后再启用。</p>
 <div class="buttons"><a href="https://github.com/imxiel126/imxiel126.github.io/tree/main/tools/personal-feed-extension" target="_blank" rel="noopener noreferrer">查看同步扩展源代码</a><a href="/">返回首页</a></div>
-</main></body></html>
+</main><script>
+(()=>{"use strict";
+const title=document.getElementById("real-sync-state");
+const details=document.getElementById("real-sync-details");
+fetch("/social/personal-feed.json?t="+Date.now(),{cache:"no-store"}).then(r=>{
+ if(!r.ok)throw Error("HTTP "+r.status);return r.json();
+}).then(d=>{
+ const items=Array.isArray(d.items)?d.items:[];
+ const zh=items.filter(x=>x.platform==="zhihu"&&x.source==="logged_in_recommendation_page").length;
+ const xhs=items.filter(x=>x.platform==="xiaohongshu"&&x.source==="logged_in_recommendation_page").length;
+ if(zh+xhs){
+ title.textContent="已收到真实推荐同步数据（共 "+(zh+xhs)+" 条）";
+ details.textContent="知乎 "+zh+" 条、小红书 "+xhs+" 条。最后同步："+(d.updated_at?new Date(d.updated_at).toLocaleString("zh-CN",{timeZone:"Asia/Shanghai"}):"未知")+"（北京时间）。这代表 GitHub 有已同步数据，不保证当前浏览器扩展仍在运行。";
+ }else{
+ title.textContent="尚未收到已授权的个人推荐卡片";
+ details.textContent="扩展程序可能还未完成采集或同步。需要打开登录后的平台推荐页，并确保扩展已获授权。";
+ }
+}).catch(()=>{title.textContent="无法读取同步状态";details.textContent="暂时无法从 GitHub Pages 读取同步文件。请查看仓库文件 social/personal-feed.json。";});
+})();
+</script></body></html>
