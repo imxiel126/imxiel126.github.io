@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:48:01.271836+00:00",
+  "updated": "2026-11-23T15:53:34.051012+00:00",
   "books": [
     {
       "id": "41807702",
@@ -5843,9 +5843,14 @@
           "东方玄幻"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "洛城那场大雪下了二百六十八天，终于停歇。",
+          "highlights": 846
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5877,9 +5882,18 @@
           "仙侠武侠"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "连做炉鼎都要和别人争，秦桑暗叹一声，取出玉简，仔细体悟这部功法。",
+          "highlights": 198
+        },
+        "review": {
+          "text": "作者想象力丰富，文采斑斓,语言华丽，构思精巧。",
+          "author": "凌晨两点的书桌",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5911,9 +5925,14 @@
           "历史架空"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "子女贩若牛羊，死者枕籍于野。",
+          "highlights": 72
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5945,9 +5964,14 @@
           "奇幻异界"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我龙尘将不再是以前的龙尘，我要崛起”",
+          "highlights": 360
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -5979,9 +6003,14 @@
           "商业"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "不为模糊不清的未来担忧，只为清清楚楚的现在努力，现在努力做好一切就好。",
+          "highlights": 1292
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6013,9 +6042,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "他说：“人人生而服从父母”，故不享有自由。这种父母权威，他称作“王权”“父权”或者“父亲身份权利”。",
+          "highlights": 378
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6047,9 +6081,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "他活着，尽管命运离奇多磨难， 他安息，只因失去天使才合眼； 生来死去，是人生自然的规律， 昼去夜来，也同样是这种道理。",
+          "highlights": 658
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6081,9 +6120,14 @@
           "法律"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "最广义之法，指源于物之本质的必然联系。万物皆有法：神有其法，物质世界有其法，超人智能有其法，兽有其法，人有其法。",
+          "highlights": 770
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6115,9 +6159,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "但是我那一串项链是假的，最多也就值500法郎啊！”",
+          "highlights": 10440
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6149,9 +6198,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "不仅没有因为对方的忘恩负义而愤慨，反而怀着期待，希望在未来的新世界里，老百姓可以不用为了饱腹而去偷半袋大蒜。",
+          "highlights": 3009
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6183,9 +6237,14 @@
           "认知思维"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我们之所以学习，是因为学习能拓展我们的能力。你所做的事情决定了你会成为什么样的人，你做的事情越多，你能做的事情也就越多。",
+          "highlights": 360
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6217,9 +6276,14 @@
           "教育"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "那个你要一生追求的目标是什么？为了成功，你愿意付出什么？",
+          "highlights": 192
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6251,9 +6315,18 @@
           "教育"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "对应到学习中，这三阶段也是我们每个人成长的必经之路，是一个人从舒适区进入成长区，并在磨难中自我突破、积极变化的过程。",
+          "highlights": 232
+        },
+        "review": {
+          "text": "以自己的亲身经历和经验总结学习和使用一体循环推进。",
+          "author": "春秋",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6291,9 +6364,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "先天与后天：哪个对人的影响更大？",
+          "highlights": 459
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6331,9 +6409,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "你的生活中有没有一个人，可以让你在凌晨4点仍然敢打电话过去倾诉烦恼？如果有，那你很可能会比回答“没有”的人活得长。",
+          "highlights": 1206
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6365,9 +6448,14 @@
           "历史读物"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“哎，王位，要吗？”“王位，王位，一毛钱五斤的王位。”",
+          "highlights": 144
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6399,9 +6487,14 @@
           "积极心理学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "如果你认为“人们必须始终做正确的事”，那么一旦他人做不到，你就会感到沮丧。",
+          "highlights": 6045
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6433,9 +6526,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "这可能成为一篇新小说的题材，不过我们现在的这篇小说却要结束了。",
+          "highlights": 18996
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6467,9 +6565,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "即使像我这样的人，人生也会有它阳光灿烂的时候的。",
+          "highlights": 10048
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6501,9 +6604,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "那是最美好的时代，那是最糟糕的时代；",
+          "highlights": 5535
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6541,9 +6649,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "你对金钱的个人经验可能只有0.00000001%符合实际，但它构成了你对世界运作方式的主观判断的80%。",
+          "highlights": 5576
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6575,9 +6688,14 @@
           "医学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "精神障碍——所有的精神障碍，都是大脑的代谢紊乱。",
+          "highlights": 126
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6620,9 +6738,14 @@
             "definition": "描述随机事件发生可能性的数量。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "什么是思维？简而言之，它是针对那些并不存在于即时环境中的事物所创造出的心理表征。",
+          "highlights": 432
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6665,9 +6788,14 @@
             "definition": "描述随机事件发生可能性的数量。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "作为一名随机的参与者，被射杀的概率为90%听起来是比较合理的。这可比1/36多很多，而这中间的差别也不小。哪个概率是对的呢？",
+          "highlights": 60
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -9159,18 +9287,18 @@
   ],
   "stats": {
     "weekly": {
-      "seconds": 2096,
+      "seconds": 2222,
       "days": 1,
-      "averageSeconds": 2096,
+      "averageSeconds": 2222,
       "readTimes": {
-        "1795363200": 2096
+        "1795363200": 2222
       },
       "categories": []
     },
     "monthly": {
-      "seconds": 160288,
+      "seconds": 160414,
       "days": 23,
-      "averageSeconds": 6969,
+      "averageSeconds": 6974,
       "readTimes": {
         "1793462400": 13558,
         "1793548800": 6866,
@@ -9194,7 +9322,7 @@
         "1795104000": 988,
         "1795190400": 3497,
         "1795276800": 593,
-        "1795363200": 2096
+        "1795363200": 2222
       },
       "categories": [
         {
@@ -9224,9 +9352,9 @@
       ]
     },
     "annually": {
-      "seconds": 1241523,
+      "seconds": 1241649,
       "days": 268,
-      "averageSeconds": 3796,
+      "averageSeconds": 3797,
       "readTimes": {
         "1767196800": 183440,
         "1769875200": 120641,
@@ -9238,7 +9366,7 @@
         "1785513600": 36167,
         "1788192000": 115495,
         "1790784000": 130914,
-        "1793462400": 160288,
+        "1793462400": 160414,
         "1796054400": 0
       },
       "categories": [
@@ -9269,7 +9397,7 @@
       ]
     },
     "overall": {
-      "seconds": 3393880,
+      "seconds": 3394006,
       "days": 781,
       "averageSeconds": 0,
       "readTimes": {
@@ -9281,7 +9409,7 @@
         "1672502400": 223,
         "1704038400": 1359860,
         "1735660800": 782586,
-        "1767196800": 1241523
+        "1767196800": 1241649
       },
       "categories": [
         {
