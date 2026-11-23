@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ready": true,
-  "updated": "2026-11-23T14:43:25.809291+00:00",
+  "updated": "2026-11-23T14:47:28.065202+00:00",
   "books": [
     {
       "id": "41807702",
@@ -21,7 +21,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33867124",
@@ -41,7 +42,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "40453176",
@@ -61,7 +63,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300015133",
@@ -81,7 +84,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "837932",
@@ -101,7 +105,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "823420",
@@ -121,7 +126,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "561816",
@@ -141,7 +147,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "648963",
@@ -161,7 +168,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300181368",
@@ -181,7 +189,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33483909",
@@ -201,7 +210,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "34424286",
@@ -221,7 +231,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "40509842",
@@ -241,7 +252,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "855243",
@@ -261,7 +273,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300020531",
@@ -281,7 +294,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300147760",
@@ -301,7 +315,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "24965201",
@@ -321,7 +336,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300197496",
@@ -341,7 +357,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300074922",
@@ -361,7 +378,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300106919",
@@ -381,7 +399,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "35040309",
@@ -401,7 +420,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300082646",
@@ -421,7 +441,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "32707695",
@@ -441,7 +462,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "34130107",
@@ -461,7 +483,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300108738",
@@ -481,7 +504,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300135453",
@@ -501,7 +525,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300127792",
@@ -521,7 +546,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300118013",
@@ -541,7 +567,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "30478269",
@@ -561,7 +588,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300067776",
@@ -581,7 +609,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "31743372",
@@ -601,7 +630,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300050500",
@@ -621,7 +651,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300016795",
@@ -641,7 +672,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300018036",
@@ -661,7 +693,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33362462",
@@ -681,7 +714,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300116432",
@@ -701,7 +735,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "846716",
@@ -721,7 +756,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "912325",
@@ -741,7 +777,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "811769",
@@ -761,7 +798,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "38245897",
@@ -781,7 +819,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300140469",
@@ -801,7 +840,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "630480",
@@ -821,7 +861,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "31933731",
@@ -841,7 +882,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300076376",
@@ -861,7 +903,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "27563210",
@@ -881,7 +924,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "926378",
@@ -901,7 +945,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "506018",
@@ -921,7 +966,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300169745",
@@ -941,7 +987,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "823003",
@@ -961,7 +1008,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "29750205",
@@ -981,7 +1029,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "22739882",
@@ -1001,7 +1050,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "38585704",
@@ -1021,7 +1071,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300025245",
@@ -1041,7 +1092,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300098320",
@@ -1061,7 +1113,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33905136",
@@ -1081,7 +1134,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "27423357",
@@ -1101,7 +1155,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300179560",
@@ -1121,7 +1176,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300192971",
@@ -1141,7 +1197,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300061154",
@@ -1161,7 +1218,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "41100356",
@@ -1181,7 +1239,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "22291759",
@@ -1201,7 +1260,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300196014",
@@ -1221,7 +1281,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33617657",
@@ -1241,7 +1302,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300083736",
@@ -1261,7 +1323,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300020416",
@@ -1281,7 +1344,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "34880565",
@@ -1301,7 +1365,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "812442",
@@ -1321,7 +1386,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "230108",
@@ -1341,7 +1407,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300020482",
@@ -1361,7 +1428,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "510909",
@@ -1381,7 +1449,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300056234",
@@ -1401,7 +1470,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300076869",
@@ -1421,7 +1491,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "834464",
@@ -1441,7 +1512,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300156371",
@@ -1461,7 +1533,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300020529",
@@ -1481,7 +1554,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "847283",
@@ -1501,7 +1575,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300020527",
@@ -1521,7 +1596,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300049239",
@@ -1541,7 +1617,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300096610",
@@ -1561,7 +1638,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "29599940",
@@ -1581,7 +1659,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300044056",
@@ -1601,7 +1680,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43379389",
@@ -1613,7 +1693,7 @@
       "category": "文学-经典作品",
       "finished": false,
       "lastRead": 1773586381,
-      "progress": null,
+      "progress": 7,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1621,7 +1701,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "26435427",
@@ -1633,7 +1714,7 @@
       "category": "精品小说-年代小说",
       "finished": false,
       "lastRead": 1773585816,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1641,7 +1722,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300192536",
@@ -1653,7 +1735,7 @@
       "category": "精品小说-科幻小说",
       "finished": false,
       "lastRead": 1773585717,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1661,7 +1743,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "849134",
@@ -1673,7 +1756,7 @@
       "category": "精品小说-治愈小说",
       "finished": false,
       "lastRead": 1773581447,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1681,7 +1764,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "567360",
@@ -1693,7 +1777,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1773581442,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1701,7 +1785,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300046691",
@@ -1713,7 +1798,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1773581415,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1721,7 +1806,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "814146",
@@ -1733,7 +1819,7 @@
       "category": "精品小说-治愈小说",
       "finished": false,
       "lastRead": 1773581407,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1741,7 +1827,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300117397",
@@ -1753,7 +1840,7 @@
       "category": "精品小说-女性小说",
       "finished": false,
       "lastRead": 1773581331,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1761,7 +1848,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300117873",
@@ -1773,7 +1861,7 @@
       "category": "精品小说-悬疑推理",
       "finished": false,
       "lastRead": 1773577247,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1781,7 +1869,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "35458083",
@@ -1793,7 +1882,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1773462150,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1801,7 +1890,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "672233",
@@ -1813,7 +1903,7 @@
       "category": "精品小说-玄幻小说",
       "finished": false,
       "lastRead": 1773461989,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1821,7 +1911,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300197644",
@@ -1833,7 +1924,7 @@
       "category": "个人成长-励志成长",
       "finished": false,
       "lastRead": 1773366117,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1841,7 +1932,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300192241",
@@ -1853,7 +1945,7 @@
       "category": "精品小说-纪实小说",
       "finished": false,
       "lastRead": 1773366109,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1861,7 +1953,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300120543",
@@ -1873,7 +1966,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1773365973,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1881,7 +1974,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "852254",
@@ -1893,7 +1987,7 @@
       "category": "个人成长-人生哲学",
       "finished": false,
       "lastRead": 1773103106,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1901,7 +1995,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300068588",
@@ -1913,7 +2008,7 @@
       "category": "个人成长-人生哲学",
       "finished": false,
       "lastRead": 1772722411,
-      "progress": null,
+      "progress": 11,
       "notes": {
         "highlights": 2,
         "thoughts": 0,
@@ -1921,7 +2016,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300052100",
@@ -1933,7 +2029,7 @@
       "category": "个人成长-励志成长",
       "finished": false,
       "lastRead": 1772635103,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1941,7 +2037,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300086356",
@@ -1953,7 +2050,7 @@
       "category": "心理-心理学应用",
       "finished": false,
       "lastRead": 1772521355,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1961,7 +2058,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "37544495",
@@ -1973,7 +2071,7 @@
       "category": "科学技术-科学科普",
       "finished": false,
       "lastRead": 1772332655,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -1981,7 +2079,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300159920",
@@ -1993,7 +2092,7 @@
       "category": "政治军事-政治",
       "finished": false,
       "lastRead": 1772332053,
-      "progress": null,
+      "progress": 4,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2001,7 +2100,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300164590",
@@ -2013,7 +2113,7 @@
       "category": "哲学宗教-思维科学",
       "finished": false,
       "lastRead": 1772332045,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2021,7 +2121,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300079274",
@@ -2033,7 +2134,7 @@
       "category": "心理-认知与行为",
       "finished": false,
       "lastRead": 1772331996,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2041,7 +2142,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300042730",
@@ -2053,7 +2155,7 @@
       "category": "心理-认知与行为",
       "finished": false,
       "lastRead": 1772331982,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2061,7 +2163,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33800862",
@@ -2073,7 +2176,7 @@
       "category": "个人成长-人生哲学",
       "finished": false,
       "lastRead": 1772275633,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2081,7 +2184,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "29589374",
@@ -2093,7 +2197,7 @@
       "category": "个人成长-认知思维",
       "finished": false,
       "lastRead": 1772113268,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2101,7 +2205,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300056380",
@@ -2113,7 +2218,7 @@
       "category": "个人成长-人生哲学",
       "finished": false,
       "lastRead": 1771898839,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2121,7 +2226,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300018022",
@@ -2133,7 +2239,7 @@
       "category": "心理-认知与行为",
       "finished": false,
       "lastRead": 1771511864,
-      "progress": null,
+      "progress": 1,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2141,7 +2247,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300101084",
@@ -2153,7 +2260,7 @@
       "category": "个人成长-认知思维",
       "finished": false,
       "lastRead": 1771511353,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2161,7 +2268,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300053146",
@@ -2173,7 +2281,7 @@
       "category": "哲学宗教-思维科学",
       "finished": false,
       "lastRead": 1771511147,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2181,7 +2289,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "23552633",
@@ -2193,7 +2302,7 @@
       "category": "历史-历史读物",
       "finished": true,
       "lastRead": 1771495319,
-      "progress": null,
+      "progress": 99,
       "notes": {
         "highlights": 21,
         "thoughts": 0,
@@ -2201,7 +2310,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300017152",
@@ -2213,7 +2323,7 @@
       "category": "经济理财-管理",
       "finished": false,
       "lastRead": 1771467147,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2221,7 +2331,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300133275",
@@ -2233,7 +2344,7 @@
       "category": "个人成长-情绪心灵",
       "finished": false,
       "lastRead": 1771293958,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2241,7 +2352,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300124331",
@@ -2253,7 +2365,7 @@
       "category": "个人成长-沟通表达",
       "finished": false,
       "lastRead": 1770993424,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2261,7 +2373,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300091455",
@@ -2273,7 +2386,7 @@
       "category": "个人成长-情绪心灵",
       "finished": false,
       "lastRead": 1770955634,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2281,7 +2394,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300176709",
@@ -2293,7 +2407,7 @@
       "category": "社会文化-社科",
       "finished": false,
       "lastRead": 1770944562,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2301,7 +2415,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "547153",
@@ -2313,7 +2428,7 @@
       "category": "文学-外国文学",
       "finished": false,
       "lastRead": 1770893267,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2321,7 +2436,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300181463",
@@ -2333,7 +2449,7 @@
       "category": "历史-世界史",
       "finished": false,
       "lastRead": 1770786894,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2341,7 +2457,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300129936",
@@ -2353,7 +2470,7 @@
       "category": "心理-心理学应用",
       "finished": false,
       "lastRead": 1770640689,
-      "progress": null,
+      "progress": 4,
       "notes": {
         "highlights": 1,
         "thoughts": 0,
@@ -2361,7 +2478,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300113264",
@@ -2373,7 +2491,7 @@
       "category": "历史-中国古代",
       "finished": false,
       "lastRead": 1770637407,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2381,7 +2499,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "26843109",
@@ -2393,7 +2512,7 @@
       "category": "哲学宗教-逻辑学",
       "finished": false,
       "lastRead": 1770628672,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -2401,7 +2520,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300048646",
@@ -2421,7 +2541,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "26572786",
@@ -2441,7 +2562,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300076186",
@@ -2461,7 +2583,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300192769",
@@ -2481,7 +2604,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300190808",
@@ -2501,7 +2625,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "856796",
@@ -2521,7 +2646,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300094405",
@@ -2541,7 +2667,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300138807",
@@ -2561,7 +2688,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300139691",
@@ -2581,7 +2709,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "34514633",
@@ -2601,7 +2730,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "36982930",
@@ -2621,7 +2751,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "23691344",
@@ -2641,7 +2772,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300113138",
@@ -2661,7 +2793,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "27256052",
@@ -2681,7 +2814,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "28027842",
@@ -2701,7 +2835,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "20775192",
@@ -2721,7 +2856,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "39006481",
@@ -2741,7 +2877,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "31617576",
@@ -2761,7 +2898,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "34792501",
@@ -2781,7 +2919,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "484840",
@@ -2801,7 +2940,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "462952",
@@ -2821,7 +2961,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "22670894",
@@ -2841,7 +2982,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300163793",
@@ -2861,7 +3003,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300183884",
@@ -2881,7 +3024,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43014772",
@@ -2901,7 +3045,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "32576776",
@@ -2921,7 +3066,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300160120",
@@ -2941,7 +3087,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "818760",
@@ -2961,7 +3108,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300021861",
@@ -2981,7 +3129,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300096458",
@@ -3001,7 +3150,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "41721976",
@@ -3021,7 +3171,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300116264",
@@ -3041,7 +3192,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300135917",
@@ -3061,7 +3213,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300138316",
@@ -3081,7 +3234,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300017554",
@@ -3101,7 +3255,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300096645",
@@ -3121,7 +3276,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300108176",
@@ -3141,7 +3297,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "40735280",
@@ -3161,7 +3318,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "823432",
@@ -3181,7 +3339,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300138066",
@@ -3201,7 +3360,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300058701",
@@ -3221,7 +3381,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "38818164",
@@ -3241,7 +3402,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "41077379",
@@ -3261,7 +3423,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "32072431",
@@ -3281,7 +3444,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300064234",
@@ -3301,7 +3465,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300107468",
@@ -3321,7 +3486,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300014119",
@@ -3341,7 +3507,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43279047",
@@ -3361,7 +3528,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300115186",
@@ -3381,7 +3549,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "598731",
@@ -3401,7 +3570,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "40638633",
@@ -3421,7 +3591,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "26187808",
@@ -3441,7 +3612,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300116634",
@@ -3461,7 +3633,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "25623475",
@@ -3481,7 +3654,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300044059",
@@ -3501,7 +3675,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "26675517",
@@ -3521,7 +3696,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "32351714",
@@ -3541,7 +3717,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300136230",
@@ -3561,7 +3738,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "924944",
@@ -3581,7 +3759,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300096530",
@@ -3601,7 +3780,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300026292",
@@ -3621,7 +3801,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "855833",
@@ -3641,7 +3822,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300114402",
@@ -3661,7 +3843,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "612970",
@@ -3681,7 +3864,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "33091799",
@@ -3701,7 +3885,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "42682684",
@@ -3721,7 +3906,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43370454",
@@ -3741,7 +3927,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300028060",
@@ -3761,7 +3948,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "312809",
@@ -3781,7 +3969,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "35346575",
@@ -3801,7 +3990,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300078184",
@@ -3821,7 +4011,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "37188896",
@@ -3841,7 +4032,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "787309",
@@ -3861,7 +4053,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300063971",
@@ -3881,7 +4074,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300111793",
@@ -3901,7 +4095,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "831972",
@@ -3921,7 +4116,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300151393",
@@ -3941,7 +4137,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300095645",
@@ -3961,7 +4158,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "808337",
@@ -3981,7 +4179,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "38117259",
@@ -4001,7 +4200,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300087420",
@@ -4021,7 +4221,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300065541",
@@ -4041,7 +4242,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300096312",
@@ -4061,7 +4263,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300023015",
@@ -4081,7 +4284,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "29998638",
@@ -4101,7 +4305,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "839229",
@@ -4121,7 +4326,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300020918",
@@ -4141,7 +4347,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300102076",
@@ -4161,7 +4368,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "853426",
@@ -4181,7 +4389,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "39204617",
@@ -4201,7 +4410,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43028699",
@@ -4221,7 +4431,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300067771",
@@ -4241,7 +4452,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300076204",
@@ -4261,7 +4473,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300070102",
@@ -4281,7 +4494,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300111243",
@@ -4301,7 +4515,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300107853",
@@ -4321,7 +4536,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300102559",
@@ -4341,7 +4557,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "32368549",
@@ -4361,7 +4578,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300047658",
@@ -4381,7 +4599,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43521869",
@@ -4401,7 +4620,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300079647",
@@ -4421,7 +4641,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300110859",
@@ -4441,7 +4662,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "30472761",
@@ -4461,7 +4683,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "184073",
@@ -4481,7 +4704,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "43309819",
@@ -4501,7 +4725,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "24020257",
@@ -4521,7 +4746,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300092079",
@@ -4541,7 +4767,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "32307608",
@@ -4561,7 +4788,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "31131755",
@@ -4581,7 +4809,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "40296162",
@@ -4601,7 +4830,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "35664228",
@@ -4621,7 +4851,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300023318",
@@ -4641,7 +4872,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300044451",
@@ -4661,7 +4893,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "918297",
@@ -4681,7 +4914,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300062449",
@@ -4701,7 +4935,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300172819",
@@ -4721,7 +4956,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300111722",
@@ -4741,7 +4977,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "3300163780",
@@ -4761,7 +4998,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     },
     {
       "id": "913053",
@@ -4781,7 +5019,8 @@
       },
       "excerpts": [],
       "summary": "",
-      "summary_hash": ""
+      "summary_hash": "",
+      "guide": {}
     }
   ],
   "stats": {
