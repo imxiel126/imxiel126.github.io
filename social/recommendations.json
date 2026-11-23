@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-23T00:00:00+08:00",
+  "source_label": "人工精选及公开网页检索，不是平台个性化推荐流",
+  "items": [
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "科研入门通用手册（计算方向）",
+      "summary": "从文献综述、研究工具到计算方法，帮助建立科研入门框架。",
+      "url": "https://zhuanlan.zhihu.com/p/708077465",
+      "topic": "科研方法",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "计量校准行业市场现状与发展前景",
+      "summary": "了解计量校准服务、机构能力和市场结构的公开讨论。",
+      "url": "https://www.zhihu.com/question/2048429709151810977/answer/2048436261711618566",
+      "topic": "计量与检测",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "一文读懂计量型 MSA（手动仪器篇）",
+      "summary": "从测量系统分析视角理解重复性、再现性和取样代表性。",
+      "url": "https://www.zhihu.com/tardis/bd/art/637398127",
+      "topic": "质量与计量",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "非贵金属阳极催化剂与电解水制氢",
+      "summary": "关注阳极析氧反应和绿氢技术产业化的公开项目介绍。",
+      "url": "https://zhuanlan.zhihu.com/p/2023002780974031809",
+      "topic": "氢能",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "计量检测技术变革与数字化测量",
+      "summary": "讨论数字化测量、模型及检测数据管理问题。",
+      "url": "https://zhuanlan.zhihu.com/p/1928728224436822381",
+      "topic": "数字计量",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "xiaohongshu",
+      "kind": "topic",
+      "title": "计量检测 · 小红书主题",
+      "summary": "查看平台上持续变化的计量、校准与测量学习内容。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%AE%A1%E9%87%8F%E6%A3%80%E6%B5%8B",
+      "topic": "计量与检测",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "xiaohongshu",
+      "kind": "topic",
+      "title": "氢能与电解水 · 小红书主题",
+      "summary": "探索制氢设备、实验笔记和能源技术相关公开笔记。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%94%B5%E8%A7%A3%E6%B0%B4%E5%88%B6%E6%B0%A2",
+      "topic": "氢能",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "xiaohongshu",
+      "kind": "topic",
+      "title": "科研方法 · 小红书主题",
+      "summary": "发现论文管理、文献阅读与项目研究技巧。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%A7%91%E7%A0%94%E6%96%B9%E6%B3%95",
+      "topic": "科研方法",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "xiaohongshu",
+      "kind": "topic",
+      "title": "人工智能 · 小红书主题",
+      "summary": "发现 AI 工具使用、机器学习实践与工作流经验。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7",
+      "topic": "人工智能",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "xiaohongshu",
+      "kind": "topic",
+      "title": "读书与成长 · 小红书主题",
+      "summary": "发掘读书笔记、知识整理与个人学习方法。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0",
+      "topic": "阅读",
+      "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    }
+  ]
+}
