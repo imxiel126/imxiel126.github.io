@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "个人推荐页同步到 GitHub Pages",
+  "version": "0.1.0",
+  "description": "仅在你授权后，读取浏览器当前显示的知乎/小红书推荐卡片并将公开摘要同步到指定的 GitHub Pages 仓库。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.zhihu.com/*",
+        "https://www.xiaohongshu.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
