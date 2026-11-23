@@ -38,7 +38,11 @@ def check_local(root=None, now=None):
     now = now or dt.datetime.now(TZ)
     issues = []
     success = []
-    archive = root / "archive" / f"{now.date()-dt.timedelta(days=1):%Y-%m-%d}.html"
+    # The prior-evening CCTV issue is generated at 07:37 and retried at 08:47.
+    # Before 10:00 China time, requiring yesterday's issue would cause midnight
+    # false alarms. Check the latest issue that is actually due for publishing.
+    expected = now.date()-dt.timedelta(days=2 if now.hour < 10 else 1)
+    archive = root / "archive" / f"{expected:%Y-%m-%d}.html"
     if not archive.is_file() or archive.stat().st_size < 500:
         issues.append(f"新闻晨读归档缺失：{archive.name}")
     else:
