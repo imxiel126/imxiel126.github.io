@@ -1,6 +1,247 @@
 {
   "schema_version": 1,
   "source": "local_authorized_browser",
-  "updated_at": null,
-  "items": []
+  "updated_at": "2026-11-23T15:34:09.195Z",
+  "items": [
+    {
+      "platform": "xiaohongshu",
+      "title": "姐妹们 留不留！！！",
+      "summary": "川页子 655",
+      "url": "https://www.xiaohongshu.com/explore/6b0266fe000000001803b34d",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "这个千年纯情老厨男有点好品🤤魂天帝",
+      "summary": "momo 50",
+      "url": "https://www.xiaohongshu.com/explore/6b031008000000001b01c604",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "为什么wps的用户越来越多 office没人用了？",
+      "summary": "亦亦 29",
+      "url": "https://www.xiaohongshu.com/explore/6b02dccf000000002a02d9a6",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "目前全球还存在着的流亡政府",
+      "summary": "斗战胜佛 1964",
+      "url": "https://www.xiaohongshu.com/explore/6b016055000000002301034a",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "温柔的川渝女孩",
+      "summary": "长板婷妹🍀 755",
+      "url": "https://www.xiaohongshu.com/explore/6ae7fdfb000000001a021945",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "你以为很爽，但这些事情会让你变臭…",
+      "summary": "巧克力炖小咪 545",
+      "url": "https://www.xiaohongshu.com/explore/6b0411f6000000002b0246ee",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "有没有近期新西兰回国的",
+      "summary": "90后四十岁的留叔 1975",
+      "url": "https://www.xiaohongshu.com/explore/6b01420800000000260264e4",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "居然有3个小时，有老师知道大唐管培笔试题型是什么吗？笔试 校招 秋招笔试 大唐集",
+      "summary": "超级原神高手 4",
+      "url": "https://www.xiaohongshu.com/explore/6b040b16000000002b01b31c",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "为什么俄罗斯不敢使用核武器？",
+      "summary": "十八 4065",
+      "url": "https://www.xiaohongshu.com/explore/6b02de790000000023011e3c",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.921Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "微信读书，有条通天大道你走不走？",
+      "summary": "如意如意顺我心意快快显灵 271",
+      "url": "https://www.xiaohongshu.com/explore/6b01baaf000000002a01ac98",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "基金委处长投案，青椒们坐不住了",
+      "summary": "赵葫芦画瓢 15",
+      "url": "https://www.xiaohongshu.com/explore/6b044ebb000000002a013cb2",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "生锈的…另有其人吧？",
+      "summary": "马上蜂 4452",
+      "url": "https://www.xiaohongshu.com/explore/6b02e6c40000000026011aac",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "励志，90后在职大学学历，已任市长！",
+      "summary": "体制拾遗 251",
+      "url": "https://www.xiaohongshu.com/explore/6added55000000002403de41",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "80批博士后面上",
+      "summary": "一只小天鹅 79",
+      "url": "https://www.xiaohongshu.com/explore/6b042de7000000002a03a95d",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "中信集团管培offer已发",
+      "summary": "全熟芝士 10",
+      "url": "https://www.xiaohongshu.com/explore/6b044471000000002903cfef",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "感谢中国科协",
+      "summary": "酱香小云饼 29",
+      "url": "https://www.xiaohongshu.com/explore/6b03f6ce000000001802becf",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "转了一个到朋友圈，都没人敢点赞",
+      "summary": "贺先生-正冰 123",
+      "url": "https://www.xiaohongshu.com/explore/6b0418ad000000002a027bf3",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "没有天赋 那就重复",
+      "summary": "Irene 4118",
+      "url": "https://www.xiaohongshu.com/explore/6addd586000000002a033317",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "啊啊啊啊啊巨好看！！！",
+      "summary": "一只小又又 839",
+      "url": "https://www.xiaohongshu.com/explore/6afacd1d0000000016032f64",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "可可爱爱的日常",
+      "summary": "曲奇饼干 176",
+      "url": "https://www.xiaohongshu.com/explore/6af9168300000000180380de",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "听说厂网没分离之前，电厂是香饽饽，电网没人愿意去？现在电气学生都扎堆考国网，",
+      "summary": "老刘职场手记 14",
+      "url": "https://www.xiaohongshu.com/explore/6b03fb4e000000002a02982e",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "感谢中国科协！解锁青年编委新身份📚",
+      "summary": "提溜脖子小鸵鸟 17",
+      "url": "https://www.xiaohongshu.com/explore/6b042f560000000018024ddc",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "八十批博士后面上结果5",
+      "summary": "烧瓶与拿铁 11",
+      "url": "https://www.xiaohongshu.com/explore/6b0431e1000000002b002c63",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "这种号也有人信😂",
+      "summary": "bond化学 579",
+      "url": "https://www.xiaohongshu.com/explore/6ae234c0000000003401c59d",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "妈妈，我出息啦，我用奖学金证书为你兑换了",
+      "summary": "橙小橙不乘 156",
+      "url": "https://www.xiaohongshu.com/explore/6b01a61d000000002b0252d4",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "申请没通过求助",
+      "summary": "凌然- 14",
+      "url": "https://www.xiaohongshu.com/explore/6b03dc6c000000001f014d09",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "全国唯一一个单字火车站",
+      "summary": "一只卑微铁工 339",
+      "url": "https://www.xiaohongshu.com/explore/6b0302ad000000002601029a",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "签证为什么会那么难办？",
+      "summary": "财财吖 1088",
+      "url": "https://www.xiaohongshu.com/explore/6afd02ec000000002c00dbdd",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "孟姐是一点没把观众当外人啊",
+      "summary": "故乡的风 220",
+      "url": "https://www.xiaohongshu.com/explore/6affe61c000000002b01bd71",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    },
+    {
+      "platform": "xiaohongshu",
+      "title": "2026甄选内蒙诚信的工业高纯制氢品牌公司，哪些值得关注",
+      "summary": "小红薯65349C3E",
+      "url": "https://www.xiaohongshu.com/explore/6b024d98000000002b03a9f1",
+      "source": "logged_in_recommendation_page",
+      "observed_at": "2026-11-23T15:34:06.920Z"
+    }
+  ]
 }
