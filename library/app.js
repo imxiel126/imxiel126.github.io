@@ -19,8 +19,30 @@ function render(){const filtered=state.all.filter(matches);const maxPage=Math.ma
 function setPage(n){state.page=n;render();byId("browse").scrollIntoView({block:"start"});}
 function toggleFavorite(x){const key=x.kind+":"+x.id;if(saved.has(key))saved.delete(key);else saved.add(key);persist();}
 let active=null;
-function openDetail(x){active=x;byId("modal-tag").textContent=names[x.kind];byId("modal-title").textContent=x.kind==="quotes"?x.content:x.title;byId("modal-meta").textContent=meta(x);byId("modal-body").textContent=preview(x);byId("modal-note").textContent=x.kind==="books"?(x.verifiedSummary?"原创概述，仅供快速理解；准确观点请核对原书。":"该条尚未撰写可信的逐书摘要，以上仅是通用阅读提示。"):x.kind==="quotes"?(x.source||"引用时请核原典。"):(x.source||"原创学习提示。");const dest=byId("modal-link");dest.replaceChildren();if(x.sourceUrl&&/^https:\/\//.test(x.sourceUrl)){const a=text("a","查看来源 ↗");a.href=x.sourceUrl;a.target="_blank";a.rel="noopener noreferrer";dest.append(a);}byId("modal-fav").textContent=saved.has(x.kind+":"+x.id)?"取消收藏":"收藏这条";byId("detail").showModal();}
+function openDetail(x){active=x;byId("modal-tag").textContent=names[x.kind];byId("modal-title").textContent=x.kind==="quotes"?x.content:x.title;byId("modal-meta").textContent=meta(x);byId("modal-body").textContent=preview(x);byId("modal-note").textContent=x.kind==="books"?(x.verifiedSummary?"原创概述，仅供快速理解；准确观点请核对原书。":"该条尚未撰写可信的逐书摘要，以上仅是通用阅读提示。"):x.kind==="quotes"?(x.source||"引用时请核原典。"):(x.source||"原创学习提示。");const dest=byId("modal-link");dest.replaceChildren();if(x.sourceUrl&&/^https:\/\//.test(x.sourceUrl)){const a=text("a","查看来源 ↗");a.href=x.sourceUrl;a.target="_blank";a.rel="noopener noreferrer";dest.append(a);}byId("modal-fav").textContent=saved.has(x.kind+":"+x.id)?"取消收藏":"收藏这条";
+let hasReview=false;try{hasReview=JSON.parse(localStorage.getItem("zhixing-review-v1")||"[]").some(row=>row.key===x.kind+":"+x.id);}catch(e){}
+byId("modal-review").textContent=hasReview?"已在复习计划中":"加入复习";
+byId("modal-review").disabled=hasReview;
+byId("detail").showModal();}
 byId("modal-fav").addEventListener("click",()=>{if(active){toggleFavorite(active);byId("modal-fav").textContent=saved.has(active.kind+":"+active.id)?"取消收藏":"收藏这条";render();}});
+byId("modal-review").addEventListener("click",()=>{
+ if(!active)return;
+ try{
+  const key=active.kind+":"+active.id,storage="zhixing-review-v1";
+  const items=JSON.parse(localStorage.getItem(storage)||"[]");
+  if(!Array.isArray(items))throw Error("Invalid review queue");
+  if(items.some(item=>item.key===key)){byId("modal-review").disabled=true;byId("modal-review").textContent="已在复习计划中";return;}
+  const pts=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+  const field=t=>pts.find(p=>p.type===t)?.value||"";
+  const today=[field("year"),field("month"),field("day")].join("-");
+  const due=new Date(Date.parse(today+"T00:00:00Z")+86400000).toISOString().slice(0,10);
+  const title=active.kind==="quotes"?active.content:active.title;
+  const query=active.kind==="quotes"?(active.author||active.work):active.topic||active.title;
+  items.unshift({key,title:String(title||"").slice(0,220),desc:String(preview(active)||"").slice(0,260),url:"/library/?q="+encodeURIComponent(query||""),source:"知识库",stage:0,due,added:today});
+  localStorage.setItem(storage,JSON.stringify(items.slice(0,300)));
+  byId("modal-review").disabled=true;byId("modal-review").textContent="已加入复习";
+ }catch(e){byId("modal-review").textContent="保存失败，请检查浏览器存储";}
+});
 byId("close").addEventListener("click",()=>byId("detail").close());
 byId("detail").addEventListener("click",e=>{if(e.target===byId("detail"))byId("detail").close();});
 let timer;byId("search").addEventListener("input",e=>{clearTimeout(timer);timer=setTimeout(()=>{state.query=e.target.value.trim().toLocaleLowerCase();state.page=1;render();},120);});
