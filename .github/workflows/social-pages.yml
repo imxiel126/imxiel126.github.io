@@ -51,6 +51,7 @@ jobs:
           done
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
       - name: 等待 Pages 部署产物可被读取
         env:
@@ -86,3 +87,5 @@ jobs:
           PY
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
