@@ -1,0 +1,46 @@
+name: 微信读书阅读中心自动同步
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 1 * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: ${{ vars.WEREAD_PUBLIC_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 同步已授权公开的微信读书数据
+        env:
+          WEREAD_PUBLIC_ENABLED: ${{ vars.WEREAD_PUBLIC_ENABLED }}
+          WEREAD_API_KEY: ${{ secrets.WEREAD_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+        run: python3 scripts/weread_sync.py
+      - name: 保存公开数据
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reading/data.json
+          git diff --cached --quiet || { git commit -m '更新微信读书公开数据'; git push; }
+      - name: 打包整个网站
+        run: |
+          mkdir -p site
+          cp index.html site/
+          cp -R archive reading site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
