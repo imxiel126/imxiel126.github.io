@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-23T00:00:00+08:00",
-  "source_label": "人工精选及公开网页检索，不是平台个性化推荐流",
+  "updated_at": "2026-11-23T15:14:18+00:00",
+  "source_label": "公开网页检索与人工精选；不等于账号算法推荐",
   "items": [
     {
       "platform": "zhihu",
@@ -101,6 +101,36 @@
       "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0",
       "topic": "阅读",
       "origin": "editorial",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "深度解析电解水制氢四大技术路线：现状、瓶颈与绿氢产业未来",
+      "summary": "在“双碳”目标驱动下，绿氢作为连接可再生能源与工业、交通等终端场景的关键载体，正迎来产业爆发期。 而电解水制氢，作为绿氢生产的核心技术路径，其技术路线的选择直接决定项目的经济性、稳定性与适配性。 当前…",
+      "url": "https://zhuanlan.zhihu.com/p/1984617642804418156",
+      "topic": "氢能",
+      "origin": "public_search",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "碱性电解水制氢全流程详解 | 一文看懂绿氢如何诞生 - 知乎",
+      "summary": "随着“双碳”目标推进，碱性电解水制氢凭借技术成熟、成本低的优势，成为绿氢规模化生产的核心路径。 本文用最通俗的语言，带你看懂从“水”到“高纯氢”的全流程！ 一、原料水处理：给电解槽“喝纯净水”普通水中…",
+      "url": "https://zhuanlan.zhihu.com/p/31797470453",
+      "topic": "氢能",
+      "origin": "public_search",
+      "discovered_at": "2026-11-23"
+    },
+    {
+      "platform": "zhihu",
+      "kind": "article",
+      "title": "机器学习算法 - 一文搞懂ML（机器学习） - 知乎",
+      "summary": "人工智能的目标是让计算机能够执行需要人类智能才能完成的复杂任务。 机器学习（ML）：作为人工智能的一个子领域，机器学习是实现人工智能目标的一种方法。 它研究如何通过算法使计算机能够从数据中学习并做出预测或决策，而无需进行明确的编程。",
+      "url": "https://zhuanlan.zhihu.com/p/677008092",
+      "topic": "人工智能",
+      "origin": "public_search",
       "discovered_at": "2026-11-23"
     }
   ]
