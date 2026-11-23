@@ -6,7 +6,7 @@ const internal=(href,title)=>{const a=el("a",title);a.href=href;return a;};
 const safeLink=(href,title)=>{try{const u=new URL(href);if(!["https:","http:"].includes(u.protocol))return null;const a=el("a",title);a.href=u.href;a.target="_blank";a.rel="noopener noreferrer";return a;}catch{return null;}};
 const short=(s,len)=>{const t=String(s||"").replace(/\s+/g," ").trim();return t.length>len?t.slice(0,len)+"…":t;};
 const safeDate=(s)=>/^\d{4}-\d{2}-\d{2}$/.test(s||"")?s:"";
-const dateInChina=()=>new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+const dateInChina=()=>{const parts=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const get=k=>parts.find(x=>x.type===k)?.value||"";return [get("year"),get("month"),get("day")].join("-");};
 let dailyData=[],shift=0;
 function classification(s){
  const list=[
@@ -115,14 +115,13 @@ function createUpdates(main){
  main.insertBefore(zone,anchor||null);
  if(research){research.classList.add("morning-research-feature");zone.insertBefore(research,panel);}
  more.addEventListener("click",()=>{shift++;renderLearning();});
- Promise.all([
-  fetch("/research/data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}),
-  Promise.all(["books","quotes","insights"].map(k=>fetch("/library/data/"+k+".json").then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>({type:k,items:d.items}))))
- ]).then(([researchData,groups])=>{updateSource(researchData);dailyData=groups;renderLearning();}).catch(()=>{
-  const s=document.getElementById("morning-source-date");if(s)s.textContent="研究资讯：暂时无法更新状态";
-  items.textContent="学习卡片暂时无法加载，仍可进入知识库。";
-  const radar=document.getElementById("morning-news-updates");if(radar)radar.textContent="最近资讯暂时无法读取，请进入研究中心查看。";
- });
+ fetch("/research/data.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw Error(r.status);return r.json();})
+  .then(updateSource)
+  .catch(()=>{const s=document.getElementById("morning-source-date");if(s)s.textContent="研究资讯：更新状态暂不可用";const radar=document.getElementById("morning-news-updates");if(radar)radar.textContent="资讯暂时无法读取，请进入研究中心查看。";});
+ Promise.all(["books","quotes","insights"].map(k=>fetch("/library/data/"+k+".json").then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>({type:k,items:d.items}))))
+  .then(groups=>{dailyData=groups;renderLearning();})
+  .catch(()=>{items.textContent="学习卡片暂时无法读取，请进入知识库查看。";});
 }
 function daySeed(){const d=dateInChina();const n=Date.parse(d+"T00:00:00Z");return Number.isFinite(n)?Math.floor(n/86400000):0;}
 function renderLearning(){
