@@ -4,6 +4,10 @@ on:
     - cron: '37 23 * * *' # 北京时间次日07:37
     - cron: '47 0 * * *' # 北京时间次日08:47补偿同步
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily.yml'
 concurrency:
   group: pages-deploy
   cancel-in-progress: false
@@ -16,19 +20,41 @@ jobs:
       - uses: actions/checkout@v4
       - name: 确定播出日期
         run: echo "ISSUE_DATE=$(TZ=Asia/Shanghai date -d yesterday +%F)" >> "$GITHUB_ENV"
-      - name: 检查投递记录
+      - name: 检查投递记录（以远端最新状态为准）
         id: check
-        run: test ! -f ".sent/details-$ISSUE_DATE" || echo "sent=true" >> "$GITHUB_OUTPUT"
+        run: |
+          git fetch origin main
+          if git cat-file -e "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null; then
+            echo "sent=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: 整理晨报
         run: python3 scripts/daily.py generate
-      - name: 发布网页和归档
+      - name: 安全提交晨读与归档（并发改动自动重试）
         run: |
           git config user.name 'News Digest'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index.html archive
-          git diff --cached --quiet || git commit -m "晨读 $ISSUE_DATE"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          cp index.html "$RUNNER_TEMP/digest-index.html"
+          cp "archive/$ISSUE_DATE.html" "$RUNNER_TEMP/digest-archive.html"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$RUNNER_TEMP/digest-index.html" index.html
+            mkdir -p archive
+            cp "$RUNNER_TEMP/digest-archive.html" "archive/$ISSUE_DATE.html"
+            git add index.html "archive/$ISSUE_DATE.html"
+            if git diff --cached --quiet; then
+              echo "晨读内容已在 GitHub，无需重复提交"
+              exit 0
+            fi
+            git commit -m "晨读 $ISSUE_DATE"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "远端有新提交，准备重试第 $attempt 次"
+            sleep 4
+          done
+          echo "::error::晨读连续五次提交冲突"
+          exit 1
       - name: 邮件投递
         if: steps.check.outputs.sent != 'true'
         env:
@@ -45,9 +71,11 @@ jobs:
           mkdir -p .sent
           touch ".sent/details-$ISSUE_DATE"
           git add ".sent/details-$ISSUE_DATE"
-          git commit -m "记录投递 $ISSUE_DATE"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          if ! git diff --cached --quiet; then
+            git commit -m "记录投递 $ISSUE_DATE"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - name: 发布前获取最新版本
         run: git fetch origin main && git reset --hard origin/main
       - name: 打包公开网页
