@@ -24,7 +24,20 @@ const overview=items.find(s=>s.querySelector(":scope > h2")?.textContent.trim()=
 if(overview){
   overview.id="overview";
   const list=overview.querySelector("ol");
-  if(list){[...list.children].forEach((li,i)=>{const strong=li.querySelector("strong");if(!strong||!candidates[i])return;const a=document.createElement("a");a.href="#report-"+(i+1);a.textContent=strong.textContent;strong.replaceWith(a);a.addEventListener("click",()=>{const d=candidates[i].querySelector("details");if(d)d.open=true;});});}
+  if(list){[...list.children].forEach((li,i)=>{
+ const strong=li.querySelector("strong");if(!strong||!candidates[i])return;
+ const existing=strong.querySelector("a[href]");
+ if(existing){
+   existing.target="_blank";existing.rel="noopener noreferrer";
+ }else{
+   const a=document.createElement("a");a.href="#report-"+(i+1);a.textContent=strong.textContent;strong.replaceWith(a);
+ }
+ if(!li.querySelector(".news-detail-link")){
+   const expand=document.createElement("a");expand.href="#report-"+(i+1);expand.className="news-detail-link";expand.textContent="本站整理";
+   li.append(" · ",expand);
+   expand.addEventListener("click",()=>{const d=candidates[i].querySelector("details");if(d)d.open=true;});
+ }
+});}
 }
 const first=candidates[0];
 const bar=document.createElement("div");bar.className="news-actions";
