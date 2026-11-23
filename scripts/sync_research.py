@@ -89,7 +89,7 @@ def papers_from(source):
 
 def normalized_date(value):
     raw = plain(value, 80)
-    if re.match(r"^\\d{4}-\\d{2}-\\d{2}", raw):
+    if re.match(r"^\d{4}-\d{2}-\d{2}", raw):
         return raw[:10]
     try:
         return parsedate_to_datetime(raw).date().isoformat()
