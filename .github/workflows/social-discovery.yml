@@ -1,5 +1,10 @@
 name: 公开社交内容发现与首页发布
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/social-discovery.yml'
+      - 'scripts/social_discover.py'
   schedule:
     - cron: '0 0,12 * * *'
   workflow_dispatch:
