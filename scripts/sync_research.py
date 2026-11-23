@@ -5,6 +5,7 @@ Deliberately excludes backups, admin, config, files, and personal diary content.
 No GitHub token or upstream write permission is required.
 """
 import datetime as dt
+from email.utils import parsedate_to_datetime
 import html
 import json
 import re
@@ -86,6 +87,16 @@ def papers_from(source):
     }
 
 
+def normalized_date(value):
+    raw = plain(value, 80)
+    if re.match(r"^\\d{4}-\\d{2}-\\d{2}", raw):
+        return raw[:10]
+    try:
+        return parsedate_to_datetime(raw).date().isoformat()
+    except (ValueError, TypeError, IndexError):
+        return ""
+
+
 def news_from(source):
     selected = []
     seen = set()
@@ -107,7 +118,7 @@ def news_from(source):
             selected.append({
                 "type": group,
                 "title": title,
-                "date": plain(x.get("pubDate"), 30),
+                "date": normalized_date(x.get("pubDate")),
                 "summary": plain(x.get("description"), 430),
                 "source": plain(block.get("source") or upstream_key, 80),
                 "url": url,
