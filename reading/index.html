@@ -3,16 +3,7 @@
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/reading/reflections.css"></head>
 <body class="site-reading"><div class="site-header"><div class="site-header__inner"><a class="site-brand" href="/"><b>知</b>行手记<small>PERSONAL ATLAS</small></a><nav class="site-nav" aria-label="主导航"><a href="/">晨读</a><a href="/library/">知识库</a><a href="/reading/" class="is-active" aria-current="page">阅读</a><a href="/notes/">笔记</a><a href="/social/">社交</a><a href="/research/">研究</a></nav></div></div><main>
-<section class="hero"><div class="eyebrow">READING JOURNAL · 阅读与思考</div><h1>在阅读中，建立自己的知识坐标</h1><p>我的书架、阅读习惯、精选笔记与 AI 导读。</p><small id="status">正在加载公开阅读数据…</small></section>
-<section class="panel" id="empty" hidden><h2>阅读中心已就绪</h2><p>等待你设置微信读书授权密钥和公开同步开关。尚未发布任何个人书架或笔记数据。</p></section>
-<div id="dashboard" hidden><section class="stats" id="stats"></section>
-<section class="panel"><div class="head"><h2>阅读时光</h2><div class="actions" id="periods"><button data-mode="weekly">本周</button><button data-mode="monthly" class="active">本月</button><button data-mode="annually">今年</button><button data-mode="overall">累计</button></div></div><div class="trend" id="trend"></div><div class="tags" id="categories"></div></section>
-<section class="panel"><div class="head"><h2>我的书架</h2><div class="actions"><input id="search" type="search" placeholder="搜索书名、作者、关键词、术语" aria-label="搜索书架"><select id="filter" aria-label="筛选书籍"><option value="all">全部</option><option value="reading">在读</option><option value="finished">已读完</option><option value="audio">有声书</option><option value="notes">有笔记</option></select></div></div><p id="book-count"></p><div class="books" id="books"></div></section>
-<section class="panel"><h2>公开的读书笔记</h2><p>仅公开明确加入白名单的书籍笔记。其他笔记只展示数量。</p><div class="notes" id="notes"></div></section>
-<section class="panel"><div class="head"><h2>书中精选短句</h2><small>微信读书公开热门划线，每本仅展示一条简短摘句</small></div><div class="notes" id="quotes"></div></section>
-<section class="panel"><div class="head"><h2>专业词汇与主题词索引</h2><small>点击词汇可搜索相关书籍</small></div><div class="tags" id="term-index"></div></section>
-<section class="panel"><h2>AI 导读</h2><p>依据公开简介和主动公开的个人心得生成，并非全书内容总结。</p><div class="summaries" id="summaries"></div></section></div>
-
+<section class="hero"><div class="eyebrow">READING JOURNAL · 阅读与思考</div><h1>在阅读中，建立自己的知识坐标</h1><p>我的书架、阅读习惯、精选笔记与 AI 导读。</p><small id="status">正在加载公开阅读数据…</small><p class="reading-shortcuts"><a href="#reading-reflections">开始今日阅读思考</a><a href="#reading-bookshelf">查看完整书架 ↓</a></p></section>
 <section id="reading-reflections" class="reading-reflections" aria-labelledby="ref-title">
   <div class="ref-head"><div><span class="eyebrow">READ · THINK · APPLY</span><h2 id="ref-title">阅读思考与观点</h2>
   <p>2000 条原创思考练习 · 每天按北京时间自动换一组 · 搜索全部内容</p></div>
@@ -25,22 +16,33 @@
   <div id="ref-results" class="ref-result"></div>
   <div class="ref-meta"><small>本站原创观点练习，不是书籍原文、名言或真实读者评价。</small><button id="ref-more" type="button" hidden>加载更多</button></div>
 </section>
+<section class="panel" id="empty" hidden><h2>阅读中心已就绪</h2><p>等待你设置微信读书授权密钥和公开同步开关。尚未发布任何个人书架或笔记数据。</p></section>
+<div id="dashboard" hidden><section class="stats" id="stats"></section>
+<section class="panel"><div class="head"><h2>阅读时光</h2><div class="actions" id="periods"><button data-mode="weekly">本周</button><button data-mode="monthly" class="active">本月</button><button data-mode="annually">今年</button><button data-mode="overall">累计</button></div></div><div class="trend" id="trend"></div><div class="tags" id="categories"></div></section>
+
+<section class="panel"><h2>公开的读书笔记</h2><p>仅公开明确加入白名单的书籍笔记。其他笔记只展示数量。</p><div class="notes" id="notes"></div></section>
+<section class="panel"><div class="head"><h2>书中精选短句</h2><small>微信读书公开热门划线，每本仅展示一条简短摘句</small></div><div class="notes" id="quotes"></div></section>
+<section class="panel"><div class="head"><h2>专业词汇与主题词索引</h2><small>点击词汇可搜索相关书籍</small></div><div class="tags" id="term-index"></div></section>
+<section class="panel"><h2>AI 导读</h2><p>依据公开简介和主动公开的个人心得生成，并非全书内容总结。</p><div class="summaries" id="summaries"></div></section>
+<section class="panel" id="reading-bookshelf"><div class="head"><h2>我的书架</h2><div class="actions"><input id="search" type="search" placeholder="搜索书名、作者、关键词、术语" aria-label="搜索书架"><select id="filter" aria-label="筛选书籍"><option value="all">全部</option><option value="reading">在读</option><option value="finished">已读完</option><option value="audio">有声书</option><option value="notes">有笔记</option></select></div></div><p id="book-count"></p><div class="books" id="books"></div><div class="books-more-wrap"><button id="books-more" type="button" hidden>继续浏览书架</button></div></section></div>
+
+
 <dialog id="book-detail" aria-label="书籍知识卡"><div style="display:flex;justify-content:flex-end"><button id="close-detail" type="button">关闭 ×</button></div><div id="book-detail-body"></div></dialog>
 </main><footer>尊重隐私与版权 · <a href="/">返回主页</a></footer>
 <script>
 'use strict';
 const $=id=>document.getElementById(id),el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);if(cls)n.className=cls;return n;},duration=s=>{s=Number(s)||0;return s>=3600?Math.floor(s/3600)+'小时'+Math.floor(s%3600/60)+'分':Math.floor(s/60)+'分钟'},link=s=>{try{let u=new URL(s);return u.protocol==='https:'?u.href:''}catch{return''}};
-let data,mode='monthly',query='',filter='all';
+let data,mode='monthly',query='',filter='all',bookLimit=12;
 function renderStats(){const v=data.stats[mode]||{};$('stats').replaceChildren(...[['阅读总时长',duration(v.seconds)],['有效阅读天数',(v.days||0)+'天'],['自然日平均',duration(v.averageSeconds)],['公开书架',data.books.length+'项']].map(([a,b])=>{const n=el('div',undefined,'stat');n.append(el('b',b),el('small',a));return n}));
 const vals=Object.entries(v.readTimes||{}).sort((a,b)=>Number(a[0])-Number(b[0])),peak=Math.max(1,...vals.map(x=>Number(x[1])));$('trend').replaceChildren(...vals.map(([ts,s])=>{const e=el('span');e.style.height=Math.max(2,Math.round(100*Number(s)/peak))+'%';e.title=new Date(Number(ts)*1000).toLocaleDateString('zh-CN')+' · '+duration(s);return e}));if(!vals.length)$('trend').append(el('p','暂无趋势数据'));
 $('categories').replaceChildren(...(v.categories||[]).filter(x=>x.name).map(x=>el('span',x.name)))}
-function renderBooks(){const selected=data.books.filter(b=>[b.title,b.author,b.category,b.guide?.intro,...(b.guide?.keywords||[]),...(b.guide?.terms||[]).map(t=>t.name)].join(' ').toLowerCase().includes(query)&& (filter==='all'||(filter==='finished'&&b.finished)||(filter==='reading'&&b.type==='ebook'&&!b.finished)||(filter==='audio'&&b.type==='audio')||(filter==='notes'&&Object.values(b.notes||{}).some(Number))));$('book-count').textContent='当前展示 '+selected.length+' 项';
-$('books').replaceChildren(...selected.map(b=>{const card=el('article',undefined,'book'),url=link(b.cover);if(url){let img=el('img');img.src=url;img.alt=b.title+'封面';img.loading='lazy';img.referrerPolicy='no-referrer';card.append(img)}else card.append(el('div','📖','cover'));const info=el('div');let title=el('h3');if(link(b.link)){const a=el('a',b.title);a.href=link(b.link);title.append(a)}else title.textContent=b.title;info.append(title,el('p',b.author||'作者未知'),el('p',(b.type==='audio'?'有声书':'电子书')+' · '+(b.category||'未分类')+(b.finished?' · 已读完':'')));if(b.progress!==null&&b.progress!==undefined){info.append(el('p','阅读进度 '+b.progress+'%'));const progress=el('div',undefined,'progress'),i=el('i');i.style.width=Math.max(0,Math.min(100,b.progress))+'%';progress.append(i);info.append(progress)}const notes=b.notes||{},n=(notes.highlights||0)+(notes.thoughts||0)+(notes.bookmarks||0);if(n)info.append(el('p','笔记 '+n+' 条（含书签）'));
+function renderBooks(){const selected=data.books.filter(b=>[b.title,b.author,b.category,b.guide?.intro,...(b.guide?.keywords||[]),...(b.guide?.terms||[]).map(t=>t.name)].join(' ').toLowerCase().includes(query)&& (filter==='all'||(filter==='finished'&&b.finished)||(filter==='reading'&&b.type==='ebook'&&!b.finished)||(filter==='audio'&&b.type==='audio')||(filter==='notes'&&Object.values(b.notes||{}).some(Number))));$('book-count').textContent='匹配 '+selected.length+' 项 · 已显示 '+Math.min(bookLimit,selected.length)+' 项';
+$('books').replaceChildren(...selected.slice(0,bookLimit).map(b=>{const card=el('article',undefined,'book'),url=link(b.cover);if(url){let img=el('img');img.src=url;img.alt=b.title+'封面';img.loading='lazy';img.referrerPolicy='no-referrer';card.append(img)}else card.append(el('div','📖','cover'));const info=el('div');let title=el('h3');if(link(b.link)){const a=el('a',b.title);a.href=link(b.link);title.append(a)}else title.textContent=b.title;info.append(title,el('p',b.author||'作者未知'),el('p',(b.type==='audio'?'有声书':'电子书')+' · '+(b.category||'未分类')+(b.finished?' · 已读完':'')));if(b.progress!==null&&b.progress!==undefined){info.append(el('p','阅读进度 '+b.progress+'%'));const progress=el('div',undefined,'progress'),i=el('i');i.style.width=Math.max(0,Math.min(100,b.progress))+'%';progress.append(i);info.append(progress)}const notes=b.notes||{},n=(notes.highlights||0)+(notes.thoughts||0)+(notes.bookmarks||0);if(n)info.append(el('p','笔记 '+n+' 条（含书签）'));
 const g=b.guide||{};
 if(g.intro)info.append(el('p',g.intro,'intro-snip'));
 if((g.keywords||[]).length){const t=el('div',undefined,'keyword-tags');t.append(...g.keywords.slice(0,3).map(word=>el('span',word)));info.append(t)}
 const more=el('button',g.checkedOn?'查看知识卡 · 导读 / 短句 / 评价':'查看书籍资料 · 尚未同步','detail-btn');more.type='button';more.onclick=()=>showBookDetail(b);info.append(more);
-card.append(info);return card}));if(!selected.length)$('books').append(el('p','暂无匹配的书籍'))}
+card.append(info);return card}));if(!selected.length)$('books').append(el('p','暂无匹配的书籍'));$('books-more').hidden=selected.length<=bookLimit;}
 function renderNotes(){const items=data.books.flatMap(b=>(b.excerpts||[]).map(x=>{const n=el('article');n.append(el('b',b.title),el('p',x.type==='highlight'?'精选划线':'我的想法'),el('blockquote',x.text));return n}));$('notes').replaceChildren(...(items.length?items:[el('p','目前没有公开的笔记正文。')]))}
 function sectionFor(parent,title){const s=el('section'),h=el('h3',title);s.append(h);parent.append(s);return s}
 function showBookDetail(book){
@@ -77,6 +79,6 @@ function renderKnowledge(){
 }
 $('close-detail').onclick=()=>$('book-detail').close();
 function renderSummaries(){const items=data.books.filter(b=>b.summary).map(b=>{const n=el('article');n.append(el('b',b.title),el('p',b.summary));return n});$('summaries').replaceChildren(...(items.length?items:[el('p','暂无 AI 导读；可选配置 OPENAI_API_KEY 启用。')]))}
-fetch('/reading/data.json?ts='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>{if(!d.ready){$('empty').hidden=false;$('status').textContent='公开同步尚未启用';return}data=d;$('dashboard').hidden=false;$('status').textContent='最近同步：'+new Date(d.updated).toLocaleString('zh-CN');renderStats();renderBooks();renderNotes();renderSummaries();renderKnowledge();$('periods').querySelectorAll('button').forEach(btn=>btn.onclick=()=>{mode=btn.dataset.mode;$('periods').querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===btn));renderStats()});$('search').oninput=e=>{query=e.target.value.trim().toLowerCase();renderBooks()};$('filter').onchange=e=>{filter=e.target.value;renderBooks()}}).catch(e=>{$('empty').hidden=false;$('status').textContent='数据暂时无法加载';console.error(e)});
+fetch('/reading/data.json?ts='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>{if(!d.ready){$('empty').hidden=false;$('status').textContent='公开同步尚未启用';return}data=d;$('dashboard').hidden=false;$('status').textContent='最近同步：'+new Date(d.updated).toLocaleString('zh-CN');renderStats();renderBooks();renderNotes();renderSummaries();renderKnowledge();$('periods').querySelectorAll('button').forEach(btn=>btn.onclick=()=>{mode=btn.dataset.mode;$('periods').querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===btn));renderStats()});$('search').oninput=e=>{query=e.target.value.trim().toLowerCase();bookLimit=12;renderBooks()};$('filter').onchange=e=>{filter=e.target.value;bookLimit=12;renderBooks()};$('books-more').onclick=()=>{bookLimit+=24;renderBooks()}}).catch(e=>{$('empty').hidden=false;$('status').textContent='数据暂时无法加载';console.error(e)});
 </script>
 <script src="/reading/reflections.js" defer></script></body></html>
