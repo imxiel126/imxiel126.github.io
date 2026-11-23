@@ -67,6 +67,7 @@ def generate():
         raise ValueError("当期节目单未核实")
     template = Path("scripts/first-issue.html").read_text()
     prefix = template.split("<main>", 1)[0]
+    prefix = prefix.replace("</nav>", '<a href="/notes/">精选笔记</a></nav>')
     prefix = re.sub(r"<title>.*?</title>", "<title>新闻联播晨读 · " + str(day) + "</title>", prefix)
     sections = []
     def section(title, body):
