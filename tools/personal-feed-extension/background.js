@@ -33,7 +33,13 @@ async function saveGitHub(force=false){
   const repo=(o.repository||DEFAULT_REPO).trim();
   if(!token)return {status:"needs_github_token"};
   if(!/^[-\w]+\/[-\w.]+$/.test(repo))return {status:"invalid_repo"};
-  if(!force && Date.now()-(o.lastSynced||0)<10*60*1000)return {status:"rate_limited"};
+  if(!force && Date.now()-(o.lastSynced||0)<10*60*1000){
+    // A tab may be closed before the next capture; keep a local flush alarm.
+    await chrome.alarms.create("personal-feed-flush",{
+      when:Math.max(Date.now()+60*1000,(o.lastSynced||0)+10*60*1000+1000)
+    });
+    return {status:"rate_limited"};
+  }
   const cards=(Array.isArray(o.observed)?o.observed:[]).map(cleanCard).filter(Boolean).slice(0,90);
   if(!cards.length)return {status:"no_recommendations_captured"};
   const base="https://api.github.com/repos/"+repo+"/contents/"+KEY;
@@ -49,12 +55,16 @@ async function saveGitHub(force=false){
   const write=await fetch(base,{method:"PUT",headers:{...headers,"Content-Type":"application/json"},body:JSON.stringify(body)});
   if(!write.ok)throw Error("GitHub PUT "+write.status+": "+(await write.text()).slice(0,250));
   await chrome.storage.local.set({lastSynced:Date.now(),lastError:""});
+  await chrome.alarms.clear("personal-feed-flush");
   return {status:"synced",count:cards.length};
  }catch(err){
   const msg=String(err?.message||err).slice(0,350);
   await chrome.storage.local.set({lastError:msg});return {status:"error",message:msg};
  }finally{running=false;}
 }
+chrome.alarms.onAlarm.addListener(alarm=>{
+ if(alarm.name==="personal-feed-flush")saveGitHub(true).catch(()=>{});
+});
 chrome.runtime.onMessage.addListener((msg,sender,sendResponse)=>{
  (async()=>{
   if(msg?.type==="observedRecommendations"){
