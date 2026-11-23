@@ -9,6 +9,8 @@ on:
       - 'scripts/weread_enrich.py'
       - 'scripts/test_weread_enrich.py'
       - 'reading/index.html'
+      - 'reading/reflections.css'
+      - 'reading/reflections.js'
   schedule:
     - cron: '15 1 * * *'
 permissions:
@@ -30,6 +32,7 @@ jobs:
           python3 -m unittest discover -s scripts -p "test_weread_enrich.py" -v
           python3 -c "from pathlib import Path; s=Path('reading/index.html').read_text(); Path('/tmp/reading.js').write_text(s.split('<script>',1)[1].split('</script>',1)[0])"
           node --check /tmp/reading.js
+          node --check reading/reflections.js
       - name: 同步已授权公开的微信读书数据
         env:
           WEREAD_PUBLIC_ENABLED: ${{ vars.WEREAD_PUBLIC_ENABLED }}
