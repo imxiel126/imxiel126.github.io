@@ -45,7 +45,7 @@ jobs:
           git push
       - name: 打包公开网页
         if: always() && hashFiles('archive/*.html') != ''
-        run: mkdir -p site && cp -R index.html archive notes site/
+        run: mkdir -p site && cp -R index.html archive notes reading site/
       - uses: actions/upload-pages-artifact@v3
         if: always() && hashFiles('archive/*.html') != ''
         with:
