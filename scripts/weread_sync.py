@@ -124,9 +124,16 @@ def main():
     books.sort(key=lambda b:b["lastRead"],reverse=True)
     counts=notebook_counts()
     for b in books:
-        b.update({"progress":None,"notes":counts.get(b["id"],{"highlights":0,"thoughts":0,"bookmarks":0}),
+        previous_progress=old.get(b["id"],{}).get("progress")
+        valid_previous=isinstance(previous_progress,(int,float)) and 0 <= previous_progress <= 100
+        b.update({"progress":int(previous_progress) if valid_previous else None,
+                  "notes":counts.get(b["id"],{"highlights":0,"thoughts":0,"bookmarks":0}),
                   "excerpts":[],"summary":"","summary_hash":""})
-    for b in [x for x in books if x["type"]=="ebook"][:40]:
+    # Query 40 books per sync; retain already-fetched progress and fill missing books first.
+    ebooks=[b for b in books if b["type"]=="ebook"]
+    candidates=[b for b in ebooks if b["progress"] is None]
+    candidates.extend(b for b in ebooks if b["progress"] is not None)
+    for b in candidates[:40]:
         try:
             progress=call("/book/getprogress",bookId=b["id"]).get("book",{}).get("progress")
             if isinstance(progress,(int,float)) and 0<=progress<=100:b["progress"]=int(progress)
