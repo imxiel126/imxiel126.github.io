@@ -11,7 +11,16 @@ const allowed=(url,p)=>{try{const u=new URL(url);if(u.protocol!=="https:")return
  p==="xiaohongshu"&&(h==="www.xiaohongshu.com"||h==="xiaohongshu.com"))?u.href:"";}catch{return""}};
 const txt=(tag,value,className)=>{const el=document.createElement(tag);if(value!==undefined)el.textContent=String(value);if(className)el.className=className;return el;};
 function show(){
- const filtered=items.filter(it=>(filter==="all"||it.platform===filter)&&allowed(it.url,it.platform)).slice(0,12);
+ const valid=items.filter(it=>allowed(it.url,it.platform));
+ const zh=valid.filter(it=>it.platform==="zhihu");
+ const xhs=valid.filter(it=>it.platform==="xiaohongshu");
+ // Alternate the actual feeds so all-mode never displays only one platform.
+ const mixed=[];
+ for(let i=0;i<Math.max(zh.length,xhs.length);i++){
+  if(zh[i])mixed.push(zh[i]);
+  if(xhs[i])mixed.push(xhs[i]);
+ }
+ const filtered=(filter==="zhihu"?zh:filter==="xiaohongshu"?xhs:mixed).slice(0,12);
  grid.replaceChildren();
  if(!filtered.length){
  const wrap=txt("div",undefined,"social-rec-empty");
@@ -30,7 +39,7 @@ function show(){
  bottom.append(txt("span",it.observed_at?it.observed_at.slice(0,10):"浏览器同步"),txt("span","查看原文 ↗"));
  card.append(bottom);grid.append(card);
  });
- status.textContent=updated?"浏览器推荐同步时间："+new Date(updated).toLocaleString("zh-CN")+" · 仅展示最近实际采集到的卡片":"尚未配置浏览器端同步 · 不包含平台私人推荐数据";
+ status.textContent=updated?"实际同步 "+valid.length+" 条 · 知乎 "+zh.length+" / 小红书 "+xhs.length+" · 最后同步："+new Date(updated).toLocaleString("zh-CN"):"尚未配置浏览器端同步 · 不包含平台私人推荐数据";
 }
 function load(){
  fetch("/social/personal-feed.json?nocache="+Date.now(),{cache:"no-store"})
