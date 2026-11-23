@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>连接真实推荐流 · 知行手记</title><link rel="stylesheet" href="/assets/site.css">
+<style>
+.setup{max-width:760px;margin:40px auto 80px;padding:0 24px}.setup h1{font-size:clamp(28px,5vw,45px);line-height:1.4}.setup h2{font-size:20px;margin:28px 0 8px}.setup p,.setup li{line-height:1.9;color:#45595a}.setup ol{padding-left:23px}.setup li{margin:0 0 12px}.setup .lead{font-size:17px}.setup .notice{border:1px solid #d7dfd8;border-radius:12px;padding:18px 21px;background:#f7f9f6;margin:22px 0}.setup .notice strong{color:#295e4e}.setup a{color:#286a5b}.setup code{padding:2px 5px;border-radius:4px;background:#f2f4f1;overflow-wrap:anywhere}.setup .buttons{display:flex;gap:11px;flex-wrap:wrap;margin:22px 0}.setup .buttons a{display:inline-block;border:1px solid #cbded5;border-radius:10px;padding:9px 15px;text-decoration:none}.setup .buttons a:first-child{background:#286a5b;color:#fff;border-color:#286a5b}
+</style></head><body>
+<div class="site-header"><div class="site-header__inner"><a class="site-brand" href="/"><b>知</b>行手记<small>PERSONAL ATLAS</small></a><nav class="site-nav" aria-label="主导航"><a href="/">晨读</a><a href="/social/">社交</a></nav></div></div>
+<main class="setup"><div style="font-size:12px;letter-spacing:.13em;color:#286a5b">MY RECOMMENDATIONS · CONNECT</div>
+<h1>连接你真正看到的知乎、小红书推荐</h1>
+<p class="lead">这里的「推荐」特指你登录后进入平台推荐页时看到的个性化内容，不是关键词搜索、热榜或同主题文章。</p>
+<div class="notice"><strong>当前状态：等待你本人授权浏览器同步。</strong><p>仅有公开主页地址不能取得你的个性化推荐流。浏览器同步扩展目前已写入 GitHub 仓库，但尚未安装或连接，不会自动采集推荐。</p></div>
+<h2>一次性开启浏览器端同步</h2>
+<ol>
+<li>在 <a href="https://github.com/imxiel126/imxiel126.github.io" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>中点击 Code → Download ZIP，解压下载文件。</li>
+<li>在 Chrome 或 Edge 地址栏打开 <code>chrome://extensions/</code> 或 <code>edge://extensions/</code>，启用开发者模式，点击“加载已解压的扩展程序”，选择解压目录内的 <code>tools/personal-feed-extension</code> 文件夹。</li>
+<li>在 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub Fine-grained Token 设置</a>中建立仅针对 <code>imxiel126/imxiel126.github.io</code> 的 token，仅授权 Contents: Read and write，不要创建全账号 token。</li>
+<li>点击浏览器扩展，在设置里填写仓库名及 token，确认个人推荐卡片将被<strong>公开展示</strong>后启用同步。</li>
+<li>登录并访问 <a href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer">知乎推荐</a>或 <a href="https://www.xiaohongshu.com/explore?channel_id=homefeed_recommend" target="_blank" rel="noopener noreferrer">小红书推荐</a>。扩展将尝试抓取页面可见卡片并提交仓库；随后首页展示同步结果。</li>
+</ol>
+<div class="notice"><strong>重要隐私提醒</strong><p>你看到的推荐可能暴露个人兴趣与阅读偏好。同步后的卡片标题、链接及短摘要会进入公开仓库，且 Git 历史可能保留。程序不读取 Cookie、密码或私信。只有浏览器打开并实际浏览推荐页时才会更新，不能承诺全天实时同步；平台页面升级也可能使采集失效。</p></div>
+<p>程序源代码和技术说明均可在 GitHub 查看。建议先检查代码、确认公开范围后再启用。</p>
+<div class="buttons"><a href="https://github.com/imxiel126/imxiel126.github.io/tree/main/tools/personal-feed-extension" target="_blank" rel="noopener noreferrer">查看同步扩展源代码</a><a href="/">返回首页</a></div>
+</main></body></html>
