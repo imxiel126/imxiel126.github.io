@@ -2,9 +2,13 @@ name: 微信读书阅读中心自动同步
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - '.github/workflows/weread.yml'
       - 'scripts/weread_sync.py'
+      - 'scripts/weread_enrich.py'
+      - 'scripts/test_weread_enrich.py'
+      - 'reading/index.html'
   schedule:
     - cron: '15 1 * * *'
 permissions:
@@ -16,10 +20,16 @@ concurrency:
   cancel-in-progress: false
 jobs:
   sync:
-    if: ${{ vars.WEREAD_PUBLIC_ENABLED == 'true' }}
+    if: ${{ github.ref == 'refs/heads/main' && vars.WEREAD_PUBLIC_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: 检查程序与网页语法
+        run: |
+          python3 -m py_compile scripts/weread_sync.py scripts/weread_enrich.py
+          python3 -m unittest discover -s scripts -p "test_weread_enrich.py" -v
+          python3 -c "from pathlib import Path; s=Path('reading/index.html').read_text(); Path('/tmp/reading.js').write_text(s.split('<script>',1)[1].split('</script>',1)[0])"
+          node --check /tmp/reading.js
       - name: 同步已授权公开的微信读书数据
         env:
           WEREAD_PUBLIC_ENABLED: ${{ vars.WEREAD_PUBLIC_ENABLED }}
@@ -27,12 +37,22 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
         run: python3 scripts/weread_sync.py
+      - name: 为书籍补充短介绍、词汇、摘句与公开评价
+        env:
+          WEREAD_PUBLIC_ENABLED: ${{ vars.WEREAD_PUBLIC_ENABLED }}
+          WEREAD_API_KEY: ${{ secrets.WEREAD_API_KEY }}
+          WEREAD_ENRICH_BATCH: ${{ vars.WEREAD_ENRICH_BATCH || '10' }}
+        run: python3 scripts/weread_enrich.py
       - name: 保存公开数据
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add reading/data.json
-          git diff --cached --quiet || { git commit -m '更新微信读书公开数据'; git push; }
+          if ! git diff --cached --quiet; then
+            git commit -m '更新微信读书公开数据与知识卡'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - name: 打包整个网站
         run: |
           mkdir -p site
