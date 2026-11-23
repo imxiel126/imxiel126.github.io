@@ -23,3 +23,13 @@
 .reading-reflections .ref-browse-title{font-size:18px;margin:18px 0 3px}
 .reading-reflections .ref-empty{margin:16px 0;color:#71817b}
 @media(max-width:640px){.reading-reflections{padding:22px 16px;margin:30px 12px}.reading-reflections .ref-featured{grid-template-columns:1fr}}
+
+/* 阅读中心学习优先：醒目的快捷入口，完整书架按需展开 */
+.site-reading .reading-shortcuts{display:flex;gap:11px;flex-wrap:wrap;margin:17px 0 0!important}
+.site-reading .reading-shortcuts a{display:inline-block;padding:8px 15px;border-radius:7px;border:1px solid #cbded2;background:#f0f7f2;color:#245c49;font-size:12px;text-decoration:none;font-weight:650}
+.site-reading .reading-shortcuts a:hover{background:#e3f1e6}
+.site-reading #reading-bookshelf{scroll-margin-top:90px}
+.site-reading #reading-reflections{scroll-margin-top:90px;margin-top:20px;margin-bottom:34px}
+.site-reading .books-more-wrap{padding:23px 0;display:flex;justify-content:center}
+.site-reading .books-more-wrap button{color:var(--accent,#286a5b);border:1px solid var(--line,#e6e8e4);border-radius:8px;background:#fff;padding:10px 22px;font-size:13px}
+.site-reading .books-more-wrap button:hover{border-color:var(--accent,#286a5b);background:#f1f6f2}
