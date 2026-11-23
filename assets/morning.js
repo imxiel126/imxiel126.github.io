@@ -160,7 +160,7 @@ function ready(){
  wrapOverview(main);
  moveSocial(main);
  const sections=[...main.querySelectorAll(":scope > section.report")];
- if(sections.length){const anchor=el("div",undefined,"morning-reports-heading");anchor.id="morning-reports";anchor.append(el("span","FULL REPORT · 逐条回看","overline"),el("h2","新闻联播 · 逐条内容"));main.insertBefore(anchor,sections[0]);}
+ if(sections.length){const anchor=el("div",undefined,"morning-reports-heading");anchor.id="morning-reports";anchor.append(el("span","FULL REPORT · 逐条回看","overline"),el("h2","新闻联播 · 逐条内容"));main.insertBefore(anchor,sections[0]);const controls=main.querySelector(":scope > .news-actions");if(controls)anchor.after(controls);}
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready);else ready();
 })();
