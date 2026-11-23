@@ -61,6 +61,19 @@ function highlights(main,records){
   const extra=el("div",undefined,"morning-headline-extra"),read=internal("#report-"+(x.index+1),"看本站整理");
   read.addEventListener("click",()=>{const detail=x.section.querySelector("details");if(detail)detail.open=true;});
   const origin=safeLink(x.sourceUrl,"央视原文 ↗");extra.append(read);if(origin)extra.append(origin);
+  const keep=el("button","＋ 稍后读");keep.type="button";keep.className="morning-save-later";
+  keep.addEventListener("click",()=>{
+   try{
+    const storageKey="zhixing-queue-v1",raw=JSON.parse(localStorage.getItem(storageKey)||"[]"),list=Array.isArray(raw)?raw:[];
+    if(list.some(row=>row.url===x.sourceUrl)){keep.textContent="已加入待读";keep.disabled=true;return;}
+    const stamp=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+    const d=type=>stamp.find(part=>part.type===type)?.value||"";
+    list.unshift({url:x.sourceUrl,title:x.title,source:"新闻联播",saved:[d("year"),d("month"),d("day")].join("-")});
+    localStorage.setItem(storageKey,JSON.stringify(list.slice(0,200)));
+    keep.textContent="已加入待读";keep.disabled=true;
+   }catch{keep.textContent="保存失败（浏览器存储不可用）";}
+  });
+  extra.append(keep);
   body.append(tag,title,summary,extra);item.append(no,body);list.append(item);
  });
  if(!list.children.length)area.append(el("p","目前没有找到带央视原文链接的报道；可查看下方节目列表。","morning-empty"));
