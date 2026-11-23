@@ -1,0 +1,46 @@
+name: 发布社交内容中心
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'social/**'
+      - '.github/workflows/social-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: 校验社交内容格式
+        run: |
+          python3 -m json.tool social/data.json > /dev/null
+          python3 - <<'PY'
+          import json
+          d=json.load(open('social/data.json'))
+          assert isinstance(d.get('items'),list)
+          assert isinstance(d.get('profiles'),dict)
+          print('Social feed schema is valid')
+          PY
+      - name: 构建全站产物
+        run: |
+          mkdir -p site
+          cp index.html site/
+          for folder in archive notes reading library social; do
+            if [ -d "$folder" ]; then cp -R "$folder" site/; fi
+          done
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
