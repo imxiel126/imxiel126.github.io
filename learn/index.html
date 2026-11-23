@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="个人每日学习工作台：十分钟晨读、知识卡复习、稍后阅读、学习记录和本地数据备份。">
+<meta name="theme-color" content="#fbfaf7"><title>每日学习台 · 知行手记</title>
+<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/learn/learn.css">
+<script src="/learn/app.js" defer></script></head>
+<body class="site-learn">
+<div class="site-header"><div class="site-header__inner"><a class="site-brand" href="/"><b>知</b>行手记<small>PERSONAL ATLAS</small></a><nav class="site-nav" aria-label="主导航"><a href="/">晨读</a><a href="/learn/" class="is-active" aria-current="page">学习台</a><a href="/library/">知识库</a><a href="/reading/">阅读</a><a href="/research/">研究</a><a href="/notes/">笔记</a><a href="/social/">社交</a></nav></div></div>
+<main class="learn-wrap">
+<header class="learn-hero"><span class="overline">ONE SMALL STEP EVERY DAY</span><h1>今天，学一点有用的。</h1><p>先筛选新信息，再理解一个概念，最后留下自己的思考。把“看过”逐渐变成“记住和用得上”。</p><div class="learn-date"><span id="learn-date"></span><span id="learn-local-note">进度仅保存在当前浏览器</span></div></header>
+<section class="learn-summary" aria-label="学习概况">
+<div><strong id="stat-done">0 / 3</strong><span>今日学习</span></div><div><strong id="stat-review">0</strong><span>待复习</span></div><div><strong id="stat-queue">0</strong><span>稍后阅读</span></div><div><strong id="stat-streak">0</strong><span>连续学习天数</span></div>
+</section>
+<div class="learn-columns">
+<section class="learn-section" aria-labelledby="daily-heading"><div class="learn-section-head"><div><span class="overline">DAILY PICKS</span><h2 id="daily-heading">今日三学</h2><p>一本书 · 一句典籍 · 一个知识问题</p></div><button class="learn-quiet-button" id="refresh-daily" type="button">换一组</button></div><div id="daily-items" aria-live="polite"><p class="learn-muted">正在准备学习内容…</p></div></section>
+<section class="learn-section" aria-labelledby="reflection-heading"><div class="learn-section-head"><div><span class="overline">THINK & WRITE</span><h2 id="reflection-heading">今日想法</h2><p>用自己的语言记录，不用追求长篇</p></div></div><label class="learn-label" for="daily-question">今天最值得继续思考的问题</label><input id="daily-question" placeholder="例如：在线校准的主要误差来自哪里？" maxlength="240" autocomplete="off">
+<label class="learn-label" for="daily-note">今日学习记录</label><textarea id="daily-note" rows="8" maxlength="12000" placeholder="我学到了什么？为什么重要？下一步怎么实践？"></textarea><div class="learn-save-line"><span id="note-save-status">自动保存到当前浏览器</span><button id="copy-note" class="learn-quiet-button" type="button">复制记录</button></div><div class="learn-idea"><b>三句话复盘法</b><p>我今天发现了……；这改变了我对……的理解；下一步我准备……</p></div></section>
+</div>
+<div class="learn-columns learn-lower">
+<section class="learn-section" aria-labelledby="reviews-heading"><div class="learn-section-head"><div><span class="overline">SPACED REVIEW</span><h2 id="reviews-heading">到期复习</h2><p>第一次隔天回顾，之后逐步拉开间隔</p></div></div><div id="review-items" aria-live="polite"></div><p class="learn-help">可以从今日三学或知识库把内容加入复习。复习日程只在当前设备保存。</p></section>
+<section class="learn-section" aria-labelledby="queue-heading"><div class="learn-section-head"><div><span class="overline">READ LATER</span><h2 id="queue-heading">稍后阅读</h2><p>集中保存值得深入读的原文</p></div></div><form id="queue-form" class="learn-queue-form"><label class="sr-only" for="queue-url">网页链接</label><input id="queue-url" type="url" placeholder="粘贴想稍后阅读的 https:// 链接" required maxlength="1500"><label class="sr-only" for="queue-title">标题</label><input id="queue-title" placeholder="给它一个好找的标题（可选）" maxlength="160"><button type="submit">保存链接</button></form><div id="queue-items" aria-live="polite"></div></section>
+</div>
+<section class="learn-section learn-history" aria-labelledby="history-heading"><div class="learn-section-head"><div><span class="overline">YOUR LEARNING FOOTPRINT</span><h2 id="history-heading">最近七天</h2><p>记录是为了看见持续积累，不是为了追求打卡数字</p></div></div><div id="week-strip" class="learn-week" aria-label="过去七天的学习情况"></div><div class="learn-bottom"><div><p class="learn-help">隐私说明：学习记录、待读与复习安排仅写入本浏览器的 localStorage，不上传 GitHub，也不会跨设备自动同步。清理浏览器数据可能导致丢失，请定期导出。</p><span id="data-status" aria-live="polite"></span></div><div class="learn-backup-actions"><button id="backup-export" type="button">导出学习备份</button><label class="learn-import-label" for="backup-import">导入备份</label><input id="backup-import" type="file" accept=".json,application/json"></div></div></section>
+<section class="learn-explore" aria-label="继续探索"><span class="overline">EXPLORE NEXT</span><div class="learn-explore-links"><a href="/">读最新新闻 <span>↗</span></a><a href="/research/">看研究进展 <span>↗</span></a><a href="/library/">检索 3,000 条知识 <span>↗</span></a><a href="/reading/">进入我的书架 <span>↗</span></a></div></section>
+</main>
+<footer class="site-footer"><span>知行手记 · 为自己的长期学习服务</span><span>无账号 · 无追踪 · 本地存储</span></footer>
+</body></html>
