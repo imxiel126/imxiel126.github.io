@@ -41,7 +41,8 @@ jobs:
         env:
           WEREAD_PUBLIC_ENABLED: ${{ vars.WEREAD_PUBLIC_ENABLED }}
           WEREAD_API_KEY: ${{ secrets.WEREAD_API_KEY }}
-          WEREAD_ENRICH_BATCH: ${{ vars.WEREAD_ENRICH_BATCH || '10' }}
+          WEREAD_INTRO_BATCH: ${{ vars.WEREAD_INTRO_BATCH || '239' }}
+          WEREAD_DISCUSSION_BATCH: ${{ vars.WEREAD_DISCUSSION_BATCH || '24' }}
         run: python3 scripts/weread_enrich.py
       - name: 保存公开数据
         run: |
