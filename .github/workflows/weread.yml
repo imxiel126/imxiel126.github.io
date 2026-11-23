@@ -30,6 +30,7 @@ jobs:
         run: |
           python3 -m py_compile scripts/weread_sync.py scripts/weread_enrich.py
           python3 -m unittest discover -s scripts -p "test_weread_enrich.py" -v
+          python3 -m unittest discover -s scripts -p "test_merge_weread_public.py" -v
           python3 -c "from pathlib import Path; s=Path('reading/index.html').read_text(); Path('/tmp/reading.js').write_text(s.split('<script>',1)[1].split('</script>',1)[0])"
           node --check /tmp/reading.js
           node --check reading/reflections.js
@@ -51,12 +52,27 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add reading/data.json
-          if ! git diff --cached --quiet; then
+          cp reading/data.json "$RUNNER_TEMP/weread-generated.json"
+          # Multiple workflows may push during data collection. Merge snapshots with
+          # newest main instead of rebasing a conflicting reading/data.json commit.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python3 scripts/merge_weread_public.py "$RUNNER_TEMP/weread-generated.json" reading/data.json
+            git add reading/data.json
+            if git diff --cached --quiet; then
+              echo "Already current; no commit needed"
+              exit 0
+            fi
             git commit -m '更新微信读书公开数据与知识卡'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Remote changed during push; retrying merge ($attempt/5)"
+            sleep 4
+          done
+          echo "::error::Could not safely update WeRead data after five attempts"
+          exit 1
       - name: 打包整个网站
         run: |
           mkdir -p site
@@ -69,6 +85,7 @@ jobs:
           if [ -d research ]; then cp -R research site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
   deploy:
     needs: sync
@@ -77,3 +94,5 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/deploy-pages@v4
+        with:
+          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
