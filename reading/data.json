@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:21:57.129900+00:00",
+  "updated": "2026-11-23T15:29:29.294732+00:00",
   "books": [
     {
       "id": "41807702",
@@ -2931,9 +2931,14 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "她每看我一眼，我便退缩得更厉害，更冷淡",
+          "highlights": 732
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2965,9 +2970,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "最后，我衷心祈祷手术成功，希望你无论如何都要活下来。 毕竟法庭还在等着你。",
+          "highlights": 31824
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2999,9 +3009,14 @@
           "外语"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "her eyes were her own.",
+          "highlights": 324
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3033,9 +3048,14 @@
           "治愈小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "敦也从信纸上抬起头，正对上其他两人的视线。他们的眼睛里都闪着光芒。 自己的眼里也一定是这样，他想。",
+          "highlights": 17017
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3067,9 +3087,14 @@
           "纪实小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“谎言是文学的一部分，我亲爱的朋友！难道你不知道吗？”",
+          "highlights": 3196
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3101,9 +3126,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“我现在喜欢这样的我，并且觉得我经历的一切都自有其目的。我想这就是上天的安排：让我成为现在的我。”",
+          "highlights": 11970
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3135,9 +3165,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "好了，渡边同学。你不认为这才是真正的复仇，是你重新做人的第一步吗？",
+          "highlights": 8078
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3169,9 +3204,18 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "以事实为基础去认识世界的重要意义，比以往任何时候都更加迫切。",
+          "highlights": 364
+        },
+        "review": {
+          "text": "非洲初期医疗援助的历史，面对人生你会做出怎样的选择？",
+          "author": "闫哲",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3203,9 +3247,14 @@
           "经典作品"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "善与恶不是相反的，而是相关的",
+          "highlights": 615
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3237,9 +3286,14 @@
           "年代小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“我的故事，从一九五〇年一月一日那天讲起……”",
+          "highlights": 64848
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3271,9 +3325,14 @@
           "科幻小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“但如果那个是欧海姆，那我不就成了——” 他没能把话说完整，只来得及说出前半截。爆炸连远在南门二都能观测到。",
+          "highlights": 540
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3305,9 +3364,14 @@
           "治愈小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "青柳雅春低头看了看盖在左手的印章。是一朵可爱的小花，正中间还有字——“做得非常好”。",
+          "highlights": 10127
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3339,9 +3403,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "就像指南针总是指向北方一样，男人怪罪的手指总是指向女人。",
+          "highlights": 27296
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3373,9 +3442,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "伤痛总会愈合。爱持久不衰。 我们迄今犹存。",
+          "highlights": 2968
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3407,9 +3481,14 @@
           "治愈小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "六个月前，她去世了。但欧维还是每天两次走遍所有房间，摸摸暖气片，看她有没有悄悄把它们打开。",
+          "highlights": 113220
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3441,9 +3520,14 @@
           "女性小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我的丈夫就是刚才在便利店见到的那个卑鄙的恶意顾客。",
+          "highlights": 52394
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3475,9 +3559,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "死者名叫团启司，五十九岁，死前在森林八贺护理站担任站长一职",
+          "highlights": 6734
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3509,9 +3598,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "他于1918年10月阵亡。那天，整个前线寂静无声。军队指挥部战报上的记录仅有一句：西线无战事。",
+          "highlights": 14775
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3543,9 +3637,14 @@
           "玄幻小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“嗨。”她也轻声回了一句，嘴唇颤抖着露出了微笑，“原来你在这里。”“我在这里。”",
+          "highlights": 10907
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3577,9 +3676,14 @@
           "励志成长"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我准备从2014年7月7日早上，也就是我的29岁生日这天，我出生后地球开始围绕太阳转第30圈的时候，开启这项挑战。",
+          "highlights": 2475
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3611,9 +3715,14 @@
           "纪实小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "家里催婚时总说“结了婚就有了依靠，不用自己那么辛苦”，在我看来，最大的依靠还是自己。",
+          "highlights": 702
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3645,9 +3754,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "在最好、最友爱、最简单的关系中奉承或称赞是必需的，正如车轮必须有润滑油才能走起来。",
+          "highlights": 330
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3679,9 +3793,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "学会发现事物美好的一面，当你面对逆境时更要如此。我们遭遇的每件事都有助于自己成长，这意味着它们终究是对我们有利的。",
+          "highlights": 6606
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3713,9 +3832,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "人的一生，是应该做自己真正喜欢的事情，还是做内心并不喜欢的事情？如果可以的话，你会选择哪一个？",
+          "highlights": 986
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
