@@ -51,6 +51,7 @@ jobs:
           test -s site/assets/site.css
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
   deploy:
     needs: sync
@@ -62,3 +63,5 @@ jobs:
       id-token: write
     steps:
       - uses: actions/deploy-pages@v4
+      with:
+        artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
