@@ -1,0 +1,51 @@
+name: 微信读书每日阅读复盘邮件
+on:
+  schedule:
+    # UTC 14:00 = 中国标准时间 22:00
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/weread-mail.yml'
+permissions:
+  contents: write
+concurrency:
+  group: weread-daily-mail
+  cancel-in-progress: false
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 检查邮件程序和思考库
+        run: |
+          python3 -m py_compile scripts/weread_daily_mail.py scripts/weread_sync.py
+          python3 -m unittest discover -s scripts -p 'test_weread_daily_mail.py' -v
+          node --check reading/reflections.js
+          python3 -c "import json; d=json.load(open('reading/reflections-2000.json')); assert d['total']==2000 and len(d['cards'])==2000"
+      - name: 计算北京时间与防止同一天重复发送
+        id: sent
+        run: |
+          echo "REPORT_DATE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
+          if [ -f ".sent/weread-mail-$(TZ=Asia/Shanghai date +%F)" ]; then echo "already=true" >> "$GITHUB_OUTPUT"; fi
+      - name: 从微信读书生成私人阅读复盘并邮件投递
+        if: steps.sent.outputs.already != 'true'
+        env:
+          WEREAD_API_KEY: ${{ secrets.WEREAD_API_KEY }}
+          WEREAD_MAIL_TO: ${{ secrets.WEREAD_MAIL_TO || secrets.MAIL_TO }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: python3 scripts/weread_daily_mail.py
+      - name: 记录已发送日期（不存储阅读正文或收件人）
+        if: steps.sent.outputs.already != 'true'
+        run: |
+          mkdir -p .sent
+          touch ".sent/weread-mail-$REPORT_DATE"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ".sent/weread-mail-$REPORT_DATE"
+          git commit -m "记录阅读日报投递日期 $REPORT_DATE"
+          git pull --rebase origin main
+          git push origin HEAD:main
