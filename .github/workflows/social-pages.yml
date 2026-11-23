@@ -36,7 +36,7 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          for folder in archive notes reading library social; do
+          for folder in archive notes reading library social assets; do
             if [ -d "$folder" ]; then cp -R "$folder" site/; fi
           done
       - uses: actions/upload-pages-artifact@v3
