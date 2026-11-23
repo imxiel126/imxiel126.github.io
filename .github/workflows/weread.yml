@@ -84,6 +84,7 @@ jobs:
           if [ -d social ]; then cp -R social site/; fi
           if [ -d assets ]; then cp -R assets site/; fi
           if [ -d research ]; then cp -R research site/; fi
+          if [ -d learn ]; then cp -R learn site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           name: site-${{ github.run_id }}-${{ github.run_attempt }}
