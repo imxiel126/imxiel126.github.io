@@ -25,7 +25,7 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          cp -R archive notes reading library social assets site/
+          cp -R archive notes reading library social research assets site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
