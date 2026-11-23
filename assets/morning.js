@@ -35,7 +35,7 @@ function buildNav(header,main){
  const source=el("span","研究动态：正在读取更新日期…");source.id="morning-source-date";
  state.append(cctv,source);header.append(state);
  const actions=el("nav",undefined,"morning-shortcuts");actions.setAttribute("aria-label","晨读快捷入口");
- [["#morning-highlights","今日重点"],["#morning-updates","研究新讯"],["#morning-learning","每日学习"],["#overview-wrapper","全部报道"],["/research/","研究中心"],["/library/","知识库"]].forEach(([url,label])=>actions.append(internal(url,label)));
+ [["#personal-recommendations","知乎·小红书推荐"],["#morning-highlights","今日重点"],["#morning-updates","研究新讯"],["#morning-learning","每日学习"],["#overview-wrapper","全部报道"],["/research/","研究中心"],["/library/","知识库"]].forEach(([url,label])=>actions.append(internal(url,label)));
  header.append(actions);
 }
 function reportData(main){
@@ -142,13 +142,14 @@ function renderLearning(){
   row.append(type,body);box.append(row);
  }
 }
-function moveSocial(main){
+function placeSocial(main){
+ // Personal recommendations are the primary homepage content, never hidden at the bottom.
  const social=main.querySelector("#personal-recommendations")||main.querySelector("#social-recommendations");
- if(!social)return;
- const details=el("details",undefined,"morning-social");details.id="morning-social";
- const summary=el("summary","社交推荐 · 按需展开");
- social.replaceWith(details);details.append(summary,social);
- main.append(details);
+ const header=main.querySelector(":scope > header");
+ if(!social||!header)return;
+ const hiddenWrapper=main.querySelector("#morning-social");
+ if(hiddenWrapper)hiddenWrapper.replaceWith(social);
+ header.insertAdjacentElement("afterend",social);
 }
 function ready(){
  if(!["/","/index.html"].includes(location.pathname))return;
@@ -158,7 +159,7 @@ function ready(){
  highlights(main,reportData(main));
  createUpdates(main);
  wrapOverview(main);
- moveSocial(main);
+ placeSocial(main);
  const sections=[...main.querySelectorAll(":scope > section.report")];
  if(sections.length){const anchor=el("div",undefined,"morning-reports-heading");anchor.id="morning-reports";anchor.append(el("span","FULL REPORT · 逐条回看","overline"),el("h2","新闻联播 · 逐条内容"));main.insertBefore(anchor,sections[0]);const controls=main.querySelector(":scope > .news-actions");if(controls)anchor.after(controls);}
 }
