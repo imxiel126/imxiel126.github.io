@@ -54,6 +54,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         if: always() && hashFiles('archive/*.html') != ''
         with:
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
   deploy:
     needs: digest
@@ -66,3 +67,5 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/deploy-pages@v4
+      with:
+        artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
