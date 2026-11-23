@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "source_repository": "xie-l/xie-l.github.io",
+  "source_url": "https://xie-l.github.io/",
+  "academic": {
+    "author_name": "Liangliang Xie",
+    "paper_count": 5,
+    "citation_count": 93,
+    "h_index": 4,
+    "updated": "2026-11-23 12:04 UTC",
+    "source": "Semantic Scholar",
+    "papers": [
+      {
+        "title": "A rapid rice blast detection and identification method based on crop disease spores' diffraction fingerprint texture.",
+        "year": 2020,
+        "venue": "The Journal of the Science of Food and Agriculture",
+        "citations": 38,
+        "doi": "10.1002/jsfa.10383"
+      },
+      {
+        "title": "A novel on‐chip solution enabling rapid analysis of melamine and chloramphenicol in milk by smartphones",
+        "year": 2019,
+        "venue": "Journal of food process engineering",
+        "citations": 30,
+        "doi": "10.1111/JFPE.12976"
+      },
+      {
+        "title": "Pesticide Residues Identification by Optical Spectrum in the Time-Sequence of Enzyme Inhibitors Performed on Microfluidic Paper-Based Analytical Devices (µPADs)",
+        "year": 2019,
+        "venue": "Molecules",
+        "citations": 17,
+        "doi": "10.3390/molecules24132428"
+      },
+      {
+        "title": "A New 3D Cultured Liver Chip and Real-Time Monitoring System Based on Microfluidic Technology",
+        "year": 2020,
+        "venue": "Micromachines",
+        "citations": 6,
+        "doi": "10.3390/mi11121118"
+      },
+      {
+        "title": "Compensation method of error caused from maladjustment of optical path based on microfluidic chip",
+        "year": 2018,
+        "venue": "Modern physics letters B",
+        "citations": 2,
+        "doi": "10.1142/S021798491840081X"
+      }
+    ]
+  },
+  "news": [],
+  "writing": [
+    {
+      "title": "中共青海省委关于制定国民经济和社会发展第十五个五年规划的建议",
+      "date": "2026-04-07",
+      "category": "tech",
+      "summary": "# 中共青海省委关于制定国民经济和社会发展\"十五五\"规划的建议 中国共产党青海省第十四届委员会第十次全体会议，深入学习贯彻党的二十届四中全会精神，紧密结合青海实际，就制定国民经济和社会发展\"十五五\"规划提出以下建议。 ## 一、\"十五五\"时期是青海与全国同步基本实现社会主义现代化的关键时期 ### …",
+      "url": "https://xie-l.github.io/blog/tech/%E4%B8%AD%E5%85%B1%E9%9D%92%E6%B5%B7%E7%9C%81%E5%A7%94%E5%85%B3%E4%BA%8E%E5%88%B6%E5%AE%9A%E5%9B%BD%E6%B0%91%E7%BB%8F%E6%B5%8E%E5%92%8C%E7%A4%BE%E4%BC%9A%E5%8F%91%E5%B1%95%E7%AC%AC%E5%8D%81%E4%BA%94%E4%B8%AA%E4%BA%94%E5%B9%B4%E8%A7%84%E5%88%92%E7%9A%84%E5%BB%BA%E8%AE%AE%EF%BC%88202604%EF%BC%89.html"
+    },
+    {
+      "title": "个人主页更新模块（202604.06）",
+      "date": "2026-04-06",
+      "category": "tech",
+      "summary": "添加了下面几个模块： - 今日三问：帮助自己每天进行思考； - 每日五词：帮助自己每天掌握学习； - 今日数感：帮助提升自身数据敏感性； - 资讯动态：帮助及时了解前沿动态。 更新，学习 更新，学习 更新，学习 更新，学习 更新，学习 更新，学习 更新，学习 更新，学习 更新，学习 更新，学习 更新…",
+      "url": "https://xie-l.github.io/blog/tech/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E6%9B%B4%E6%96%B0%E6%A8%A1%E5%9D%97%EF%BC%88202604.06%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
+    },
+    {
+      "title": "《新闻联播》2026 年 4 月 5 日",
+      "date": "2026-04-05",
+      "category": "analysis",
+      "summary": "一、国内新闻板块（按重要性+类别分层摘录） （一）主题报道与节日相关 核心主题报道：【新思想引领新征程】清明祭英烈 奋进新征程 节气专题：二十四节气·清明（结合清明节日民俗与自然节气特点展开） 公祭活动：丙午年清明公祭轩辕黄帝典礼在陕西举行（农历干支：丙午年；地点：陕西） （二）经济与民生保障 文旅…",
+      "url": "https://xie-l.github.io/blog/analysis/2026-4-5-%EF%BC%882026.04%EF%BC%89.html"
+    },
+    {
+      "title": "《新闻联播》2026 年 4 月 5 日",
+      "date": "2026-04-05",
+      "category": "analysis",
+      "summary": "一、国内新闻板块（按重要性+类别分层摘录） （一）主题报道与节日相关 核心主题报道：【新思想引领新征程】清明祭英烈 奋进新征程 节气专题：二十四节气·清明（结合清明节日民俗与自然节气特点展开） 公祭活动：丙午年清明公祭轩辕黄帝典礼在陕西举行（农历干支：丙午年；地点：陕西） （二）经济与民生保障 文旅…",
+      "url": "https://xie-l.github.io/blog/analysis/%E3%80%8A%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD%E3%80%8B2026%20%E5%B9%B4%204%20%E6%9C%88%205%20%E6%97%A5%EF%BC%88202604%EF%BC%89.html"
+    },
+    {
+      "title": "刘强东三大工作方法-氢能管培生的执行革命（2026.04）",
+      "date": "2026-04-04",
+      "category": "tech",
+      "summary": "刘强东三大工作方法核心内容： 1. Pre-thinking（提前思考/预判）：做任何事之前，提前想清楚、规划周全、准备到位，把风险和问题消灭在萌芽状态。刘强东出差前不仅准备证件、资料，还要预判对接人、楼层、天气、甚至当地小费、零钱等细节；工作中开会、谈判、见客户前，提前准备所有材料，预判对方10个…",
+      "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E4%B8%89%E5%A4%A7%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%B3%95-%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E6%89%A7%E8%A1%8C%E9%9D%A9%E5%91%BD%EF%BC%882026.04%EF%BC%89.html"
+    },
+    {
+      "title": "刘强东三大工作方法-氢能管培生的执行革命（2026.04）",
+      "date": "2026-04-04",
+      "category": "tech",
+      "summary": "刘强东三大工作方法核心内容： 1. Pre-thinking（提前思考/预判）：做任何事之前，提前想清楚、规划周全、准备到位，把风险和问题消灭在萌芽状态。刘强东出差前不仅准备证件、资料，还要预判对接人、楼层、天气、甚至当地小费、零钱等细节；工作中开会、谈判、见客户前，提前准备所有材料，预判对方10个…",
+      "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E4%B8%89%E5%A4%A7%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%B3%95-%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E6%89%A7%E8%A1%8C%E9%9D%A9%E5%91%BD%EF%BC%882026.04%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
+    },
+    {
+      "title": "刘强东人事管理八项规定-氢能管培生的组织生存指南（2026.04）",
+      "date": "2026-04-04",
+      "category": "tech",
+      "summary": "视频背景：这是刘强东在京东内部讲解的《人事管理八项规定》，是京东从创业公司成长为行业巨头的核心管理制度。虽然时过境迁，但组织管理的底层逻辑从未改变。作为一个刚入职国家能源集团氢能管培生的我，看完这个视频后，我意识到这八项规定不仅是管人的规则，更是管自己的镜子。 在三级联动培养的第一年，我正面临从博士…",
+      "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E4%BA%BA%E4%BA%8B%E7%AE%A1%E7%90%86%E5%85%AB%E9%A1%B9%E8%A7%84%E5%AE%9A-%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E7%BB%84%E7%BB%87%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%EF%BC%882026.04%EF%BC%89.html"
+    },
+    {
+      "title": "刘强东人事管理八项规定-氢能管培生的组织生存指南（2026.04）",
+      "date": "2026-04-04",
+      "category": "tech",
+      "summary": "视频背景：这是刘强东在京东内部讲解的《人事管理八项规定》，是京东从创业公司成长为行业巨头的核心管理制度。虽然时过境迁，但组织管理的底层逻辑从未改变。作为一个刚入职国家能源集团氢能管培生的我，看完这个视频后，我意识到这八项规定不仅是管人的规则，更是管自己的镜子。 在三级联动培养的第一年，我正面临从博士…",
+      "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E4%BA%BA%E4%BA%8B%E7%AE%A1%E7%90%86%E5%85%AB%E9%A1%B9%E8%A7%84%E5%AE%9A-%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E7%BB%84%E7%BB%87%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%EF%BC%882026.%EF%BC%88202604%EF%BC%89.html"
+    },
+    {
+      "title": "刘强东自我管理-对我这个氢能管培生的启示（2026.04）",
+      "date": "2026-04-03",
+      "category": "tech",
+      "summary": "视频背景：这是刘强东2016年一堂课的第二部分，主要讲述从个人角度在生活与职场中如何管理自己的经验与方法。虽然时过境迁，但自我管理的核心逻辑从未改变。 作为一个刚入职国家能源集团的氢能管培生，看完这个视频我失眠了。不是因为刘强东的商业成就，而是他讲到的那些自我管理的底层逻辑，恰好击中了我自我认知档案…",
+      "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86-%E5%AF%B9%E6%88%91%E8%BF%99%E4%B8%AA%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E5%90%AF%E7%A4%BA%EF%BC%882026.04%EF%BC%89.html"
+    },
+    {
+      "title": "刘强东自我管理-对我这个氢能管培生的启示（2026.04）",
+      "date": "2026-04-03",
+      "category": "tech",
+      "summary": "视频背景：这是刘强东2016年一堂课的第二部分，主要讲述从个人角度在生活与职场中如何管理自己的经验与方法。虽然时过境迁，但自我管理的核心逻辑从未改变。 作为一个刚入职国家能源集团的氢能管培生，看完这个视频我失眠了。不是因为刘强东的商业成就，而是他讲到的那些自我管理的底层逻辑，恰好击中了我自我认知档案…",
+      "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86-%E5%AF%B9%E6%88%91%E8%BF%99%E4%B8%AA%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E5%90%AF%E7%A4%BA%EF%BC%882026.04%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
+    }
+  ],
+  "synced_at": "2026-11-23T15:07:00+00:00"
+}
