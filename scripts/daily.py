@@ -67,7 +67,6 @@ def generate():
         raise ValueError("当期节目单未核实")
     template = Path("scripts/first-issue.html").read_text()
     prefix = template.split("<main>", 1)[0]
-    prefix = prefix.replace("</nav>", '<a href="/notes/">精选笔记</a></nav>')
     prefix = re.sub(r"<title>.*?</title>", "<title>新闻联播晨读 · " + str(day) + "</title>", prefix)
     sections = []
     def section(title, body):
@@ -107,7 +106,8 @@ def generate():
             shutil.copyfile("scripts/first-issue.html", archive / "2026-11-20.html")
     (archive / f"{day}.html").write_text(article + "</main></html>")
     past = " · ".join(link("https://imxiel126.github.io/archive/" + p.name,p.stem) for p in sorted(archive.glob("*.html"), reverse=True) if p.stem != str(day))
-    (public / "index.html").write_text(article + "<section><h2>往期</h2>" + past + "</section></main></html>")
+    social_block = '<section><h2>知乎与小红书 · 内容中心</h2><p>把值得保存的观点、公开文章和图文笔记集中到一个阅读入口，按平台和关键词检索。</p><p><a href="/social/">进入知乎 / 小红书内容中心</a></p></section>'
+    (public / "index.html").write_text(article + social_block + "<section><h2>往期</h2>" + past + "</section></main></html>")
     Path(os.environ["RUNNER_TEMP"], "mail.html").write_text(article + "</main></html>")
 
 
