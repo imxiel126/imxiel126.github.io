@@ -48,6 +48,8 @@ jobs:
           git commit -m "记录投递 $ISSUE_DATE"
           git pull --rebase origin main
           git push origin HEAD:main
+      - name: 发布前获取最新版本
+        run: git fetch origin main && git reset --hard origin/main
       - name: 打包公开网页
         if: always() && hashFiles('archive/*.html') != ''
         run: mkdir -p site && cp -R index.html archive notes reading library social research learn assets site/
