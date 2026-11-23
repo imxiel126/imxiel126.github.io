@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:29:29.294732+00:00",
+  "updated": "2026-11-23T15:41:27.916625+00:00",
   "books": [
     {
       "id": "41807702",
@@ -3871,9 +3871,14 @@
           "励志成长"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我们即使优秀了，还是不快乐，那基本上还是因为，我们总认为“最好”的含义就是战胜别人，而没有想到真正的最好是“成为最好的我自己”。",
+          "highlights": 112
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3905,9 +3910,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "这几天你一直对我板着脸。 你大概觉得， 我应该问问你， 是哪只蚊子叮咬了你。",
+          "highlights": 6180
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3939,9 +3949,14 @@
           "科学科普"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "谨献给每一个有脑子的人。 要忍受这玩意儿可不容易，大家辛苦了。",
+          "highlights": 6080
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -3973,9 +3988,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "中国人过着相对宁静、安稳的生活，充满了一种细水长流的幸福感。",
+          "highlights": 816
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4007,9 +4027,18 @@
           "思维科学"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "就像我们理解了重量的含义以及空气有重量这一事实后，最终也明白了水或汞在真空管中上升与下降的压强原理。",
+          "highlights": 2127
+        },
+        "review": {
+          "text": "教育的关键不是灌输，不是让学生储存知识，而是培养学会思考的能力，培养联想能力与跨学科思维，打破学科边界，让思维在跨学科联想中变得连贯多元。",
+          "author": "房房",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4047,9 +4076,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "之所以活着，到底是为了什么？生命的意义到底是什么？",
+          "highlights": 208
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4087,9 +4121,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "有怎样的身体，就有怎样的心理。",
+          "highlights": 360
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4121,9 +4160,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "自律是解决人生问题最主要的工具，也是消除人生痛苦最重要的方法。",
+          "highlights": 26736
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4155,9 +4199,18 @@
           "认知思维"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "打破“数字统治”：真正重要的东西无法被衡量",
+          "highlights": 72
+        },
+        "review": {
+          "text": "翻看了目录， 简单易懂的七个顶级思维（除了NLP）用一个场景来记忆。讲一个极简特别有影响力的故事，是关于如何用领导NLP合作创业的。不知道有用么对你？",
+          "author": "曹清旺",
+          "stars": 4
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4189,9 +4242,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“我十年内还清债务，得到了幸福！”",
+          "highlights": 6138
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4229,9 +4287,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "这充分说明孩子能不能上大学，跟父母有没有钱、重不重视教育关系不大，或许在孩子还是受精卵时就注定了。",
+          "highlights": 3920
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4263,9 +4326,14 @@
           "认知思维"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "当遇到挑战时，你应该退一步思考。想想非传统的方法，跳出思维定式。你可以随时把自己拉回来。",
+          "highlights": 308
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4297,9 +4365,14 @@
           "思维科学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "思想是行动的先导，没有思维方式、认知上的变化，一切变化都无从谈起。",
+          "highlights": 352
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4331,9 +4404,18 @@
           "历史读物"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "其实所有的谈判都是这个道理，妥协并不一定就是出让既有利益，你完全可以主动制造一个问题，然后在这个问题上让步。",
+          "highlights": 2535
+        },
+        "review": {
+          "text": "最后一本看完，整个王伟系列结束。开始下一个系列！看王老师的书，其实不必过于较真，但一定要多思考，实现目标的途径很多，并非只有一条路。多见识一点，厚积薄发，总是好的！",
+          "author": "上德若谷🐷🐯",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4371,9 +4453,14 @@
             "definition": "对自身认知过程进行监控与调节的能力。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "一个人想要获得成功，做正确的事远远比正确地做事重要得多。",
+          "highlights": 476
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4405,9 +4492,18 @@
           "情绪心灵"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "心里有事，你就请个事假；心里有病，你就请个病假。允许自己丧一会儿，但丧完之后，还要继续发光！",
+          "highlights": 544
+        },
+        "review": {
+          "text": "有人说成年人该稳重点了，我稳重个球啊，好不容易来一趟人间，又不能活着回去，趁现在还能蹦哒，开心一天是一天！",
+          "author": "吴（VoRMiR's Wu）",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4439,9 +4535,14 @@
           "沟通表达"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "边界感不是与生俱来的，而是要通过人们后天学习才能掌握的。",
+          "highlights": 110
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4473,9 +4574,14 @@
           "情绪心灵"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "一个人沉浸于负面情绪，本质上是沉浸于相信自己能够改变创伤事件的“幻想”中。",
+          "highlights": 1296
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4507,9 +4613,14 @@
           "社科"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "有效生存意味着掌握充分信息，因此通信与控制既是人类社会生活的核心，也是精神世界的本质要素。",
+          "highlights": 255
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4541,9 +4652,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "唉，亲爱的，那就是贝尔曼的杰作——他在最后一片叶子掉落的那个晚上，把它画在了墙上。”",
+          "highlights": 11520
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4575,9 +4691,18 @@
           "世界史"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "1814年，当斐迪南七世登上被废黜的父亲卡洛斯四世的王位时，他惊愕地发现自己竟被要求在一部使西班牙近乎共和国般自由的宪法下执政。",
+          "highlights": 976
+        },
+        "review": {
+          "text": "25年读的第37本书。美式西史。",
+          "author": "刘鲁静",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4615,9 +4740,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "金钱对你来说意味着什么？",
+          "highlights": 2024
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4649,9 +4779,18 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "这就好比一个女人被一个不喜欢的男人玷污之后，不会马上就见自己的心上人。",
+          "highlights": 420
+        },
+        "review": {
+          "text": "一本细节丰富的介绍“面子换票子、票子换面子”的通俗历史读物呀，帮助我对朝贡的政治功能、秩序功能、文化功能有了更深的认识。总之推荐呀～",
+          "author": "花间拂清露",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -4683,9 +4822,18 @@
           "逻辑学"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "有两种方式可以让事物变得更简单，一种是忘记它的某些部分，另一种是让自己变得更加聪明。",
+          "highlights": 90
+        },
+        "review": {
+          "text": "辩论不是为了竞争，而是为了更好地互相理解～",
+          "author": "鱼啊鱼啊鱼",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -8867,18 +9015,18 @@
   ],
   "stats": {
     "weekly": {
-      "seconds": 1929,
+      "seconds": 2096,
       "days": 1,
-      "averageSeconds": 1929,
+      "averageSeconds": 2096,
       "readTimes": {
-        "1795363200": 1929
+        "1795363200": 2096
       },
       "categories": []
     },
     "monthly": {
-      "seconds": 160121,
+      "seconds": 160288,
       "days": 23,
-      "averageSeconds": 6961,
+      "averageSeconds": 6969,
       "readTimes": {
         "1793462400": 13558,
         "1793548800": 6866,
@@ -8902,7 +9050,7 @@
         "1795104000": 988,
         "1795190400": 3497,
         "1795276800": 593,
-        "1795363200": 1929
+        "1795363200": 2096
       },
       "categories": [
         {
@@ -8932,7 +9080,7 @@
       ]
     },
     "annually": {
-      "seconds": 1241356,
+      "seconds": 1241523,
       "days": 268,
       "averageSeconds": 3796,
       "readTimes": {
@@ -8946,7 +9094,7 @@
         "1785513600": 36167,
         "1788192000": 115495,
         "1790784000": 130914,
-        "1793462400": 160121,
+        "1793462400": 160288,
         "1796054400": 0
       },
       "categories": [
@@ -8977,7 +9125,7 @@
       ]
     },
     "overall": {
-      "seconds": 3393713,
+      "seconds": 3393880,
       "days": 781,
       "averageSeconds": 0,
       "readTimes": {
@@ -8989,7 +9137,7 @@
         "1672502400": 223,
         "1704038400": 1359860,
         "1735660800": 782586,
-        "1767196800": 1241356
+        "1767196800": 1241523
       },
       "categories": [
         {
