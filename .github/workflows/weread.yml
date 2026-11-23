@@ -61,6 +61,7 @@ jobs:
           if [ -d notes ]; then cp -R notes site/; fi
           if [ -d library ]; then cp -R library site/; fi
           if [ -d social ]; then cp -R social site/; fi
+          if [ -d assets ]; then cp -R assets site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
