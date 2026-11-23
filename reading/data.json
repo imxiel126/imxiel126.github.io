@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T14:57:23.734625+00:00",
+  "updated": "2026-11-23T15:03:55.185111+00:00",
   "books": [
     {
       "id": "41807702",
@@ -994,9 +994,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "冲突的根源就在于神经症患者丧失了全心全意争取某物的能力，因为他所有的愿望都是分裂的，也就是说，他所有的愿望都是相互抵触的。",
+          "highlights": 832
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1028,9 +1033,14 @@
           "纪实小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "泰丽雅变得牢骚满腹，甚至对着艾琳大喊大叫，控诉艾琳为什么不去继续卖淫呢，在这里看着自己挨饿，利用自己！",
+          "highlights": 368
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1062,9 +1072,14 @@
           "管理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "做自己最擅长的事，是的，但要精益求精；消除短处，是的，但只针对妨碍长处得到发挥的那些短处。",
+          "highlights": 1386
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1096,9 +1111,14 @@
           "管理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "最明显的表现就是员工不爱思考了，更不能独立解决问题",
+          "highlights": 176
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1130,9 +1150,14 @@
           "女性小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“男人出轨就离婚，这太不像话了。想想金女婿会有多难受吧。要想开点儿，大家都是这么活过来的。”",
+          "highlights": 34016
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1164,9 +1189,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "能穿透浓雾的也只有声音而已。",
+          "highlights": 2600
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1204,9 +1234,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "道德的目标必然是驯化或克服自然状态，而不是发展自然状态。",
+          "highlights": 224
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1238,9 +1273,14 @@
           "治愈小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "阿米莉娅乐观的一面相信，与其跟一个并不情投意合的人在一起，倒不如自己一个人过。（的确如此，对吧？）",
+          "highlights": 3852
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1278,9 +1318,18 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "人们需要持续的人际沟通来维持心智的秩序。",
+          "highlights": 480
+        },
+        "review": {
+          "text": "其实我是先买的《人生十二法则1》，但是最先读完的却是这本《人生十二法则2》，好有趣。 很喜欢这套书，收藏！",
+          "author": "浅浅驾到",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1312,9 +1361,14 @@
           "经典作品"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "这里也许是我待过的最好的地方了。只有在很久以前的某处，我才享受过比这儿更快乐的日子。有空的时候，请给我回信。",
+          "highlights": 3136
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1346,9 +1400,14 @@
           "心理学研究"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "感到焦虑时，我就会停止尝试……",
+          "highlights": 1845
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1380,9 +1439,14 @@
           "穿越架空"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“那怎么好意思。”苏静笑，可是双腿已经不听使唤地跟着来了。",
+          "highlights": 105
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1414,9 +1478,14 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我想，这又是一个忙忙乱乱的星期天，妈妈已经下葬入土，而我明天又该上班了，生活仍是老样子，没有任何变化。",
+          "highlights": 32295
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1448,9 +1517,14 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "实际上，他们总是发现，讲话的是谁，他们就会同意谁的。",
+          "highlights": 7956
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1488,9 +1562,18 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "境况不能赋予生命任何意义，是我们对境况的解读方式决定了我们的人生。",
+          "highlights": 378
+        },
+        "review": {
+          "text": "一本用于了解社会，了解人类基本情感的基础性图书。可以帮助我们更好的理解这个世界的发展规律，更好的了解自己，找到适合自己的生活方式。",
+          "author": "MK",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1522,9 +1605,14 @@
           "人在职场"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "所谓“破壁”，是指对模糊的想法或还没找到解决方案的问题进行梳理，提供解决方案。",
+          "highlights": 85
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1556,9 +1644,14 @@
           "科学科普"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "任何事物都倾向于去往时间流逝最慢的地方——引力会将其拉向那个地方。",
+          "highlights": 451
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1596,9 +1689,18 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "“一个男人若不会抽烟就不要指望成为心理学家。”",
+          "highlights": 1524
+        },
+        "review": {
+          "text": "用段子拆解心理学，弗洛伊德变梗王，马斯洛需求成脱口秀。专业与搞笑齐飞，笑着学知识，笑着治愈自己——心理学从未如此下饭！",
+          "author": "一梦如是",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1630,9 +1732,14 @@
           "认知思维"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "优秀的思考者不满足于确定性，他们乐于思考，乐于探索种种可能，并因结果的不确定性感到愉快。",
+          "highlights": 187
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1664,9 +1771,14 @@
           "世界史"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "亚历山大高呼的自由和荣耀，真的值得付出如此大的代价吗？话说回来，他的自由和荣耀到底又是什么？",
+          "highlights": 126
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1698,9 +1810,14 @@
           "中国近现代"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "一个民族对自己历史的自我批判，正是它避免重蹈历史覆辙的坚实保证。",
+          "highlights": 4086
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1732,9 +1849,14 @@
           "奇幻异界"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "穿越了宇宙洪荒，凝练了天地玄黄……纵使摆脱了六道轮回，也难逃那天地动荡……",
+          "highlights": 3050
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1766,9 +1888,14 @@
           "心理学研究"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "你知道一种情绪实际上可以持续多久吗？ 90秒。这是认真的，只需要一分半钟，情绪就会结束了。",
+          "highlights": 170
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -1800,9 +1927,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "霍胜手起刀落，高桥松的头颅随即滚到了地上。",
+          "highlights": 979
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7124,7 +7256,7 @@
       "category": "个人成长-认知思维",
       "finished": false,
       "lastRead": 1751378700,
-      "progress": null,
+      "progress": 1,
       "notes": {
         "highlights": 2,
         "thoughts": 2,
@@ -7164,7 +7296,7 @@
       "category": "个人成长-人生哲学",
       "finished": false,
       "lastRead": 1751378179,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7198,7 +7330,7 @@
       "category": "经济理财-商业",
       "finished": false,
       "lastRead": 1751377556,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7232,7 +7364,7 @@
       "category": "个人成长-情绪心灵",
       "finished": false,
       "lastRead": 1751274005,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7266,7 +7398,7 @@
       "category": "心理-认知与行为",
       "finished": false,
       "lastRead": 1750404175,
-      "progress": null,
+      "progress": 4,
       "notes": {
         "highlights": 1,
         "thoughts": 0,
@@ -7300,7 +7432,7 @@
       "category": "哲学宗教-东方哲学",
       "finished": false,
       "lastRead": 1750391055,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7334,7 +7466,7 @@
       "category": "经济理财-财经",
       "finished": false,
       "lastRead": 1749774239,
-      "progress": null,
+      "progress": 3,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7368,7 +7500,7 @@
       "category": "经济理财-商业",
       "finished": false,
       "lastRead": 1749773783,
-      "progress": null,
+      "progress": 8,
       "notes": {
         "highlights": 6,
         "thoughts": 6,
@@ -7402,7 +7534,7 @@
       "category": "经济理财-财经",
       "finished": false,
       "lastRead": 1749469966,
-      "progress": null,
+      "progress": 98,
       "notes": {
         "highlights": 90,
         "thoughts": 72,
@@ -7442,7 +7574,7 @@
       "category": "个人成长-认知思维",
       "finished": false,
       "lastRead": 1749468349,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7476,7 +7608,7 @@
       "category": "心理-社会心理学",
       "finished": false,
       "lastRead": 1748957346,
-      "progress": null,
+      "progress": 4,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7510,7 +7642,7 @@
       "category": "经济理财-财经",
       "finished": false,
       "lastRead": 1748158152,
-      "progress": null,
+      "progress": 3,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7544,7 +7676,7 @@
       "category": "心理-社会心理学",
       "finished": false,
       "lastRead": 1748155813,
-      "progress": null,
+      "progress": 2,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7584,7 +7716,7 @@
       "category": "哲学宗教-西方哲学",
       "finished": false,
       "lastRead": 1728117233,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7618,7 +7750,7 @@
       "category": "精品小说-悬疑推理",
       "finished": false,
       "lastRead": 1727085164,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7658,7 +7790,7 @@
       "category": "社会文化-法律",
       "finished": false,
       "lastRead": 1726895882,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7692,7 +7824,7 @@
       "category": "心理-心理学研究",
       "finished": false,
       "lastRead": 1726640206,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7732,7 +7864,7 @@
       "category": "科学技术-科学科普",
       "finished": false,
       "lastRead": 1726477044,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7766,7 +7898,7 @@
       "category": "历史-中国古代",
       "finished": false,
       "lastRead": 1725367943,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7800,7 +7932,7 @@
       "category": "哲学宗教-思维科学",
       "finished": false,
       "lastRead": 1725282993,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7834,7 +7966,7 @@
       "category": "历史-历史地理",
       "finished": false,
       "lastRead": 1724722234,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7868,7 +8000,7 @@
       "category": "人物传记-军政领袖",
       "finished": false,
       "lastRead": 1724382544,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7902,7 +8034,7 @@
       "category": "历史-中国古代",
       "finished": false,
       "lastRead": 1724142695,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7936,7 +8068,7 @@
       "category": "哲学宗教-西方哲学",
       "finished": false,
       "lastRead": 1724125584,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -7970,7 +8102,7 @@
       "category": "政治军事-政治",
       "finished": false,
       "lastRead": 1723344298,
-      "progress": null,
+      "progress": 1,
       "notes": {
         "highlights": 1,
         "thoughts": 1,
@@ -8004,7 +8136,7 @@
       "category": "哲学宗教-哲学读物",
       "finished": false,
       "lastRead": 1721278555,
-      "progress": null,
+      "progress": 3,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -8038,7 +8170,7 @@
       "category": "文学-经典作品",
       "finished": false,
       "lastRead": 1712651023,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -8140,7 +8272,7 @@
       "category": "个人成长-人生哲学",
       "finished": false,
       "lastRead": 0,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
@@ -8174,7 +8306,7 @@
       "category": "历史-中国古代",
       "finished": false,
       "lastRead": 0,
-      "progress": null,
+      "progress": 0,
       "notes": {
         "highlights": 0,
         "thoughts": 0,
