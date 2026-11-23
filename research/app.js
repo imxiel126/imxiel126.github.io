@@ -16,7 +16,25 @@ if(!papers.length){list.append(node("p","暂未同步到学术论文记录。","
 papers.forEach((p,i)=>{const article=node("article",undefined,"research-paper"),id=node("span",String(i+1).padStart(2,"0"),"research-index");const body=node("div",undefined,"research-paper-body"),h=node("h4",p.title||"未命名论文"),meta=node("p",[p.venue,p.year].filter(Boolean).join(" · "),"research-meta");body.append(h,meta);if(Number.isFinite(Number(p.citations)))body.append(node("span",String(p.citations)+" 次索引引用","research-citations"));if(p.doi){const link=sourceLink("https://doi.org/"+p.doi,"查看 DOI ↗","doi");if(link)body.append(link);}article.append(id,body);list.append(article);});}
 function filteredNews(){return state.items.filter(x=>(state.filter==="all"||x.type===state.filter)&&(!state.search||[x.title,x.summary,x.source,x.type].join(" ").toLocaleLowerCase().includes(state.search)));}
 function renderNews(){const root=$("research-feed"),more=$("research-more");root.replaceChildren();more.replaceChildren();const all=filteredNews();if(!all.length){root.append(node("p","暂无匹配的研究动态。","research-placeholder"));return;}
-for(const x of all.slice(0,state.shown)){const article=node("article",undefined,"research-news-row"),details=node("div",undefined,"research-news-body"),head=node("div",undefined,"research-news-heading"),category=node("span",names[x.type]||"资讯","research-news-tag"),date=node("time",x.date||"","research-meta");head.append(category,date);const h=node("h3",trim(x.title,150)),p=node("p",trim(x.summary,260)),bottom=node("div",undefined,"research-news-footer");bottom.append(node("small",x.source||"公开资料源"));const link=sourceLink(x.url,"阅读来源 ↗");if(link)bottom.append(link);details.append(head,h,p,bottom);article.append(details);root.append(article);}
+for(const x of all.slice(0,state.shown)){const article=node("article",undefined,"research-news-row"),details=node("div",undefined,"research-news-body"),head=node("div",undefined,"research-news-heading"),category=node("span",names[x.type]||"资讯","research-news-tag"),date=node("time",x.date||"","research-meta");head.append(category,date);const h=node("h3",trim(x.title,150)),p=node("p",trim(x.summary,260)),bottom=node("div",undefined,"research-news-footer");bottom.append(node("small",x.source||"公开资料源"));const link=sourceLink(x.url,"阅读来源 ↗");if(link)bottom.append(link);
+ if(link){
+  const save=node("button","＋ 稍后读","research-save-later");
+  save.type="button";
+  save.addEventListener("click",()=>{
+   try{
+    const storeKey="zhixing-queue-v1",items=JSON.parse(localStorage.getItem(storeKey)||"[]");
+    if(!Array.isArray(items))throw Error("Invalid queue");
+    if(items.some(r=>r.url===link.href)){save.textContent="已保存";save.disabled=true;return;}
+    const parts=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+    const value=k=>parts.find(part=>part.type===k)?.value||"";
+    items.unshift({url:link.href,title:String(x.title||"").slice(0,160),source:"研究资讯",saved:[value("year"),value("month"),value("day")].join("-")});
+    localStorage.setItem(storeKey,JSON.stringify(items.slice(0,200)));
+    save.textContent="已保存";save.disabled=true;
+   }catch(e){save.textContent="保存失败";}
+  });
+  bottom.append(save);
+ }
+ details.append(head,h,p,bottom);article.append(details);root.append(article);}
 if(all.length>state.shown){const b=node("button","继续查看（剩余 "+(all.length-state.shown)+" 条）","research-show-more");b.type="button";b.addEventListener("click",()=>{state.shown+=8;renderNews();});more.append(b);}}
 function writing(list){const root=$("research-writing");root.replaceChildren();if(!list.length){root.append(node("p","当前没有可展示的公开技术文章。","research-placeholder"));return;}
 list.slice(0,12).forEach(x=>{const article=node("article",undefined,"research-writing-row"),head=node("div",undefined,"research-writing-head");head.append(node("span",x.category==="analysis"?"研究分析":"技术笔记","research-news-tag"),node("time",x.date||"","research-meta"));article.append(head,node("h3",x.title),node("p",trim(x.summary,240)));const link=sourceLink(x.url,"查阅原站全文 ↗","blog");if(link)article.append(link);root.append(article);});}
