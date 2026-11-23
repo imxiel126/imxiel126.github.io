@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/weread.yml'
+      - 'scripts/weread_sync.py'
   schedule:
     - cron: '15 1 * * *'
 permissions:
