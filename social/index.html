@@ -11,8 +11,8 @@
 <main class="wrap">
 <section class="hero"><div class="eyebrow">SOCIAL READING · 发现与整理</div><h1>知乎 · 小红书</h1><p>把值得保存的回答、文章和图文笔记整理在同一个地方。支持分类、关键词检索、原文跳转；仅展示已明确公开的内容，不自动公开私人收藏。</p></section>
 <div class="toolbar"><div class="tabs" role="tablist" aria-label="内容平台"><button class="tab" role="tab" id="tab-all" aria-selected="true" data-platform="all">全部</button><button class="tab" role="tab" id="tab-zhihu" aria-selected="false" data-platform="zhihu">知乎</button><button class="tab" role="tab" id="tab-xiaohongshu" aria-selected="false" data-platform="xiaohongshu">小红书</button></div><div class="controls"><input class="search" id="search" type="search" aria-label="搜索公开内容" placeholder="搜索标题、摘要、关键词"><span class="count" id="count" aria-live="polite">加载中…</span></div></div>
-<section class="panel"><div class="platform-head"><div class="platform-id"><span class="logo z">知</span><div><h2>知乎 · 深度观点</h2><p id="zhihu-profile">文章、回答与专业讨论</p></div></div><a id="zhihu-link" class="external" href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer">打开知乎 ↗</a></div></section>
-<section class="panel"><div class="platform-head"><div class="platform-id"><span class="logo x">薯</span><div><h2>小红书 · 灵感与实践</h2><p id="xiaohongshu-profile">图文笔记、学习经验与生活发现</p></div></div><a id="xiaohongshu-link" class="external" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener noreferrer">打开小红书 ↗</a></div></section>
+<section class="panel"><div class="platform-head"><div class="platform-id"><span class="logo z">知</span><div><h2>知乎 · 深度观点</h2><p id="zhihu-profile">文章、回答与专业讨论</p></div></div><a id="zhihu-link" class="external" href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer">打开知乎 ↗</a></div><div id="zhihu-detail" class="profile-detail" style="margin-top:16px;color:#647887;font-size:14px"></div></section>
+<section class="panel"><div class="platform-head"><div class="platform-id"><span class="logo x">薯</span><div><h2>小红书 · 灵感与实践</h2><p id="xiaohongshu-profile">图文笔记、学习经验与生活发现</p></div></div><a id="xiaohongshu-link" class="external" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener noreferrer">打开小红书 ↗</a></div><div id="xiaohongshu-detail" class="profile-detail" style="margin-top:16px;color:#647887;font-size:14px"></div></section>
 <section id="items" class="grid" aria-live="polite"></section>
 <section class="empty" id="empty" hidden><span aria-hidden="true" style="font-size:29px">📎</span><strong>公开内容展示区已准备好</strong><span id="empty-text">尚未配置公开文章或笔记链接。</span><p>关联账号及公开内容后，将在此显示标题、摘要、封面和原文入口。</p></section>
 <section class="panel guide"><h2>继续探索感兴趣的主题</h2><p>以下是站外检索入口，不代表已同步或推荐了具体作者的内容。</p><div class="topics" id="topics"></div></section>
@@ -26,7 +26,19 @@ const allowed=(u,p)=>{try{const x=new URL(u);const domains=p==="zhihu"?["zhihu.c
 const coverUrl=u=>{try{const x=new URL(u);return x.protocol==="https:"?x.href:""}catch{return""}};
 let dataset={profiles:{},items:[]},platform="all",query="";
 const pName={zhihu:"知乎",xiaohongshu:"小红书"};
-function linkToProfile(p){const profile=dataset.profiles?.[p]||{},url=allowed(profile.url,p);const a=$("#"+p+"-link"),desc=$("#"+p+"-profile");a.href=url||SAFE[p];a.textContent=url?"查看公开主页 ↗":(p==="zhihu"?"打开知乎 ↗":"打开小红书 ↗");if(profile.name&&url)desc.textContent=profile.name+" · 公开内容";}
+function linkToProfile(p){
+ const profile=dataset.profiles?.[p]||{},url=allowed(profile.url,p),a=$("#"+p+"-link"),desc=$("#"+p+"-profile"),detail=$("#"+p+"-detail");
+ a.href=url||SAFE[p];
+ a.textContent=url?"查看 "+(profile.name||pName[p])+" 的主页 ↗":(p==="zhihu"?"打开知乎 ↗":"打开小红书 ↗");
+ if(profile.name&&url)desc.textContent=profile.name+(profile.description?" · "+profile.description:"");
+ if(!detail)return;
+ detail.replaceChildren();
+ if(profile.status)detail.append(el("p",profile.status));
+ const sections=Array.isArray(profile.sections)?profile.sections:[];
+ const row=el("div",undefined,"tags");
+ sections.forEach(section=>{const target=allowed(section.url,p);if(!target)return;const link=el("a",section.label||"查看平台内容 ↗","external");link.href=target;link.target="_blank";link.rel="noopener noreferrer";row.append(link)});
+ if(row.childElementCount)detail.append(row);
+}
 function card(d){const url=allowed(d.url,d.platform);if(!url)return null;const c=el("article",undefined,"item");const cover=coverUrl(d.cover);if(cover){let img=el("img");img.className="cover";img.src=cover;img.alt=d.title||"公开内容封面";img.loading="lazy";img.referrerPolicy="no-referrer";img.onerror=()=>img.remove();c.append(img)}
 const body=el("div",undefined,"item-body"),meta=[pName[d.platform],d.type||"公开内容",d.published||""].filter(Boolean).join(" · ");body.append(el("div",meta,"meta"));const h=el("h3");const a=el("a",d.title||"查看公开原文");a.href=url;a.target="_blank";a.rel="noopener noreferrer";h.append(a);body.append(h);if(d.summary)body.append(el("p",d.summary));const tags=el("div",undefined,"tags");(Array.isArray(d.tags)?d.tags:[]).slice(0,5).forEach(t=>tags.append(el("span",t,"tag")));body.append(tags);const open=el("a","阅读原文 ↗","read");open.href=url;open.target="_blank";open.rel="noopener noreferrer";body.append(open);c.append(body);return c}
 function render(){let items=(Array.isArray(dataset.items)?dataset.items:[]).filter(d=>pName[d.platform]&&allowed(d.url,d.platform)&&d.public===true);items=items.filter(d=>(platform==="all"||d.platform===platform)&&[d.title,d.summary,...(Array.isArray(d.tags)?d.tags:[])].join(" ").toLowerCase().includes(query)).sort((a,b)=>String(b.published||"").localeCompare(String(a.published||"")));const cards=items.map(card).filter(Boolean);$("#items").replaceChildren(...cards);$("#count").textContent="共 "+items.length+" 条";$("#empty").hidden=cards.length>0;$("#empty-text").textContent=query?"未找到匹配的公开内容。":"尚未配置公开文章或笔记链接。";}
