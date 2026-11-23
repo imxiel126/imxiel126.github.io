@@ -1,8 +1,4942 @@
 {
   "schema": 1,
-  "ready": false,
-  "updated": null,
-  "books": [],
-  "stats": {},
-  "privacy": "No account data is published until you enable public sync."
+  "ready": true,
+  "updated": "2026-11-23T14:40:26.789846+00:00",
+  "books": [
+    {
+      "id": "33867124",
+      "type": "ebook",
+      "title": "我家老婆来自一千年前",
+      "author": "花还没开",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/124/33867124/t6_33867124.jpg",
+      "link": "https://weread.qq.com/web/reader/724327307204c574724d57b",
+      "category": "男生小说-奇幻异界",
+      "finished": false,
+      "lastRead": 1795072340,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "40453176",
+      "type": "ebook",
+      "title": "终宋",
+      "author": "怪诞的表哥",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/176/40453176/t6_40453176.jpg",
+      "link": "https://weread.qq.com/web/reader/ae13222072694438ae17a23",
+      "category": "男生小说-历史架空",
+      "finished": false,
+      "lastRead": 1795072325,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300015133",
+      "type": "ebook",
+      "title": "高效论证：美国大学最实用的逻辑训练课",
+      "author": "大卫•莫罗 安东尼•韦斯顿",
+      "cover": "https://cdn.weread.qq.com/weread/cover/33/3300015133/t6_3300015133.jpg",
+      "link": "https://weread.qq.com/web/reader/a2f32690813ab6c69g013212",
+      "category": "哲学宗教-逻辑学",
+      "finished": false,
+      "lastRead": 1794732221,
+      "progress": 3,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "837932",
+      "type": "ebook",
+      "title": "穷查理宝典：查理·芒格智慧箴言录（全新增订本）",
+      "author": "彼得·考夫曼",
+      "cover": "https://cdn.weread.qq.com/weread/cover/48/YueWen_837932/t6_YueWen_837932.jpg",
+      "link": "https://weread.qq.com/web/reader/2e0320e05cc92c2e0796c5a",
+      "category": "个人成长-励志成长",
+      "finished": false,
+      "lastRead": 1794497958,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "823420",
+      "type": "ebook",
+      "title": "简单的逻辑学（湛庐经典）",
+      "author": "D.Q.麦克伦尼",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/420/823420/t6_823420.jpg",
+      "link": "https://weread.qq.com/web/reader/c12324505c907cc12555d33",
+      "category": "哲学宗教-逻辑学",
+      "finished": false,
+      "lastRead": 1794497672,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "561816",
+      "type": "ebook",
+      "title": "逆天邪神",
+      "author": "火星引力",
+      "cover": "https://cdn.weread.qq.com/weread/cover/37/YueWen_561816/t6_YueWen_561816.jpg",
+      "link": "https://weread.qq.com/web/reader/08632a005892980860a4192",
+      "category": "男生小说-奇幻异界",
+      "finished": false,
+      "lastRead": 1794496741,
+      "progress": 99,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "648963",
+      "type": "ebook",
+      "title": "万古神帝",
+      "author": "飞天鱼",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/963/648963/t6_648963.jpg",
+      "link": "https://weread.qq.com/web/reader/6163238059e7036164dc5a3",
+      "category": "男生小说-东方玄幻",
+      "finished": false,
+      "lastRead": 1794450513,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300181368",
+      "type": "ebook",
+      "title": "1984",
+      "author": "[英]乔治·奥威尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_i8ynodndbtuzrhr7fdhy7c/t6_cpplatform_i8ynodndbtuzrhr7fdhy7c1764831272.jpg",
+      "link": "https://weread.qq.com/web/reader/aba32c80813abad58g0189a1",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1793664275,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "33483909",
+      "type": "ebook",
+      "title": "绝叫（同名日剧原著）",
+      "author": "叶真中显",
+      "cover": "https://cdn.weread.qq.com/weread/cover/67/YueWen_33483909/t6_YueWen_33483909.jpg",
+      "link": "https://weread.qq.com/web/reader/28b3290071feec8528bfcfe",
+      "category": "精品小说-女性小说",
+      "finished": true,
+      "lastRead": 1793576544,
+      "progress": 100,
+      "notes": {
+        "highlights": 6,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "34424286",
+      "type": "ebook",
+      "title": "信（东野圭吾不可不读的洞悉人性之作）",
+      "author": "[日]东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/59/yuewen_34424286/t6_yuewen_344242861722245441.jpg",
+      "link": "https://weread.qq.com/web/reader/59732830720d45de597bb4f",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1793576266,
+      "progress": 7,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "40509842",
+      "type": "ebook",
+      "title": "Blue",
+      "author": "[日]叶真中显",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/842/40509842/t6_40509842.jpg",
+      "link": "https://weread.qq.com/web/reader/b2b32ad0726a2192b2b1b17",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1793495298,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "855243",
+      "type": "ebook",
+      "title": "湖畔（东野圭吾 正版电子书）",
+      "author": "东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/1/yuewen_855243/t6_yuewen_8552431689145500.jpg",
+      "link": "https://weread.qq.com/web/reader/738320b05d0ccb738abe749",
+      "category": "精品小说-悬疑推理",
+      "finished": true,
+      "lastRead": 1792844083,
+      "progress": 100,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300020531",
+      "type": "ebook",
+      "title": "嫌疑人X的献身",
+      "author": "东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/59/cpplatform_gnveypvmpcpiaen24cumub/t6_cpplatform_gnveypvmpcpiaen24cumub1785219967.jpg",
+      "link": "https://weread.qq.com/web/reader/55a32390813ab6e85g011abb",
+      "category": "精品小说-悬疑推理",
+      "finished": true,
+      "lastRead": 1792843982,
+      "progress": 99,
+      "notes": {
+        "highlights": 2,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300147760",
+      "type": "ebook",
+      "title": "如何将知识转化为行动",
+      "author": "[美]肯·布兰佳  [美]保罗·梅耶  [美]迪克·卢赫",
+      "cover": "https://cdn.weread.qq.com/weread/cover/1/cpplatform_7dhtue6prw9wgagkja4hqt/t6_cpplatform_7dhtue6prw9wgagkja4hqt1749201032.jpg",
+      "link": "https://weread.qq.com/web/reader/6dc32f80813aba038g010e3b",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1792298391,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "24965201",
+      "type": "ebook",
+      "title": "平凡的世界（全三册）",
+      "author": "路遥",
+      "cover": "https://cdn.weread.qq.com/weread/cover/61/yuewen_24965201/t6_yuewen_249652011682413401.jpg",
+      "link": "https://weread.qq.com/web/reader/18832880717cf0511881c78",
+      "category": "精品小说-年代小说",
+      "finished": false,
+      "lastRead": 1791964205,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300197496",
+      "type": "ebook",
+      "title": "西游是个官场局：八十一难皆是戏",
+      "author": "黄如一",
+      "cover": "https://cdn.weread.qq.com/weread/cover/44/cpplatform_ounopdcppb4bwajfbbymbe/t6_cpplatform_ounopdcppb4bwajfbbymbe1772789103.jpg",
+      "link": "https://weread.qq.com/web/reader/31232ba0813abb3a5g01693b",
+      "category": "文学-文学鉴赏",
+      "finished": false,
+      "lastRead": 1791255216,
+      "progress": 7,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300074922",
+      "type": "ebook",
+      "title": "别相信直觉",
+      "author": "赛思·斯蒂芬斯·达维多维茨",
+      "cover": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_o4hxchddehc7mhlnpl2rhb/t6_cpplatform_o4hxchddehc7mhlnpl2rhb1697530753.jpg",
+      "link": "https://weread.qq.com/web/reader/61532620813ab83c4g012234",
+      "category": "哲学宗教-思维科学",
+      "finished": false,
+      "lastRead": 1791028081,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300106919",
+      "type": "ebook",
+      "title": "点与线",
+      "author": "[日]松本清张",
+      "cover": "https://cdn.weread.qq.com/weread/cover/98/cpplatform_to6fycynaxkuy98s5bb4zt/t6_cpplatform_to6fycynaxkuy98s5bb4zt1721295981.jpg",
+      "link": "https://weread.qq.com/web/reader/ed632880813ab9043g019980",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1786269983,
+      "progress": 4,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "35040309",
+      "type": "ebook",
+      "title": "偏见的本质",
+      "author": "戈登·奥尔波特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/70/YueWen_35040309/t6_YueWen_35040309.jpg",
+      "link": "https://weread.qq.com/web/reader/23a32d307216ac3523a47e6",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 1785848673,
+      "progress": 8,
+      "notes": {
+        "highlights": 5,
+        "thoughts": 1,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300082646",
+      "type": "ebook",
+      "title": "精力重启：重构秩序的精力管理，摆脱倦怠与内耗，成为高效、专注、自律的人",
+      "author": "[美]彼得·霍林斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/7/cpplatform_3lytachegcy5qplnk2sv9o/t6_cpplatform_3lytachegcy5qplnk2sv9o1703662504.jpg",
+      "link": "https://weread.qq.com/web/reader/73932e10813ab86c8g0167ba",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1785846522,
+      "progress": 4,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "32707695",
+      "type": "ebook",
+      "title": "太荒吞天诀",
+      "author": "铁马飞桥",
+      "cover": "https://cdn.weread.qq.com/weread/cover/75/YueWen_32707695/t6_YueWen_32707695.jpg",
+      "link": "https://weread.qq.com/web/reader/58932d1071f3146f589372e",
+      "category": "男生小说-东方玄幻",
+      "finished": false,
+      "lastRead": 1783207121,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "34130107",
+      "type": "ebook",
+      "title": "贫僧不想当影帝",
+      "author": "陶安逸",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/107/34130107/t6_34130107.jpg",
+      "link": "https://weread.qq.com/web/reader/aa732fe07208c8bbaa74c2f",
+      "category": "男生小说-都市小说",
+      "finished": false,
+      "lastRead": 1783168860,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300108738",
+      "type": "ebook",
+      "title": "一把扭曲的匕首",
+      "author": "[英]安东尼·霍洛维茨",
+      "cover": "https://cdn.weread.qq.com/weread/cover/80/cpplatform_thdjqmgf3fkiziexm5npbq/t6_cpplatform_thdjqmgf3fkiziexm5npbq1722246764.jpg",
+      "link": "https://weread.qq.com/web/reader/02632470813ab90f9g0185c7",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1779341269,
+      "progress": 4,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300135453",
+      "type": "ebook",
+      "title": "我们内心的冲突",
+      "author": "[美]卡伦·霍妮",
+      "cover": "https://cdn.weread.qq.com/weread/cover/20/cpplatform_xvtdvekzr4zarbx4zxdxdr/t6_cpplatform_xvtdvekzr4zarbx4zxdxdr1740647474.jpg",
+      "link": "https://weread.qq.com/web/reader/5cf322f0813ab9b69g013443",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1779335801,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300127792",
+      "type": "ebook",
+      "title": "变态犯罪：电影背后反人性的真实案件",
+      "author": "8年级毕业生",
+      "cover": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5giglsrvc1qrw8wjxglpn7/t6_cpplatform_5giglsrvc1qrw8wjxglpn71735122774.jpg",
+      "link": "https://weread.qq.com/web/reader/9d232470813ab986bg012b5d",
+      "category": "精品小说-纪实小说",
+      "finished": false,
+      "lastRead": 1778848869,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300118013",
+      "type": "ebook",
+      "title": "卓有成效的管理者（55周年新译本）",
+      "author": "[美]彼得·德鲁克",
+      "cover": "https://cdn.weread.qq.com/weread/cover/12/cpplatform_axqdwrf5vrx31ktflmcmkz/t6_cpplatform_axqdwrf5vrx31ktflmcmkz1729216757.jpg",
+      "link": "https://weread.qq.com/web/reader/f3d32010813ab9499g013aa7",
+      "category": "经济理财-管理",
+      "finished": false,
+      "lastRead": 1778639839,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "30478269",
+      "type": "ebook",
+      "title": "不懂带团队，你就自己干到死",
+      "author": "尚旭东 陈培松",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/269/30478269/t6_30478269.jpg",
+      "link": "https://weread.qq.com/web/reader/2f932d0071d10fbd2f96377",
+      "category": "经济理财-管理",
+      "finished": false,
+      "lastRead": 1778499467,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300067776",
+      "type": "ebook",
+      "title": "明亮的夜晚",
+      "author": "崔恩荣",
+      "cover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_dzcupluzwjbcszj1zes4a9/t6_cpplatform_dzcupluzwjbcszj1zes4a91692182630.jpg",
+      "link": "https://weread.qq.com/web/reader/2db32930813ab80f9g0165a3",
+      "category": "精品小说-女性小说",
+      "finished": false,
+      "lastRead": 1778222701,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "31743372",
+      "type": "ebook",
+      "title": "熔炉（独家定制版｜同名韩影原著）",
+      "author": "孔枝泳",
+      "cover": "https://cdn.weread.qq.com/weread/cover/34/yuewen_31743372/t6_yuewen_317433721718605105.jpg",
+      "link": "https://weread.qq.com/web/reader/79d32a5071e45d8c79dcce7",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1777523913,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300050500",
+      "type": "ebook",
+      "title": "实现自我：神经症与人的成长（西方心理学大师经典译丛）",
+      "author": "卡伦·霍妮",
+      "cover": "https://cdn.weread.qq.com/weread/cover/98/cpplatform_k6psykolnkxjpkm5zzwcmu/t6_cpplatform_k6psykolnkxjpkm5zzwcmu1677491179.jpg",
+      "link": "https://weread.qq.com/web/reader/04a32260813ab7a3ag010a54",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1777459504,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300016795",
+      "type": "ebook",
+      "title": "岛上书店（修订版）",
+      "author": "加·泽文",
+      "cover": "https://cdn.weread.qq.com/weread/cover/95/3300016795/t6_3300016795.jpg",
+      "link": "https://weread.qq.com/web/reader/c7032220813ab6d0fg015d45",
+      "category": "精品小说-治愈小说",
+      "finished": false,
+      "lastRead": 1777458079,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300018036",
+      "type": "ebook",
+      "title": "人生十二法则2",
+      "author": "乔丹·彼得森",
+      "cover": "https://cdn.weread.qq.com/weread/cover/36/3300018036/t6_3300018036.jpg",
+      "link": "https://weread.qq.com/web/reader/d26322b0813ab6d8bg016f5f",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1777457911,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "33362462",
+      "type": "ebook",
+      "title": "紫与黑：K.J.帕克短篇小说集",
+      "author": "K.J.帕克",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/462/33362462/t6_33362462.jpg",
+      "link": "https://weread.qq.com/web/reader/ca23295071fd121eca275e8",
+      "category": "文学-经典作品",
+      "finished": false,
+      "lastRead": 1777349691,
+      "progress": 1,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300116432",
+      "type": "ebook",
+      "title": "重塑杏仁核：情绪修复脑科学",
+      "author": "[美]凯瑟琳·M. 皮特曼",
+      "cover": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_f8nqyjadruqecj4euuj6jj/t6_cpplatform_f8nqyjadruqecj4euuj6jj1727434091.jpg",
+      "link": "https://weread.qq.com/web/reader/9aa324a0813ab93fbg012922",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1777330382,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "846716",
+      "type": "ebook",
+      "title": "相思，莫相负",
+      "author": "千苒君笑",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/716/846716/t6_846716.jpg",
+      "link": "https://weread.qq.com/web/reader/69b32d705ceb7c69b954239",
+      "category": "女生小说-穿越架空",
+      "finished": false,
+      "lastRead": 1777018558,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "912325",
+      "type": "ebook",
+      "title": "局外人",
+      "author": "[法]加缪",
+      "cover": "https://cdn.weread.qq.com/weread/cover/44/YueWen_912325/t6_YueWen_912325.jpg",
+      "link": "https://weread.qq.com/web/reader/7bd329e05debc57bdc79852",
+      "category": "精品小说-社会小说",
+      "finished": false,
+      "lastRead": 1776933013,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "811769",
+      "type": "ebook",
+      "title": "动物农场",
+      "author": "乔治·奥威尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/38/YueWen_811769/t6_YueWen_811769.jpg",
+      "link": "https://weread.qq.com/web/reader/b74324c05c62f9b743e3e8a",
+      "category": "精品小说-社会小说",
+      "finished": false,
+      "lastRead": 1776906271,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "38245897",
+      "type": "ebook",
+      "title": "自卑与超越",
+      "author": "阿尔弗雷德·阿德勒",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/897/38245897/t6_38245897.jpg",
+      "link": "https://weread.qq.com/web/reader/b37327f072479609b371503",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1776906256,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300140469",
+      "type": "ebook",
+      "title": "分解工作法：聪明人如何解决复杂问题",
+      "author": "[日]菅原健一",
+      "cover": "https://cdn.weread.qq.com/weread/cover/84/cpplatform_6nk8dczoqqiazys8rvccrf/t6_cpplatform_6nk8dczoqqiazys8rvccrf1744188226.jpg",
+      "link": "https://weread.qq.com/web/reader/66f32ab0813ab9d5eg01997d",
+      "category": "个人成长-人在职场",
+      "finished": false,
+      "lastRead": 1776905839,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "630480",
+      "type": "ebook",
+      "title": "星际穿越",
+      "author": "基普·索恩",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/480/630480/t6_630480.jpg",
+      "link": "https://weread.qq.com/web/reader/13f329c0599ed013ff80b18",
+      "category": "科学技术-科学科普",
+      "finished": false,
+      "lastRead": 1776853796,
+      "progress": 0,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "31933731",
+      "type": "ebook",
+      "title": "爆笑吧！心理学大神来了",
+      "author": "迟毓凯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/82/YueWen_31933731/t6_YueWen_31933731.jpg",
+      "link": "https://weread.qq.com/web/reader/133327c071e745231336a6f",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1776736228,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300076376",
+      "type": "ebook",
+      "title": "认知觉醒",
+      "author": "保罗·斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_2fpscer77vx83pnm1eef2b/t6_cpplatform_2fpscer77vx83pnm1eef2b1698911724.jpg",
+      "link": "https://weread.qq.com/web/reader/42732b10813ab8455g016621",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1776656017,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "27563210",
+      "type": "ebook",
+      "title": "讲谈社·兴亡的世界史（全九卷）",
+      "author": "森谷公俊等",
+      "cover": "https://cdn.weread.qq.com/weread/cover/52/YueWen_27563210/t6_YueWen_27563210.jpg",
+      "link": "https://weread.qq.com/web/reader/edc3225071a494caedc4f50",
+      "category": "历史-世界史",
+      "finished": false,
+      "lastRead": 1776613048,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "926378",
+      "type": "ebook",
+      "title": "天朝的崩溃：鸦片战争再研究（修订版）",
+      "author": "茅海建",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/378/926378/t6_926378.jpg",
+      "link": "https://weread.qq.com/web/reader/68c32bf05e22aa68c605298",
+      "category": "历史-中国近现代",
+      "finished": false,
+      "lastRead": 1776611365,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "506018",
+      "type": "ebook",
+      "title": "神墓",
+      "author": "辰东",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/18/506018/t6_506018.jpg",
+      "link": "https://weread.qq.com/web/reader/d4e3229057b8a2d4e594590",
+      "category": "男生小说-奇幻异界",
+      "finished": false,
+      "lastRead": 1776610450,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300169745",
+      "type": "ebook",
+      "title": "情绪脑科学",
+      "author": "[美]费思·哈珀",
+      "cover": "https://cdn.weread.qq.com/weread/cover/76/cpplatform_7dp2whr6zwzvgnbr1ohpva/t6_cpplatform_7dp2whr6zwzvgnbr1ohpva1760496118.jpg",
+      "link": "https://weread.qq.com/web/reader/bee324b0813aba8ceg015e49",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1776605414,
+      "progress": null,
+      "notes": {
+        "highlights": 2,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "823003",
+      "type": "ebook",
+      "title": "破绽：反转反转再反转的高智商悬疑",
+      "author": "刘天壮",
+      "cover": "https://cdn.weread.qq.com/weread/cover/58/yuewen_823003/t6_yuewen_8230031766655900.jpg",
+      "link": "https://weread.qq.com/web/reader/b89324305c8edbb89117c55",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1776392152,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "29750205",
+      "type": "ebook",
+      "title": "阿斯伯格综合征完全指南",
+      "author": "托尼·阿特伍德",
+      "cover": "https://cdn.weread.qq.com/weread/cover/32/YueWen_29750205/t6_YueWen_29750205.jpg",
+      "link": "https://weread.qq.com/web/reader/3eb32b1071c5f3bd3ebb29f",
+      "category": "医学健康-医学",
+      "finished": false,
+      "lastRead": 1776336914,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "22739882",
+      "type": "ebook",
+      "title": "情感勒索",
+      "author": "苏珊·福沃德 唐娜·弗雷泽",
+      "cover": "https://cdn.weread.qq.com/weread/cover/5/YueWen_22739882/t6_YueWen_22739882.jpg",
+      "link": "https://weread.qq.com/web/reader/31a32880715afbaa31ac35e",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1776335119,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "38585704",
+      "type": "ebook",
+      "title": "桶川跟踪狂杀人事件",
+      "author": "清水洁",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/704/38585704/t6_38585704.jpg",
+      "link": "https://weread.qq.com/web/reader/63332500724cc5686333355",
+      "category": "文学-纪实文学",
+      "finished": false,
+      "lastRead": 1776334463,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300025245",
+      "type": "ebook",
+      "title": "意识的解释",
+      "author": "丹尼尔·丹尼特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/71/cpPlatform_3300025245/t6_cpPlatform_3300025245.jpg",
+      "link": "https://weread.qq.com/web/reader/859326e0813ab705cg015746",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1776244879,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300098320",
+      "type": "ebook",
+      "title": "朝闻道",
+      "author": "刘慈欣",
+      "cover": "https://cdn.weread.qq.com/weread/cover/24/cpplatform_gtthsr1mfwaoshw6m3musc/t6_cpplatform_gtthsr1mfwaoshw6m3musc1714460447.jpg",
+      "link": "https://weread.qq.com/web/reader/28c32730813ab8ce8g010849",
+      "category": "精品小说-科幻小说",
+      "finished": false,
+      "lastRead": 1776152150,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "33905136",
+      "type": "ebook",
+      "title": "做自己喜欢的事，永远没有太晚的开始",
+      "author": "摩西奶奶",
+      "cover": "https://cdn.weread.qq.com/weread/cover/14/YueWen_33905136/t6_YueWen_33905136.jpg",
+      "link": "https://weread.qq.com/web/reader/71a32850720559f071aaac1",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1776135730,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "27423357",
+      "type": "ebook",
+      "title": "吞食者",
+      "author": "刘慈欣",
+      "cover": "https://cdn.weread.qq.com/weread/cover/45/yuewen_27423357/t6_yuewen_274233571714484102.jpg",
+      "link": "https://weread.qq.com/web/reader/0f132a6071a2727d0f1e360",
+      "category": "精品小说-科幻小说",
+      "finished": false,
+      "lastRead": 1776000335,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300179560",
+      "type": "ebook",
+      "title": "老人与海",
+      "author": "[美]欧内斯特·海明威",
+      "cover": "https://cdn.weread.qq.com/weread/cover/96/cpplatform_tl5qvavm89ccsnxfdbacbk/t6_cpplatform_tl5qvavm89ccsnxfdbacbk1764062548.jpg",
+      "link": "https://weread.qq.com/web/reader/46532e00813abaca4g010be6",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1775923125,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300192971",
+      "type": "ebook",
+      "title": "媚者无疆",
+      "author": "半明半寐",
+      "cover": "https://cdn.weread.qq.com/weread/cover/76/cpplatform_9bexsayrbhnnfwwvlbwgq3/t6_cpplatform_9bexsayrbhnnfwwvlbwgq31768984255.jpg",
+      "link": "https://weread.qq.com/web/reader/7d1322c0813abb1e1g0110b1",
+      "category": "精品小说-古言精品",
+      "finished": false,
+      "lastRead": 1775806522,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300061154",
+      "type": "ebook",
+      "title": "芯片战争：世界最关键技术的争夺战（财之道丛书）",
+      "author": "克里斯·米勒",
+      "cover": "https://cdn.weread.qq.com/weread/cover/82/cpplatform_7fknrczhjmrhcrf8vygbvx/t6_cpplatform_7fknrczhjmrhcrf8vygbvx1686134532.jpg",
+      "link": "https://weread.qq.com/web/reader/ddb32cf0813ab7e63g014bab",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1775797065,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "41100356",
+      "type": "ebook",
+      "title": "挽救计划（同名电影原著）",
+      "author": "[美]安迪·威尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/0/yuewen_41100356/t6_yuewen_411003561772520377.jpg",
+      "link": "https://weread.qq.com/web/reader/6d232640727324446d2e978",
+      "category": "精品小说-科幻小说",
+      "finished": false,
+      "lastRead": 1775795844,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "22291759",
+      "type": "ebook",
+      "title": "谁杀了她",
+      "author": "东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/45/yuewen_22291759/t6_yuewen_222917591785220014.jpg",
+      "link": "https://weread.qq.com/web/reader/d9332f907154252fd93842e",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1775485292,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300196014",
+      "type": "ebook",
+      "title": "话语权",
+      "author": "[意]保拉·迪·尼古拉",
+      "cover": "https://cdn.weread.qq.com/weread/cover/17/cpplatform_f83zohnggssdvf89byz5cn/t6_cpplatform_f83zohnggssdvf89byz5cn1770892467.jpg",
+      "link": "https://weread.qq.com/web/reader/dd732480813abb311g014dbe",
+      "category": "社会文化-法律",
+      "finished": false,
+      "lastRead": 1775115552,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "33617657",
+      "type": "ebook",
+      "title": "平面国（果麦经典）",
+      "author": "埃德温·艾勃特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/76/YueWen_33617657/t6_YueWen_33617657.jpg",
+      "link": "https://weread.qq.com/web/reader/215328407200f6f9215a612",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1775115543,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300083736",
+      "type": "ebook",
+      "title": "恶行（知名刑事律师将真实案件化为锋利故事）",
+      "author": "[德] 费迪南德·冯·席拉赫",
+      "cover": "https://cdn.weread.qq.com/weread/cover/92/cpplatform_js5rqdgjfgdgxnx17ervnr/t6_cpplatform_js5rqdgjfgdgxnx17ervnr1704783078.jpg",
+      "link": "https://weread.qq.com/web/reader/52032250813ab8735g016107",
+      "category": "精品小说-纪实小说",
+      "finished": false,
+      "lastRead": 1775115442,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300020416",
+      "type": "ebook",
+      "title": "蝇王（特精版）",
+      "author": "威廉·戈尔丁",
+      "cover": "https://cdn.weread.qq.com/weread/cover/82/cpplatform_hsiddppyp42ggoksp6xhng/t6_cpplatform_hsiddppyp42ggoksp6xhng1761806234.jpg",
+      "link": "https://weread.qq.com/web/reader/f83321b0813ab6e79g016622",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1775114578,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "34880565",
+      "type": "ebook",
+      "title": "能人",
+      "author": "冯骥才",
+      "cover": "https://cdn.weread.qq.com/weread/cover/17/YueWen_34880565/t6_YueWen_34880565.jpg",
+      "link": "https://weread.qq.com/web/reader/d733227072143c35d73e028",
+      "category": "文学-经典作品",
+      "finished": false,
+      "lastRead": 1774919733,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "812442",
+      "type": "ebook",
+      "title": "曾在天涯",
+      "author": "阎真",
+      "cover": "https://cdn.weread.qq.com/weread/cover/77/YueWen_812442/t6_YueWen_812442.jpg",
+      "link": "https://weread.qq.com/web/reader/c1132bd05c659ac1164b3b9",
+      "category": "精品小说-社会小说",
+      "finished": false,
+      "lastRead": 1774843081,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "230108",
+      "type": "ebook",
+      "title": "幻夜",
+      "author": "东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/2/yuewen_230108/t6_yuewen_2301081785220014.jpg",
+      "link": "https://weread.qq.com/web/reader/2f132e505382dc2f1f3f44e",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1774766709,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300020482",
+      "type": "ebook",
+      "title": "一桩事先张扬的凶杀案",
+      "author": "[哥]加西亚•马尔克斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/82/3300020482/t6_3300020482.jpg",
+      "link": "https://weread.qq.com/web/reader/b4432e10813ab6e80g01239a",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1774350175,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "510909",
+      "type": "ebook",
+      "title": "弗洛伊德9：自我与本我",
+      "author": "[奥]弗洛伊德",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/909/510909/t6_510909.jpg",
+      "link": "https://weread.qq.com/web/reader/c71327f057cbbdc71ea4731",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1774316955,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300056234",
+      "type": "ebook",
+      "title": "看不见的孩子",
+      "author": "安德里亚·埃利奥特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_dq9zmkrrrcgsdqcnmt1wam/t6_cpplatform_dq9zmkrrrcgsdqcnmt1wam1681901525.jpg",
+      "link": "https://weread.qq.com/web/reader/032320f0813ab7c77g0140d1",
+      "category": "精品小说-纪实小说",
+      "finished": false,
+      "lastRead": 1774261761,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300076869",
+      "type": "ebook",
+      "title": "论人的成长：第二版",
+      "author": "卡尔·罗杰斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_1qnu8j8zkyuv9s8udg6egh/t6_cpplatform_1qnu8j8zkyuv9s8udg6egh1699252089.jpg",
+      "link": "https://weread.qq.com/web/reader/54f32920813ab8486g0191a7",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1774259982,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "834464",
+      "type": "ebook",
+      "title": "活着",
+      "author": "余华",
+      "cover": "https://cdn.weread.qq.com/weread/cover/1/yuewen_834464/t6_yuewen_8344641758521403.jpg",
+      "link": "https://weread.qq.com/web/reader/33332bf05cbba0333b1efb4",
+      "category": "精品小说-年代小说",
+      "finished": true,
+      "lastRead": 1774106101,
+      "progress": null,
+      "notes": {
+        "highlights": 3,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300156371",
+      "type": "ebook",
+      "title": "呼啸山庄",
+      "author": "[英]艾米莉·勃朗特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/51/cpplatform_afb2dr2nymitjkkz3kcudp/t6_cpplatform_afb2dr2nymitjkkz3kcudp1754469527.jpg",
+      "link": "https://weread.qq.com/web/reader/522324a0813aba395g0114fe",
+      "category": "精品小说-社会小说",
+      "finished": false,
+      "lastRead": 1774106005,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300020529",
+      "type": "ebook",
+      "title": "恶意",
+      "author": "东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/29/3300020529/t6_3300020529.jpg",
+      "link": "https://weread.qq.com/web/reader/f7932970813ab6e84g019b96",
+      "category": "精品小说-悬疑推理",
+      "finished": true,
+      "lastRead": 1774105025,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "847283",
+      "type": "ebook",
+      "title": "飘：Gone with the wind（英文朗读版）（上下全集）",
+      "author": "[美]玛格丽特·米切尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/98/YueWen_847283/t6_YueWen_847283.jpg",
+      "link": "https://weread.qq.com/web/reader/b70327c05cedb3b7016d950",
+      "category": "教育学习-外语",
+      "finished": false,
+      "lastRead": 1774104617,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300020527",
+      "type": "ebook",
+      "title": "解忧杂货店",
+      "author": "东野圭吾",
+      "cover": "https://cdn.weread.qq.com/weread/cover/27/3300020527/t6_3300020527.jpg",
+      "link": "https://weread.qq.com/web/reader/6d132250813ab6e84g017ca5",
+      "category": "精品小说-治愈小说",
+      "finished": true,
+      "lastRead": 1773908984,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300049239",
+      "type": "ebook",
+      "title": "同意",
+      "author": "瓦内莎·斯普林格拉",
+      "cover": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_bepffhpqaubjiv9jikaszk/t6_cpplatform_bepffhpqaubjiv9jikaszk1676638091.jpg",
+      "link": "https://weread.qq.com/web/reader/1c032a80813ab79bbg019e18",
+      "category": "精品小说-纪实小说",
+      "finished": false,
+      "lastRead": 1773908969,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300096610",
+      "type": "ebook",
+      "title": "早安，怪物",
+      "author": "[加]凯瑟琳·吉尔迪纳",
+      "cover": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_hre43m7tloyfetmcyqwrgu/t6_cpplatform_hre43m7tloyfetmcyqwrgu1714270637.jpg",
+      "link": "https://weread.qq.com/web/reader/5f9326e0813ab8c3dg010320",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1773908596,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "29599940",
+      "type": "ebook",
+      "title": "告白（同名电影原著）",
+      "author": "湊佳苗",
+      "cover": "https://cdn.weread.qq.com/weread/cover/31/yuewen_29599940/t6_yuewen_295999401754619204.jpg",
+      "link": "https://weread.qq.com/web/reader/5b63248071c3a8c45b67987",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1773831072,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300044056",
+      "type": "ebook",
+      "title": "人生的选择",
+      "author": "[瑞典]汉斯·罗斯林 [瑞典]范妮·黑尔格斯坦",
+      "cover": "https://cdn.weread.qq.com/weread/cover/99/cpPlatform_4EmWn1TJDGACg6VGsw6mfr/t6_cpPlatform_4EmWn1TJDGACg6VGsw6mfr.jpg",
+      "link": "https://weread.qq.com/web/reader/a4832fb0813ab77b5g0161ff",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1773714966,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43379389",
+      "type": "ebook",
+      "title": "芥川龙之介小说精选",
+      "author": "[日]芥川龙之介",
+      "cover": "https://cdn.weread.qq.com/weread/cover/42/YueWen_43379389/t6_YueWen_43379389.jpg",
+      "link": "https://weread.qq.com/web/reader/2c6323007295eabd2c64d59",
+      "category": "文学-经典作品",
+      "finished": false,
+      "lastRead": 1773586381,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "26435427",
+      "type": "ebook",
+      "title": "生死疲劳【中国诺奖得主代表作】",
+      "author": "莫言",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/yuewen_26435427/t6_yuewen_264354271701758059.jpg",
+      "link": "https://weread.qq.com/web/reader/c2f320f071935f63c2f1313",
+      "category": "精品小说-年代小说",
+      "finished": false,
+      "lastRead": 1773585816,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300192536",
+      "type": "ebook",
+      "title": "少数派报告",
+      "author": "[美]菲利普·迪克",
+      "cover": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_wq8fzkm1jm5ih9yzcdxzsi/t6_cpplatform_wq8fzkm1jm5ih9yzcdxzsi1768789794.jpg",
+      "link": "https://weread.qq.com/web/reader/76632250813abb1b5g016298",
+      "category": "精品小说-科幻小说",
+      "finished": false,
+      "lastRead": 1773585717,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "849134",
+      "type": "ebook",
+      "title": "金色梦乡（同名电影原著）",
+      "author": "伊坂幸太郎",
+      "cover": "https://cdn.weread.qq.com/weread/cover/65/YueWen_849134/t6_YueWen_849134.jpg",
+      "link": "https://weread.qq.com/web/reader/7f132a105cf4ee7f1e8ac79",
+      "category": "精品小说-治愈小说",
+      "finished": false,
+      "lastRead": 1773581447,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "567360",
+      "type": "ebook",
+      "title": "灿烂千阳",
+      "author": "卡勒德·胡赛尼",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/360/567360/t6_567360.jpg",
+      "link": "https://weread.qq.com/web/reader/8e4325c058a8408e4894ef4",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1773581442,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300046691",
+      "type": "ebook",
+      "title": "夜莺",
+      "author": "克莉丝汀·汉娜",
+      "cover": "https://cdn.weread.qq.com/weread/cover/69/cpplatform_qmht7qyi3vyps36avf36hp/t6_cpplatform_qmht7qyi3vyps36avf36hp1674023080.jpg",
+      "link": "https://weread.qq.com/web/reader/89932bb0813ab78bdg011449",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1773581415,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "814146",
+      "type": "ebook",
+      "title": "一个叫欧维的男人决定去死（同名电影原著）",
+      "author": "弗雷德里克·巴克曼",
+      "cover": "https://cdn.weread.qq.com/weread/cover/16/yuewen_814146/t6_yuewen_8141461689328417.jpg",
+      "link": "https://weread.qq.com/web/reader/04832c405c6c4204842b439",
+      "category": "精品小说-治愈小说",
+      "finished": false,
+      "lastRead": 1773581407,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300117397",
+      "type": "ebook",
+      "title": "恶女的告白（（又名：漫长的午后））",
+      "author": "[日]叶真中显",
+      "cover": "https://cdn.weread.qq.com/weread/cover/7/cpplatform_j222hnf5hzkyvspmxgtekl/t6_cpplatform_j222hnf5hzkyvspmxgtekl1728726362.jpg",
+      "link": "https://weread.qq.com/web/reader/72b32170813ab945bg017ab8",
+      "category": "精品小说-女性小说",
+      "finished": false,
+      "lastRead": 1773581331,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300117873",
+      "type": "ebook",
+      "title": "失控的照护",
+      "author": "[日]叶真中显",
+      "cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_phvxwc8has7ryqedfwm7ew/t6_cpplatform_phvxwc8has7ryqedfwm7ew1729135427.jpg",
+      "link": "https://weread.qq.com/web/reader/f4d32730813ab948bg013273",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1773577247,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "35458083",
+      "type": "ebook",
+      "title": "西线无战事（同名电影原著）（果麦经典）",
+      "author": "埃里希·玛丽亚·雷马克",
+      "cover": "https://cdn.weread.qq.com/weread/cover/26/YueWen_35458083/t6_YueWen_35458083.jpg",
+      "link": "https://weread.qq.com/web/reader/df332790721d0c23df352fd",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1773462150,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "672233",
+      "type": "ebook",
+      "title": "摆渡人",
+      "author": "克莱儿·麦克福尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/29/YueWen_672233/t6_YueWen_672233.jpg",
+      "link": "https://weread.qq.com/web/reader/4e2322d05a41e94e241c4b2",
+      "category": "精品小说-玄幻小说",
+      "finished": false,
+      "lastRead": 1773461989,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300197644",
+      "type": "ebook",
+      "title": "不消费的一年",
+      "author": "[加]凯特·弗兰德斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/78/cpplatform_oszyoprsurswrbzgndxfvn/t6_cpplatform_oszyoprsurswrbzgndxfvn1773053817.jpg",
+      "link": "https://weread.qq.com/web/reader/46532970813abb3b4g0142ff",
+      "category": "个人成长-励志成长",
+      "finished": false,
+      "lastRead": 1773366117,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300192241",
+      "type": "ebook",
+      "title": "我的失业日记",
+      "author": "赛赛",
+      "cover": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_25vfzizbvas8qe3lnnccja/t6_cpplatform_25vfzizbvas8qe3lnnccja1768462967.jpg",
+      "link": "https://weread.qq.com/web/reader/dbe32cb0813abb198g01181c",
+      "category": "精品小说-纪实小说",
+      "finished": false,
+      "lastRead": 1773366109,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300120543",
+      "type": "ebook",
+      "title": "战争与和平：全四部（果麦经典）",
+      "author": "[俄]列夫·托尔斯泰",
+      "cover": "https://cdn.weread.qq.com/weread/cover/41/cpplatform_x7b11ibkjzcxpyzcfgeewf/t6_cpplatform_x7b11ibkjzcxpyzcfgeewf1731407168.jpg",
+      "link": "https://weread.qq.com/web/reader/64332a30813ab9596g013ee7",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1773365973,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "852254",
+      "type": "ebook",
+      "title": "秘密：实践版",
+      "author": "朗达·拜恩",
+      "cover": "https://cdn.weread.qq.com/weread/cover/24/YueWen_852254/t6_YueWen_852254.jpg",
+      "link": "https://weread.qq.com/web/reader/c7232bc05d011ec726ea6c8",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1773103106,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300068588",
+      "type": "ebook",
+      "title": "假如今天是生命的最后一天",
+      "author": "翡翠小太郎",
+      "cover": "https://cdn.weread.qq.com/weread/cover/9/cpplatform_h4erqqjzfpj6pm8pfhgyms/t6_cpplatform_h4erqqjzfpj6pm8pfhgyms1692776392.jpg",
+      "link": "https://weread.qq.com/web/reader/d39322d0813ab814ag018735",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1772722411,
+      "progress": null,
+      "notes": {
+        "highlights": 2,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300052100",
+      "type": "ebook",
+      "title": "成长比成功更重要：增订本",
+      "author": "凌志军",
+      "cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_qnwtcsubpowlxkt6vg6pxq/t6_cpplatform_qnwtcsubpowlxkt6vg6pxq1678703449.jpg",
+      "link": "https://weread.qq.com/web/reader/ca832090813ab7adag010fca",
+      "category": "个人成长-励志成长",
+      "finished": false,
+      "lastRead": 1772635103,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300086356",
+      "type": "ebook",
+      "title": "躲在蚊子后面的大象",
+      "author": "[德]恩斯特弗里德·哈尼希   [德]爱娃·温德勒",
+      "cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_dcnmsj225vbjrgvdrd9rqp/t6_cpplatform_dcnmsj225vbjrgvdrd9rqp1707120440.jpg",
+      "link": "https://weread.qq.com/web/reader/bfc32800813ab883bg0165f3",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1772521355,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "37544495",
+      "type": "ebook",
+      "title": "是我把你蠢哭了吗",
+      "author": "迪安·博内特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/31/YueWen_37544495/t6_YueWen_37544495.jpg",
+      "link": "https://weread.qq.com/web/reader/7d832df0723ce22f7d85e71",
+      "category": "科学技术-科学科普",
+      "finished": false,
+      "lastRead": 1772332655,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300159920",
+      "type": "ebook",
+      "title": "中国问题",
+      "author": "[英]伯特兰·罗素",
+      "cover": "https://cdn.weread.qq.com/weread/cover/32/cpplatform_v99wrrjgsmeeakwvixr8jy/t6_cpplatform_v99wrrjgsmeeakwvixr8jy1755852022.jpg",
+      "link": "https://weread.qq.com/web/reader/d1232c60813aba4f8g010353",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1772332053,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300164590",
+      "type": "ebook",
+      "title": "我们如何思维",
+      "author": "[美]约翰·杜威",
+      "cover": "https://cdn.weread.qq.com/weread/cover/68/cpplatform_frgutrtc9bvmeczswmp1ay/t6_cpplatform_frgutrtc9bvmeczswmp1ay1757923883.jpg",
+      "link": "https://weread.qq.com/web/reader/78232d00813aba6cbg010703",
+      "category": "哲学宗教-思维科学",
+      "finished": false,
+      "lastRead": 1772332045,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300079274",
+      "type": "ebook",
+      "title": "你的生命意味着什么",
+      "author": "阿尔弗雷德·阿德勒",
+      "cover": "https://cdn.weread.qq.com/weread/cover/74/cpplatform_5red56avgg71zn5ugkl1bx/t6_cpplatform_5red56avgg71zn5ugkl1bx1700721649.jpg",
+      "link": "https://weread.qq.com/web/reader/8b132bc0813ab8577g014b2d",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 1772331996,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300042730",
+      "type": "ebook",
+      "title": "为什么大象不听话：人类行为背后的25个心理学原理",
+      "author": "魏知超",
+      "cover": "https://cdn.weread.qq.com/weread/cover/42/cpPlatform_ry36eofZN4Ly8qiopMjVp4/t6_cpPlatform_ry36eofZN4Ly8qiopMjVp4.jpg",
+      "link": "https://weread.qq.com/web/reader/5f3329f0813ab7731g010015",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 1772331982,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "33800862",
+      "type": "ebook",
+      "title": "少有人走的路：心智成熟的旅程",
+      "author": "M.斯科特·派克",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/862/33800862/t6_33800862.jpg",
+      "link": "https://weread.qq.com/web/reader/6fa32ab07203c29e6fa3a18",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1772275633,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "29589374",
+      "type": "ebook",
+      "title": "人人都可以学的顶级思维法（套装共7册）",
+      "author": "安东尼·塔斯加尔 西蒙·泰勒等",
+      "cover": "https://cdn.weread.qq.com/weread/cover/17/YueWen_29589374/t6_YueWen_29589374.jpg",
+      "link": "https://weread.qq.com/web/reader/57e322f071c37f7e57e9d3d",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1772113268,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300056380",
+      "type": "ebook",
+      "title": "从负债2000万到心想事成每一天",
+      "author": "小池浩",
+      "cover": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_ustzlbuivbtnfyevhchhqp/t6_cpplatform_ustzlbuivbtnfyevhchhqp1681982038.jpg",
+      "link": "https://weread.qq.com/web/reader/86532b70813ab7c86g010e11",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1771898839,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300018022",
+      "type": "ebook",
+      "title": "不要挑战人性",
+      "author": "潘楷文",
+      "cover": "https://cdn.weread.qq.com/weread/cover/22/3300018022/t6_3300018022.jpg",
+      "link": "https://weread.qq.com/web/reader/01f32e20813ab6d8ag012e3e",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 1771511864,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300101084",
+      "type": "ebook",
+      "title": "创造力：跳出惯性思维去思考",
+      "author": "[美]吉姆·兰德尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/34/cpplatform_hxs83mnyjistrvijhzbneo/t6_cpplatform_hxs83mnyjistrvijhzbneo1716793514.jpg",
+      "link": "https://weread.qq.com/web/reader/80132af0813ab8dfcg014878",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1771511353,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300053146",
+      "type": "ebook",
+      "title": "爆发式成长：个人突围的14个底层逻辑",
+      "author": "李栩然",
+      "cover": "https://cdn.weread.qq.com/weread/cover/17/cpplatform_8bvyf1gv7gvk41acgtb43c/t6_cpplatform_8bvyf1gv7gvk41acgtb43c1679377736.jpg",
+      "link": "https://weread.qq.com/web/reader/6ea32080813ab7b42g01611c",
+      "category": "哲学宗教-思维科学",
+      "finished": false,
+      "lastRead": 1771511147,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "23552633",
+      "type": "ebook",
+      "title": "权力密码：当历史遇见经济学",
+      "author": "王伟",
+      "cover": "https://cdn.weread.qq.com/weread/cover/97/YueWen_23552633/t6_YueWen_23552633.jpg",
+      "link": "https://weread.qq.com/web/reader/90432a70716762799041e0b",
+      "category": "历史-历史读物",
+      "finished": true,
+      "lastRead": 1771495319,
+      "progress": null,
+      "notes": {
+        "highlights": 21,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300017152",
+      "type": "ebook",
+      "title": "元认知：如何成为洞悉底层逻辑的思维高手",
+      "author": "吴常",
+      "cover": "https://cdn.weread.qq.com/weread/cover/52/3300017152/t6_3300017152.jpg",
+      "link": "https://weread.qq.com/web/reader/30a32180813ab6d33g01227f",
+      "category": "经济理财-管理",
+      "finished": false,
+      "lastRead": 1771467147,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300133275",
+      "type": "ebook",
+      "title": "做一个情绪稳定的成年人",
+      "author": "星蔓编著",
+      "cover": "https://cdn.weread.qq.com/weread/cover/18/cpplatform_stukeekdxfhcwkrzdztecv/t6_cpplatform_stukeekdxfhcwkrzdztecv1739353747.jpg",
+      "link": "https://weread.qq.com/web/reader/41d32160813ab9a8fg015b84",
+      "category": "个人成长-情绪心灵",
+      "finished": false,
+      "lastRead": 1771293958,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300124331",
+      "type": "ebook",
+      "title": "边界感：人和人之间最舒服的距离",
+      "author": "肖卫",
+      "cover": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_kbhjzeyexmfx9psd2u7ffs/t6_cpplatform_kbhjzeyexmfx9psd2u7ffs1733731754.jpg",
+      "link": "https://weread.qq.com/web/reader/e6332d50813ab9711g011eaf",
+      "category": "个人成长-沟通表达",
+      "finished": false,
+      "lastRead": 1770993424,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300091455",
+      "type": "ebook",
+      "title": "做一个内核稳定的成年人",
+      "author": "风墟",
+      "cover": "https://cdn.weread.qq.com/weread/cover/15/cpplatform_7cphyfgkwt5cmxk8w21hzp/t6_cpplatform_7cphyfgkwt5cmxk8w21hzp1711011314.jpg",
+      "link": "https://weread.qq.com/web/reader/b19320f0813ab8a39g01534e",
+      "category": "个人成长-情绪心灵",
+      "finished": false,
+      "lastRead": 1770955634,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300176709",
+      "type": "ebook",
+      "title": "人有人的用处：控制论和社会",
+      "author": "[美]N·维纳",
+      "cover": "https://cdn.weread.qq.com/weread/cover/51/cpplatform_slbzmmtseu186u4v6npqra/t6_cpplatform_slbzmmtseu186u4v6npqra1762827500.jpg",
+      "link": "https://weread.qq.com/web/reader/3d2328b0813abab86g019515",
+      "category": "社会文化-社科",
+      "finished": false,
+      "lastRead": 1770944562,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "547153",
+      "type": "ebook",
+      "title": "欧亨利短篇小说精选（果麦经典）",
+      "author": "[美]欧·亨利",
+      "cover": "https://cdn.weread.qq.com/weread/cover/35/YueWen_547153/t6_YueWen_547153.jpg",
+      "link": "https://weread.qq.com/web/reader/c5a329b0585951c5a1521e1",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1770893267,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300181463",
+      "type": "ebook",
+      "title": "西班牙简史",
+      "author": "[美]玛丽·普拉特·帕米利",
+      "cover": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_7emjhabovdjmzlknscr5zt/t6_cpplatform_7emjhabovdjmzlknscr5zt1764837660.jpg",
+      "link": "https://weread.qq.com/web/reader/96e32aa0813abad62g0138ae",
+      "category": "历史-世界史",
+      "finished": false,
+      "lastRead": 1770786894,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300129936",
+      "type": "ebook",
+      "title": "金钱心理学：让钱为你工作",
+      "author": "[英]维姬·雷诺",
+      "cover": "https://cdn.weread.qq.com/weread/cover/58/cpplatform_a29rbz2trhs9fb7bp9eayp/t6_cpplatform_a29rbz2trhs9fb7bp9eayp1736244419.jpg",
+      "link": "https://weread.qq.com/web/reader/a9f327d0813ab9941g016f27",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1770640689,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300113264",
+      "type": "ebook",
+      "title": "朝贡圈",
+      "author": "张宏杰",
+      "cover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_dqp69wnyad5qkxdt5kaver/t6_cpplatform_dqp69wnyad5qkxdt5kaver1724920721.jpg",
+      "link": "https://weread.qq.com/web/reader/ed7320c0813ab92beg014259",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1770637407,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "26843109",
+      "type": "ebook",
+      "title": "逻辑的力量",
+      "author": "郑乐隽",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/109/26843109/t6_26843109.jpg",
+      "link": "https://weread.qq.com/web/reader/00832720719997e5008fc7f",
+      "category": "哲学宗教-逻辑学",
+      "finished": false,
+      "lastRead": 1770628672,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300048646",
+      "type": "ebook",
+      "title": "逻辑学导论（第15版）",
+      "author": "欧文·M.柯匹 卡尔·科恩 维克多·罗迪奇",
+      "cover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_u4p5habtcaxxjanfqnmvwy/t6_cpplatform_u4p5habtcaxxjanfqnmvwy1676355720.jpg",
+      "link": "https://weread.qq.com/web/reader/f9f32f80813ab7980g016bfa",
+      "category": "哲学宗教-逻辑学",
+      "finished": false,
+      "lastRead": 1770625864,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "26572786",
+      "type": "ebook",
+      "title": "我师兄实在太稳健了（敖瑞鹏主演《师兄太稳健》影视原著）",
+      "author": "言归正传",
+      "cover": "https://cdn.weread.qq.com/weread/cover/45/yuewen_26572786/t6_yuewen_265727861787111863.jpg",
+      "link": "https://weread.qq.com/web/reader/74632fe0719577f2746ed5e",
+      "category": "男生小说-东方玄幻",
+      "finished": false,
+      "lastRead": 1770481861,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300076186",
+      "type": "ebook",
+      "title": "语言塑造人类思维",
+      "author": "维奥丽卡·玛丽安",
+      "cover": "https://cdn.weread.qq.com/weread/cover/6/cpplatform_c8pwqqtcjzsa9stf12d2kn/t6_cpplatform_c8pwqqtcjzsa9stf12d2kn1698823400.jpg",
+      "link": "https://weread.qq.com/web/reader/ab832740813ab8442g0168c8",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1770481813,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300192769",
+      "type": "ebook",
+      "title": "不要为打翻的牛奶哭泣",
+      "author": "赵约翰",
+      "cover": "https://cdn.weread.qq.com/weread/cover/19/cpplatform_5cuu4wuxh4rpbhz3rmhdjn/t6_cpplatform_5cuu4wuxh4rpbhz3rmhdjn1768895608.jpg",
+      "link": "https://weread.qq.com/web/reader/7a832bd0813abb1ccg019612",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1770307656,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300190808",
+      "type": "ebook",
+      "title": "极权主义的起源（第2版）",
+      "author": "[美]汉娜·阿伦特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/99/cpplatform_cmaqhjtwkbv9czckp4bdeo/t6_cpplatform_cmaqhjtwkbv9czckp4bdeo1767758057.jpg",
+      "link": "https://weread.qq.com/web/reader/c6932490813abb108g0185c0",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1770025989,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "856796",
+      "type": "ebook",
+      "title": "人是一根会思考的芦苇",
+      "author": "[法]帕斯卡",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/796/856796/t6_856796.jpg",
+      "link": "https://weread.qq.com/web/reader/d9e327505d12dcd9ed095e3",
+      "category": "哲学宗教-哲学读物",
+      "finished": false,
+      "lastRead": 1770025963,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300094405",
+      "type": "ebook",
+      "title": "荒诞医学史",
+      "author": "[美]莉迪亚·康 内特·彼得森",
+      "cover": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_a1t1prq8wnteephfs7qjav/t6_cpplatform_a1t1prq8wnteephfs7qjav1713853011.jpg",
+      "link": "https://weread.qq.com/web/reader/71032700813ab8b60g0152ca",
+      "category": "科学技术-科学科普",
+      "finished": false,
+      "lastRead": 1770025931,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300138807",
+      "type": "ebook",
+      "title": "慢即是快：一个投资者20年的思考与实践",
+      "author": "三年一倍",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_i7zd4ubxj827ckrkmztbxv/t6_cpplatform_i7zd4ubxj827ckrkmztbxv1743070577.jpg",
+      "link": "https://weread.qq.com/web/reader/fb2329d0813ab9cb8g0171c0",
+      "category": "经济理财-理财",
+      "finished": false,
+      "lastRead": 1770025413,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300139691",
+      "type": "ebook",
+      "title": "套中人（轻经典）",
+      "author": "[俄]契诃夫",
+      "cover": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_emzv5wmxjegpk45wn8j1v3/t6_cpplatform_emzv5wmxjegpk45wn8j1v31743575143.jpg",
+      "link": "https://weread.qq.com/web/reader/5a232b90813ab9d11g011772",
+      "category": "精品小说-社会小说",
+      "finished": false,
+      "lastRead": 1770025407,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "34514633",
+      "type": "ebook",
+      "title": "焦虑缓解手册：如何从焦虑中自愈",
+      "author": "埃德蒙·伯恩 阿伦·布朗斯坦 洛娜·加拉诺",
+      "cover": "https://cdn.weread.qq.com/weread/cover/87/YueWen_34514633/t6_YueWen_34514633.jpg",
+      "link": "https://weread.qq.com/web/reader/5eb32690720ea6c95ebd8be",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 1770025368,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "36982930",
+      "type": "ebook",
+      "title": "鬼才作家乙一小说集（全4册）",
+      "author": "[日]乙一",
+      "cover": "https://cdn.weread.qq.com/weread/cover/58/YueWen_36982930/t6_YueWen_36982930.jpg",
+      "link": "https://weread.qq.com/web/reader/fe63247072345092fe6dd94",
+      "category": "文学-经典作品",
+      "finished": false,
+      "lastRead": 1770020070,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "23691344",
+      "type": "ebook",
+      "title": "大而不倒",
+      "author": "安德鲁·罗斯·索尔金",
+      "cover": "https://cdn.weread.qq.com/weread/cover/78/YueWen_23691344/t6_YueWen_23691344.jpg",
+      "link": "https://weread.qq.com/web/reader/cca323f071698050cca9cf8",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1769674362,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300113138",
+      "type": "ebook",
+      "title": "黄仁勋传（芯片之王和他的英伟达商业帝国）",
+      "author": "刘与白",
+      "cover": "https://cdn.weread.qq.com/weread/cover/17/cpplatform_gym5nbrcblmc5itmarmnzv/t6_cpplatform_gym5nbrcblmc5itmarmnzv1724829289.jpg",
+      "link": "https://weread.qq.com/web/reader/1ad321b0813ab92b1g018ad4",
+      "category": "经济理财-商业",
+      "finished": false,
+      "lastRead": 1769400405,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "27256052",
+      "type": "ebook",
+      "title": "人生十二法则：直面混乱与痛苦",
+      "author": "乔丹·彼得森",
+      "cover": "https://cdn.weread.qq.com/weread/cover/47/YueWen_27256052/t6_YueWen_27256052.jpg",
+      "link": "https://weread.qq.com/web/reader/74732e20719fe4f4747f8f4",
+      "category": "心理-积极心理学",
+      "finished": false,
+      "lastRead": 1769158134,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "28027842",
+      "type": "ebook",
+      "title": "万族之劫",
+      "author": "老鹰吃小鸡",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/842/28027842/t6_28027842.jpg",
+      "link": "https://weread.qq.com/web/reader/ef0323d071ababc2ef0aeba",
+      "category": "男生小说-都市小说",
+      "finished": false,
+      "lastRead": 1769053106,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "20775192",
+      "type": "ebook",
+      "title": "新安诡事",
+      "author": "沧海一鼠",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/192/20775192/t6_20775192.jpg",
+      "link": "https://weread.qq.com/web/reader/e1a32890713d0118e1a7f11",
+      "category": "女生小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1769053052,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "39006481",
+      "type": "ebook",
+      "title": "不科学御兽",
+      "author": "轻泉流响",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/481/39006481/t6_39006481.jpg",
+      "link": "https://weread.qq.com/web/reader/02832a107253311102810bc",
+      "category": "男生小说-奇幻异界",
+      "finished": false,
+      "lastRead": 1769052941,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "31617576",
+      "type": "ebook",
+      "title": "夜的命名术（同名动画原著）",
+      "author": "会说话的肘子",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/576/31617576/t6_31617576.jpg",
+      "link": "https://weread.qq.com/web/reader/c8e322c071e27228c8e605b",
+      "category": "男生小说-异术超能",
+      "finished": false,
+      "lastRead": 1769052885,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "34792501",
+      "type": "ebook",
+      "title": "穿越八年才出道",
+      "author": "茗夜",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/501/34792501/t6_34792501.jpg",
+      "link": "https://weread.qq.com/web/reader/958322a07212e4359589e61",
+      "category": "男生小说-都市小说",
+      "finished": false,
+      "lastRead": 1769052843,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "484840",
+      "type": "ebook",
+      "title": "大道争锋",
+      "author": "误道者",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/840/484840/t6_484840.jpg",
+      "link": "https://weread.qq.com/web/reader/5a5321405765e85a5a28a1b",
+      "category": "男生小说-仙侠武侠",
+      "finished": false,
+      "lastRead": 1769052795,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "462952",
+      "type": "ebook",
+      "title": "将夜",
+      "author": "猫腻",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/952/462952/t6_462952.jpg",
+      "link": "https://weread.qq.com/web/reader/d0d32c90571068d0dd184df",
+      "category": "男生小说-东方玄幻",
+      "finished": false,
+      "lastRead": 1769052778,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "22670894",
+      "type": "ebook",
+      "title": "李嘉诚传：逆境与抉择",
+      "author": "李阳",
+      "cover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_22670894/t6_YueWen_22670894.jpg",
+      "link": "https://weread.qq.com/web/reader/120326b07159ee2e12052d4",
+      "category": "经济理财-商业",
+      "finished": false,
+      "lastRead": 1768985955,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300163793",
+      "type": "ebook",
+      "title": "君主论",
+      "author": "[意]马基雅维利著",
+      "cover": "https://cdn.weread.qq.com/weread/cover/92/cpplatform_kykuf6wihorewgzzcewiyf/t6_cpplatform_kykuf6wihorewgzzcewiyf1757476121.jpg",
+      "link": "https://weread.qq.com/web/reader/eb732b80813aba67bg0133c5",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1768919362,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300183884",
+      "type": "ebook",
+      "title": "神偷四爷",
+      "author": "有毛僧",
+      "cover": "https://cdn.weread.qq.com/weread/cover/76/cpplatform_xos6xmzcxmjy1x2hgcb3t7/t6_cpplatform_xos6xmzcxmjy1x2hgcb3t71768211584.jpg",
+      "link": "https://weread.qq.com/web/reader/e4132270813abae54g014ee5",
+      "category": "精品小说-社会小说",
+      "finished": true,
+      "lastRead": 1768919323,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43014772",
+      "type": "ebook",
+      "title": "青山",
+      "author": "会说话的肘子",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/772/43014772/t6_43014772.jpg",
+      "link": "https://weread.qq.com/web/reader/0fa32e3072905a740fa747c",
+      "category": "男生小说-东方玄幻",
+      "finished": false,
+      "lastRead": 1768817812,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "32576776",
+      "type": "ebook",
+      "title": "叩问仙道",
+      "author": "雨打青石",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/776/32576776/t6_32576776.jpg",
+      "link": "https://weread.qq.com/web/reader/c6932c8071f11508c699035",
+      "category": "男生小说-仙侠武侠",
+      "finished": false,
+      "lastRead": 1768816452,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300160120",
+      "type": "ebook",
+      "title": "一品布衣（热门同名影视原著|日更中）",
+      "author": "李破山",
+      "cover": "https://cdn.weread.qq.com/weread/cover/33/cpplatform_8ply38jk9d4kcxeqjb2cnu/t6_cpplatform_8ply38jk9d4kcxeqjb2cnu1756102610.jpg",
+      "link": "https://weread.qq.com/web/reader/7f032970813aba50cg010801",
+      "category": "男生小说-历史架空",
+      "finished": false,
+      "lastRead": 1768816438,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "818760",
+      "type": "ebook",
+      "title": "九星霸体诀",
+      "author": "平凡魔术师",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/760/818760/t6_818760.jpg",
+      "link": "https://weread.qq.com/web/reader/073325905c7e4807313387e",
+      "category": "男生小说-奇幻异界",
+      "finished": false,
+      "lastRead": 1768816426,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300021861",
+      "type": "ebook",
+      "title": "李嘉诚传",
+      "author": "王晶 陈润",
+      "cover": "https://cdn.weread.qq.com/weread/cover/61/3300021861/t6_3300021861.jpg",
+      "link": "https://weread.qq.com/web/reader/e3b32090813ab6f0ag011299",
+      "category": "经济理财-商业",
+      "finished": false,
+      "lastRead": 1768622941,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300096458",
+      "type": "ebook",
+      "title": "政府论（上、下篇）",
+      "author": "[英]洛克",
+      "cover": "https://cdn.weread.qq.com/weread/cover/24/cpplatform_ohzxmvw3m6nbdtby284c2b/t6_cpplatform_ohzxmvw3m6nbdtby284c2b1740969872.jpg",
+      "link": "https://weread.qq.com/web/reader/5c832060813ab8c2dg018e58",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1768551780,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "41721976",
+      "type": "ebook",
+      "title": "悲惨世界（全二册）（著名翻译家李玉民权威译作）",
+      "author": "[法]维克多·雨果",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/976/41721976/t6_41721976.jpg",
+      "link": "https://weread.qq.com/web/reader/e7f32ee0727ca078e7fb63e",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1768551748,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300116264",
+      "type": "ebook",
+      "title": "论法的精神（中法双语版）",
+      "author": "[法]孟德斯鸠",
+      "cover": "https://cdn.weread.qq.com/weread/cover/32/cpplatform_u7q4xgx7q1grlf3cfxfext/t6_cpplatform_u7q4xgx7q1grlf3cfxfext1727343271.jpg",
+      "link": "https://weread.qq.com/web/reader/b0932880813ab93eag014cbf",
+      "category": "社会文化-法律",
+      "finished": false,
+      "lastRead": 1768551741,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300135917",
+      "type": "ebook",
+      "title": "项链（轻经典）",
+      "author": "[法]莫泊桑",
+      "cover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_gtmwsrfz7pikl7g96fuwj2/t6_cpplatform_gtmwsrfz7pikl7g96fuwj21752237739.jpg",
+      "link": "https://weread.qq.com/web/reader/6fd32240813ab9b97g017662",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1768551722,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300138316",
+      "type": "ebook",
+      "title": "父亲的解放日志（豆瓣2025年度外国文学TOP1）",
+      "author": "[韩]郑智我",
+      "cover": "https://cdn.weread.qq.com/weread/cover/20/cpplatform_qxxyjccxkhhaf919n29pah/t6_cpplatform_qxxyjccxkhhaf919n29pah1742891225.jpg",
+      "link": "https://weread.qq.com/web/reader/325320f0813ab9c87g0162ef",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1768551707,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300017554",
+      "type": "ebook",
+      "title": "知道做到：跃迁式学习",
+      "author": "彼得•霍林斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/54/3300017554/t6_3300017554.jpg",
+      "link": "https://weread.qq.com/web/reader/37032360813ab6d5bg014fdd",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1768551189,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300096645",
+      "type": "ebook",
+      "title": "满分学习法：从高效学习到满分人生",
+      "author": "柳柳",
+      "cover": "https://cdn.weread.qq.com/weread/cover/89/cpplatform_4rzgbf3yd3ittunjadruos/t6_cpplatform_4rzgbf3yd3ittunjadruos1714289404.jpg",
+      "link": "https://weread.qq.com/web/reader/4b132970813ab8c40g015ec2",
+      "category": "教育学习-教育",
+      "finished": false,
+      "lastRead": 1768551049,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300108176",
+      "type": "ebook",
+      "title": "向学习要结果：用知识解决实际问题",
+      "author": "齐洁",
+      "cover": "https://cdn.weread.qq.com/weread/cover/69/cpplatform_jfeqf2q4rn7cyk6irftfsk/t6_cpplatform_jfeqf2q4rn7cyk6irftfsk1721896200.jpg",
+      "link": "https://weread.qq.com/web/reader/c0332240813ab90c1g01640a",
+      "category": "教育学习-教育",
+      "finished": false,
+      "lastRead": 1768551035,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "40735280",
+      "type": "ebook",
+      "title": "费尔德曼发展心理学（原书第4版）",
+      "author": "罗伯特·S. 费尔德曼",
+      "cover": "https://cdn.weread.qq.com/weread/cover/57/YueWen_40735280/t6_YueWen_40735280.jpg",
+      "link": "https://weread.qq.com/web/reader/7cf32820726d92307cfc1b7",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1768446112,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "823432",
+      "type": "ebook",
+      "title": "持续的幸福",
+      "author": "马丁·塞利格曼",
+      "cover": "https://cdn.weread.qq.com/weread/cover/58/YueWen_823432/t6_YueWen_823432.jpg",
+      "link": "https://weread.qq.com/web/reader/8e3325605c90888e3b6e7a8",
+      "category": "心理-积极心理学",
+      "finished": false,
+      "lastRead": 1768445246,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300138066",
+      "type": "ebook",
+      "title": "历史人物的B面",
+      "author": "历史喵",
+      "cover": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_mhuvcoswkf8edk5chvyx1h/t6_cpplatform_mhuvcoswkf8edk5chvyx1h1742379950.jpg",
+      "link": "https://weread.qq.com/web/reader/56832760813ab9c6eg016ed2",
+      "category": "历史-历史读物",
+      "finished": false,
+      "lastRead": 1768357163,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300058701",
+      "type": "ebook",
+      "title": "胡思乱想消除指南：用认知行为策略走出情绪困境",
+      "author": "萨拉·埃德尔曼",
+      "cover": "https://cdn.weread.qq.com/weread/cover/96/cpplatform_vrvpu4f37t72swowokbgrl/t6_cpplatform_vrvpu4f37t72swowokbgrl1683888125.jpg",
+      "link": "https://weread.qq.com/web/reader/991320b0813ab7d6eg01136e",
+      "category": "心理-积极心理学",
+      "finished": false,
+      "lastRead": 1768277677,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "38818164",
+      "type": "ebook",
+      "title": "罪与罚",
+      "author": "[俄]陀思妥耶夫斯基",
+      "cover": "https://cdn.weread.qq.com/weread/cover/53/YueWen_38818164/t6_YueWen_38818164.jpg",
+      "link": "https://weread.qq.com/web/reader/cb73280072505174cb7179d",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1768272096,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "41077379",
+      "type": "ebook",
+      "title": "简爱（世界十大文学名著）",
+      "author": "夏洛蒂·勃朗特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/42/YueWen_41077379/t6_YueWen_41077379.jpg",
+      "link": "https://weread.qq.com/web/reader/99a32fa07272ca8399a5aff",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1768272015,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "32072431",
+      "type": "ebook",
+      "title": "双城记（经典译林）",
+      "author": "[英]查尔斯·狄更斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/98/YueWen_32072431/t6_YueWen_32072431.jpg",
+      "link": "https://weread.qq.com/web/reader/88b32ee071e962ef88b5d03",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 1768271988,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300064234",
+      "type": "ebook",
+      "title": "金钱心理学：财富、人性和幸福的永恒真相",
+      "author": "摩根·豪泽尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/84/cpplatform_5w7t185qhfj9qfxdrrfytz/t6_cpplatform_5w7t185qhfj9qfxdrrfytz1689561935.jpg",
+      "link": "https://weread.qq.com/web/reader/6ab326d0813ab7f97g014662",
+      "category": "心理-积极心理学",
+      "finished": false,
+      "lastRead": 1768271615,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300107468",
+      "type": "ebook",
+      "title": "大脑能量",
+      "author": "[美]克里斯托弗·帕尔默",
+      "cover": "https://cdn.weread.qq.com/weread/cover/27/cpplatform_egjv2jldpyc89lofruvzr5/t6_cpplatform_egjv2jldpyc89lofruvzr51721703896.jpg",
+      "link": "https://weread.qq.com/web/reader/e50329c0813ab907ag018fc9",
+      "category": "医学健康-医学",
+      "finished": false,
+      "lastRead": 1768186219,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300014119",
+      "type": "ebook",
+      "title": "不确定世界的理性选择:判断与决策心理学（第2版）",
+      "author": "雷德·海斯蒂     罗宾·道斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/19/3300014119/t6_3300014119.jpg",
+      "link": "https://weread.qq.com/web/reader/7f732710813ab6c03g019848",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1768008719,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43279047",
+      "type": "ebook",
+      "title": "概率思维预测未来",
+      "author": "威廉·庞德斯通",
+      "cover": "https://cdn.weread.qq.com/weread/cover/46/YueWen_43279047/t6_YueWen_43279047.jpg",
+      "link": "https://weread.qq.com/web/reader/a3632720729462c7a363478",
+      "category": "哲学宗教-逻辑学",
+      "finished": false,
+      "lastRead": 1768008551,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300115186",
+      "type": "ebook",
+      "title": "掌控大脑习惯：15个习惯，提升大脑的记忆力",
+      "author": "[日]筑山节",
+      "cover": "https://cdn.weread.qq.com/weread/cover/72/cpplatform_a7n3bdbfscab6j2mkeqkzr/t6_cpplatform_a7n3bdbfscab6j2mkeqkzr1726650216.jpg",
+      "link": "https://weread.qq.com/web/reader/705328d0813ab937eg016977",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1767924685,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "598731",
+      "type": "ebook",
+      "title": "小病小痛，拉伸搞定",
+      "author": "田纪钧",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/731/598731/t6_598731.jpg",
+      "link": "https://weread.qq.com/web/reader/98732e705922cb9879358ba",
+      "category": "生活百科-体育",
+      "finished": false,
+      "lastRead": 1767924232,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "41807702",
+      "type": "ebook",
+      "title": "精准拉伸：低头族和电脑族一学就会的脊椎养护练习",
+      "author": "《健康活力唤醒》编写组",
+      "cover": "https://cdn.weread.qq.com/weread/cover/59/YueWen_41807702/t6_YueWen_41807702.jpg",
+      "link": "https://weread.qq.com/web/reader/fc4328e0727def56fc4af9c",
+      "category": "医学健康-健康",
+      "finished": false,
+      "lastRead": 1767847199,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "40638633",
+      "type": "ebook",
+      "title": "噪声：《思考快与慢》作者全新力作",
+      "author": "[美]丹尼尔·卡尼曼 [法]奥利维耶·西博尼 [美]卡斯·R.桑斯坦",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/633/40638633/t6_40638633.jpg",
+      "link": "https://weread.qq.com/web/reader/d33327e0726c18a9d335459",
+      "category": "心理-认知与行为",
+      "finished": true,
+      "lastRead": 1767847104,
+      "progress": null,
+      "notes": {
+        "highlights": 112,
+        "thoughts": 83,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "26187808",
+      "type": "ebook",
+      "title": "拉伸：适合全家人的健身与运动",
+      "author": "杨克新",
+      "cover": "https://cdn.weread.qq.com/weread/cover/16/YueWen_26187808/t6_YueWen_26187808.jpg",
+      "link": "https://weread.qq.com/web/reader/48c32880718f982048c89d8",
+      "category": "生活百科-体育",
+      "finished": false,
+      "lastRead": 1767844820,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300116634",
+      "type": "ebook",
+      "title": "运动拉伸实用手册",
+      "author": "陈方灿主编",
+      "cover": "https://cdn.weread.qq.com/weread/cover/42/cpplatform_num81bmvvxnaknwuutm21f/t6_cpplatform_num81bmvvxnaknwuutm21f1727679816.jpg",
+      "link": "https://weread.qq.com/web/reader/d8032630813ab940fg014032",
+      "category": "生活百科-体育",
+      "finished": false,
+      "lastRead": 1767844793,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "25623475",
+      "type": "ebook",
+      "title": "黑天鹅",
+      "author": "纳西姆·尼古拉斯·塔勒布",
+      "cover": "https://cdn.weread.qq.com/weread/cover/42/YueWen_25623475/t6_YueWen_25623475.jpg",
+      "link": "https://weread.qq.com/web/reader/32e32c707186fbb332e15c0",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1767697066,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300044059",
+      "type": "ebook",
+      "title": "认识大脑",
+      "author": "莉莎·费德曼·巴瑞特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/66/cpPlatform_i2if4ot1gsuWJcx7y171ta/t6_cpPlatform_i2if4ot1gsuWJcx7y171ta.jpg",
+      "link": "https://weread.qq.com/web/reader/fa332ef0813ab77b5g019258",
+      "category": "医学健康-医学",
+      "finished": false,
+      "lastRead": 1767697047,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "26675517",
+      "type": "ebook",
+      "title": "王阳明全集",
+      "author": "[明]王守仁",
+      "cover": "https://cdn.weread.qq.com/weread/cover/95/YueWen_26675517/t6_YueWen_26675517.jpg",
+      "link": "https://weread.qq.com/web/reader/3ec328c07197093d3ec6b84",
+      "category": "历史-历史读物",
+      "finished": false,
+      "lastRead": 1767695420,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "32351714",
+      "type": "ebook",
+      "title": "人体简史",
+      "author": "[英]比尔·布莱森",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/714/32351714/t6_32351714.jpg",
+      "link": "https://weread.qq.com/web/reader/698326e071eda5e269837c3",
+      "category": "社会文化-社科",
+      "finished": false,
+      "lastRead": 1767597524,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 1,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300136230",
+      "type": "ebook",
+      "title": "理解人性（知书经典）",
+      "author": "[奥]阿尔弗雷德·阿德勒",
+      "cover": "https://cdn.weread.qq.com/weread/cover/1/cpplatform_meaxmp69cv4uwwmpld2m54/t6_cpplatform_meaxmp69cv4uwwmpld2m541741171213.jpg",
+      "link": "https://weread.qq.com/web/reader/79632da0813ab9bb7g010002",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 1767502322,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "924944",
+      "type": "ebook",
+      "title": "台湾往事",
+      "author": "凤凰书品编著",
+      "cover": "https://cdn.weread.qq.com/weread/cover/10/yuewen_924944/t6_yuewen_9249441794365980.jpg",
+      "link": "https://weread.qq.com/web/reader/45f320105e1d1045fbdb873",
+      "category": "历史-口述史",
+      "finished": false,
+      "lastRead": 1767257201,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300096530",
+      "type": "ebook",
+      "title": "何以帝国：从财政视角再看中华史（罗振宇、包刚升、梁捷诚挚推荐）",
+      "author": "刘守刚",
+      "cover": "https://cdn.weread.qq.com/weread/cover/89/cpplatform_glbnnkvp9kvmxryh3auzda/t6_cpplatform_glbnnkvp9kvmxryh3auzda1714114737.jpg",
+      "link": "https://weread.qq.com/web/reader/51f32de0813ab8c35g01089a",
+      "category": "历史-中国古代",
+      "finished": true,
+      "lastRead": 1766654602,
+      "progress": null,
+      "notes": {
+        "highlights": 27,
+        "thoughts": 13,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300026292",
+      "type": "ebook",
+      "title": "从神经科学到心理学系列套装（13册）",
+      "author": "［加］迈克尔·加扎尼加 ［美］芭芭拉·特沃斯基 ［葡］安东尼奥·达马西奥 等",
+      "cover": "https://cdn.weread.qq.com/weread/cover/67/cpPlatform_i9pd5brE6cQ2px9ZzDoBE1/t6_cpPlatform_i9pd5brE6cQ2px9ZzDoBE1.jpg",
+      "link": "https://weread.qq.com/web/reader/2e632510813ab70c5g012953",
+      "category": "心理-社会心理学",
+      "finished": false,
+      "lastRead": 1759250844,
+      "progress": null,
+      "notes": {
+        "highlights": 2,
+        "thoughts": 2,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "855833",
+      "type": "ebook",
+      "title": "娱乐至死",
+      "author": "尼尔·波兹曼",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/833/855833/t6_855833.jpg",
+      "link": "https://weread.qq.com/web/reader/aef326f05d0f19aef085d2b",
+      "category": "社会文化-社科",
+      "finished": false,
+      "lastRead": 1755482799,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 1,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300114402",
+      "type": "ebook",
+      "title": "历史的逻辑：新闻人眼中的历史真相",
+      "author": "路上老王",
+      "cover": "https://cdn.weread.qq.com/weread/cover/66/cpplatform_9prgusu1ufojkgjwoiqzab/t6_cpplatform_9prgusu1ufojkgjwoiqzab1726219073.jpg",
+      "link": "https://weread.qq.com/web/reader/49732b00813ab9330g012a6d",
+      "category": "历史-历史文化",
+      "finished": false,
+      "lastRead": 1754638481,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "612970",
+      "type": "ebook",
+      "title": "血腥的盛唐（全7册）",
+      "author": "王觉仁",
+      "cover": "https://cdn.weread.qq.com/weread/cover/99/YueWen_612970/t6_YueWen_612970.jpg",
+      "link": "https://weread.qq.com/web/reader/2f6327c0595a6a2f6db663f",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1754638462,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "33091799",
+      "type": "ebook",
+      "title": "穷理查智慧书（中英对照）",
+      "author": "[美]本杰明·富兰克林",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/799/33091799/t6_33091799.jpg",
+      "link": "https://weread.qq.com/web/reader/b3a3271071f8f0d7b3a2e25",
+      "category": "个人成长-励志成长",
+      "finished": false,
+      "lastRead": 1754638354,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "42682684",
+      "type": "ebook",
+      "title": "中国社会各阶层分析",
+      "author": "梁晓声",
+      "cover": "https://cdn.weread.qq.com/weread/cover/0/yuewen_42682684/t6_yuewen_426826841728383400.jpg",
+      "link": "https://weread.qq.com/web/reader/085326e0728b493c085ade1",
+      "category": "社会文化-社科",
+      "finished": false,
+      "lastRead": 1754282735,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43370454",
+      "type": "ebook",
+      "title": "政治学",
+      "author": "[古希腊]亚里士多德",
+      "cover": "https://cdn.weread.qq.com/weread/cover/86/YueWen_43370454/t6_YueWen_43370454.jpg",
+      "link": "https://weread.qq.com/web/reader/16b32f007295c7d616ba073",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1754280164,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300028060",
+      "type": "ebook",
+      "title": "寡头统治铁律：现代民主体制中的政党社会学",
+      "author": "罗伯特·米歇尔斯",
+      "cover": "https://cdn.weread.qq.com/weread/cover/9/cpPlatform_x9pRtY37LT3jKwMLbJykrT/t6_cpPlatform_x9pRtY37LT3jKwMLbJykrT.jpg",
+      "link": "https://weread.qq.com/web/reader/d2232790813ab7176g01065c",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1753341048,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "312809",
+      "type": "ebook",
+      "title": "小公务员之死（契诃夫中短篇小说）",
+      "author": "契诃夫",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/809/312809/t6_312809.jpg",
+      "link": "https://weread.qq.com/web/reader/2cc32eb054c5e92cc509b01",
+      "category": "文学-经典作品",
+      "finished": false,
+      "lastRead": 1753334807,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "35346575",
+      "type": "ebook",
+      "title": "你一定爱读的极简欧洲史（增订纪念版)",
+      "author": "约翰·赫斯特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/12/YueWen_35346575/t6_YueWen_35346575.jpg",
+      "link": "https://weread.qq.com/web/reader/7a332810721b588f7a32c7e",
+      "category": "历史-历史读物",
+      "finished": false,
+      "lastRead": 1753334745,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300078184",
+      "type": "ebook",
+      "title": "部级领导干部历史文化讲座（套装共6册）",
+      "author": "国家图书馆",
+      "cover": "https://cdn.weread.qq.com/weread/cover/36/cpplatform_qvhr8cunvc8hwe2rq1jhyf/t6_cpplatform_qvhr8cunvc8hwe2rq1jhyf1700208753.jpg",
+      "link": "https://weread.qq.com/web/reader/d9132690813ab850ag014b17",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1753167311,
+      "progress": null,
+      "notes": {
+        "highlights": 185,
+        "thoughts": 115,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "37188896",
+      "type": "ebook",
+      "title": "张宏杰历史作品集（共4册）",
+      "author": "张宏杰",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/896/37188896/t6_37188896.jpg",
+      "link": "https://weread.qq.com/web/reader/5df32a80723775205df60fc",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1752896263,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "787309",
+      "type": "ebook",
+      "title": "自为墓志铭",
+      "author": "[明]张岱",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/309/787309/t6_787309.jpg",
+      "link": "https://weread.qq.com/web/reader/7e7326805c036d7e7b7a204",
+      "category": "历史-历史典籍",
+      "finished": false,
+      "lastRead": 1752895181,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300063971",
+      "type": "ebook",
+      "title": "商文明的信仰世界与传统思想渊源（全三册）",
+      "author": "郭静云",
+      "cover": "https://cdn.weread.qq.com/weread/cover/41/cpplatform_4pc1mrxubvrue5jwaxzwik/t6_cpplatform_4pc1mrxubvrue5jwaxzwik1689230130.jpg",
+      "link": "https://weread.qq.com/web/reader/64932a00813ab7f7dg011746",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1752122142,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300111793",
+      "type": "ebook",
+      "title": "财政密码",
+      "author": "郭建龙",
+      "cover": "https://cdn.weread.qq.com/weread/cover/21/cpplatform_g7sxegrjt3wbl7s9vwf44e/t6_cpplatform_g7sxegrjt3wbl7s9vwf44e1724725500.jpg",
+      "link": "https://weread.qq.com/web/reader/1db32430813ab922bg013ee9",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1751680752,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "831972",
+      "type": "ebook",
+      "title": "淡定：内心强大的力量",
+      "author": "卡耐基",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/972/831972/t6_831972.jpg",
+      "link": "https://weread.qq.com/web/reader/fbb325005cb1e4fbb211d92",
+      "category": "个人成长-情绪心灵",
+      "finished": false,
+      "lastRead": 1751680102,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300151393",
+      "type": "ebook",
+      "title": "叔本华：人生智慧箴言",
+      "author": "[德]叔本华",
+      "cover": "https://cdn.weread.qq.com/weread/cover/90/cpplatform_mdcldkvcoao5tjqb4mx1z4/t6_cpplatform_mdcldkvcoao5tjqb4mx1z41751536317.jpg",
+      "link": "https://weread.qq.com/web/reader/a9232450813aba1a3g013285",
+      "category": "哲学宗教-哲学读物",
+      "finished": false,
+      "lastRead": 1751680097,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300095645",
+      "type": "ebook",
+      "title": "多巴胺商业：驱动用户购买行为的底层逻辑",
+      "author": "程志良",
+      "cover": "https://cdn.weread.qq.com/weread/cover/40/cpplatform_cmjkvetub2xyj9zkeslspp/t6_cpplatform_cmjkvetub2xyj9zkeslspp1713347677.jpg",
+      "link": "https://weread.qq.com/web/reader/136326b0813ab8bdcg015cf1",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1751680088,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "808337",
+      "type": "ebook",
+      "title": "中国史纲",
+      "author": "张荫麟",
+      "cover": "https://cdn.weread.qq.com/weread/cover/15/YueWen_808337/t6_YueWen_808337.jpg",
+      "link": "https://weread.qq.com/web/reader/c38325305c5591c38baf62d",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1751679493,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "38117259",
+      "type": "ebook",
+      "title": "看透事物的本质套装（套装共2册）",
+      "author": "九边",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/259/38117259/t6_38117259.jpg",
+      "link": "https://weread.qq.com/web/reader/0a3327c072459f8b0a39232",
+      "category": "个人成长-人生哲学",
+      "finished": true,
+      "lastRead": 1751679335,
+      "progress": null,
+      "notes": {
+        "highlights": 99,
+        "thoughts": 75,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300087420",
+      "type": "ebook",
+      "title": "出手：高手出手就是定局",
+      "author": "恒洋",
+      "cover": "https://cdn.weread.qq.com/weread/cover/4/cpplatform_bvximuegjbjmksygxyk37k/t6_cpplatform_bvximuegjbjmksygxyk37k1708934200.jpg",
+      "link": "https://weread.qq.com/web/reader/e96322c0813ab88a6g01019b",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1751378700,
+      "progress": null,
+      "notes": {
+        "highlights": 2,
+        "thoughts": 2,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300065541",
+      "type": "ebook",
+      "title": "学习的战争",
+      "author": "[韩国]韩国KBS《Homo Academicus》制作团队",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_epdzepnqovy4rvm46vpvq7/t6_cpplatform_epdzepnqovy4rvm46vpvq71690541515.jpg",
+      "link": "https://weread.qq.com/web/reader/c6a321c0813ab801ag011934",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 1751378179,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300096312",
+      "type": "ebook",
+      "title": "你的直觉会出错：反直觉商业现象解读",
+      "author": "声动早咖啡 著 声动活泼 编",
+      "cover": "https://cdn.weread.qq.com/weread/cover/36/cpplatform_jwihrsirctmc8bs2j4e8tj/t6_cpplatform_jwihrsirctmc8bs2j4e8tj1714011195.jpg",
+      "link": "https://weread.qq.com/web/reader/3c832650813ab8c1fg012f67",
+      "category": "经济理财-商业",
+      "finished": false,
+      "lastRead": 1751377556,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300023015",
+      "type": "ebook",
+      "title": "我决定给自己一点时间",
+      "author": "李彦姃",
+      "cover": "https://cdn.weread.qq.com/weread/cover/15/3300023015/t6_3300023015.jpg",
+      "link": "https://weread.qq.com/web/reader/3df32c10813ab6f7dg015bd6",
+      "category": "个人成长-情绪心灵",
+      "finished": false,
+      "lastRead": 1751274005,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "29998638",
+      "type": "ebook",
+      "title": "走出人格陷阱",
+      "author": "武志红",
+      "cover": "https://cdn.weread.qq.com/weread/cover/58/YueWen_29998638/t6_YueWen_29998638.jpg",
+      "link": "https://weread.qq.com/web/reader/15b32b5071c9be2e15b33da",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 1750404175,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "839229",
+      "type": "ebook",
+      "title": "知行合一：王阳明传",
+      "author": "梅寒",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/YueWen_839229/t6_YueWen_839229.jpg",
+      "link": "https://weread.qq.com/web/reader/f2632e305cce3df26bcb164",
+      "category": "哲学宗教-东方哲学",
+      "finished": false,
+      "lastRead": 1750391055,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300020918",
+      "type": "ebook",
+      "title": "透过财报看企业：洋葱财务分析法",
+      "author": "崔小北",
+      "cover": "https://cdn.weread.qq.com/weread/cover/18/3300020918/t6_3300020918.jpg",
+      "link": "https://weread.qq.com/web/reader/48132d00813ab6eabg0184e9",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1749774239,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300102076",
+      "type": "ebook",
+      "title": "新媒体写作：从提笔就怕到成就IP",
+      "author": "赵博平",
+      "cover": "https://cdn.weread.qq.com/weread/cover/30/cpplatform_hh1emysxgi7whrsr4qryfq/t6_cpplatform_hh1emysxgi7whrsr4qryfq1717404127.jpg",
+      "link": "https://weread.qq.com/web/reader/11d32910813ab8e5fg016cfb",
+      "category": "经济理财-商业",
+      "finished": false,
+      "lastRead": 1749773783,
+      "progress": null,
+      "notes": {
+        "highlights": 6,
+        "thoughts": 6,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "853426",
+      "type": "ebook",
+      "title": "稀缺：我们是如何陷入贫穷与忙碌的",
+      "author": "塞德希尔·穆来纳森",
+      "cover": "https://cdn.weread.qq.com/weread/cover/46/YueWen_853426/t6_YueWen_853426.jpg",
+      "link": "https://weread.qq.com/web/reader/36b321405d05b236bb0ce7d",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1749469966,
+      "progress": null,
+      "notes": {
+        "highlights": 90,
+        "thoughts": 72,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "39204617",
+      "type": "ebook",
+      "title": "成长：如何深度思考与学习",
+      "author": "单华伟",
+      "cover": "https://cdn.weread.qq.com/weread/cover/36/YueWen_39204617/t6_YueWen_39204617.jpg",
+      "link": "https://weread.qq.com/web/reader/73b325407256370973b28ba",
+      "category": "个人成长-认知思维",
+      "finished": false,
+      "lastRead": 1749468349,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43028699",
+      "type": "ebook",
+      "title": "理性的非理性：生活中的怪诞行为学",
+      "author": "郑毓煌 苏丹",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/699/43028699/t6_43028699.jpg",
+      "link": "https://weread.qq.com/web/reader/1c5328d0729090db1c5caae",
+      "category": "心理-社会心理学",
+      "finished": false,
+      "lastRead": 1748957346,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300067771",
+      "type": "ebook",
+      "title": "新增长路径：营销驱动增长的底层逻辑",
+      "author": "曹虎",
+      "cover": "https://cdn.weread.qq.com/weread/cover/12/cpplatform_ipmptkhmeajysa1auf3j3u/t6_cpplatform_ipmptkhmeajysa1auf3j3u1692181153.jpg",
+      "link": "https://weread.qq.com/web/reader/79c32c50813ab80f9g011462",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 1748158152,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300076204",
+      "type": "ebook",
+      "title": "深度关系",
+      "author": "武志红",
+      "cover": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
+      "link": "https://weread.qq.com/web/reader/bb432f60813ab8444g014d61",
+      "category": "心理-社会心理学",
+      "finished": false,
+      "lastRead": 1748155813,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300070102",
+      "type": "ebook",
+      "title": "历史哲学",
+      "author": "黑格尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/10/cpplatform_22gye5kmf7qppxtmhk1ury/t6_cpplatform_22gye5kmf7qppxtmhk1ury1693820366.jpg",
+      "link": "https://weread.qq.com/web/reader/4cf32690813ab81e2g012695",
+      "category": "哲学宗教-西方哲学",
+      "finished": false,
+      "lastRead": 1728117233,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300111243",
+      "type": "ebook",
+      "title": "猎凶记（套装共3册）",
+      "author": "岳勇",
+      "cover": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_ngaufpkfjavsyhvbrzata1/t6_cpplatform_ngaufpkfjavsyhvbrzata11723607276.jpg",
+      "link": "https://weread.qq.com/web/reader/5b032470813ab91f4g013346",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 1727085164,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300107853",
+      "type": "ebook",
+      "title": "成为更理性的人：法律如何实现正义",
+      "author": "翟志勇",
+      "cover": "https://cdn.weread.qq.com/weread/cover/44/cpplatform_2kywbhtydkwdk8wmfswfau/t6_cpplatform_2kywbhtydkwdk8wmfswfau1721803668.jpg",
+      "link": "https://weread.qq.com/web/reader/ff332c90813ab90a1g01327a",
+      "category": "社会文化-法律",
+      "finished": false,
+      "lastRead": 1726895882,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300102559",
+      "type": "ebook",
+      "title": "耶鲁的心理学第一课",
+      "author": "安宇敬",
+      "cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_hwcsektzqtquynsv2fpmol/t6_cpplatform_hwcsektzqtquynsv2fpmol1717575830.jpg",
+      "link": "https://weread.qq.com/web/reader/74232ae0813ab8e8fg019bda",
+      "category": "心理-心理学研究",
+      "finished": false,
+      "lastRead": 1726640206,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "32368549",
+      "type": "ebook",
+      "title": "航拍中国（全5册）",
+      "author": "《航拍中国》节目组",
+      "cover": "https://cdn.weread.qq.com/weread/cover/84/YueWen_32368549/t6_YueWen_32368549.jpg",
+      "link": "https://weread.qq.com/web/reader/5e6325e071ede7a55e6dee0",
+      "category": "科学技术-科学科普",
+      "finished": false,
+      "lastRead": 1726477044,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300047658",
+      "type": "ebook",
+      "title": "读历史就该这样细读：顾诚明清史文集（全3册）",
+      "author": "顾诚",
+      "cover": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_rwkyfkhrehbds5cqoye1zc/t6_cpplatform_rwkyfkhrehbds5cqoye1zc1698891250.jpg",
+      "link": "https://weread.qq.com/web/reader/cec32e50813ab791dg018e60",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1725367943,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43521869",
+      "type": "ebook",
+      "title": "思维模型",
+      "author": "加布里埃尔·温伯格  劳伦·麦肯",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/869/43521869/t6_43521869.jpg",
+      "link": "https://weread.qq.com/web/reader/6c6328a07298174d6c6a1c5",
+      "category": "哲学宗教-思维科学",
+      "finished": false,
+      "lastRead": 1725282993,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300079647",
+      "type": "ebook",
+      "title": "中国历史的地理密码",
+      "author": "董金社",
+      "cover": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_e6ntnksezbaqwbh8zodrra/t6_cpplatform_e6ntnksezbaqwbh8zodrra1701067806.jpg",
+      "link": "https://weread.qq.com/web/reader/94f32730813ab859cg017e26",
+      "category": "历史-历史地理",
+      "finished": false,
+      "lastRead": 1724722234,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300110859",
+      "type": "ebook",
+      "title": "历史转折中的邓小平（同名电视剧原著）",
+      "author": "龙平平 黄亚洲 张强 魏人",
+      "cover": "https://cdn.weread.qq.com/weread/cover/11/cpplatform_4tenfeme5rd1ldk9ftlvjb/t6_cpplatform_4tenfeme5rd1ldk9ftlvjb1723194681.jpg",
+      "link": "https://weread.qq.com/web/reader/34c32ff0813ab91cdg019b06",
+      "category": "人物传记-军政领袖",
+      "finished": false,
+      "lastRead": 1724382544,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "30472761",
+      "type": "ebook",
+      "title": "通鉴纪事本末（注译本·全42卷）（全本全注全译）",
+      "author": "袁枢",
+      "cover": "https://cdn.weread.qq.com/weread/cover/96/YueWen_30472761/t6_YueWen_30472761.jpg",
+      "link": "https://weread.qq.com/web/reader/aba320b071d0fa39abaeb8a",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 1724142695,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "184073",
+      "type": "ebook",
+      "title": "西方哲学简史",
+      "author": "伯兰特·罗素",
+      "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/73/184073/t6_184073.jpg",
+      "link": "https://weread.qq.com/web/reader/3343271052cf09334242116",
+      "category": "哲学宗教-西方哲学",
+      "finished": false,
+      "lastRead": 1724125584,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "43309819",
+      "type": "ebook",
+      "title": "王伟：全球政治势力全解析（全4册）",
+      "author": "王伟",
+      "cover": "https://cdn.weread.qq.com/weread/cover/3/yuewen_43309819/t6_yuewen_433098191775031700.jpg",
+      "link": "https://weread.qq.com/web/reader/09d320f07294dafb09dbc15",
+      "category": "政治军事-政治",
+      "finished": false,
+      "lastRead": 1723344298,
+      "progress": null,
+      "notes": {
+        "highlights": 1,
+        "thoughts": 1,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "24020257",
+      "type": "ebook",
+      "title": "复旦名师陈果：人生哲学课（共2册）",
+      "author": "陈果",
+      "cover": "https://cdn.weread.qq.com/weread/cover/76/YueWen_24020257/t6_YueWen_24020257.jpg",
+      "link": "https://weread.qq.com/web/reader/03e320d0716e852103e7235",
+      "category": "哲学宗教-哲学读物",
+      "finished": false,
+      "lastRead": 1721278555,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300092079",
+      "type": "ebook",
+      "title": "余华中短篇小说集",
+      "author": "余华",
+      "cover": "https://cdn.weread.qq.com/weread/cover/93/cpplatform_4kvfuyyc7nwv14dvfk6asy/t6_cpplatform_4kvfuyyc7nwv14dvfk6asy1722400954.jpg",
+      "link": "https://weread.qq.com/web/reader/59132390813ab8a77g019daa",
+      "category": "文学-经典作品",
+      "finished": false,
+      "lastRead": 1712651023,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "32307608",
+      "type": "ebook",
+      "title": "理想国",
+      "author": "[古希腊]柏拉图",
+      "cover": "https://cdn.weread.qq.com/weread/cover/51/YueWen_32307608/t6_YueWen_32307608.jpg",
+      "link": "https://weread.qq.com/web/reader/72832c2071ecf998728b35a",
+      "category": "哲学宗教-西方哲学",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "31131755",
+      "type": "ebook",
+      "title": "韩信：越强大的人，越懂得忍耐",
+      "author": "苏城育",
+      "cover": "https://cdn.weread.qq.com/weread/cover/70/YueWen_31131755/t6_YueWen_31131755.jpg",
+      "link": "https://weread.qq.com/web/reader/90e32cd071db086b90e2866",
+      "category": "历史-历史读物",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "40296162",
+      "type": "ebook",
+      "title": "时间管理",
+      "author": "吉姆·兰德尔",
+      "cover": "https://cdn.weread.qq.com/weread/cover/70/YueWen_40296162/t6_YueWen_40296162.jpg",
+      "link": "https://weread.qq.com/web/reader/2ae32eb07266dee22ae7591",
+      "category": "个人成长-人生哲学",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "35664228",
+      "type": "ebook",
+      "title": "赛雷三分钟漫画中国史（全五册）",
+      "author": "赛雷",
+      "cover": "https://cdn.weread.qq.com/weread/cover/98/YueWen_35664228/t6_YueWen_35664228.jpg",
+      "link": "https://weread.qq.com/web/reader/e3332d1072203164e339693",
+      "category": "历史-中国古代",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300023318",
+      "type": "ebook",
+      "title": "深蓝的故事（《三大队》秦昊剧版、张译电影版原著）（全4册）",
+      "author": "深蓝",
+      "cover": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_gjfxbsebpdlq77nhxyhxjk/t6_cpplatform_gjfxbsebpdlq77nhxyhxjk1706775850.jpg",
+      "link": "https://weread.qq.com/web/reader/e3f329d0813ab6f9bg018b89",
+      "category": "精品小说-悬疑推理",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300044451",
+      "type": "ebook",
+      "title": "心理治疗为什么有用：从疗愈心灵到改变大脑的神经机制",
+      "author": "路易斯·科佐利诺",
+      "cover": "https://cdn.weread.qq.com/weread/cover/19/cpPlatform_48ok3R5tkLYoth25EPdeoK/t6_cpPlatform_48ok3R5tkLYoth25EPdeoK1672909738.jpg",
+      "link": "https://weread.qq.com/web/reader/ee132bf0813ab77ddg011065",
+      "category": "心理-心理学应用",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "918297",
+      "type": "ebook",
+      "title": "激荡十年，水大鱼大：中国企业2008-2018",
+      "author": "吴晓波",
+      "cover": "https://cdn.weread.qq.com/weread/cover/48/YueWen_918297/t6_YueWen_918297.jpg",
+      "link": "https://weread.qq.com/web/reader/6b632f705e03196b61cc59d",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300062449",
+      "type": "ebook",
+      "title": "呼啸山庄（插图珍藏版）",
+      "author": "艾米莉·勃朗特",
+      "cover": "https://cdn.weread.qq.com/weread/cover/95/cpplatform_jvtgmzwn9vyb8rsxajadrn/t6_cpplatform_jvtgmzwn9vyb8rsxajadrn1687661753.jpg",
+      "link": "https://weread.qq.com/web/reader/1ac32fb0813ab7ee4g019746",
+      "category": "文学-外国文学",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300172819",
+      "type": "ebook",
+      "title": "唐代长安与西域文明",
+      "author": "向达",
+      "cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_2gyy6fcrwbeaxc7tnltz8e/t6_cpplatform_2gyy6fcrwbeaxc7tnltz8e1761791580.jpg",
+      "link": "https://weread.qq.com/web/reader/f8f329a0813abaa01g019fc8",
+      "category": "历史-历史文化",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300111722",
+      "type": "ebook",
+      "title": "这就是人性：认知觉醒的底层逻辑",
+      "author": "王心傲",
+      "cover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_qcung4qc49qmod45c9qj1c/t6_cpplatform_qcung4qc49qmod45c9qj1c1724061010.jpg",
+      "link": "https://weread.qq.com/web/reader/f84327c0813ab9224g012fc7",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "3300163780",
+      "type": "ebook",
+      "title": "史记•货殖列传（外三种）",
+      "author": "[西汉]司马迁等著 刘子裕译注",
+      "cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_7etlvngv6grznjqkgnyedq/t6_cpplatform_7etlvngv6grznjqkgnyedq1757475744.jpg",
+      "link": "https://weread.qq.com/web/reader/0ba326b0813aba67ag010b03",
+      "category": "历史-历史典籍",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    },
+    {
+      "id": "913053",
+      "type": "ebook",
+      "title": "个人的体验",
+      "author": "大江健三郎",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/yuewen_913053/t6_yuewen_9130531695728850.jpg",
+      "link": "https://weread.qq.com/web/reader/66032cd05dee9d660783ee9",
+      "category": "精品小说-社会小说",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": ""
+    }
+  ],
+  "stats": {
+    "weekly": {
+      "seconds": 1929,
+      "days": 1,
+      "averageSeconds": 1929,
+      "readTimes": {
+        "1795363200": 1929
+      },
+      "categories": []
+    },
+    "monthly": {
+      "seconds": 160121,
+      "days": 23,
+      "averageSeconds": 6961,
+      "readTimes": {
+        "1793462400": 13558,
+        "1793548800": 6866,
+        "1793635200": 10042,
+        "1793721600": 34910,
+        "1793808000": 22793,
+        "1793894400": 2351,
+        "1793980800": 5559,
+        "1794067200": 1209,
+        "1794153600": 4110,
+        "1794240000": 12157,
+        "1794326400": 426,
+        "1794412800": 1988,
+        "1794499200": 7613,
+        "1794585600": 6255,
+        "1794672000": 6209,
+        "1794758400": 4858,
+        "1794844800": 3836,
+        "1794931200": 3398,
+        "1795017600": 4976,
+        "1795104000": 988,
+        "1795190400": 3497,
+        "1795276800": 593,
+        "1795363200": 1929
+      },
+      "categories": [
+        {
+          "name": "男生小说"
+        },
+        {
+          "name": "文学"
+        },
+        {
+          "name": "女性小说"
+        },
+        {
+          "name": "影视原著"
+        },
+        {
+          "name": "哲学宗教"
+        },
+        {
+          "name": "官场小说"
+        },
+        {
+          "name": "社会小说"
+        },
+        {
+          "name": "年代小说"
+        }
+      ]
+    },
+    "annually": {
+      "seconds": 1241356,
+      "days": 268,
+      "averageSeconds": 3796,
+      "readTimes": {
+        "1767196800": 183440,
+        "1769875200": 120641,
+        "1772294400": 151269,
+        "1774972800": 150320,
+        "1777564800": 125209,
+        "1780243200": 38900,
+        "1782835200": 28880,
+        "1785513600": 36167,
+        "1788192000": 115495,
+        "1790784000": 130914,
+        "1793462400": 160121,
+        "1796054400": 0
+      },
+      "categories": [
+        {
+          "name": "影视原著"
+        },
+        {
+          "name": "社会小说"
+        },
+        {
+          "name": "悬疑推理"
+        },
+        {
+          "name": "年代小说"
+        },
+        {
+          "name": "文学"
+        },
+        {
+          "name": "心理"
+        },
+        {
+          "name": "男生小说"
+        },
+        {
+          "name": "个人成长"
+        }
+      ]
+    },
+    "overall": {
+      "seconds": 3393713,
+      "days": 781,
+      "averageSeconds": 0,
+      "readTimes": {
+        "1514736000": 0,
+        "1546272000": 0,
+        "1577808000": 0,
+        "1609430400": 0,
+        "1640966400": 9688,
+        "1672502400": 223,
+        "1704038400": 1359860,
+        "1735660800": 782586,
+        "1767196800": 1241356
+      },
+      "categories": [
+        {
+          "name": "影视原著"
+        },
+        {
+          "name": "武侠小说"
+        },
+        {
+          "name": "个人成长"
+        },
+        {
+          "name": "玄幻小说"
+        },
+        {
+          "name": "历史"
+        },
+        {
+          "name": "心理"
+        },
+        {
+          "name": "社会小说"
+        },
+        {
+          "name": "政治军事"
+        }
+      ]
+    }
+  },
+  "privacy": "Public opt-in snapshot; no private shelf entries; note text only from approved books."
 }
