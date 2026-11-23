@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:53:34.051012+00:00",
+  "updated": "2026-11-23T15:56:59.042663+00:00",
   "books": [
     {
       "id": "41807702",
@@ -6827,9 +6827,14 @@
           "认知思维"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "如果人每天都待在相同的房间里、过着相同的生活、只能见到有限的几个人，那么长期如此，大脑的各种功能就很容易出现问题。",
+          "highlights": 450
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6867,9 +6872,14 @@
             "definition": "通过改变关节或肌肉长度位置进行柔韧性练习。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "吸气的时候，两侧面部分别向后伸展。此时嘴角、鼻翼、眼眉、耳朵以及头皮都向外分开，达到最大限度后保持。",
+          "highlights": 90
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6901,9 +6911,14 @@
           "认知与行为"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "噪声的一个普遍特性是：你可以在对目标或偏差一无所知的情况下，识别噪声，并对它进行测量。",
+          "highlights": 1768
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6943,7 +6958,9 @@
         ],
         "quote": null,
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -6982,8 +6999,14 @@
           }
         ],
         "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "review": {
+          "text": "作为入门书是一本非常好的引导书籍，推荐热爱运动的你来阅读，来来来……",
+          "author": "quan",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7015,9 +7038,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "除了过度专注于已知知识以外，人性还有另一个弱点：习惯于学习精确的东西，而不是从总体上把握。",
+          "highlights": 2616
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7055,9 +7083,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "人类新生儿大脑要想具备成人大脑的全部结构和功能，完成所有大脑网络的连线，大概需要25年。",
+          "highlights": 408
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7089,9 +7122,14 @@
           "历史读物"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "也是中国思想史上堪与朱熹媲美的儒家思想家与教育家",
+          "highlights": 306
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7123,9 +7161,14 @@
           "社科"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "阉割是一种公认的治疗秃头的方法。",
+          "highlights": 4602
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7163,9 +7206,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "若是一个人不能处理好自己与他人的关系，那么此人便不能正常发展。",
+          "highlights": 560
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7197,9 +7245,14 @@
           "口述史"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我们不希望这种痛苦再让我们的孩子、孙子这一代承受，2300万的（台湾人）不要再受这个痛苦。",
+          "highlights": 1050
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7231,9 +7284,14 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "唯一能让强制成为合法的途径，就是使被强制者自己也认同这种强制；而被强制者之所以认同，是因为强制力量的运用是为了公共的需要。",
+          "highlights": 1216
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7271,9 +7329,18 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "加扎尼加回忆说：“我一直鼓励我的学生，直接给你想一起做研究的那个人写信，也许机会就会落到你身上。”",
+          "highlights": 561
+        },
+        "review": {
+          "text": "60个小时。中间两本教材和最后一本八卦书挺好。《直觉》和《拖延症》没看，不感兴趣。 墙推《费尔德曼发展心理学》从受精卵开始讲，把人的一生都看透了。",
+          "author": "Maya Wang",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7305,9 +7372,14 @@
           "社科"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "政治家原本可以表现才干和驾驭能力的领域已经从智慧变成了化妆术。",
+          "highlights": 18555
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7339,9 +7411,14 @@
           "历史文化"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "读史的目的，不在于记住多少时间、地点、人物与事件，而在于把握历史运行的底层逻辑，用历史的道理支撑我们的生活。",
+          "highlights": 210
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7373,9 +7450,14 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "窦建德的成长史告诉我们：虽然时势可以造英雄，但是要想成为英雄，一个重要的前提就是——你必须扔掉手中的那块鸡肋。",
+          "highlights": 5401
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7407,9 +7489,18 @@
           "励志成长"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "没有遮风躲雨之处，无力生起旺盛的炉火，就不要把老婆娶进门。",
+          "highlights": 1343
+        },
+        "review": {
+          "text": "在天降服大雷电，在地争取大民权。 ——印刷工人富兰克林 在天愿作比翼鸟，在地愿为连理枝。 ——唐朝诗人乐天居易",
+          "author": "形如上学",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7441,9 +7532,14 @@
           "社科"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我的回答是——过去有，比如蒋家王朝和“四大家族”。现在没有。",
+          "highlights": 3077
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7475,9 +7571,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "在这个世上，一些人统治着别人，另一些人又被别人统治着，并且在出生时就已注定，像这样的情况实际上不仅必须，还是利大于弊的。",
+          "highlights": 735
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7509,9 +7610,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "社会主义领导人存在的这种倾向并不是一种偶然，这源于社会主义政党与军事组织在理念上存在某种亲和力。",
+          "highlights": 144
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7543,9 +7649,14 @@
           "经典作品"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "一个女仆白天辛劳干活，晚上还要照顾主人家的孩子，她极度渴望睡眠，最后竟然将孩子杀死。",
+          "highlights": 2366
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7577,9 +7688,14 @@
           "历史读物"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "欧洲文明是独特的，因为它一直是唯一能让世界其他地区马首是瞻的文明。",
+          "highlights": 1498
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7611,9 +7727,18 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "还有人说，印第安人之所以叫印第安人，原因是殷商后人怀念故乡，一见面就问“殷地安否？”",
+          "highlights": 187
+        },
+        "review": {
+          "text": "比较推荐看看李伯重《融入世界：中国经常全球化》。 才会明白孔子所说有文事者，必有武备。 忘记那些政治正确的言论，才能看清世界潮流，特别是这十多年的内外竞争。",
+          "author": "miikaTS",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -7645,9 +7770,18 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "没有飞跃，没有灵光乍现，立地顿悟，每一步都是困而求知，而勉而行，但坚韧之感，就像一把刀不假思索深深扎入，直没刀柄。",
+          "highlights": 210
+        },
+        "review": {
+          "text": "单本书包含：曾国藩的正面与侧面、陋规：明清的腐败与反腐败、中国国民性演变史、大明王朝的七张面孔",
+          "author": "寄居小王子",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -9287,18 +9421,18 @@
   ],
   "stats": {
     "weekly": {
-      "seconds": 2222,
+      "seconds": 2539,
       "days": 1,
-      "averageSeconds": 2222,
+      "averageSeconds": 2539,
       "readTimes": {
-        "1795363200": 2222
+        "1795363200": 2539
       },
       "categories": []
     },
     "monthly": {
-      "seconds": 160414,
+      "seconds": 160731,
       "days": 23,
-      "averageSeconds": 6974,
+      "averageSeconds": 6988,
       "readTimes": {
         "1793462400": 13558,
         "1793548800": 6866,
@@ -9322,7 +9456,7 @@
         "1795104000": 988,
         "1795190400": 3497,
         "1795276800": 593,
-        "1795363200": 2222
+        "1795363200": 2539
       },
       "categories": [
         {
@@ -9352,9 +9486,9 @@
       ]
     },
     "annually": {
-      "seconds": 1241649,
+      "seconds": 1241966,
       "days": 268,
-      "averageSeconds": 3797,
+      "averageSeconds": 3798,
       "readTimes": {
         "1767196800": 183440,
         "1769875200": 120641,
@@ -9366,7 +9500,7 @@
         "1785513600": 36167,
         "1788192000": 115495,
         "1790784000": 130914,
-        "1793462400": 160414,
+        "1793462400": 160731,
         "1796054400": 0
       },
       "categories": [
@@ -9397,7 +9531,7 @@
       ]
     },
     "overall": {
-      "seconds": 3394006,
+      "seconds": 3394323,
       "days": 781,
       "averageSeconds": 0,
       "readTimes": {
@@ -9409,7 +9543,7 @@
         "1672502400": 223,
         "1704038400": 1359860,
         "1735660800": 782586,
-        "1767196800": 1241649
+        "1767196800": 1241966
       },
       "categories": [
         {
