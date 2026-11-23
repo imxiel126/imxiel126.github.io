@@ -5,7 +5,9 @@ on:
     paths:
       - 'social/**'
       - 'index.html'
-      - 'assets/site.css'
+      - 'assets/**'
+      - 'scripts/first-issue.html'
+      - 'scripts/check_homepage_feed.py'
       - 'scripts/daily.py'
       - '.github/workflows/social-pages.yml'
   workflow_dispatch:
@@ -27,6 +29,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: 使用 main 分支最新文件，避免多个工作流发布旧版本
+        run: git fetch origin main && git reset --hard origin/main
       - uses: actions/configure-pages@v5
       - name: 校验社交内容格式
         run: |
@@ -34,6 +38,8 @@ jobs:
           python3 -m json.tool social/recommendations.json > /dev/null
           node --check social/recommendations.js
           node --check social/personal-feed.js
+          node --check assets/morning.js
+          python3 scripts/check_homepage_feed.py
           python3 -m py_compile scripts/daily.py scripts/social_discover.py
           python3 - <<'PY'
           import json
