@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbfaf7">
+<meta name="description" content="知行手记第二大脑：快速收集、跨库检索、知识加工、项目行动、间隔复习和每周复盘。">
+<title>第二大脑 · 知行手记</title>
+<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/brain/brain.css">
+<script src="/brain/app.js" defer></script></head>
+<body class="site-brain">
+<div class="site-header"><div class="site-header__inner">
+<a class="site-brand" href="/"><b>知</b>行手记<small>PERSONAL ATLAS</small></a>
+<nav class="site-nav" aria-label="主导航"><a href="/">晨读</a><a href="/brain/" class="is-active" aria-current="page">第二大脑</a><a href="/learn/">学习台</a><a href="/library/">知识库</a><a href="/reading/">阅读</a><a href="/research/">研究</a><a href="/notes/">笔记</a><a href="/social/">社交</a></nav>
+</div></div>
+<main class="brain-wrap">
+<header class="brain-hero">
+<span class="overline">CAPTURE · CONNECT · RETRIEVE · ACT</span>
+<div class="brain-hero-top"><div><h1>第二大脑</h1><p>不必记住所有资料放在哪里。先收进来，需要时找出来，再变成自己的理解和下一步行动。</p></div><a class="brain-small-link" href="/learn/">进入今日学习 ↗</a></div>
+<div class="brain-command"><form id="brain-search-form" role="search"><label class="sr-only" for="brain-search">搜索个人与公开知识</label><span class="brain-search-icon" aria-hidden="true">⌕</span><input id="brain-search" type="search" autocomplete="off" placeholder="搜索所有知识：量值溯源、氢能、实验设计、某本书…"><button type="submit">检索</button></form><span class="brain-keyboard">/ 搜索 · C 收集</span></div>
+</header>
+<section class="brain-metrics" aria-label="第二大脑状态">
+<div><strong id="brain-count-inbox">0</strong><span>待处理收集</span></div>
+<div><strong id="brain-count-notes">0</strong><span>自己的知识笔记</span></div>
+<div><strong id="brain-count-projects">0</strong><span>进行中项目</span></div>
+<div><strong id="brain-count-tasks">0</strong><span>下一步行动</span></div>
+</section>
+<section class="brain-quick" id="capture" aria-labelledby="capture-title">
+<div class="brain-title-row"><div><span class="overline">CAPTURE IN SECONDS</span><h2 id="capture-title">快速收集</h2><p>先记录一句话，不必当场想清楚分类。</p></div><span id="capture-status" role="status" class="brain-caption">当前浏览器私有</span></div>
+<form id="capture-form" class="brain-capture-form">
+<label for="capture-content" class="sr-only">想法、问题、资料或待办</label>
+<textarea id="capture-content" rows="2" required maxlength="4000" placeholder="我刚看到什么？有何疑问？下一步该做什么？"></textarea>
+<div class="brain-capture-bottom"><label><span>类型</span><select id="capture-kind"><option value="idea">灵感</option><option value="question">问题</option><option value="source">资料</option><option value="action">行动</option></select></label>
+<label class="brain-capture-source"><span>来源（可选）</span><input id="capture-url" type="url" placeholder="https://…" maxlength="1500"></label>
+<button type="submit">存入收集箱 <span>↵</span></button></div></form>
+</section>
+<div class="brain-tabs" role="tablist" aria-label="第二大脑功能区">
+<button type="button" role="tab" class="active" aria-selected="true" data-tab="inbox">收集箱 <span id="inbox-tab-count">0</span></button>
+<button type="button" role="tab" aria-selected="false" data-tab="notes">知识笔记</button>
+<button type="button" role="tab" aria-selected="false" data-tab="projects">项目行动</button>
+<button type="button" role="tab" aria-selected="false" data-tab="search">全域检索</button>
+<button type="button" role="tab" aria-selected="false" data-tab="weekly">每周复盘</button>
+</div>
+<section class="brain-panel" id="panel-inbox" role="tabpanel" aria-label="收集箱">
+<div class="brain-title-row"><div><h2>先收集，再决定用途</h2><p>把零散输入加工为知识或行动；不用处理的内容可以删除。</p></div><button class="brain-ghost" type="button" id="inbox-sort">最新优先</button></div>
+<div id="brain-inbox-list" aria-live="polite"></div></section>
+<section class="brain-panel" id="panel-notes" role="tabpanel" aria-label="知识笔记" hidden>
+<div class="brain-title-row"><div><h2>把信息写成自己的知识</h2><p>“自己的解释 + 可核查来源 + 能用在哪里”，比复制原文更重要。</p></div><button id="note-new" type="button" class="brain-ghost">＋ 新建笔记</button></div>
+<form id="note-form" class="brain-edit-form" hidden>
+<input id="note-id" type="hidden">
+<div class="brain-form-grid"><label class="wide">标题 <input id="note-title" maxlength="180" required placeholder="一个问题 / 一个可以复述的概念"></label>
+<label>主题 <select id="note-area"></select></label>
+<label>关联项目 <select id="note-project"><option value="">不关联项目</option></select></label></div>
+<label>我的理解 <textarea id="note-explain" rows="4" maxlength="8000" placeholder="合上资料，我能如何向同事讲明白？"></textarea></label>
+<label>证据与来源 <textarea id="note-source" rows="2" maxlength="2000" placeholder="论文 / 标准编号 / 链接 / 数据依据；不确定的地方也写下来"></textarea></label>
+<label>下一步如何应用 <textarea id="note-apply" rows="2" maxlength="2000" placeholder="哪项实验、规范、工作决策或生活场景能用到？"></textarea></label>
+<label>关键词（用逗号分隔） <input id="note-tags" maxlength="300" placeholder="量值溯源,测量不确定度,检定"></label>
+<label class="brain-check"><input id="note-review" type="checkbox" checked> 加入主动回忆计划，明天复习</label>
+<div class="brain-form-actions"><button type="submit">保存知识笔记</button><button type="button" class="brain-ghost" id="note-cancel">取消</button><span id="note-form-state" role="status"></span></div></form>
+<div class="brain-note-filters"><label class="sr-only" for="notes-filter">按主题查看笔记</label><select id="notes-filter"><option value="all">全部主题</option></select><span id="notes-count"></span></div>
+<div id="brain-note-list" aria-live="polite"></div></section>
+<section class="brain-panel" id="panel-projects" role="tabpanel" aria-label="项目行动" hidden>
+<div class="brain-title-row"><div><h2>知识最终要服务行动</h2><p>每个进行中的项目，只需要先明确目标与一个可执行的下一步。</p></div><button type="button" class="brain-ghost" id="project-new">＋ 新建项目</button></div>
+<form id="project-form" class="brain-edit-form" hidden><div class="brain-form-grid">
+<label class="wide">项目名称 <input id="project-name" maxlength="160" required placeholder="例如：流量计在线校准方法验证"></label>
+<label>主题 <select id="project-area"></select></label>
+<label>目标日期（可选） <input id="project-deadline" type="date"></label></div>
+<label>期望成果 / 完成标准 <textarea id="project-outcome" maxlength="2000" rows="2" placeholder="完成后要交付什么，怎样知道已经完成？"></textarea></label>
+<label>第一步行动（可选） <input id="project-first" maxlength="250" placeholder="动词开头：整理试验记录、约定验证时间…"></label>
+<div class="brain-form-actions"><button type="submit">保存项目</button><button type="button" id="project-cancel" class="brain-ghost">取消</button></div></form>
+<div class="brain-project-tools"><label class="sr-only" for="project-view">筛选项目</label><select id="project-view"><option value="active">进行中</option><option value="all">全部项目</option><option value="archived">已归档</option></select></div>
+<div id="brain-project-list" aria-live="polite"></div>
+<div class="brain-task-add"><h3>直接加入一项行动</h3><form id="task-form"><input id="task-title" maxlength="240" required placeholder="一个能在下一次工作时真正执行的动作"><select id="task-project"><option value="">不关联项目</option></select><input id="task-due" type="date" aria-label="行动截止日期"><button type="submit">添加</button></form></div>
+<h3 class="brain-subtitle">待办行动</h3><div id="brain-task-list" aria-live="polite"></div></section>
+<section class="brain-panel" id="panel-search" role="tabpanel" aria-label="全域检索" hidden>
+<div class="brain-title-row"><div><h2>一个搜索入口，调度全部资料</h2><p>先搜索自己的笔记与项目，再按需从书目、典籍、知识卡、阅读和研究来源检索。</p></div><button id="load-public" type="button" class="brain-ghost">载入全部公开资料</button></div>
+<div class="brain-search-tools"><select id="search-scope" aria-label="搜索范围"><option value="all">全部资料</option><option value="personal">私人知识与行动</option><option value="library">书籍、名言、知识卡</option><option value="research">研究与论文</option><option value="reading">阅读与思考</option></select><span id="search-status" role="status"></span></div>
+<div id="brain-results" aria-live="polite"><p class="brain-muted">输入问题或关键词开始查找。</p></div><button id="search-more" class="brain-more" type="button" hidden>查看更多结果</button></section>
+<section class="brain-panel" id="panel-weekly" role="tabpanel" aria-label="每周复盘" hidden>
+<div class="brain-title-row"><div><h2>每周复盘：留下什么，放下什么</h2><p>收集不等于掌握。每周把信息转成知识、知识转成成果。</p></div><span id="week-label" class="brain-caption"></span></div>
+<div id="brain-week-overview" class="brain-week-overview"></div>
+<form id="week-form" class="brain-edit-form">
+<label>本周最有价值的一条认识 <textarea id="week-insight" rows="3" maxlength="3000" placeholder="是什么？什么证据支持它？"></textarea></label>
+<label>当前阻碍和仍未解决的问题 <textarea id="week-blocker" rows="3" maxlength="3000" placeholder="什么事情仍不清楚？我缺哪一项证据？"></textarea></label>
+<label>下周最重要的一步 <textarea id="week-next" rows="3" maxlength="3000" placeholder="写一个可以直接开始执行的动作"></textarea></label>
+<div class="brain-form-actions"><button type="submit">保存本周复盘</button><button type="button" id="week-copy" class="brain-ghost">复制周报</button><span id="week-status" role="status"></span></div></form>
+<div class="brain-week-history"><h3>历史复盘</h3><div id="week-history"></div></div>
+</section>
+<section class="brain-backup">
+<div><span class="overline">PORTABLE & PRIVATE</span><h2>可迁移，不依赖某个平台</h2>
+<p>收集箱、笔记、项目、任务、复盘与已有学习台记录默认只保存在当前浏览器。公开 GitHub 仓库仅存放程序和可公开资料，不存私人内容。不同设备不会自动同步，请定期导出加密保存的备份文件。</p>
+<span id="brain-backup-status" role="status"></span></div>
+<div class="brain-backup-actions"><button type="button" id="brain-export">导出完整备份</button><label for="brain-import" class="brain-import">导入备份</label><input id="brain-import" type="file" accept=".json,application/json"></div>
+</section>
+<section class="brain-method"><span class="overline">SMALL, CONSISTENT, USEFUL</span><h2>每天只做三件事</h2>
+<div class="brain-method-grid"><div><b>01 · 收集</b><p>看到有用内容，只留一句话和来源。不急着分类。</p></div><div><b>02 · 提炼</b><p>将一条收集内容转成自己的解释、证据和应用场景。</p></div><div><b>03 · 应用</b><p>关联一个项目的具体行动，或安排下一次主动回忆。</p></div></div>
+<p class="brain-citation">学习方法参考 <a href="https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html" target="_blank" rel="noopener noreferrer">Dunlosky 等的学习策略综述</a>；间隔复习安排是一套简单的操作规则，并非对个人记忆效果的精确预测。</p></section>
+</main><footer class="site-footer"><span>知行手记 · 第二大脑</span><span>本地优先 · 可导出 · 证据可追溯</span></footer>
+</body></html>
