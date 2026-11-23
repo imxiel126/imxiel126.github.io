@@ -15,6 +15,16 @@ class HealthTests(unittest.TestCase):
             good,issues=check_local(root=root,now=dt.datetime(2026,11,23,23,45,tzinfo=TZ))
             self.assertTrue(any("归档" in e for e in issues))
             self.assertTrue(any("邮件" in e for e in issues))
+    def test_midnight_does_not_require_unpublished_news(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/"archive").mkdir()
+            # At 00:20 on Nov 24 the Nov 23 bulletin is not due until 07:37.
+            (root/"archive/2026-11-22.html").write_text("x"*600)
+            now=dt.datetime(2026,11,24,0,20,tzinfo=TZ)
+            _,issues=check_local(root=root,now=now)
+            self.assertFalse(any("新闻晨读归档缺失" in e for e in issues))
+
     def test_accepts_fresh_local_dataset(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
