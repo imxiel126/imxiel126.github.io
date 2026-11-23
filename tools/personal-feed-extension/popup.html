@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><style>
+body{font:13px/1.6 system-ui,sans-serif;color:#253536;width:330px;padding:17px;margin:0}
+h1{font-size:18px;margin:0 0 10px}.tip{color:#6a777b}.warning{border:1px solid #f1cc9a;background:#fff8eb;padding:10px;border-radius:8px}
+label{display:block;margin:10px 0 4px;font-weight:600}input[type=text],input[type=password]{width:100%;box-sizing:border-box;border:1px solid #cbd9d4;border-radius:7px;padding:8px;font:inherit}
+.check{display:flex;gap:9px;align-items:flex-start}.check input{margin-top:5px}
+button{border:0;background:#286a5b;color:white;border-radius:8px;padding:9px 13px;margin:8px 4px 0 0;cursor:pointer}
+button.secondary{background:#e8f0ec;color:#285c4d}small{color:#6a777b}a{color:#286a5b}
+</style></head><body><h1>我的推荐流 · 同步设置</h1>
+<p class="tip">仅在你登录并浏览知乎或小红书“推荐”页面时，读取当前可见的推荐卡片，不读取 Cookie、密码或私信。</p>
+<p class="warning">隐私提醒：同步的标题、链接、简短摘要将发布到<strong>公开的 GitHub Pages 网站</strong>，任何人都可能看到你的推荐偏好。</p>
+<label for="repo">GitHub 仓库</label><input id="repo" type="text" value="imxiel126/imxiel126.github.io">
+<label for="token">Fine-grained GitHub Token</label><input id="token" type="password" placeholder="仅保存在本机浏览器；需 Contents: Read and write">
+<div class="check"><input id="consent" type="checkbox"><label for="consent">我理解推荐卡片会公开，同意同步推荐预览</label></div>
+<div class="check"><input id="enabled" type="checkbox"><label for="enabled">启用自动同步（仅当我浏览推荐页时）</label></div>
+<button id="save">保存设置</button><button id="sync" class="secondary">立即同步已采集内容</button>
+<p id="status" role="status">尚未加载状态。</p>
+<small>首次需从 GitHub 创建仓库专用 fine-grained token。不要粘贴知乎或小红书 Cookie。<a href="https://github.com/settings/personal-access-tokens/new" target="_blank">打开 GitHub Token 设置</a></small>
+<script src="popup.js"></script></body></html>
