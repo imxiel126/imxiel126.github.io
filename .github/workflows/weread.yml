@@ -1,6 +1,9 @@
 name: 微信读书阅读中心自动同步
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/weread.yml'
   schedule:
     - cron: '15 1 * * *'
 permissions:
