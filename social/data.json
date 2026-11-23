@@ -3,12 +3,22 @@
   "updated": "2026-11-23",
   "profiles": {
     "zhihu": {
-      "name": "",
-      "url": ""
+      "name": "知理殿堂",
+      "url": "https://www.zhihu.com/people/89-63-94-21",
+      "description": "实现知识连接与理解共生的平台空间",
+      "status": "账号主页显示：回答 0 · 文章 0 · 想法 3",
+      "sections": [
+        {
+          "label": "查看想法（主页显示 3 条）",
+          "url": "https://www.zhihu.com/people/89-63-94-21/pins"
+        }
+      ]
     },
     "xiaohongshu": {
-      "name": "",
-      "url": ""
+      "name": "momo",
+      "url": "https://www.xiaohongshu.com/user/profile/62bfbc44000000001b027b54",
+      "status": "账号主页显示：目前尚无已发布笔记",
+      "sections": []
     }
   },
   "items": []
