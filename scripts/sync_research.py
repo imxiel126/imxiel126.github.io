@@ -22,8 +22,6 @@ CHANNELS = {
     "energy": "energy",
     "energy_cn": "energy",
     "energy_intl": "energy",
-    "tech": "energy",
-    "tech_cn": "energy",
     "policy_nea": "policy",
     "policy_ndrc": "policy",
 }
