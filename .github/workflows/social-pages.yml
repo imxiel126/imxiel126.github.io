@@ -30,6 +30,7 @@ jobs:
           python3 -m json.tool social/data.json > /dev/null
           python3 -m json.tool social/recommendations.json > /dev/null
           node --check social/recommendations.js
+          node --check social/personal-feed.js
           python3 -m py_compile scripts/daily.py scripts/social_discover.py
           python3 - <<'PY'
           import json
