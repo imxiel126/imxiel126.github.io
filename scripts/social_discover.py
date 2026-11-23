@@ -81,7 +81,7 @@ def get_public_results(topic: tuple[str, str, str]) -> list[dict]:
         return []
     discovered = []
     entries = root.findall(".//item")
-    logging.info("%s: RSS returned %d items", label, len(entries))
+    logging.info("%s: RSS returned %d items; sample links=%s", label, len(entries), [e.findtext("link") for e in entries[:2]])
     for entry in entries[:MAX_RESULTS_PER_QUERY]:
         link = public_link((entry.findtext("link") or "").strip(), platform)
         title = clean(entry.findtext("title") or "", 105)
