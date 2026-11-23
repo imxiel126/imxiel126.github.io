@@ -461,3 +461,17 @@ body.site-news:has(.morning-highlights) main{max-width:1050px}
 .site-news .morning-radar-item small{display:block;margin-top:3px}
 .site-news .morning-overview>summary{padding:13px}
 }
+
+
+/* Cross-page learning actions — private to this browser */
+.site-news .morning-headline-extra .morning-save-later,
+.site-research .research-news-footer .research-save-later{
+ display:inline-flex;align-items:center;padding:2px 0;font:650 12px var(--font);
+ background:transparent;border:0;color:var(--accent);cursor:pointer
+}
+.site-news .morning-headline-extra .morning-save-later:hover,
+.site-research .research-news-footer .research-save-later:hover{text-decoration:underline}
+.site-news .morning-headline-extra .morning-save-later:disabled,
+.site-research .research-news-footer .research-save-later:disabled{cursor:default;color:#7c9e87}
+.site-news .morning-shortcuts a[href="/learn/"]{background:#e4f0e7;border-color:#bcd7c6;font-weight:760}
+.site-research .research-news-footer{gap:15px}
