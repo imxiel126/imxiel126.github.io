@@ -88,7 +88,7 @@ def generate():
         if excerpts:
             detailed += 1
         lead = re.split(r'(?<=[。！？])', excerpts[0][1])[0] if excerpts else '正文暂缺'
-        overview.append(f'<li><strong>{escape(title)}</strong>：{escape(lead)}</li>')
+        overview.append(f'<li><strong><a href="{escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">{escape(title)}</a></strong>：{escape(lead)}</li>')
         body = "".join(
             (f"<h3>{escape(heading)}</h3>" if heading else "") + f"<p>{escape(text)}</p>"
             for heading, text in excerpts
@@ -114,6 +114,7 @@ def generate():
     email_css = "<style>body{font:16px/1.85 Arial,sans-serif;color:#253333;max-width:760px;margin:auto;padding:20px}section{border-bottom:1px solid #dedede;padding:18px 0}h1{font-size:34px}h2{font-size:22px}a{color:#286a5b}li{margin:8px 0}</style>"
     mail_html = article.replace('<link rel="stylesheet" href="/assets/site.css">', email_css)
     mail_html = mail_html.replace('<script src="/assets/news.js" defer></script>', "")
+    mail_html = mail_html.replace('<script src="/assets/morning.js" defer></script>', "")
     Path(os.environ["RUNNER_TEMP"], "mail.html").write_text(mail_html + "</main></body></html>")
 
 
