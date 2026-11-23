@@ -37,7 +37,7 @@ $('books').replaceChildren(...selected.map(b=>{const card=el('article',undefined
 const g=b.guide||{};
 if(g.intro)info.append(el('p',g.intro,'intro-snip'));
 if((g.keywords||[]).length){const t=el('div',undefined,'keyword-tags');t.append(...g.keywords.slice(0,3).map(word=>el('span',word)));info.append(t)}
-const more=el('button',g.checkedOn?'查看知识卡 · 导读 / 短句 / 评价':'查看详情 · 内容待补充','detail-btn');more.type='button';more.onclick=()=>showBookDetail(b);info.append(more);
+const more=el('button',g.checkedOn?'查看知识卡 · 导读 / 短句 / 评价':'查看书籍资料 · 尚未同步','detail-btn');more.type='button';more.onclick=()=>showBookDetail(b);info.append(more);
 card.append(info);return card}));if(!selected.length)$('books').append(el('p','暂无匹配的书籍'))}
 function renderNotes(){const items=data.books.flatMap(b=>(b.excerpts||[]).map(x=>{const n=el('article');n.append(el('b',b.title),el('p',x.type==='highlight'?'精选划线':'我的想法'),el('blockquote',x.text));return n}));$('notes').replaceChildren(...(items.length?items:[el('p','目前没有公开的笔记正文。')]))}
 function sectionFor(parent,title){const s=el('section'),h=el('h3',title);s.append(h);parent.append(s);return s}
@@ -50,7 +50,7 @@ function showBookDetail(book){
   if(g.rating!==null&&g.rating!==undefined)details.append(el('p','微信读书评分：'+g.rating+'/100'+(g.ratingCount?' · '+g.ratingCount+'人评分':''),'knowledge-meta'));
   if(link(book.link)){const a=el('a','在微信读书查看原书');a.href=link(book.link);a.target='_blank';a.rel='noopener noreferrer';details.append(a)}
   head.append(details);body.append(head);
-  sectionFor(body,'这本书讲什么').append(el('p',g.intro||'书籍简介正在按批次补充，请查看微信读书原书介绍。'));
+  sectionFor(body,'这本书讲什么').append(el('p',g.intro||'官方暂未提供可展示的简介；可通过上方链接查看微信读书原书资料。'));
   const words=sectionFor(body,'关键词与专业术语'),tags=el('div',undefined,'tags');
   tags.append(...(g.keywords||[]).map(w=>el('span',w)));
   words.append(tags);
