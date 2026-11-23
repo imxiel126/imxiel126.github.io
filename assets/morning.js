@@ -35,7 +35,7 @@ function buildNav(header,main){
  const source=el("span","研究动态：正在读取更新日期…");source.id="morning-source-date";
  state.append(cctv,source);header.append(state);
  const actions=el("nav",undefined,"morning-shortcuts");actions.setAttribute("aria-label","晨读快捷入口");
- [["#personal-recommendations","知乎·小红书推荐"],["#morning-highlights","今日重点"],["#morning-updates","研究新讯"],["#morning-learning","每日学习"],["#overview-wrapper","全部报道"],["/research/","研究中心"],["/library/","知识库"]].forEach(([url,label])=>actions.append(internal(url,label)));
+ [["#personal-recommendations","知乎·小红书推荐"],["/learn/","进入学习台"],["#morning-highlights","今日重点"],["#morning-updates","研究新讯"],["#morning-learning","每日学习"],["#overview-wrapper","全部报道"],["/research/","研究中心"],["/library/","知识库"]].forEach(([url,label])=>actions.append(internal(url,label)));
  header.append(actions);
 }
 function reportData(main){
@@ -121,7 +121,7 @@ function createUpdates(main){
  const study=el("section",undefined,"morning-study");study.id="morning-learning";study.setAttribute("aria-label","每日学习");
  const heading=el("div",undefined,"morning-panel-heading");
  const more=el("button","换一组 ↻");more.type="button";more.id="morning-change-study";
- heading.append(el("div","每日三学 · 小步积累","morning-panel-title"),more);
+ heading.append(el("div","每日三学 · 小步积累","morning-panel-title"),more,internal("/learn/","记录与复习 →"));
  const items=el("div","正在读取今日学习卡片…","morning-study-items");items.id="morning-study-items";
  study.append(heading,items);zone.append(panel,study);
  const anchor=main.querySelector("#overview")||main.querySelector(":scope > section.report");
