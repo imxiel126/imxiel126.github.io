@@ -1,0 +1,25 @@
+/* 阅读思考 · 独立样式，仅在 reading 页面加载 */
+.reading-reflections{margin:44px auto 60px;max-width:1120px;padding:26px 30px 34px;border:1px solid var(--line,#e5e9e2);background:#fff;border-radius:14px}
+.reading-reflections .ref-head{display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap}
+.reading-reflections h2{margin:6px 0 4px;font:700 clamp(24px,3vw,32px)/1.45 var(--serif,"Songti SC",serif)}
+.reading-reflections .ref-head p{color:var(--muted,#667);font-size:13px;margin:3px 0 16px}
+.reading-reflections .ref-pill{display:inline-block;font-size:12px;padding:5px 10px;border:1px solid #d4e4d8;border-radius:40px;background:#f3f8f4;color:#24634e}
+.reading-reflections .ref-featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:14px 0 30px}
+.reading-reflections .ref-card{background:#fbfcfa;border:1px solid var(--line,#e5e9e2);border-radius:10px;padding:19px 20px;display:flex;flex-direction:column;gap:9px;min-height:225px}
+.reading-reflections .ref-card h3{font:700 17px/1.5 var(--serif,"Songti SC",serif);margin:0}
+.reading-reflections .ref-card p{font-size:13px;color:#435451;line-height:1.8;margin:0}
+.reading-reflections .ref-card small{font-size:11px;color:var(--muted,#667)}
+.reading-reflections .ref-card .ref-action{margin-top:auto;padding-top:9px;border-top:1px solid #e4ece7;font-size:12px}
+.reading-reflections .ref-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line,#e5e9e2);padding-top:20px}
+.reading-reflections input,.reading-reflections select{min-width:0;border:1px solid #dce5df;border-radius:8px;padding:9px 11px;color:#203b32;background:#fff}
+.reading-reflections input{flex:1 1 220px}
+.reading-reflections button{border:1px solid #cbdcd1;border-radius:8px;color:#23634f;background:#fff;padding:7px 12px;font:inherit;font-size:12px;cursor:pointer}
+.reading-reflections button:hover{background:#eef6f0}
+.reading-reflections .ref-result{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-top:15px}
+.reading-reflections .ref-result .ref-card{min-height:165px;padding:14px 16px}
+.reading-reflections .ref-result .ref-card h3{font-size:15px}
+.reading-reflections .ref-result .ref-card p{font-size:12px}
+.reading-reflections .ref-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;color:var(--muted,#667);font-size:12px;margin-top:12px}
+.reading-reflections .ref-browse-title{font-size:18px;margin:18px 0 3px}
+.reading-reflections .ref-empty{margin:16px 0;color:#71817b}
+@media(max-width:640px){.reading-reflections{padding:22px 16px;margin:30px 12px}.reading-reflections .ref-featured{grid-template-columns:1fr}}
