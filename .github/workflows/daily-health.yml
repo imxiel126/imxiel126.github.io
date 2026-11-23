@@ -10,6 +10,8 @@ on:
     paths:
       - 'scripts/check_daily_updates.py'
       - 'scripts/test_check_daily_updates.py'
+      - 'scripts/check_site_integrity.py'
+      - 'learn/**'
       - '.github/workflows/daily-health.yml'
 permissions:
   contents: read
@@ -24,6 +26,7 @@ jobs:
       - name: 检查监测程序
         run: |
           python3 -m py_compile scripts/check_daily_updates.py
+          python3 scripts/check_site_integrity.py
           python3 -m unittest discover -s scripts -p 'test_check_daily_updates.py' -v
       - name: 核查每日资料时效、思考卡轮换和线上页面，失败时发邮件
         env:
