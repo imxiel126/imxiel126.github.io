@@ -12,7 +12,8 @@ on:
       - 'reading/reflections.css'
       - 'reading/reflections.js'
   schedule:
-    - cron: '15 1 * * *'
+    - cron: '17 1 * * *' # 北京时间09:17
+    - cron: '47 3 * * *' # 北京时间11:47补偿同步
 permissions:
   contents: write
   pages: write
