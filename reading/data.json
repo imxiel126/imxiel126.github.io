@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:03:55.185111+00:00",
+  "updated": "2026-11-23T15:21:57.129900+00:00",
   "books": [
     {
       "id": "41807702",
@@ -1966,9 +1966,14 @@
           "医学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "2.不能讲述、描写或创造出自发性的、原创性的、自主性的小说故事。",
+          "highlights": 527
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2000,9 +2005,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我们被迫与勒索共舞，却无法跳好舞步，也看不透舞伴的心思。",
+          "highlights": 1296
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2034,9 +2044,14 @@
           "纪实文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我的眼睛盯在那个人身上，惊讶得腿都快软了。 来人不是小松和人，也不是持刀的肥胖男子。 而是猪野诗织。",
+          "highlights": 8604
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2079,9 +2094,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "很显然，怎样的“探究”问题被提出，不是由意识主体，而是由意识主体之外的社会共同体决定的。",
+          "highlights": 238
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2113,9 +2133,14 @@
           "科幻小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "丁仪摇摇头说：“可你们始终没能理解我这话的真正含义，你们不懂得物理学到底是什么。” 方琳笑着说：“只要它的性别不是女就行。”",
+          "highlights": 612
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2147,9 +2172,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "梦想没有年龄的限制，现在开始，就是最好的时候。",
+          "highlights": 1824
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2181,9 +2211,18 @@
           "科幻小说"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "大牙最后说：“我们以后有很长的时间相处，有很多的事要谈，但不要再从道德的角度谈了，在宇宙中，那东西没意义。”",
+          "highlights": 1674
+        },
+        "review": {
+          "text": "微风吹来，草海上涌起道道波纹，仿佛是星空下无际的骚动的人海，向整个宇宙无声地歌唱着。",
+          "author": "℘⃝時光的邂逅⁎♥̶๓࿐ᩚ不私信",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2215,9 +2254,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "人尽可被毁灭，但不可被打败。",
+          "highlights": 2873
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2249,9 +2293,18 @@
           "古言精品"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "“不够。”他摇头：“要这滴水一直滑到你脚尖，不破不分那么才够。”",
+          "highlights": 28
+        },
+        "review": {
+          "text": "看完后表示作者为了出版也是拼了……友情推荐，当然推荐的是原版",
+          "author": "momo",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2283,9 +2336,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "但有些事情是“不可堆积的”，比如中国足球。",
+          "highlights": 2484
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2317,9 +2375,14 @@
           "科幻小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“你们谁能告诉我光速是多少？” 12个孩子举起了手爪。",
+          "highlights": 9036
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2351,9 +2414,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "那天夜里，两人一同躺到了那张小小的床上。",
+          "highlights": 4816
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2385,9 +2453,14 @@
           "法律"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我从没听到过有人承认自己存在偏见，首先就是我。但当我意识到有些偏见已经深入骨髓，我感到失望、忧虑和难过。",
+          "highlights": 494
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2419,9 +2492,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "事实上，平面国的居民不可能凭视觉区分不同的形状，因为除了线段以外，我们看不见、也不可能看见任何其他东西。",
+          "highlights": 13266
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2453,9 +2531,14 @@
           "纪实小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我们所能谈论的现实，从来不是现实本身。",
+          "highlights": 720
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2487,9 +2570,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "就这样，西蒙的尸体轻轻地漂向辽阔的大海。",
+          "highlights": 289
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2521,9 +2609,18 @@
           "经典作品"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "爱的本质就是生命的相互依赖。",
+          "highlights": 850
+        },
+        "review": {
+          "text": "冯老的津版“故事汇”，许多情节令人触动🙏🤔",
+          "author": "🚴🏻‍♂️福星🏃‍💙🌈",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2555,9 +2652,14 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "现在我知道成熟是怎么一回事了，那就是有勇气正视生存现实沉默的冷漠，就是有力量拒绝真诚的善意的温柔的自我欺骗。",
+          "highlights": 357
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2589,9 +2691,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "他想起了新海美冬脖颈上的两颗黑痣。",
+          "highlights": 7293
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2623,9 +2730,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“他们把我杀了，韦内姑娘。”他说。",
+          "highlights": 5661
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2663,9 +2775,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "“因为不管怎么说，朝向某个目标的倾向并不意味着目标的达到，而且因为，一般地说，这个目标只能近似地达到……”",
+          "highlights": 112
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2697,9 +2814,14 @@
           "纪实小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "这些都是我们的孩子。 他们长大成人后 我们都会受益，或付出代价。",
+          "highlights": 756
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2731,9 +2853,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "话语表达的是一种意思，而说话的语调可能传达出另一种截然不同的意思。",
+          "highlights": 518
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
@@ -2765,9 +2892,14 @@
           "年代小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "生活是属于每个人自己的感受，不属于任何别人的看法。",
+          "highlights": 85932
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-23",
+        "reviewCheckedOn": "2026-11-23"
       }
     },
     {
