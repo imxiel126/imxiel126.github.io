@@ -1,8 +1,8 @@
 name: 新闻联播晨读
 on:
   schedule:
-    - cron: '30 23 * * *' # 北京时间次日07:30
-    - cron: '30 0 * * *' # 北京时间次日08:30补偿同步
+    - cron: '37 23 * * *' # 北京时间次日07:37
+    - cron: '47 0 * * *' # 北京时间次日08:47补偿同步
   workflow_dispatch:
 concurrency:
   group: pages-deploy
