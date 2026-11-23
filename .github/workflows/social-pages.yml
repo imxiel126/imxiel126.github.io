@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths:
       - 'social/**'
+      - 'index.html'
+      - 'assets/site.css'
+      - 'scripts/daily.py'
       - '.github/workflows/social-pages.yml'
   workflow_dispatch:
 permissions:
@@ -25,6 +28,9 @@ jobs:
       - name: 校验社交内容格式
         run: |
           python3 -m json.tool social/data.json > /dev/null
+          python3 -m json.tool social/recommendations.json > /dev/null
+          node --check social/recommendations.js
+          python3 -m py_compile scripts/daily.py scripts/social_discover.py
           python3 - <<'PY'
           import json
           d=json.load(open('social/data.json'))
