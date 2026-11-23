@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: curated-notes-pages-deployment
+  group: pages-deploy
   cancel-in-progress: false
 jobs:
   deploy:
@@ -28,6 +28,9 @@ jobs:
           cp -R archive notes reading library social research assets site/
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
