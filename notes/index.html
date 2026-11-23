@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>精选笔记 · 个人知识中心</title>
+<style>
+:root{--ink:#172a3e;--muted:#607487;--accent:#145e87;--line:#dde6ed}*{box-sizing:border-box}
+body{margin:0;background:#f3f7fa;color:var(--ink);font:16px/1.7 system-ui,-apple-system,"PingFang SC",sans-serif}
+a{color:var(--accent);text-underline-offset:.2em}
+nav{max-width:1080px;margin:auto;padding:20px clamp(16px,5vw,38px);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+main{max-width:1080px;margin:auto;padding:26px clamp(16px,5vw,38px) 64px}
+h1{font:700 clamp(32px,5vw,50px)/1.2 Georgia,serif;margin:10px 0}h2{font-size:20px;margin:0 0 8px}
+.lead,.meta,footer{color:var(--muted)}.lead{max-width:650px}.meta,footer{font-size:13px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 10px}
+input,select{font:inherit;border:1px solid #c8d7e2;background:white;border-radius:10px;padding:11px 13px;color:var(--ink)}
+input{flex:2;min-width:240px}select{flex:1;min-width:150px}
+#count{color:var(--muted);font-size:14px;margin:14px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+article{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0}
+.excerpt,.content{white-space:pre-wrap;overflow-wrap:anywhere}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0}.tag{background:#eef5fa;border-radius:999px;padding:2px 9px;color:#315f7d;font-size:12px}
+button{border:0;background:none;color:var(--accent);font:inherit;cursor:pointer;padding:0;text-decoration:underline}
+.content{display:none;border-top:1px solid var(--line);margin-top:14px;padding-top:14px}.content.visible{display:block}
+.empty{grid-column:1/-1;background:white;border:1px dashed #bacbd9;border-radius:16px;padding:40px 25px;color:var(--muted)}
+footer{margin-top:32px}
+</style></head><body>
+<nav><a href="/"><strong>新闻联播晨读</strong></a><a href="/">返回首页</a></nav>
+<main><header><p class="meta">PERSONAL KNOWLEDGE LIBRARY</p><h1>精选笔记</h1>
+<p class="lead">这里仅展示已经人工审核并批准公开的笔记。私人备份与网站严格分离。</p></header>
+<div class="controls"><input id="search" type="search" aria-label="搜索笔记" placeholder="搜索标题、正文或标签"><select id="category" aria-label="标签筛选"><option value="">全部标签</option></select><select id="order" aria-label="排序方式"><option value="new">最近更新</option><option value="old">最早更新</option><option value="title">标题排序</option></select></div>
+<div id="count" aria-live="polite"></div><div id="items" class="cards"></div>
+<footer>公开展示采用人工白名单机制，不会自动发布未审核的私人笔记。</footer></main>
+<script>
+(()=>{
+'use strict';
+const list=document.querySelector('#items'),count=document.querySelector('#count'),search=document.querySelector('#search'),category=document.querySelector('#category'),order=document.querySelector('#order');
+let notes=[];
+const make=(tag,cls,value)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=value;return x};
+const formattedDate=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?'':d.toLocaleDateString('zh-CN')};
+function display(){
+const q=search.value.trim().toLocaleLowerCase();
+let shown=notes.filter(n=>(!category.value||(n.tags||[]).includes(category.value))&&(!q||[n.title,n.excerpt,n.content,...(n.tags||[])].join(' ').toLocaleLowerCase().includes(q)));
+shown.sort((a,b)=>order.value==='title'?a.title.localeCompare(b.title,'zh-CN'):order.value==='old'?(a.updated_at||'').localeCompare(b.updated_at||''):(b.updated_at||'').localeCompare(a.updated_at||''));
+count.textContent='共 '+notes.length+' 篇已公开笔记 · 当前显示 '+shown.length+' 篇';
+list.replaceChildren();
+if(!shown.length){list.append(make('div','empty',notes.length?'没有找到符合条件的笔记。':'精选笔记页面已准备好，暂时没有批准公开的笔记。'));return}
+for(const n of shown){
+const card=make('article');card.append(make('div','meta',(n.notebook||'知识笔记')+' · '+formattedDate(n.updated_at)),make('h2','',n.title),make('p','excerpt',n.excerpt||''));
+const tags=make('div','tags');for(const t of n.tags||[])tags.append(make('span','tag',t));card.append(tags);
+if(n.content){const btn=make('button','','阅读全文'),body=make('div','content',n.content);btn.type='button';btn.setAttribute('aria-expanded','false');btn.addEventListener('click',()=>{const yes=body.classList.toggle('visible');btn.textContent=yes?'收起正文':'阅读全文';btn.setAttribute('aria-expanded',String(yes))});card.append(btn,body)}
+list.append(card)
+}}
+fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('not available');return r.json()}).then(d=>{
+notes=Array.isArray(d.items)?d.items.filter(n=>n&&typeof n.title==='string'):[];
+for(const tag of [...new Set(notes.flatMap(n=>Array.isArray(n.tags)?n.tags:[]))].sort((a,b)=>a.localeCompare(b,'zh-CN'))){const opt=make('option','',tag);opt.value=tag;category.append(opt)}
+display()}).catch(()=>list.append(make('div','empty','笔记索引暂时无法加载，请稍后再试。')));
+[search,category,order].forEach(x=>x.addEventListener('input',display))
+})();
+</script></body></html>
