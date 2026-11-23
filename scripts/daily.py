@@ -104,11 +104,15 @@ def generate():
     if day > dt.date(2026,11,20):
         if not (archive / "2026-11-20.html").exists():
             shutil.copyfile("scripts/first-issue.html", archive / "2026-11-20.html")
-    (archive / f"{day}.html").write_text(article + "</main></html>")
+    (archive / f"{day}.html").write_text(article + "</main></body></html>")
     past = " · ".join(link("https://imxiel126.github.io/archive/" + p.name,p.stem) for p in sorted(archive.glob("*.html"), reverse=True) if p.stem != str(day))
     social_block = '<section><h2>知乎与小红书 · 内容中心</h2><p>把值得保存的观点、公开文章和图文笔记集中到一个阅读入口，按平台和关键词检索。</p><p><a href="/social/">进入知乎 / 小红书内容中心</a></p></section>'
     (public / "index.html").write_text(article + social_block + "<section><h2>往期</h2>" + past + "</section></main></html>")
-    Path(os.environ["RUNNER_TEMP"], "mail.html").write_text(article + "</main></html>")
+    # Keep the email legible without external CSS and website-only JS.
+    email_css = "<style>body{font:16px/1.85 Arial,sans-serif;color:#253333;max-width:760px;margin:auto;padding:20px}section{border-bottom:1px solid #dedede;padding:18px 0}h1{font-size:34px}h2{font-size:22px}a{color:#286a5b}li{margin:8px 0}</style>"
+    mail_html = article.replace('<link rel="stylesheet" href="/assets/site.css">', email_css)
+    mail_html = mail_html.replace('<script src="/assets/news.js" defer></script>', "")
+    Path(os.environ["RUNNER_TEMP"], "mail.html").write_text(mail_html + "</main></body></html>")
 
 
 def send():
