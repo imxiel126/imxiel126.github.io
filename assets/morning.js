@@ -97,7 +97,7 @@ function updateSource(root){
  const format=raw=>{const d=new Date(raw);return Number.isNaN(d.getTime())?"":new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(d);};
  const stamp=format(root.synced_at);
  const target=document.getElementById("morning-source-date");
- if(target)target.textContent=stamp?"研究资讯最近同步 "+stamp:"研究资讯：已读取资料";
+ if(target)target.textContent=stamp?"研究资料内容最近变化 "+stamp:"研究资讯：已读取资料";
  const feed=document.getElementById("morning-news-updates");if(!feed)return;feed.replaceChildren();
  const news=Array.isArray(root.news)?root.news:[];
  const selected=[...news.filter(x=>x.type==="hydrogen"),...news.filter(x=>x.type==="papers"),...news.filter(x=>x.type==="policy")];
