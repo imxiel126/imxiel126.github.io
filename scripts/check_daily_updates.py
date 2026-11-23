@@ -78,10 +78,13 @@ def check_local(root=None, now=None):
         research=json.loads((root/"research/data.json").read_text(encoding="utf-8"))
         stamp=parse_datetime(research.get("synced_at"))
         age=((now.astimezone(dt.timezone.utc)-stamp.astimezone(dt.timezone.utc)).total_seconds()/3600) if stamp else 9999
-        if age > 20:
-            issues.append(f"研究资料已超过20小时未同步（约 {age:.1f} 小时）")
+        if age < -1:
+            issues.append("研究资料内容更新时间异常（未来日期）")
+        elif age > 20:
+            # The timestamp means last CONTENT change, not the most recent sync job.
+            success.append(f"研究资料最近一次内容变化约 {age:.1f} 小时前（应另查同步任务是否成功）")
         else:
-            success.append(f"研究资料更新记录正常（约 {age:.1f} 小时前）")
+            success.append(f"研究资料内容最近有变化（约 {age:.1f} 小时前）")
     except (OSError,ValueError,TypeError) as err:
         issues.append("研究资料检查失败："+type(err).__name__)
 
@@ -91,9 +94,12 @@ def check_online():
     issues=[]
     success=[]
     for suffix,needle in [
-        ("/","/reading/"),
-        ("/reading/","id=\"reading-reflections\""),
-        ("/reading/reflections-2000.json",'"total":2000'),
+        ("/", 'href="/learn/"'),
+        ("/learn/", 'id="daily-items"'),
+        ("/learn/app.js", "zhixing-days-v1"),
+        ("/reading/", 'id="reading-reflections"'),
+        ("/reading/reflections-2000.json", '"total":2000'),
+        ("/research/", 'id="research-title"'),
     ]:
         endpoint=SITE+suffix
         problem=None
@@ -137,7 +143,12 @@ def notify_failure(issues,now):
 def main():
     now=dt.datetime.now(TZ)
     passed,failed=check_local(now=now)
-    site_ok,site_failed=check_online()
+    # A push may start before GitHub Pages finishes; avoid premature website alerts.
+    if os.environ.get("GITHUB_EVENT_NAME") == "push":
+        print("Online website verification deferred until the next scheduled health check.")
+        site_ok,site_failed=[],[]
+    else:
+        site_ok,site_failed=check_online()
     passed.extend(site_ok)
     failed.extend(site_failed)
     for text in passed:print("OK:",text)
