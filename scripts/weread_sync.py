@@ -126,9 +126,12 @@ def main():
     for b in books:
         previous_progress=old.get(b["id"],{}).get("progress")
         valid_previous=isinstance(previous_progress,(int,float)) and 0 <= previous_progress <= 100
+        # Keep only public book metadata previously enriched for this same still-visible book.
+        prior_guide=old.get(b["id"],{}).get("guide",{})
         b.update({"progress":int(previous_progress) if valid_previous else None,
                   "notes":counts.get(b["id"],{"highlights":0,"thoughts":0,"bookmarks":0}),
-                  "excerpts":[],"summary":"","summary_hash":""})
+                  "excerpts":[],"summary":"","summary_hash":"",
+                  "guide":prior_guide if isinstance(prior_guide,dict) else {}})
     # Query 40 books per sync; retain already-fetched progress and fill missing books first.
     ebooks=[b for b in books if b["type"]=="ebook"]
     candidates=[b for b in ebooks if b["progress"] is None]
