@@ -29,7 +29,7 @@ function show(){
  const bottom=txt("span",undefined,"social-rec-card-bottom");
  bottom.append(txt("span",it.observed_at?it.observed_at.slice(0,10):"浏览器同步"),txt("span","查看原文 ↗"));
  card.append(bottom);grid.append(card);
- }));
+ });
  status.textContent=updated?"浏览器推荐同步时间："+new Date(updated).toLocaleString("zh-CN")+" · 仅展示最近实际采集到的卡片":"尚未配置浏览器端同步 · 不包含平台私人推荐数据";
 }
 function load(){
