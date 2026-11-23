@@ -10,6 +10,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 from weread_sync import call, number, short, https
@@ -91,7 +92,7 @@ def one_public_review(items):
                     "stars":star//20 if star in (20,40,60,80,100) else None}
     return None
 
-def enrich(book):
+def enrich(book, with_discussion=True):
     info=call("/book/info",bookId=book["id"])
     intro=plain(info.get("intro"),260)
     keywords,terms=keywords_and_terms(book,intro)
@@ -110,48 +111,86 @@ def enrich(book):
         "review":None,
         "checkedOn":dt.datetime.now(dt.timezone.utc).date().isoformat(),
     }
-    try:
-        popular=call("/book/bestbookmarks",bookId=book["id"],chapterUid=0)
-        guide["quote"]=one_short_quote(popular.get("items"))
-    except (RuntimeError,ValueError,OSError) as exc:
-        print("Popular highlights unavailable for book:",type(exc).__name__,file=sys.stderr)
-    try:
-        review=call("/review/list",bookId=book["id"],reviewListType=1,count=5)
-        guide["review"]=one_public_review(review.get("reviews"))
-        deep=review.get("deepVRecommendValue")
-        if isinstance(deep,(int,float)) and 0<=deep<=1000:
-            guide["deepRecommendationPct"]=round(deep/10,1)
-    except (RuntimeError,ValueError,OSError) as exc:
-        print("Public reviews unavailable for book:",type(exc).__name__,file=sys.stderr)
+    if with_discussion:
+        fill_discussion(guide,book["id"])
     return guide
+
+def fill_discussion(guide,book_id):
+    """Enhance an already fetched public book card; don't duplicate requests."""
+    if not guide.get("quoteCheckedOn"):
+        try:
+            popular=call("/book/bestbookmarks",bookId=book_id,chapterUid=0)
+            guide["quote"]=one_short_quote(popular.get("items"))
+            guide["quoteCheckedOn"]=dt.datetime.now(dt.timezone.utc).date().isoformat()
+        except (RuntimeError,ValueError,OSError) as exc:
+            print("Public highlight unavailable:",type(exc).__name__,file=sys.stderr)
+    if not guide.get("reviewCheckedOn"):
+        try:
+            review=call("/review/list",bookId=book_id,reviewListType=1,count=5)
+            guide["review"]=one_public_review(review.get("reviews"))
+            deep=review.get("deepVRecommendValue")
+            if isinstance(deep,(int,float)) and 0<=deep<=1000:
+                guide["deepRecommendationPct"]=round(deep/10,1)
+            guide["reviewCheckedOn"]=dt.datetime.now(dt.timezone.utc).date().isoformat()
+        except (RuntimeError,ValueError,OSError) as exc:
+            print("Public reader review unavailable:",type(exc).__name__,file=sys.stderr)
+
 
 def main():
     if os.getenv("WEREAD_PUBLIC_ENABLED")!="true":
-        raise SystemExit("No public sync permission")
+        raise SystemExit("Public sync is disabled")
     data=json.loads(DATA.read_text(encoding="utf-8"))
     if not data.get("ready"):raise RuntimeError("Sync bookshelf before enriching")
     books=data.get("books") or []
-    maximum=min(16,max(1,number(os.getenv("WEREAD_ENRICH_BATCH","10"))))
     today=dt.datetime.now(dt.timezone.utc).date()
-    pending=[]
+    # First complete every public book introduction. This does not fetch the book text.
+    intro_limit=min(250,max(1,number(os.getenv("WEREAD_INTRO_BATCH","239"))))
+    discussion_limit=min(32,max(1,number(os.getenv("WEREAD_DISCUSSION_BATCH","24"))))
+    missing=[]
     for book in books:
         if book.get("type")!="ebook":continue
         guide=book.get("guide")
-        checked=(guide or {}).get("checkedOn")
+        checked=(guide or {}).get("checkedOn") if isinstance(guide,dict) else None
         try: age=(today-dt.date.fromisoformat(checked)).days
         except (ValueError,TypeError):age=999
-        if not guide or age>=90:pending.append(book)
+        if not isinstance(guide,dict) or not guide or age>=90:
+            missing.append(book)
     enriched=0
-    for book in pending[:maximum]:
+    failed=0
+    for i,book in enumerate(missing[:intro_limit]):
         try:
-            book["guide"]=enrich(book)
+            # Updating book/info only; public highlights and opinions are a second pass.
+            existing=book.get("guide") or {}
+            guide=enrich(book,with_discussion=False)
+            for key in ("quote","review","quoteCheckedOn","reviewCheckedOn","deepRecommendationPct"):
+                if key in existing:guide[key]=existing[key]
+            book["guide"]=guide
             enriched+=1
         except (RuntimeError,ValueError,OSError) as exc:
-            print(f"Book metadata unavailable for {book.get('id')}: {type(exc).__name__}",file=sys.stderr)
+            failed+=1
+            print(f"Book description unavailable for {book.get('id')}: {type(exc).__name__}",file=sys.stderr)
+            if failed%10==0:time.sleep(2)
+        if (i+1)%25==0:
+            print(f"Intro backfill: {i+1}/{min(intro_limit,len(missing))} checked",flush=True)
+            # Checkpoint locally; workflow commits the final result only after success.
+            DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        time.sleep(0.12)
+    # Quotes and reviews are published only when the provider has concise public entries.
+    # Progressively enrich a limited set each day, without clearing existing cards.
+    to_discuss=[b for b in books if b.get("type")=="ebook"
+                and isinstance(b.get("guide"),dict) and b["guide"].get("checkedOn")
+                and (not b["guide"].get("quoteCheckedOn") or not b["guide"].get("reviewCheckedOn"))]
+    discussed=0
+    for b in to_discuss[:discussion_limit]:
+        fill_discussion(b["guide"],b["id"])
+        discussed+=1
+        time.sleep(0.15)
     data["schema"]=2
-    data["guideSource"]="WeRead book information, popular highlights, public recommended reviews; small excerpts only"
+    data["guideSource"]="Official WeRead public book info and optional concise public highlights/reviews; no private reading text"
     DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     total=sum(bool(b.get("guide",{}).get("checkedOn")) for b in books)
-    print(f"Guide enrichment: {enriched} new/renewed; {total} books now have guides")
+    qtotal=sum(bool(b.get("guide",{}).get("quoteCheckedOn")) for b in books)
+    rtotal=sum(bool(b.get("guide",{}).get("reviewCheckedOn")) for b in books)
+    print(f"Public introductions {total}/{len(books)}; added {enriched}, failed {failed}; quote checks {qtotal}, review checks {rtotal}, newly attempted {discussed}",flush=True)
 
 if __name__=="__main__":main()
