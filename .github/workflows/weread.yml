@@ -34,6 +34,7 @@ jobs:
           mkdir -p site
           cp index.html site/
           cp -R archive reading site/
+          if [ -d notes ]; then cp -R notes site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
