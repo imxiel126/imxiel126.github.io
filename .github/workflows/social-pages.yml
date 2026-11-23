@@ -58,6 +58,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPOSITORY: ${{ github.repository }}
           GH_RUN_ID: ${{ github.run_id }}
+          GH_ARTIFACT_NAME: site-${{ github.run_id }}-${{ github.run_attempt }}
         run: |
           python3 - <<'PY'
           import json, os, time, urllib.request
@@ -73,7 +74,7 @@ jobs:
                   with urllib.request.urlopen(req, timeout=15) as resp:
                       data = json.load(resp)
                   matches = [a for a in data.get('artifacts', [])
-                             if a.get('name') == 'github-pages' and not a.get('expired')]
+                             if a.get('name') == os.environ['GH_ARTIFACT_NAME'] and not a.get('expired')]
                   if len(matches) == 1:
                       print('Found exactly one Pages artifact:', matches[0]['id'])
                       break
