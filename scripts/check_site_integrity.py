@@ -47,12 +47,22 @@ def main():
     for folder in ("brain","learn","assets","journal","archive","notes","reading","research","library","social"):
         if folder not in publisher:
             raise AssertionError("Unified Pages publisher omits site folder: "+folder)
+    # One unified publisher deploys the entire website; other workflows only
+    # update content. They should not each upload a potentially stale site.
+    for path in WORKFLOWS:
+        assert_file(path)
+    publisher=assert_file(".github/workflows/social-pages.yml")
+    for folder in ("brain", "learn", "assets", "journal", "reading", "research"):
+        if folder not in publisher:
+            raise AssertionError("Unified Pages deployment misses "+folder)
+    if "actions/upload-pages-artifact@v3" not in publisher or "actions/deploy-pages@v4" not in publisher:
+        raise AssertionError("Unified Pages deployment must upload and publish the full site")
     for path in WORKFLOWS:
         if path.endswith("social-pages.yml"):
             continue
-        workflow=assert_file(path)
-        if "actions/deploy-pages@v4" in workflow:
-            raise AssertionError("Data-only workflow must not deploy Pages: "+path)
+        content=assert_file(path)
+        if "actions/deploy-pages@" in content:
+            raise AssertionError("Only the unified publisher should deploy Pages: "+path)
     first=assert_file("scripts/first-issue.html")
     home=assert_file("index.html")
     if 'href="/brain/"' not in first or 'href="/brain/"' not in home:
