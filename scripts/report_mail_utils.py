@@ -20,6 +20,20 @@ def make_report_id(kind: str, report_date: dt.date) -> str:
     return f"{kind}-{report_date:%Y%m%d}"
 
 
+def make_report_subject(kind: str, report_date: dt.date) -> str:
+    """Return the canonical, date-stamped subject for each daily report."""
+    kind = str(kind).strip().lower()
+    if isinstance(report_date, str):
+        report_date = dt.date.fromisoformat(report_date)
+    make_report_id(kind, report_date)  # validate kind and date
+    labels = {
+        "news": "新闻联播晨读",
+        "hydrogen": "氢能行业晨报",
+        "home": "个人主页晨报",
+    }
+    return f"{labels[kind]}｜{report_date:%Y-%m-%d}"
+
+
 def add_report_footer(content: str, report_id: str) -> str:
     """Put a searchable, human-readable ID in both HTML and plain-text mail."""
     if report_id in content:
