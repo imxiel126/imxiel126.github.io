@@ -13,7 +13,7 @@ from check_daily_updates import check_local, check_morning_editions, TZ
 def write_marker(path, report_id):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
-        f"report_id={report_id}\nsmtp_accepted_at=2026-11-23T15:00:00Z\n"
+        f"report_id={report_id}\nstatus=smtp_accepted\nsmtp_accepted_at=2026-11-23T15:00:00Z\n"
         "smtp_accepted_recipients=1\nfinal_delivery=unverified\n",
         encoding="utf-8",
     )
@@ -67,6 +67,28 @@ class HealthTests(unittest.TestCase):
             edition_ok, edition_fail = check_morning_editions(now, root=root)
             self.assertEqual(edition_fail, [])
             self.assertEqual(len(edition_ok), 2)
+
+    def test_pending_claim_is_not_counted_as_smtp_accepted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / ".sent").mkdir()
+            now = dt.datetime(2026, 11, 24, 9, 30, tzinfo=TZ)
+            (root / ".sent/details-2026-11-23").write_text(
+                "report_id=news-20261123\nstatus=pending\nclaim_id=123-1\n",
+                encoding="utf-8",
+            )
+            _, issues = check_local(root=root, now=now, check_delivery=True)
+            self.assertTrue(any("新闻联播历史投递标记" in e for e in issues))
+            (root / ".sent/edition-hydrogen-2026-11-24.txt").write_text(
+                "report_id=hydrogen-20261124\nstatus=pending\nclaim_id=123-1\n",
+                encoding="utf-8",
+            )
+            (root / ".sent/edition-home-2026-11-24.txt").write_text(
+                "report_id=home-20261124\nstatus=pending\nclaim_id=124-1\n",
+                encoding="utf-8",
+            )
+            _, edition_issues = check_morning_editions(now, root=root)
+            self.assertEqual(len(edition_issues), 2)
 
     def test_morning_edition_check_requires_both_independent_markers(self):
         with tempfile.TemporaryDirectory() as tmp:
