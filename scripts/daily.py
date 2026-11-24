@@ -21,15 +21,92 @@ escape = html.escape
 
 class Listings(HTMLParser):
     def __init__(self):
-        super().__init__()
+        super().__init__(convert_charrefs=True)
         self.items = {}
+        self.anchor = None
 
     def handle_starttag(self, tag, attrs):
+        if tag != "a":
+            return
         a = dict(attrs)
         url = a.get("href", "")
-        title = a.get("title", "")
-        if tag == "a" and title and url.startswith(f"https://tv.cctv.com/{day:%Y/%m/%d}/"):
-            self.items[url] = title.removeprefix("[视频]")
+        if url.startswith("//"):
+            url = "https:" + url
+        if url.startswith("http://tv.cctv.com/"):
+            url = "https://" + url[len("http://"):]
+        parsed = urlsplit(url)
+        if parsed.scheme == "https" and parsed.netloc == "tv.cctv.com" and re.fullmatch(
+                rf"/{day:%Y/%m/%d}/VIDE[A-Za-z0-9]+\.shtml", parsed.path):
+            self.anchor = (url, a.get("title", ""), [])
+        else:
+            self.anchor = None
+
+    def handle_data(self, text):
+        if self.anchor:
+            self.anchor[2].append(text)
+
+    def handle_endtag(self, tag):
+        if tag == "a" and self.anchor:
+            url, title, parts = self.anchor
+            title = (title or "".join(parts)).strip()
+            title = re.sub(r"^(?:完整版\s*)?(?:\[视频\]\s*)?", "", title).strip()
+            if title:
+                self.items[url] = title
+            self.anchor = None
+
+
+def full_program(title):
+    return "新闻联播" in title and stamp in title and bool(re.search(r"19[:：]00", title))
+
+
+def get_listings():
+    # The official dated page can be empty or change markup. Try official
+    # channel pages too; never use a report whose URL date differs.
+    for url in (source, "https://tv.cctv.com/lm/xwlb/",
+                "https://tv.cctv.com/lm/xwlb/index.shtml",
+                "https://cctv.cntv.cn/lm/xinwenlianbo/index.shtml"):
+        try:
+            parser = Listings()
+            parser.feed(subprocess.check_output(
+                ["curl", "-fsSL", "--retry", "2", "--max-time", "40",
+                 "-A", "Mozilla/5.0", url]).decode("utf-8", errors="replace"))
+            full = [u for u,t in parser.items.items() if full_program(t)]
+            if len(full) == 1 and len(parser.items) >= 2:
+                print("Verified CCTV listing:", url, "items:", len(parser.items))
+                return parser
+            print("CCTV listing incomplete:", url, "items:", len(parser.items))
+        except (subprocess.CalledProcessError, OSError, ValueError) as exc:
+            print("CCTV listing unavailable:", url, type(exc).__name__)
+    raise ValueError("当期节目单未核实：已检查多个央视官方入口；保留上期内容")
+
+
+def verified_archive():
+    # Reuse only an existing detailed archive of the exact date, with
+    # matching official dated links and a complete number of detail sections.
+    path = public / "archive" / f"{day}.html"
+    if not path.is_file():
+        return None
+    article = path.read_text(encoding="utf-8")
+    header = re.search(r"<main>\s*<header>.*?</header>", article, re.S)
+    count = re.search(r"央视节目单收录\s+(\d+)\s+条分段报道", article)
+    if not header or f"{day} 播出" not in header[0] or not count:
+        return None
+    n = int(count[1])
+    links = set(re.findall(rf'href="https://tv\.cctv\.com/{day:%Y/%m/%d}/VIDE[A-Za-z0-9]+\.shtml"', article))
+    if n < 1 or len(links) != n + 1 or article.count("央视原文与视频</a>") != n:
+        return None
+    if "全期速览" not in article or "观看完整节目</a>" not in article:
+        return None
+    if article.count("本条正文暂未取得") >= n:
+        return None
+    return article
+
+
+def write_mail(article):
+    email_css = "<style>body{font:16px/1.85 Arial,sans-serif;color:#253333;max-width:760px;margin:auto;padding:20px}section{border-bottom:1px solid #dedede;padding:18px 0}h1{font-size:34px}h2{font-size:22px}a{color:#286a5b}li{margin:8px 0}</style>"
+    mail_html = re.sub(r'<link\b[^>]*\brel="stylesheet"[^>]*>', lambda m: email_css, article, flags=re.I)
+    mail_html = re.sub(r"<script\b[^>]*>.*?</script>", "", mail_html, flags=re.I | re.S)
+    Path(os.environ["RUNNER_TEMP"], "mail.html").write_text(mail_html, encoding="utf-8")
 
 
 def extract_details(url):
@@ -61,10 +138,15 @@ def extract_details(url):
 
 
 def generate():
-    parser = Listings()
-    parser.feed(subprocess.check_output(["curl", "-fsSL", "--retry", "3", "--max-time", "60", source]).decode())
-    if len(parser.items) < 2 or not any(stamp in t for t in parser.items.values()):
-        raise ValueError("当期节目单未核实")
+    archived = verified_archive()
+    homepage = public / "index.html"
+    if archived and homepage.is_file():
+        current = re.search(r"<main>\s*<header>.*?<p>(\d{4}-\d{2}-\d{2}) 播出</p>.*?</header>", homepage.read_text(encoding="utf-8"), re.S)
+        if current and dt.date.fromisoformat(current[1]) >= day:
+            write_mail(archived)
+            print("Verified existing archive reused:", day, "homepage preserved")
+            return
+    parser = get_listings()
     template = Path("scripts/first-issue.html").read_text()
     prefix = template.split("<main>", 1)[0]
     prefix = re.sub(r"<title>.*?</title>", "<title>知行手记 · 每日晨读 · " + str(day) + "</title>", prefix)
@@ -75,7 +157,7 @@ def generate():
         if urlsplit(url).scheme not in ("https", "http"):
             raise ValueError("无效来源")
         return f'<a href="{escape(url, quote=True)}">{escape(title)}</a>'
-    full_url = next(url for url, title in parser.items.items() if stamp in title)
+    full_url = next(url for url, title in parser.items.items() if full_program(title))
     reports = [(url, title) for url, title in parser.items.items() if url != full_url]
     section("本期节目", f"<p>央视节目单收录 {len(reports)} 条分段报道。</p>" + link(full_url, "观看完整节目"))
     overview = []
@@ -110,12 +192,7 @@ def generate():
     research_block = "<div class=\"research-teaser\" id=\"research-teaser\" aria-label=\"最新研究动态\"><div><span class=\"overline\">RESEARCH · 自动同步</span><h2>研究与实践</h2><p class=\"teaser-lead\">氢能 · 电催化 · 检测技术 · 研究方法，集中在本站阅读。</p><a href=\"/research/\">查看研究栏目 →</a></div><div class=\"research-teaser-latest\"><small id=\"research-teaser-meta\">同步资料加载中</small><h3 id=\"research-teaser-title\">最新研究动态</h3><p id=\"research-teaser-desc\">从公开研究主页同步科技和论文资讯。</p></div></div><script src=\"/assets/research-teaser.js\" defer></script>"
     home_article = article.replace("</header>", "</header>" + research_block + social_block, 1)
     (public / "index.html").write_text(home_article + "<section><h2>往期</h2>" + past + "</section></main></body></html>")
-    # Email clients cannot load the shared website CSS: use a small inline fallback.
-    email_css = "<style>body{font:16px/1.85 Arial,sans-serif;color:#253333;max-width:760px;margin:auto;padding:20px}section{border-bottom:1px solid #dedede;padding:18px 0}h1{font-size:34px}h2{font-size:22px}a{color:#286a5b}li{margin:8px 0}</style>"
-    mail_html = article.replace('<link rel="stylesheet" href="/assets/site.css">', email_css)
-    mail_html = mail_html.replace('<script src="/assets/news.js" defer></script>', "")
-    mail_html = mail_html.replace('<script src="/assets/morning.js?v=20261123-home-feed-top" defer></script>', "")
-    Path(os.environ["RUNNER_TEMP"], "mail.html").write_text(mail_html + "</main></body></html>")
+    write_mail(article + "</main></body></html>")
 
 
 def send():
@@ -133,7 +210,10 @@ def send():
         smtp.send_message(msg)
 
 
-if sys.argv[1] == "generate":
-    generate()
-else:
-    send()
+if __name__ == "__main__":
+    if sys.argv[1] == "generate":
+        generate()
+    elif sys.argv[1] == "send":
+        send()
+    else:
+        raise SystemExit("Unknown daily command")
