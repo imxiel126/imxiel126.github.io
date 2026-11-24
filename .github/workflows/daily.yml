@@ -15,12 +15,6 @@ on:
         type: boolean
         required: false
         default: false
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/daily.yml'
-      - 'scripts/daily.py'
-      - 'scripts/report_mail_utils.py'
 concurrency:
   group: news-digest
   cancel-in-progress: false
