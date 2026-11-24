@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>随手记 · 今日想法与稍后阅读 | 知行手记</title>
+<meta name="description" content="今日想法、稍后阅读、回顾与 GitHub 手动同步。记录默认仅保存在本机；公开上传前必须确认。">
+<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/journal/journal.css">
+<script src="/journal/journal.js?v=20261124-1" defer></script></head>
+<body class="site-journal">
+<div class="site-header"><div class="site-header__inner"><a class="site-brand" href="/"><b>知</b>行手记<small>PERSONAL ATLAS</small></a><nav class="site-nav" aria-label="主导航"><a href="/">晨读</a><a href="/journal/" class="is-active" aria-current="page">随手记</a><a href="/learn/">学习台</a><a href="/reading/">阅读</a><a href="/library/">知识库</a><a href="/social/">社交</a></nav></div></div>
+<main class="journal-layout">
+<header class="journal-hero"><span class="journal-kicker">PERSONAL CAPTURE · REVISIT</span><h1>随手记</h1>
+<p>想到就记，看到就收。把「今日想法」「稍后阅读」变成可回顾、可检索的个人资料。</p>
+<div class="journal-stats"><span id="stat-ideas">想法 0</span><span id="stat-reading">待读 0</span><span id="stat-read">已读 0</span><span id="stat-local">本机待同步 0</span></div>
+</header>
+<div class="journal-columns">
+<section class="journal-panel journal-compose" id="capture">
+<div class="journal-title-row"><h2>立即记录</h2><span class="journal-hint">按保存后自动存入当前浏览器</span></div>
+<form id="capture-form">
+<div class="journal-tabs" role="group" aria-label="记录类型"><label><input type="radio" name="kind" value="idea" checked> 今日想法</label><label><input type="radio" name="kind" value="later"> 稍后阅读</label></div>
+<label for="entry-title">标题 / 一句话主题</label><input id="entry-title" required maxlength="140" placeholder="今天值得记录的一个发现…" autocomplete="off">
+<label for="entry-body">想法、摘录或阅读理由</label><textarea id="entry-body" rows="5" maxlength="6000" placeholder="写下关键观点、为什么重要、下一步准备怎么做…"></textarea>
+<label for="entry-url">原文链接（可选）</label><input id="entry-url" type="url" placeholder="https://…">
+<label for="entry-tags">标签（用逗号分隔）</label><input id="entry-tags" maxlength="180" placeholder="科研, 氢能, 阅读">
+<div class="journal-actions"><button type="submit" id="save-entry">保存到浏览器</button><button type="button" class="secondary" id="reset-entry">清空</button><span id="save-message" role="status"></span></div>
+</form></section>
+<section class="journal-panel journal-sync" id="sync">
+<div class="journal-title-row"><h2>上传与同步</h2><span class="journal-hint">公开上传必须由你手动确认</span></div>
+<p><strong>① 本地保存：</strong>点击保存即可，不用登录，不会自动公开。<strong>② 上传 GitHub：</strong>需填写仅授权此仓库的 GitHub Token，点击上传后这些记录会进入公开的网站仓库。</p>
+<div class="journal-warning"><strong>隐私提醒：</strong>你的仓库是公开的。上传的想法、链接、标签任何人都可能查看，Git 历史也可能保留。私人日记、密码、内部工作资料请只保存在本机，不要公开上传。</div>
+<label for="sync-token">GitHub Fine-grained Token（仅本次页面使用）</label>
+<input id="sync-token" type="password" autocomplete="off" placeholder="只给 imxiel126/imxiel126.github.io 的 Contents 写入权限">
+<label class="journal-confirm"><input type="checkbox" id="public-consent"> 我确认此次上传的记录适合公开展示</label>
+<div class="journal-actions"><button type="button" id="sync-btn">将记录上传至 GitHub</button><button type="button" class="secondary" id="refresh-btn">读取 GitHub 已公开记录</button></div>
+<p class="journal-status" id="sync-status" role="status">正在读取已公开记录…</p>
+<p class="journal-hint">Token 不保存到本站本地存储或 GitHub 文件。上传完成可直接清除输入框。<a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">创建仓库专用 Token</a></p>
+</section>
+</div>
+<section class="journal-panel journal-review" id="review">
+<div class="journal-title-row"><div><h2>记录回顾</h2><p class="journal-hint">合并展示：GitHub 已公开记录 + 当前浏览器本地记录</p></div><div class="journal-actions"><button type="button" class="secondary" id="download-btn">导出本地备份</button></div></div>
+<div class="journal-toolbar">
+<select id="review-kind" aria-label="筛选记录"><option value="all">全部记录</option><option value="idea">今日想法</option><option value="later">稍后阅读</option><option value="unread">待阅读</option><option value="done">已读</option></select>
+<input type="search" id="review-search" aria-label="搜索记录" placeholder="搜索标题、正文或标签">
+<select id="review-order" aria-label="排序方式"><option value="new">最近记录</option><option value="old">最早记录</option></select>
+</div>
+<div id="entries" class="journal-entries" aria-live="polite"></div>
+</section>
+<footer class="journal-footer">这不是印象笔记或第三方平台的自动备份。本站仅保存你主动输入的文本及链接。<a href="/">回到个人主页</a></footer>
+</main></body></html>
