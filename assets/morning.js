@@ -74,6 +74,13 @@ function highlights(main,records){
    }catch{keep.textContent="保存失败（浏览器存储不可用）";}
   });
   extra.append(keep);
+  const collect=el("button","＋ 收入第二大脑");collect.type="button";collect.className="morning-save-later";
+  collect.addEventListener("click",()=>{
+    const result=window.ZhixingBrain?.capture({text:x.title+"\n"+short(x.summary,230),url:x.sourceUrl,source:"新闻联播",kind:"source"});
+    collect.textContent=result?.ok?(result.duplicate?"已收集":"已入收集箱"):(result?.reason||"暂时无法收集");
+    if(result?.ok)collect.disabled=true;
+  });
+  extra.append(collect);
   body.append(tag,title,summary,extra);item.append(no,body);list.append(item);
  });
  if(!list.children.length)area.append(el("p","目前没有找到带央视原文链接的报道；可查看下方节目列表。","morning-empty"));
