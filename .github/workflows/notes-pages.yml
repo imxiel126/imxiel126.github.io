@@ -32,6 +32,8 @@ jobs:
         with:
           name: site-${{ github.run_id }}-${{ github.run_attempt }}
           path: site
+      - name: 等待 Pages 产物完成跨服务索引
+        run: sleep 20
       - id: deployment
         uses: actions/deploy-pages@v4
         with:
