@@ -60,7 +60,9 @@ def check_local(root=None, now=None, check_delivery=False):
                     fields[key.strip()] = value.strip()
         if not marker.is_file():
             issues.append(f"新闻联播邮件缺少 SMTP 接受记录：{marker.name}")
-        elif fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at"):
+        elif (fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at")
+              or not fields.get("smtp_accepted_recipients", "").isdigit()
+              or int(fields.get("smtp_accepted_recipients", "0")) < 1):
             issues.append("新闻联播历史投递标记不含可验证的 SMTP 接受证据；不要据此认定已送达")
         else:
             success.append("新闻联播 SMTP 已接受（Gmail 最终收件仍需独立核验）")
@@ -164,7 +166,9 @@ def check_morning_editions(now, root=None):
                     fields[key.strip()] = value.strip()
         if not marker.is_file():
             issues.append(f"{label}缺少今日 SMTP 接受记录：{marker.name}")
-        elif fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at"):
+        elif (fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at")
+              or not fields.get("smtp_accepted_recipients", "").isdigit()
+              or int(fields.get("smtp_accepted_recipients", "0")) < 1):
             issues.append(f"{label}投递标记不完整，无法证明 SMTP 接受")
         else:
             ok.append(f"{label} SMTP 已接受；Gmail 最终收件仍需独立核验")
