@@ -23,8 +23,22 @@ function openDetail(x){active=x;byId("modal-tag").textContent=names[x.kind];byId
 let hasReview=false;try{hasReview=JSON.parse(localStorage.getItem("zhixing-review-v1")||"[]").some(row=>row.key===x.kind+":"+x.id);}catch(e){}
 byId("modal-review").textContent=hasReview?"已在复习计划中":"加入复习";
 byId("modal-review").disabled=hasReview;
+byId("modal-brain").textContent="收入第二大脑";byId("modal-brain").disabled=false;
 byId("detail").showModal();}
 byId("modal-fav").addEventListener("click",()=>{if(active){toggleFavorite(active);byId("modal-fav").textContent=saved.has(active.kind+":"+active.id)?"取消收藏":"收藏这条";render();}});
+byId("modal-brain").addEventListener("click",()=>{
+ if(!active)return;
+ const title=active.kind==="quotes"?active.content:active.title;
+ const excerpt=preview(active)||"";
+ const source=active.kind==="books"?"书籍："+(active.author||"作者未列"):active.kind==="quotes"?"《"+(active.work||"典籍")+"》":"知识库";
+ const result=window.ZhixingBrain?.capture({
+   text:String(title||"")+"\n"+String(excerpt).slice(0,1100),
+   kind:"source",
+   source
+ });
+ byId("modal-brain").textContent=result?.ok?(result.duplicate?"已收集":"已入收集箱"):(result?.reason||"暂时无法保存");
+ if(result?.ok)byId("modal-brain").disabled=true;
+});
 byId("modal-review").addEventListener("click",()=>{
  if(!active)return;
  try{
