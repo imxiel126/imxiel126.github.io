@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-24T00:45:39.975761+00:00",
+  "updated": "2026-11-24T00:48:28.863264+00:00",
   "books": [
     {
       "id": "41807702",
@@ -8799,9 +8799,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "获取无关信息足以让人们对自己智力的信心暴增。",
+          "highlights": 624
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8833,9 +8838,18 @@
           "科学科普"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "你见过什么样的中国？ 是林立的高楼大厦 还是熙熙攘攘的人群 是九百六十万平方千米的辽阔 还是四百七十万平方千米的澎湃",
+          "highlights": 280
+        },
+        "review": {
+          "text": "泱泱华夏，历史上经历了繁多的苦难，在二十一世纪我们已经看见了美好的明天，中国正在腾飞，中华之崛起已然起势。",
+          "author": "杨夕兵",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8867,9 +8881,18 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "当时造册书写数字的表达方式是“几百几十万……”，不用阿拉伯数字，也就不可能出现多写“一”字头、“二”字头的问题。",
+          "highlights": 90
+        },
+        "review": {
+          "text": "平實卻深刻的論文集，包括明衛所、明末起義軍、明末史事，及一些明清史籍等，側重點在於明末起義及南明史事。",
+          "author": "四部居士",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8901,9 +8924,14 @@
           "思维科学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "逆向思维（inverse thinking）这个概念能帮你做出明智的决策。“多做正确的事”反过来就是“少犯错”。",
+          "highlights": 684
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8935,9 +8963,18 @@
           "历史地理"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "随着人类改造自然能力增强，西方便产生或然论、人定胜天等思想。但中国文明自始至终主张天人和谐，不以相互征服为目的。",
+          "highlights": 238
+        },
+        "review": {
+          "text": "说什么呢？我问自己！胸有万言，口却一默。还是说一句吧：一定一定要把事后诸葛亮精神放在学术研究上。此本可称得上了！",
+          "author": "柔弱胜👐",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8969,9 +9006,14 @@
           "军政领袖"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“我是中国人民的儿子，我深情地爱着我的祖国和人民。我深深地相信，中国的未来是属于中国人民的，世界的未来是属于世界人民的。”",
+          "highlights": 4575
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9003,9 +9045,18 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "臣光曰：臣闻天子之职莫大于礼，礼莫大于分，分莫大于名[1]。何谓礼？纪纲是也[2]。何谓分？君臣是也。何谓名？公侯卿大夫是也。",
+          "highlights": 432
+        },
+        "review": {
+          "text": "《通鉴纪事本末》最权威形象的注译本，详细的注解和翻译让普通读者也能亲近大部头史书！",
+          "author": "微信读书团队",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9037,9 +9088,14 @@
           "西方哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "眼光长远是理性的，但也是苦闷的，因为美好永远在将来，当下永远有苦难。",
+          "highlights": 2040
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9071,9 +9127,14 @@
           "政治"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "一个国家的自豪感说到底是来自于它的现状而非历史。",
+          "highlights": 650
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9105,9 +9166,18 @@
           "哲学读物"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "爱自己，就是尽力地使自己活成一个自己会喜欢的人，并且用喜欢的方式度过一生。",
+          "highlights": 1456
+        },
+        "review": {
+          "text": "凌晨四点半，读完这本书最后的两个章节。生活中的琐事，竟然让我有点失眠。感觉自己有一个心魔，我每天必须用读书来压制。只有读书的时候,才让自己异常安静。",
+          "author": "呱呱",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9139,9 +9209,18 @@
           "经典作品"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "三年之后，他在这里与白雨潇再次相遇。现在白雨潇已经离去了。",
+          "highlights": 714
+        },
+        "review": {
+          "text": "從活著到兄弟，再到現實的一種。在這本書裡面比較喜歡的古典愛情，愛情故事這兩篇，印象最深刻的是現實的一種。",
+          "author": "采菊东篱",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9173,9 +9252,14 @@
           "西方哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "正义就是“把善给予友人，把恶给予敌人。”",
+          "highlights": 459
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9207,9 +9291,14 @@
           "历史读物"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "忍，不意味着羸弱。恰恰相反，忍是强者才具有的品质。 能忍受常人所不能忍的屈辱，才配享常人得不到的荣光。",
+          "highlights": 700
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9241,9 +9330,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“时间是一种阻止事件突然发生的自然属性。最近以来，这一属性的作用似乎不太明显了。”",
+          "highlights": 522
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9275,9 +9369,14 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "所以周武王这波操作，也被叫做“封邦建国”，简称封建。",
+          "highlights": 1360
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9309,9 +9408,14 @@
           "悬疑推理"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "“难道说白书记的落马……” 朋友意味深长地看了我一眼，笑而不答。",
+          "highlights": 2480
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9343,9 +9447,14 @@
           "心理学应用"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "不存在现在或未来，只有过去在当下一次又一次地发生。",
+          "highlights": 255
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9377,9 +9486,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "商业是一场持久战，一开始比的是灵感、勇猛和运气，接下来拼的是坚忍、格局和理性。",
+          "highlights": 4728
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9411,9 +9525,14 @@
           "外国文学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我照样忙我的家务事，深信田庄里只有一个头脑是清醒的，这个头脑就长在我身上。",
+          "highlights": 864
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9445,9 +9564,14 @@
           "历史文化"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "康氏 康国人来中国，多以康为氏。",
+          "highlights": 64
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9485,9 +9609,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "当你要判断一个人是否值得深交的时候，不要听他怎么说，而是要看他怎么做，从行为逻辑去界定一个人。",
+          "highlights": 2220
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9519,9 +9648,18 @@
           "历史典籍"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "故善者因之，其次利道之，其次教诲之，其次整齐之，最下者与之争。",
+          "highlights": 408
+        },
+        "review": {
+          "text": "古人对财富、贸易的认知，到现在也有很多启示，让我们看到经济活动在历史长河中的鲜活印记，也为理解古代经济智慧打开了一扇窗。",
+          "author": "📚🌅✨ing✨🌅📚",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9553,9 +9691,14 @@
           "社会小说"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "我的儿子像阿波利奈尔一样头缠绷带，他在我完全不熟悉的黑暗战场上孤独地负伤。我只能像埋葬战死者那样埋葬我的儿子。鸟热泪不止。",
+          "highlights": 576
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     }
   ],
