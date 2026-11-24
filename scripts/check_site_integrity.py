@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ["index.html","brain/index.html","learn/index.html","library/index.html","reading/index.html",
          "notes/index.html","research/index.html","social/index.html","journal/index.html"]
-REQUIRED = ["assets/site.css","assets/news.js","assets/morning.js","brain/brain.css","brain/app.js",
+REQUIRED = ["assets/site.css","assets/news.js","assets/morning.js","assets/brain-bridge.js","brain/brain.css","brain/app.js",
             "learn/app.js","learn/learn.css","library/app.js","research/app.js",
             "scripts/first-issue.html","scripts/daily.py","journal/journal.js","journal/journal.css","journal/data.json"]
 WORKFLOWS = [
@@ -72,7 +72,7 @@ def main():
     reflections=json.loads(assert_file("reading/reflections-2000.json"))
     if len(reflections.get("cards",[]))!=2000:
         raise AssertionError("Reading reflections archive is not complete")
-    for path in ["assets/news.js","assets/morning.js","brain/app.js","learn/app.js","library/app.js","research/app.js","journal/journal.js"]:
+    for path in ["assets/news.js","assets/morning.js","assets/brain-bridge.js","brain/app.js","learn/app.js","library/app.js","research/app.js","journal/journal.js"]:
         result=subprocess.run(["node","--check",str(ROOT/path)],capture_output=True,text=True)
         if result.returncode:
             raise AssertionError("JavaScript syntax error in "+path+": "+result.stderr[:400])
