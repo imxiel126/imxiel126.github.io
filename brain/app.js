@@ -37,8 +37,9 @@ if(source&&!validUrl(source)){$("capture-status").textContent="来源需是有�
 if(data.inbox.length>=500){$("capture-status").textContent="收集箱已达500条，请先整理或导出。";return;}
 data.inbox.unshift({id:id(),type:$("capture-kind").value,text:content,url:source?validUrl(source):"",created:now(),deferUntil:""});
 if(!persist())return;$("capture-form").reset();$("capture-status").textContent="已存入收集箱，稍后再整理。";refresh();show("inbox");}
-function renderInbox(){const root=$("brain-inbox-list");root.replaceChildren();const today=day(),sorted=[...data.inbox].sort((a,b)=>ascending?String(a.created).localeCompare(b.created):String(b.created).localeCompare(a.created));
-if(!sorted.length){root.append(empty("收集箱清空了。今天看到什么问题或灵感，可直接记录到上方。"));return;}
+function renderInbox(){const root=$("brain-inbox-list");root.replaceChildren();const today=day(),future=data.inbox.filter(x=>x.deferUntil&&x.deferUntil>today),sorted=data.inbox.filter(x=>!x.deferUntil||x.deferUntil<=today).sort((a,b)=>ascending?String(a.created).localeCompare(b.created):String(b.created).localeCompare(a.created));
+if(future.length)root.append(make("p",future.length+" 条内容已延后处理，到期后会重新显示。","brain-caption"));
+if(!sorted.length){root.append(empty(future.length?"今日没有待处理的收集内容。":"收集箱清空了。今天看到什么问题或灵感，可直接记录到上方。"));return;}
 sorted.forEach(x=>{const card=make("article",undefined,"brain-item"),h=make("div",undefined,"brain-item-header");
 h.append(tag(LABELS[x.type]||"记录"),make("time",dtime(x.created)+(x.deferUntil&&x.deferUntil>today?" · "+x.deferUntil+"再看":"")));
 card.append(h,make("p",short(x.text,400)));if(x.url)card.append(link(x.url,"查看原始来源 ↗"));
@@ -50,22 +51,23 @@ data.inbox=data.inbox.filter(r=>r.id!==x.id);if(persist()){refresh();show("proje
 function fillAreas(id,first){const select=$(id);select.replaceChildren();if(first)select.add(new Option("全部主题","all"));for(const a of AREAS)select.add(new Option(a,a));}
 function projectOptions(){const allowed=data.projects.filter(x=>x.status!=="archived");for(const id of ["note-project","task-project"]){const select=$(id),old=select.value;select.replaceChildren(new Option("不关联项目",""));for(const p of allowed)select.add(new Option(p.name,p.id));select.value=allowed.some(x=>x.id===old)?old:"";}}
 function openNote(inbox=null,note=null){editingNote=note?.id||null;pendingInbox=inbox?.id||null;const form=$("note-form");form.hidden=false;$("note-title").value=note?.title||short((inbox?.text||"").split("\n")[0],180);
-$("note-area").value=note?.area||"其他";projectOptions();$("note-project").value=note?.projectId||"";$("note-explain").value=note?.explain||inbox?.text||"";$("note-source").value=note?.source||inbox?.url||"";$("note-apply").value=note?.apply||"";$("note-tags").value=(note?.tags||[]).join(", ");$("note-review").checked=!note;
+$("note-area").value=note?.area||"其他";projectOptions();$("note-project").value=note?.projectId||"";$("note-explain").value=note?.explain||inbox?.text||"";$("note-question").value=note?.question||"";$("note-source").value=note?.source||inbox?.url||"";$("note-apply").value=note?.apply||"";$("note-tags").value=(note?.tags||[]).join(", ");$("note-review").checked=!note;
 $("note-form-state").textContent=inbox?"已从收集箱带入内容；保存后再移除原记录。":"先写自己的解释，再保存。";show("notes");form.scrollIntoView({block:"start",behavior:"smooth"});$("note-title").focus();}
 function closeNote(){$("note-form").hidden=true;editingNote=null;pendingInbox=null;$("note-form").reset();}
 function submitNote(evt){evt.preventDefault();const title=str($("note-title").value,180);if(!title)return;
 if(!editingNote&&data.notes.length>=1500){$("note-form-state").textContent="笔记已达到容量限制，请先导出和整理。";return;}
-const obj={title,area:$("note-area").value,projectId:$("note-project").value,explain:str($("note-explain").value,8000),source:str($("note-source").value,2000),apply:str($("note-apply").value,2000),tags:[...new Set($("note-tags").value.split(/[,，、]/).map(x=>str(x,35)).filter(Boolean))].slice(0,12),updated:now()};
+const obj={title,area:$("note-area").value,projectId:$("note-project").value,explain:str($("note-explain").value,8000),question:str($("note-question").value,400),source:str($("note-source").value,2000),apply:str($("note-apply").value,2000),tags:[...new Set($("note-tags").value.split(/[,，、]/).map(x=>str(x,35)).filter(Boolean))].slice(0,12),updated:now()};
 let note;if(editingNote){note=data.notes.find(x=>x.id===editingNote);if(!note)return;Object.assign(note,obj);}else{note={id:id(),created:now(),...obj};data.notes.unshift(note);}
 if(!persist())return;
 if(pendingInbox){data.inbox=data.inbox.filter(x=>x.id!==pendingInbox);persist();}
 if($("note-review").checked)addReviewFromNote(note);closeNote();refresh();$("brain-backup-status").textContent="知识笔记已保存。";}
 function addReviewFromNote(note){const storageKey=LEARN.reviews,arr=localGet(storageKey,[]);if(!Array.isArray(arr))return;
-const key="brain:"+note.id;if(arr.some(x=>x.key===key))return;arr.unshift({key,title:short(note.title,220),desc:short(note.explain,260),url:"/brain/?note="+encodeURIComponent(note.id),source:"第二大脑",stage:0,due:addDays(day(),1),added:day()});
+const key="brain:"+note.id;if(arr.some(x=>x.key===key))return;arr.unshift({key,title:short(note.title,220),desc:short(note.question?"回忆问题："+note.question:"不看原文，请试着解释："+note.title,260),url:"/brain/?note="+encodeURIComponent(note.id),source:"第二大脑",stage:0,due:addDays(day(),1),added:day()});
 try{localStorage.setItem(storageKey,JSON.stringify(arr.slice(0,300)));}catch(e){$("brain-backup-status").textContent="笔记已保存，但浏览器空间不足，未能加入复习。";}}
 function renderNotes(){const root=$("brain-note-list");root.replaceChildren();const list=data.notes.filter(n=>notesFilter==="all"||n.area===notesFilter);$("notes-count").textContent="共 "+list.length+" 篇知识笔记";
 if(!list.length){root.append(empty("这里还没有对应主题的知识笔记。从收集箱选一条，再用自己的话解释。"));return;}
 for(const x of list.slice(0,200)){const a=make("article",undefined,"brain-item");a.id="brain-note-"+x.id;const top=make("div",undefined,"brain-item-header");top.append(tag(x.area||"未分类"),make("time",dtime(x.updated)));a.append(top,make("h3",x.title));if(x.explain)a.append(make("p",short(x.explain,470)));
+if(x.question)a.append(make("p","自测问题："+short(x.question,240)));
 if(x.source)a.append(make("p","证据/来源："+short(x.source,170)));if(x.apply)a.append(make("p","如何使用："+short(x.apply,170)));
 const tags=make("div",undefined,"brain-tag-list");(x.tags||[]).forEach(t=>tags.append(make("span",t)));a.append(tags);
 const project=data.projects.find(p=>p.id===x.projectId);if(project)a.append(make("small","关联项目："+project.name));
@@ -78,7 +80,7 @@ const project={id:id(),name,area:$("project-area").value,outcome:str($("project-
 data.projects.unshift(project);const first=str($("project-first").value,240);if(first)data.tasks.unshift({id:id(),title:first,detail:"",projectId:project.id,due:"",done:false,created:now(),completed:""});
 if(!persist())return;$("project-form").reset();$("project-form").hidden=true;refresh();}
 function submitTask(evt){evt.preventDefault();const title=str($("task-title").value,240);if(!title)return;if(data.tasks.length>=1500){alert("待办任务已达到容量限制");return;}
-data.tasks.unshift({id:id(),title,detail:"",projectId:$("task-project").value,due:$("task-due").value,done:false,created:now(),completed:""});if(!persist())return;
+data.tasks.unshift({id:id(),title,detail:"",projectId:$("task-project").value,due:$("task-due").value,trigger:str($("task-trigger").value,160),done:false,created:now(),completed:""});if(!persist())return;
 $("task-form").reset();refresh();}
 function renderProjects(){projectOptions();const root=$("brain-project-list");root.replaceChildren();const filter=$("project-view").value,projects=data.projects.filter(p=>filter==="all"||(filter==="active"?p.status!=="archived":p.status==="archived"));
 if(!projects.length)root.append(empty("尚无项目。可以从一个明确成果开始，不必先制订完美计划。"));
@@ -91,6 +93,7 @@ const taskHost=$("brain-task-list");taskHost.replaceChildren();const unfinished=
 if(!unfinished.length)taskHost.append(empty("没有待执行的行动。每个重要项目建议保留一个明确的下一步。"));
 for(const x of unfinished.slice(0,100)){const row=make("article",undefined,"brain-item");row.append(make("h3",x.title));const p=data.projects.find(p=>p.id===x.projectId),hint=make("small",(p?p.name+" · ":"")+(x.due?"截止 "+x.due:"未设期限"),"brain-task-due"+(x.due&&x.due<day()?" late":""));row.append(hint);
 if(x.detail)row.append(make("p",short(x.detail,300)));
+if(x.trigger)row.append(make("p","当 "+short(x.trigger,130)+"，我就 "+short(x.title,155),"brain-project-next"));
 row.append(actions(btn("标记完成",()=>{x.done=true;x.completed=now();if(persist())refresh();}),btn("删除",()=>{if(!confirm("删除这项行动？"))return;data.tasks=data.tasks.filter(t=>t.id!==x.id);if(persist())refresh();},true)));taskHost.append(row);}
 if(unfinished.length>100)taskHost.append(make("p","当前只展示前100项行动，建议先整理项目。","brain-caption"));}
 function weekOverview(){const since=weekKey(),done=data.tasks.filter(t=>t.done&&t.completed?.slice(0,10)>=since).length,notes=data.notes.filter(n=>n.created?.slice(0,10)>=since).length,stale=data.inbox.filter(i=>i.created?.slice(0,10)<addDays(day(),-7)).length;return[[notes,"本周新增知识笔记"],[done,"本周完成行动"],[stale,"超过7天未整理"]];}
@@ -152,9 +155,9 @@ const b=o.brain;if(!Array.isArray(b.inbox)||!Array.isArray(b.notes)||!Array.isAr
 if(b.inbox.length>500||b.notes.length>1500||b.projects.length>200||b.tasks.length>1500||Object.keys(b.weeks).length>156)throw Error("备份条目超过容量上限");
 const seen=new Set();for(const part of [b.inbox,b.notes,b.projects,b.tasks])for(const e of part){if(!e||typeof e.id!=="string"||e.id.length>160||seen.has(e.id))throw Error("备份含无效或重复标识");seen.add(e.id);}
 const cleanInbox=b.inbox.map(e=>({id:e.id,type:LABELS[e.type]?e.type:"idea",text:str(e.text,4000),url:validUrl(e.url),created:str(e.created,45),deferUntil:str(e.deferUntil,12)}));
-const cleanNotes=b.notes.map(e=>({id:e.id,title:str(e.title,180),area:AREAS.includes(e.area)?e.area:"其他",explain:str(e.explain,8000),source:str(e.source,2000),apply:str(e.apply,2000),tags:Array.isArray(e.tags)?e.tags.slice(0,12).map(x=>str(x,35)):[],projectId:str(e.projectId,160),created:str(e.created,45),updated:str(e.updated,45)}));
+const cleanNotes=b.notes.map(e=>({id:e.id,title:str(e.title,180),area:AREAS.includes(e.area)?e.area:"其他",explain:str(e.explain,8000),question:str(e.question,400),source:str(e.source,2000),apply:str(e.apply,2000),tags:Array.isArray(e.tags)?e.tags.slice(0,12).map(x=>str(x,35)):[],projectId:str(e.projectId,160),created:str(e.created,45),updated:str(e.updated,45)}));
 const cleanProj=b.projects.map(e=>({id:e.id,name:str(e.name,160),area:AREAS.includes(e.area)?e.area:"其他",outcome:str(e.outcome,2000),deadline:str(e.deadline,12),status:e.status==="archived"?"archived":"active",created:str(e.created,45)}));
-const cleanTasks=b.tasks.map(e=>({id:e.id,title:str(e.title,240),detail:str(e.detail,2000),projectId:str(e.projectId,160),due:str(e.due,12),done:e.done===true,created:str(e.created,45),completed:str(e.completed,45)}));
+const cleanTasks=b.tasks.map(e=>({id:e.id,title:str(e.title,240),detail:str(e.detail,2000),projectId:str(e.projectId,160),due:str(e.due,12),trigger:str(e.trigger,160),done:e.done===true,created:str(e.created,45),completed:str(e.completed,45)}));
 const weeks={};for(const [k,e] of Object.entries(b.weeks)){if(!/^\d{4}-\d\d-\d\d$/.test(k)||!e||typeof e!=="object")continue;weeks[k]={insight:str(e.insight,3000),blocker:str(e.blocker,3000),next:str(e.next,3000),updated:str(e.updated,45)};}
 return{version:1,inbox:cleanInbox,notes:cleanNotes,projects:cleanProj,tasks:cleanTasks,weeks};}
 async function importFile(evt){const file=evt.target.files?.[0];if(!file)return;try{if(file.size>7_000_000)throw Error("备份不能超过7 MB");
