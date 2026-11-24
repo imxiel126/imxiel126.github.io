@@ -1,4 +1,4 @@
-name: 发布社交内容中心
+name: 个人网站全站统一发布
 on:
   push:
     branches: [main]
@@ -67,6 +67,8 @@ jobs:
           assert isinstance(d.get('profiles'),dict)
           print('Social feed schema is valid')
           PY
+      - name: 校验完整站点结构
+        run: python3 scripts/check_site_integrity.py
       - name: 构建全站产物
         run: |
           mkdir -p site
