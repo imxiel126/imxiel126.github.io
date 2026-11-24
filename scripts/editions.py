@@ -18,14 +18,29 @@ if sys.argv[1] == "home":
         page = browser.new_page(timezone_id="Asia/Shanghai")
         page.goto("https://xie-l.github.io/", wait_until="domcontentloaded")
         for card in page.locator("main section").all():
+            card_id = card.get_attribute("id")
             title = card.locator("h2").first.inner_text()
-            if card.get_attribute("id") == "news-feed":
+            if card_id == "news-feed":
                 for tab in card.locator(".news-tab").all():
                     tab.click()
                     card.locator(".news-item, .news-status:not(:has(.fa-spinner))").first.wait_for()
                     section(tab.inner_text(), card.locator("#news-content").inner_text())
+            elif card_id == "site-health":
+                # The monitor is inserted by deferred JS and performs several async checks.
+                # Do not email its initial "正在检测…" placeholder as if it were a report.
+                try:
+                    page.wait_for_function("""() => {
+                        const box = document.getElementById("site-health");
+                        const hint = box && box.querySelector("p");
+                        const rows = box && box.querySelector('[aria-live="polite"]');
+                        return !!hint && hint.textContent.startsWith("本次检测：")
+                            && !!rows && rows.children.length >= 8;
+                    }""", timeout=60000)
+                    section(title, card.inner_text().split("\n",1)[-1])
+                except Exception:
+                    section(title, "检测未在60秒内完成；请打开科研主页的运行日志查看，不将初始加载状态误报为正常。")
             else:
-                page.wait_for_function("(id) => !document.getElementById(id).innerText.includes('加载中')", arg=card.get_attribute("id"), timeout=30000)
+                page.wait_for_function("(id) => !document.getElementById(id).innerText.includes('加载中')", arg=card_id, timeout=30000)
                 section(title, card.inner_text().split("\n",1)[-1])
         page.locator(".wt-tab").first.wait_for()
         for city in page.locator(".wt-tab").all():
