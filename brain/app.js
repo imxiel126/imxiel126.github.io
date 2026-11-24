@@ -18,7 +18,7 @@ function day(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai"
 function addDays(date,n){const t=Date.parse(date+"T00:00:00Z");return Number.isFinite(t)?new Date(t+n*86400000).toISOString().slice(0,10):day();}
 function now(){return new Date().toISOString();}
 function short(t,n=140){const s=str(t,n+30);return s.length>n?s.slice(0,n)+"…":s;}
-function dtime(s){if(!s)return"";const d=new Date(s);return Number.isNaN(d.getTime())?str(s,24):new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",month:"2-digit",day:"2-digit"}).format(d);}
+function dtime(s){if(!s)return"";if(typeof s==="number"&&s>=1800&&s<=2200)return String(s);if(typeof s==="string"&&/^\d{4}$/.test(s))return s;const d=new Date(s);return Number.isNaN(d.getTime())?str(s,24):new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",month:"2-digit",day:"2-digit"}).format(d);}
 function escapedQuery(s){return encodeURIComponent(str(s,90));}
 function tag(label){return make("span",label,"brain-item-label");}
 function link(url,text){const a=make("a",text);const raw=str(url,1800);if(raw.startsWith("/")&&!raw.startsWith("//")){a.href=raw;return a;}const safe=validUrl(raw);a.href=safe||"/brain/";if(safe){a.target="_blank";a.rel="noopener noreferrer";}return a;}
@@ -186,7 +186,7 @@ document.addEventListener("keydown",evt=>{if(evt.ctrlKey||evt.metaKey||evt.altKe
 const focused=document.activeElement,editing=["INPUT","TEXTAREA","SELECT"].includes(focused?.tagName)||focused?.isContentEditable;
 if(!editing&&(evt.key==="/"||evt.key==="c"||evt.key==="C")){evt.preventDefault();if(evt.key==="/"){$("brain-search").focus();}else{$("capture-content").focus();$("capture").scrollIntoView({block:"start"});}}});
 refresh();const params=new URLSearchParams(location.search);const tab=params.get("tab"),q=params.get("q"),note=params.get("note"),inbox=params.get("inbox"),capture=params.get("capture");
-if(capture){$("capture-content").value=str(capture,4000);$("capture-content").focus();}
+if(capture){$("capture-content").value=str(capture,4000);const source=validUrl(params.get("source")||"");if(source){$("capture-url").value=source;$("capture-kind").value="source";}$("capture-content").focus();}
 if(q)selectSearch(q);else if(note){const n=data.notes.find(x=>x.id===note);if(n)openNote(null,n);else show("notes");}
 else if(inbox){show("inbox");const item=data.inbox.find(x=>x.id===inbox);if(item)openNote(item);}
 else if(["inbox","notes","projects","search","weekly"].includes(tab))show(tab);else show("inbox");
