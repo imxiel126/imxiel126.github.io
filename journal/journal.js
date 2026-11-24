@@ -9,7 +9,7 @@ const API="https://api.github.com/repos/"+REPO+"/contents/"+FILE;
 const MAX_PUBLIC=1000;
 const node=(tag,value,cls)=>{const e=document.createElement(tag);if(value!==undefined&&value!==null)e.textContent=String(value);if(cls)e.className=cls;return e;};
 const str=(v,max=6000)=>String(v===null||v===undefined?"":v).trim().slice(0,max);
-const day=()=>new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date()).replace(/\//g,"-");
+const day=()=>{const parts=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const g=k=>parts.find(x=>x.type===k)?.value||"";return[g("year"),g("month"),g("day")].join("-");};
 const now=()=>new Date().toISOString();
 const validDate=v=>typeof v==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(v);
 const safeUrl=v=>{try{if(!v)return "";const u=new URL(v);return ["http:","https:"].includes(u.protocol)&&!u.username&&!u.password?u.href:"";}catch{return"";}};
@@ -195,8 +195,10 @@ async function publish(){
    for(const x of selection)map.set(x.id,{...x,origin:"journal"});
    if(map.size>MAX_PUBLIC)throw Error("公开记录已接近 "+MAX_PUBLIC+" 条限制，请先整理旧内容。");
    const items=[...map.values()].sort((a,b)=>String(b.updated_at).localeCompare(String(a.updated_at)));
+   const serialized=JSON.stringify({schema_version:1,updated_at:now(),items},null,2)+"\n";
+   if(new TextEncoder().encode(serialized).length>900000)throw Error("公开记录数据文件接近 GitHub API 限制；请拆分归档后再上传。");
    const body={message:"journal: publish "+selection.length+" selected personal entries",
-    sha:file.sha,content:encodeBase64(JSON.stringify({schema_version:1,updated_at:now(),items},null,2)+"\n")};
+    sha:file.sha,content:encodeBase64(serialized)};
    const put=await fetch(API,{method:"PUT",headers:{...headers,"Content-Type":"application/json"},body:JSON.stringify(body)});
    if(put.ok){
     published=items.map(x=>({...x,origin:"github"}));remoteAvailable=true;
