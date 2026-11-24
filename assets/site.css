@@ -475,3 +475,21 @@ body.site-news:has(.morning-highlights) main{max-width:1050px}
 .site-research .research-news-footer .research-save-later:disabled{cursor:default;color:#7c9e87}
 .site-news .morning-shortcuts a[href="/learn/"]{background:#e4f0e7;border-color:#bcd7c6;font-weight:760}
 .site-research .research-news-footer{gap:15px}
+
+/* Personal journal homepage preview */
+.site-news .morning-journal{padding:26px 0 34px;border-bottom:1px solid var(--line)}
+.site-news .morning-journal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:16px}
+.site-news .morning-journal-head h2{font:730 clamp(22px,3vw,28px)/1.4 var(--serif);margin:7px 0 8px}
+.site-news .morning-journal-head p{font-size:13px;color:var(--muted);line-height:1.8;max-width:590px;margin:0}
+.site-news .morning-journal-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.site-news .morning-journal-actions a{padding:8px 11px;font-size:12px;text-decoration:none;border:1px solid var(--line);border-radius:8px;white-space:nowrap;color:var(--accent)}
+.site-news .morning-journal-actions a:first-child{background:#e8f2eb;border-color:#c5dccd;font-weight:700}
+.site-news .morning-journal-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.site-news .morning-journal-card{padding:15px 17px;border:1px solid var(--line);border-radius:11px;background:var(--paper);min-width:0}
+.site-news .morning-journal-meta{display:block;font-size:11px;color:var(--accent);font-weight:700}
+.site-news .morning-journal-card h3{margin:8px 0;font:700 15px/1.6 var(--serif);word-break:break-word}
+.site-news .morning-journal-card p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 10px;white-space:pre-wrap}
+.site-news .morning-journal-card a{display:inline-block;font-size:12px;text-decoration:none;color:var(--accent)}
+.site-news .morning-journal-empty{grid-column:1/-1;background:#f6f8f4;border:1px dashed var(--line);border-radius:11px;padding:18px;font-size:13px;color:var(--muted);line-height:1.8;margin:0}
+.site-news .morning-journal-status{font-size:11px;color:var(--muted);margin:11px 0 0}
+@media(max-width:750px){.site-news .morning-journal-head{display:block}.site-news .morning-journal-actions{justify-content:flex-start;margin-top:14px}.site-news .morning-journal-preview{grid-template-columns:1fr}}
