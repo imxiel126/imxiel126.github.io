@@ -243,6 +243,8 @@ $("download-btn").addEventListener("click",downloadBackup);
 $("review-search").addEventListener("input",render);
 window.addEventListener("storage",e=>{if([KEY,LEARN_DAYS,LEARN_QUEUE].includes(e.key)){local=(Array.isArray(storeRead(KEY,[]))?storeRead(KEY,[]):[]).map(x=>sanitize(x,"journal")).filter(Boolean);render();}});
 const params=new URLSearchParams(location.search);
+const presetKind=params.get("kind");
+if(presetKind==="idea"||presetKind==="later"){const input=document.querySelector('input[name="kind"][value="'+presetKind+'"]');if(input)input.checked=true;}
 if(params.has("title"))$("entry-title").value=str(params.get("title"),140);
 if(params.has("url"))$("entry-url").value=safeUrl(params.get("url"));
 render();readPublic();
