@@ -90,6 +90,13 @@ class HealthTests(unittest.TestCase):
             _, edition_issues = check_morning_editions(now, root=root)
             self.assertEqual(len(edition_issues), 2)
 
+    def test_non_scheduled_health_check_does_not_audit_weread_mail(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            now = dt.datetime(2026, 11, 24, 23, 45, tzinfo=TZ)
+            _, issues = check_local(root=root, now=now, check_delivery=False)
+            self.assertFalse(any("阅读复盘邮件" in e for e in issues))
+
     def test_morning_edition_check_requires_both_independent_markers(self):
         with tempfile.TemporaryDirectory() as tmp:
             now = dt.datetime(2026, 11, 24, 9, 30, tzinfo=TZ)
