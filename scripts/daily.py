@@ -201,6 +201,8 @@ def send():
     msg["From"] = os.environ["SMTP_USER"]
     msg["To"] = os.environ["MAIL_TO"]
     msg["Subject"] = os.environ.get("MAIL_SUBJECT", f"新闻联播晨读｜{day}")
+    msg["Message-ID"] = f"<news-{stamp}@imxiel126.github.io>"
+    msg["X-Report-ID"] = f"news-{stamp}"
     content = Path(os.environ["RUNNER_TEMP"], "mail.html").read_text()
     plain = re.sub(r"<(style|script)\b[^>]*>.*?</\1>", "", content, flags=re.I | re.S)
     plain = re.sub(r"<br\s*/?>|</(?:p|li|h[1-6]|section)>", "\n", plain, flags=re.I)
@@ -214,7 +216,14 @@ def send():
         refused = smtp.send_message(msg)
         accepted = len(recipients) - len(refused)
         domains = sorted({address.rsplit("@", 1)[-1].lower() for address in recipients if "@" in address})
+        masked = []
+        for address in recipients:
+            if "@" in address:
+                local, domain = address.rsplit("@", 1)
+                masked.append((local[:2] + "***" + local[-2:] if len(local) > 4 else "***") + "@" + domain.lower())
+        print("SMTP recipient(s), masked: " + ", ".join(sorted(set(masked))))
         print(f"SMTP recipient domain(s): {', '.join(domains) if domains else 'unavailable'}")
+        print(f"Message-ID: {msg['Message-ID']}")
         print(f"SMTP server accepted {accepted}/{len(recipients)} recipient(s); final delivery and inbox placement are not verified.")
         if refused:
             raise RuntimeError(f"SMTP server refused {len(refused)} recipient(s)")

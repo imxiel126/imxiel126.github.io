@@ -85,9 +85,15 @@ jobs:
             echo "已存在当期投递记录，跳过重复发送"
             exit 0
           fi
-          python3 scripts/daily.py send
+          send_output="$(python3 scripts/daily.py send)"
+          printf '%s\n' "$send_output"
+          message_id="$(printf '%s\n' "$send_output" | sed -n 's/^Message-ID: //p' | tail -n 1)"
+          if [ -z "$message_id" ]; then
+            echo "::error::SMTP returned without a traceable Message-ID"
+            exit 1
+          fi
           mkdir -p .sent
-          printf 'smtp_accepted_at=%s\nfinal_delivery=unverified\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > ".sent/details-$ISSUE_DATE"
+          printf 'smtp_accepted_at=%s\nmessage_id=%s\nfinal_delivery=unverified\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$message_id" > ".sent/details-$ISSUE_DATE"
           git add ".sent/details-$ISSUE_DATE"
           if ! git diff --cached --quiet; then
             git commit -m "记录投递 $ISSUE_DATE"
