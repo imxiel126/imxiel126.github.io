@@ -1,40 +1,24 @@
+# Notes are public ONLY after review; publication is handled by social-pages.yml.
 name: Publish approved notes to GitHub Pages
 on:
   push:
     branches: [main]
     paths:
       - 'notes/**'
+      - '.github/workflows/notes-pages.yml'
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages-deploy
-  cancel-in-progress: false
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - name: Refresh latest website before publishing
-        run: git fetch origin main && git reset --hard origin/main
-      - name: Stage website without touching private notes
+      - name: 检查经过审核的公开笔记结构
         run: |
-          mkdir -p site
-          cp index.html site/
-          cp -R archive notes reading library social research learn brain journal assets site/
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          name: site-${{ github.run_id }}-${{ github.run_attempt }}
-          path: site
-      - name: 等待 Pages 产物完成跨服务索引
-        run: sleep 20
-      - id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
+          python3 - <<'PY'
+          import json
+          data=json.load(open("notes/data.json",encoding="utf-8"))
+          assert isinstance(data.get("items"),list), "Expected a public notes array"
+          print("Public notes validated; unified publisher will deploy the latest main snapshot.")
+          PY
