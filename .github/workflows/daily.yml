@@ -153,8 +153,15 @@ jobs:
           REPORT_KIND: news
         run: |
           set -euo pipefail
-          send_output="$(python3 scripts/daily.py send)"
+          set +e
+          send_output="$(python3 scripts/daily.py send 2>&1)"
+          send_status=$?
+          set -e
           printf '%s\n' "$send_output"
+          if [ "$send_status" -ne 0 ]; then
+            echo "::error::Mail send did not complete; the pending marker remains to prevent accidental duplicates"
+            exit "$send_status"
+          fi
           report_id="$(printf '%s\n' "$send_output" | sed -n 's/^Report-ID: //p' | tail -n 1)"
           expected_report_id="news-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
           if [ "$report_id" != "$expected_report_id" ] || ! printf '%s\n' "$send_output" | grep -q '^SMTP_STAGE=accepted$'; then
