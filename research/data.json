@@ -49,12 +49,164 @@
   },
   "news": [
     {
-      "type": "energy",
-      "title": "Stellantis现任首席执行官比Stellantis的前任首席执行官对电动汽车更加乐观，但唱的还是同样的乏味老调",
+      "type": "hydrogen",
+      "title": "Takenaka Corporation在公寓楼中实现了季节性氢气储存",
       "date": "2026-11-23",
-      "summary": "Stellantis has never been a bastion of EV enthusiasm and progress. Back in the day (about 10 years ago), Sergio Marchionne was a very openly, blatantly anti-EV CEO. He actually asked customers to not buy their first electric car, the Fiat 500e. Stellantis is still dragging its feet on EVs ... [conti",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/22/electrolyzer/takenaka-corporation-proves-seasonal-hydrogen-storage-in-apartment-block"
+    },
+    {
+      "type": "hydrogen",
+      "title": "Stegra离瑞典绿色氢钢项目的国内铁矿石供应更近一步",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/23/h2/stegra-moves-closer-to-domestic-iron-ore-supply-for-swedish-green-hydrogen-steel-project"
+    },
+    {
+      "type": "hydrogen",
+      "title": "研究发现，LOHC氢能列车在区域铁路线路上的运营成本可与柴油列车相当",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/23/fuel-cells/study-finds-lohc-hydrogen-trains-could-match-diesel-operating-costs-on-regional-rail-routes"
+    },
+    {
+      "type": "hydrogen",
+      "title": "Green Cat Hydrogen的Creca氢能设施获得规划许可",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/23/electrolyzer/green-cat-hydrogen-s-creca-hydrogen-facility-secures-planning-permission"
+    },
+    {
+      "type": "hydrogen",
+      "title": "中国燃料电池和氢能新闻要点：2026年11月16-20日",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/21/clean-energy/fuel-cell-and-hydrogen-news-highlights-from-china-nov-16-20-2026"
+    },
+    {
+      "type": "hydrogen",
+      "title": "Enapter AG完成增资——润石华集团加入成为战略投资者",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/23/electrolyzer/enapter-ag-completes-capital-increase-runshihua-group-joins-as-strategic-investor"
+    },
+    {
+      "type": "hydrogen",
+      "title": "Chemelot的绿色未来正在停滞不前——其废物制氢计划的夭折恰恰说明了原因所在",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/22/h2/chemelot-s-green-future-is-stalling-and-the-collapse-of-its-waste-to-hydrogen-plan-shows-exactly-why"
+    },
+    {
+      "type": "hydrogen",
+      "title": "Liquid Energy Design与蒂森克虏伯Decarbon Technologies合作，在瑞典东北部开发E-Fuel工厂",
+      "date": "2026-11-23",
+      "summary": "",
+      "source": "Fuel Cells Works",
+      "url": "https://fuelcellsworks.com/2026/11/23/clean-energy/liquid-energy-design-and-thyssenkrupp-decarbon-technologies-partner-to-develop-e-fuel-plants-in-north-east-sweden"
+    },
+    {
+      "type": "energy",
+      "title": "轮廓化可减轻固态电池放电时锂/陶瓷电解质界面的空隙",
+      "date": "2026-11-23",
+      "summary": "Nature Energy, Published online: 23 November 2026; doi:10.1038/s41560-026-02172-w Discharge-induced voids are a major barrier to practical lithium metal solid-state batteries. Here the authors show that an egg-box-contoured lithium–electrolyte interface increases the voiding threshold by an order of",
+      "source": "Nature Energy",
+      "url": "https://www.nature.com/articles/s41560-026-02172-w"
+    },
+    {
+      "type": "energy",
+      "title": "中国—东盟关于构建能源合作伙伴关系的联合声明：探索绿色氢能等领域技术开发与应用合作 - 国际氢能网",
+      "date": "2026-11-23",
+      "summary": "中国—东盟关于构建能源合作伙伴关系的联合声明：探索绿色氢能等领域技术开发与应用合作 国际氢能网",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9scWJoMWZTUHZ2Um9EZ1JSajYxcUstVmFadjhWQzRhalZwcnRsREE5QnlPZW01Nk9zZlQzTjJwb1p1UHRNTjBKY0tBdUpnSGpNZDFyVlp3?oc=5"
+    },
+    {
+      "type": "energy",
+      "title": "卫蓝新能源与煜邦电力签约：涉及储能技术研发、电芯应用等合作！ - 世纪新能源网",
+      "date": "2026-11-23",
+      "summary": "卫蓝新能源与煜邦电力签约：涉及储能技术研发、电芯应用等合作！ 世纪新能源网",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJazhLTXVkU2lUR3ZpT01iaGE0UW5fYjV4ZW81MENGUTJJREF6ZGpIRUJST1YwcjExeVhLb0VjXzR3MUVTem9KRXR1WXAteVhQb284eg?oc=5"
+    },
+    {
+      "type": "energy",
+      "title": "量子计算瞄准能源业务，从电力到氢能 - IDNFinancials",
+      "date": "2026-11-23",
+      "summary": "量子计算瞄准能源业务，从电力到氢能 IDNFinancials",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQUnlYVWZjSm1ERDJIOUdJaVQ4UEtRdm1lbThlckttWjBnbjl1aWtPR3oxOUo5Zko2WldyX2Y4ek02YVlDTjJZMno4NENiQXZFNGR6RG5yNVA3Vm1mbkRoUW03TnNWZ1A0ZDVxNkJFT3Rwb05oMUJIaEJVLVY3bnBHQVpIZVBxMkxGVHB4S3k1ZlBQMlB1NDVEcHI4Mm05dEFmdUdHc1NIanlTTjB4SEtHbDFSd2Vtdm1HYVQ5ZDlDVG9ET3dPMHI1YldPUEM0UlJ2RGVuaG9JQzd2c21VSldSWFN3UEtTVzZsMHhzRnpEWDNFc3dlaWQ5RUFmMFZaaGZILUpDdlJrbnNPaEwxUE9CNV9oWVRfclk?oc=5"
+    },
+    {
+      "type": "energy",
+      "title": "Adani Cement将部署410辆电动卡车，用于运输水泥和熟料",
+      "date": "2026-11-23",
+      "summary": "Adani Cement to deploy 410 EV trucks by March 2027 as the 1st Phase plan for cement & clinker movement. Deployment commenced at Sanghi Plant in Gujarat. 410-truck fleet is projected to reduce over 25,000 tonnes of CO₂ annually. Targeting 10% logistics road volume through EV trucks by 2030, with",
       "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/22/stellantis-ceo-more-bullish-on-evs-than-stellantis-ceos-of-old-but-sings-same-boring-song/"
+      "url": "https://cleantechnica.com/2026/11/23/adani-cement-to-deploy-410-electric-trucks-cement-clinker/"
+    },
+    {
+      "type": "energy",
+      "title": "巴塞罗那正陷入氢能运输的恶性循环",
+      "date": "2026-11-23",
+      "summary": "Barcelona’s fuel shutdown exposes the financial risk of keeping hydrogen fleets running as support markets contract. The post Barcelona Is Suffering From The Hydrogen Transport Death Spiral appeared first on CleanTechnica .",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/barcelona-is-suffering-from-the-hydrogen-transport-death-spiral/"
+    },
+    {
+      "type": "energy",
+      "title": "T&E表示，石油国家对COP31的钳制凸显了快速电气化的必要性",
+      "date": "2026-11-23",
+      "summary": "COP31 climate talks break down shows that fossil fuel interests remain a major obstacle to climate action. The lack of a final text at the end of COP31 shows how far the fossil fuel industry is willing to go to keep its polluting businesses operating, says T&E. While the final ... [continued] Th",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/petrostates-chokehold-on-cop31-underscores-need-for-rapid-electrification-says-te/"
+    },
+    {
+      "type": "energy",
+      "title": "各团体对陆军在爱荷华州实施叠氮化铅起爆计划的反应",
+      "date": "2026-11-23",
+      "summary": "Army says it plans to detonate degraded lead in Iowa town no later than Nov. 24, despite court stay. Des Moines, IOWA — The Iowa Environmental Council, Sierra Club, and Earthjustice will continue to advocate for accountability from the U.S. Environmental Protection Agency (EPA) and the U.S. Army in",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/groups-respond-to-armys-plan-to-proceed-with-lead-azide-detonation-in-iowa/"
+    },
+    {
+      "type": "energy",
+      "title": "思考插电式VPP的潜力",
+      "date": "2026-11-23",
+      "summary": "I recently discussed the potential of the plug-in VPP from Jackery and Every Electric to transform urban energy storage. But the current program could be just the start. The more I discussed it at RE+, the more it started making me thing about where it could go in the future. ... [continued] The pos",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/pondering-the-potential-of-plug-in-vpp/"
+    },
+    {
+      "type": "energy",
+      "title": "三个绿色氢能项目躲过了特朗普的“砍刀”",
+      "date": "2026-11-23",
+      "summary": "The startup Plug Power is among the green hydrogen stakeholders carving out more space for renewable energy in the US market, despite last year's sharp U-turn in federal energy policy. The post Three Green Hydrogen Projects Slip Through The Trump Chopper appeared first on CleanTechnica .",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/green-hydrogen-us-energy-policy-plug-power-powercell/"
+    },
+    {
+      "type": "energy",
+      "title": "埃隆·马斯克在DealBook峰会上的采访：Starlink具有革命性，并能拯救生命",
+      "date": "2026-11-23",
+      "summary": "Elon Musk, the chief executive of SpaceX and Tesla, said at the DealBook Summit recently that “the number of lives that have been saved” by Starlink connectivity “may be hundreds.” Want to get the correct numbers? Musk asked host Andrew Ross Sorkin, editor of DealBook, a dail",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/elon-musk-interview-at-the-dealbook-summit-starlink-is-revolutionary-and-saves-lives/"
+    },
+    {
+      "type": "energy",
+      "title": "LDV eDeliver 5——一款物美价廉的中国车？",
+      "date": "2026-11-23",
+      "summary": "A bargain electric van from China — the LDV eDeliver 5. “The tide is changing; people are more on board with Chinese cars and electric vehicles” in Australia. And it has 50% more cargo space than the Korean competition (6.6 cubic metres). For the same price! On the same day ... [continued] The post",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/22/ldv-edeliver-5-a-chinese-bargain/"
     },
     {
       "type": "policy",
@@ -65,62 +217,6 @@
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4ydW1fZUpFR3kzS0hSQUszQUNCbTdzb3NZVF9OX0tTSm5HN3VySWxkZDVEYThESEc0T2JvSHhUQWFWdFU0NlNkXzMzZUlGMFZFN2tlVjk2UXlBTkla?oc=5"
     },
     {
-      "type": "energy",
-      "title": "RMI的氢能研究正在取得进步。其投资建议仍有欠缺。",
-      "date": "2026-11-22",
-      "summary": "RMI's hydrogen research increasingly favors batteries and narrower demand, but its investment recommendations still promote subsidies and infrastructure. The post RMI’s Hydrogen Research Is Getting Better. Its Investment Advice Still Falls Short. appeared first on CleanTechnica .",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/22/rmis-hydrogen-research-is-getting-better-its-investment-advice-still-falls-short/"
-    },
-    {
-      "type": "energy",
-      "title": "保险可负担性危机：风险、韧性和解决方案",
-      "date": "2026-11-22",
-      "summary": "NRDC resources on insurance affordability, market availability, climate risk, resilience investments, and strategies to protect homeowners, businesses, and communities. For property owners, insurance provides a critical financial safety net that protects homes, businesses, and other assets from unex",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/22/the-insurance-affordability-crisis-risks-resilience-and-solutions/"
-    },
-    {
-      "type": "energy",
-      "title": "致马斯克的备忘录：否认只是通往康复漫长道路上的第一步",
-      "date": "2026-11-22",
-      "summary": "The incoming US Congress plans to call Elon Musk to account for manipulating SpaceX satellite services in Ukraine, crippling that country's ability to defend itself against Russian attacks. The post Memo To Musk: Denial Is Just The First Step On The Long Road To Recovery appeared first on CleanTechn",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/22/elon-musk-ukraine-spacex-starshield-democrats-government-contracts-risk/"
-    },
-    {
-      "type": "energy",
-      "title": "福特开始生产自家的磷酸铁锂电池",
-      "date": "2026-11-22",
-      "summary": "Ford is now a battery producer. Yes, it’s using battery technology licensed from CATL, but it is now producing EV batteries it is going to be using in its own vehicles. In fact, it is reportedly doing so in a really fast, advanced way. “The BlueOval Battery Park Michigan assembly ... [co",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/21/ford-begins-producing-its-own-lfp-batteries/"
-    },
-    {
-      "type": "energy",
-      "title": "谁需要自动驾驶？您喜欢开车！然而，对于许多残疾人来说，特斯拉的完全自动驾驶是唯一的选择。要么使用它，要么就别开车！",
-      "date": "2026-11-21",
-      "summary": "Editor’s note: In my opinion, a person should not be using Tesla FSD to drive somewhere if they aren’t capable of driving the trip fully themselves. Fritz makes the argument here that it is easier to supervise FSD and that is why someone with a handicap can use it when ... [continued] Th",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/21/who-needs-automatic-driving-you-love-to-drive-however-for-many-handicapped-teslas-full-self-driving-is-the-only-option-its-use-it-or-dont-drive/"
-    },
-    {
-      "type": "energy",
-      "title": "电动汽车市场份额飙升至 68%（！）且小型纯电动汽车崛起——10 月中国电动汽车销量报告",
-      "date": "2026-11-21",
-      "summary": "High gas prices and a never-ending wave of new BEVs have allowed October to reach 68% EV market share, a new record! This record achievement is thanks to a significant ICE (internal combustion engine) crash. The overall market dropped 27% year over year (YoY), to around 1.6 million sales. Plugins ..",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/21/ev-share-jumps-to-68-and-small-bevs-rise-to-power-china-ev-sales-report-for-october/"
-    },
-    {
-      "type": "energy",
-      "title": "欧洲的氢气价格为5.70欧元/千克，而工业买家能承受的价格要低得多",
-      "date": "2026-11-21",
-      "summary": "Industrial buyers’ price ceilings challenge Europe’s modelled €5.70/kg hydrogen costs. Heat, ammonia and iron compete with other production routes. The post Europe’s Modelled €5.70/kg Hydrogen Faces Industrial Buyers Who Can Afford Far Less appeared first on CleanTechnica .",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/21/europe-hydrogen-cost-industrial-buyers-price-ceilings/"
-    },
-    {
       "type": "policy",
       "title": "新能源全面入市后，电力交易进入“算小时”时代 - 21财经",
       "date": "2026-11-21",
@@ -129,68 +225,68 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSkZkUEQ5a3NMbVBTWVJZMEVlQVZQQ0ZjeHBLdExqSlgtUHd4amVGZFVHU1AzMnhrQXdDZUVNeDQ0QmVVVjZsc1JWd0FSNkVKNFN3QWp5b19yN0RFdnRERGdvclk0cG1uU1gwd3pOZWJ3RU5MSllwT3dvTUxmZVpnZno0bE5sVktrNzQ3SGJ0dw?oc=5"
     },
     {
-      "type": "hydrogen",
-      "title": "PowerCell获得美国公用事业规模绿色氢能发电装置4.4亿瑞典克朗订单",
+      "type": "papers",
+      "title": "无方差的最佳线性回归",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/20/electrolyzer/powercell-receives-sek-440-million-order-for-utility-scale-green-hydrogen-power-generation-installation-in-the-us"
+      "summary": "We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a finite conditional $α$-moment $ν$ for some unknown $α\\in(1,2)$, and the covariates may only have finite moments up to a given order (e.g., 4th moment). We give a black-box reduction tha",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27983v1"
     },
     {
-      "type": "hydrogen",
-      "title": "阿拉贡经济部长表示，氢能必须具有竞争力才能实现规模化",
+      "type": "papers",
+      "title": "除非加密假设不成立，否则不存在塔尔斯基不动点的多项式时间算法",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/20/h2/hydrogen-must-be-competitive-to-scale-says-aragon-economy-minister"
+      "summary": "We study the time complexity of finding a Tarski fixed point. We provide a subexponential-time reduction from the Unique End of Potential Line (UEOPL) problem to the problem of finding a Tarski fixed point. Using a range of known cryptographic lower bounds for UEOPL, our reduction implies a range of",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27977v1"
     },
     {
-      "type": "hydrogen",
-      "title": "TEAL Mobility开始在安特卫普建设氢气加注站",
+      "type": "papers",
+      "title": "晶格量子电动力学基态能量的非微扰边界",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/19/electrolyzer/teal-mobility-starts-construction-of-its-hydrogen-refueling-station-in-antwerp"
+      "summary": "We establish nonperturbative bounds on the ground-state energy of lattice quantum electrodynamics with naive fermions in Coulomb gauge, within the Gaussian photon approximation. Our central result is a spectral comparison theorem showing that, in the thermodynamic limit, the minimum fermionic energy",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27975v1"
     },
     {
-      "type": "hydrogen",
-      "title": "意大利公路运输行业计划开展氢能卡车试点，以测试燃料成本和加氢基础设施",
+      "type": "papers",
+      "title": "重离子碰撞中的软-硬贝叶斯推理",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/18/fuel-cells/italy-s-road-haulage-industry-plans-hydrogen-truck-pilot-to-test-fuel-costs-and-refuelling-infrastructure"
+      "summary": "Bayesian analyses of jet quenching commonly constrain jet--medium interaction parameters using a fixed quark-gluon plasma (QGP) background obtained from a soft-sector calibration. This approach neglects uncertainty in the medium and prevents hard observables from providing additional constraints on",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27971v1"
     },
     {
-      "type": "hydrogen",
-      "title": "现代氢动力公司向瑞士东部Migros交付另外两辆下一代XCIENT氢燃料电池卡车",
+      "type": "papers",
+      "title": "解释性统计：面向人工智能时代的研究",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/18/fuel-cells/hyundai-hydrogen-mobility-delivers-two-additional-next-generation-xcient-fuel-cell-trucks-to-migros-eastern-switzerland"
+      "summary": "AI is dramatically changing the statistical research landscape. I argue that production of a distinct category of statistical knowledge, which I refer to as explicational statistics, is actually becoming more valuable as AI increasingly automates other parts of the research process. I define explica",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27961v1"
     },
     {
-      "type": "hydrogen",
-      "title": "Genevos获得220万欧元欧盟资助，用于为大型船舶建造1兆瓦氢燃料电池",
+      "type": "papers",
+      "title": "配备电池储能的小型模块化反应堆（SMR）动力全电动船舶的负荷跟踪动态",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/15/fuel-cells/genevos-lands-2-2-million-eu-grant-to-build-1-mw-hydrogen-fuel-cell-for-large-ships"
+      "summary": "Small modular reactors (SMRs) are being considered as compact, high-energy-density power sources for future all-electric ships. In such systems, propulsion-load variations can propagate through the electrical network, turbine-generator set, steam generator, and reactor, producing coupled nuclear, th",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27957v1"
     },
     {
-      "type": "hydrogen",
-      "title": "Kelluu为自主氢气飞艇增添被动雷达，以实现持续空中监测",
+      "type": "papers",
+      "title": "亚指数固定参数时间下的聚类编辑",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/16/h2/kelluu-adds-passive-radar-to-autonomous-hydrogen-airship-for-persistent-aerial-monitoring"
+      "summary": "Cluster Editing asks whether at most $k$ edge additions and deletions turn a given $n$-vertex graph into a disjoint union of cliques. For more than a decade, the fastest algorithm for it was the golden-ratio algorithm of Böcker with running time $O(1.62^k+n^{O(1)})$. Cao and Chen had conjectured tha",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27956v1"
     },
     {
-      "type": "hydrogen",
-      "title": "H2APEX子公司HydroExceed：认证为进军氢气罐车市场铺平道路",
+      "type": "papers",
+      "title": "利用机器学习从恒星整体特性中恢复低光度红巨星的浮力异常参数",
       "date": "2026-11-20",
-      "summary": "",
-      "source": "Fuel Cells Works",
-      "url": "https://fuelcellsworks.com/2026/11/17/h2/h2apex-subsidiary-hydroexceed-certification-paves-the-way-into-the-hydrogen-trailer-market"
+      "summary": "Buoyancy glitches in red giants provide localized information on the interior structure near the base of the convective envelope, but their properties are typically inferred from dedicated seismic modelling rather than global properties, limiting large-sample applications. We investigate whether the",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.27954v1"
     },
     {
       "type": "energy",
@@ -210,83 +306,11 @@
     },
     {
       "type": "policy",
-      "title": "\"算力的尽头是电力\"：政策密集出台后，AI+能源还差储能、数据 - 财联社",
-      "date": "2026-11-20",
-      "summary": "\"算力的尽头是电力\"：政策密集出台后，AI+能源还差储能、数据 财联社",
-      "source": "发改委政策",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9KNDJBLXNadjFEY0syS1YtRDkxMnlZUE9BeFhaeDdjTE9PdEZXeTI3NGdtM3F5UG9KZTJjd2NXOTIxc0xSZW1MRQ?oc=5"
-    },
-    {
-      "type": "policy",
       "title": "自然资源部、国家发改委、央行、金融监管总局、证监会，联合发文 - 国际金融报",
       "date": "2026-11-20",
       "summary": "自然资源部、国家发改委、央行、金融监管总局、证监会，联合发文 国际金融报",
       "source": "发改委政策",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5adzgtQWpYNzVwNnVrRFM0UThFSnc4SUc4T1FBY2JqU2ZMS3pfU0ljVGNLR05uMGlmT3VIb2xzS2FoYVRfenhVWHRGTXZWdlU2MnRaQm1tQlBCenBRN1FZ?oc=5"
-    },
-    {
-      "type": "papers",
-      "title": "原子超流体的局部测速：从黎曼稀疏波到量子化涡旋",
-      "date": "2026-11-19",
-      "summary": "We demonstrate local velocimetry for atomic superfluids in two dimensions (2D). Using matter-wave interferometry based on Raman--Bragg beam splitters, we map the local gradient of the phase of the superfluid's wavefunction onto displacement of the interference fringes and reconstruct the 2D velocity",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26608v1"
-    },
-    {
-      "type": "papers",
-      "title": "基于数值估计器的查询最优量子最小值查找",
-      "date": "2026-11-19",
-      "summary": "We propose a quantum minimum-finding algorithm for objectives accessed via numerical estimators that avoids the logarithmic query overhead of amplifying the confidence of estimates before the search. A coherent estimator that is $\\varepsilon$-accurate with probability at least $2/3$ on each of $N$ l",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26606v1"
-    },
-    {
-      "type": "papers",
-      "title": "一种用于拟阵并的有效算法",
-      "date": "2026-11-19",
-      "summary": "We design a polynomial-time algorithm for matroid cups with $O(1)$ discrepancy. Our matroid cups algorithm design consists of a sequence of reductions to simpler instances, culminating in $O(n)$ instances of matroid cups where the matroid has rank 1.",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26602v1"
-    },
-    {
-      "type": "papers",
-      "title": "SoK：评估大语言模型（LLM）在软件漏洞研究中的能力演变",
-      "date": "2026-11-19",
-      "summary": "LLM-based agents are becoming increasingly capable at discovering, validating and patching vulnerabilities in real software, and vendors and researchers report that this is already changing how vulnerabilities are found and fixed. These claims, however, are scattered across papers, vendor reports an",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26601v1"
-    },
-    {
-      "type": "papers",
-      "title": "通过闭式交替牛顿型优化进行磁化率源分离",
-      "date": "2026-11-19",
-      "summary": "Quantitative Susceptibility Mapping (QSM) provides a bulk magnetic susceptibility estimate per voxel, so contributions from paramagnetic and diamagnetic sources within the same voxel partially cancel. Susceptibility source separation methods identify these compartments by fitting a three-pool comple",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26561v1"
-    },
-    {
-      "type": "papers",
-      "title": "极值Dymnikova黑洞的磁性NED重构中的超光速传播",
-      "date": "2026-11-19",
-      "summary": "We reconstruct the magnetic nonlinear electrodynamics (NED) source of the Dymnikova geometry on the branch \\(\\Iinv>0\\) and analyze its electromagnetic perturbations on the fixed background. The reconstruction does not admit a Maxwell limit. The extraordinary characteristic cone gives a transverse sp",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26560v1"
-    },
-    {
-      "type": "papers",
-      "title": "跨越时间的化学制图：来自五项巡天的580,000颗巨星的同质样本揭示的银河系随年龄变化的化学结构",
-      "date": "2026-11-19",
-      "summary": "Mapping the distribution of elements in the Milky Way and understanding how that distribution has changed over time can give us insight into the formation and evolution of our Galaxy. Here we use homogeneously estimated atmospheric parameters, elemental abundances, distances, and ages for ~580,000 g",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26550v1"
-    },
-    {
-      "type": "papers",
-      "title": "系外行星化学中的人口统计推断受反演假设的影响",
-      "date": "2026-11-19",
-      "summary": "Understanding the chemical diversity of exoplanet atmospheres is crucial for linking atmospheric composition to planetary formation history. Atmospheric C/O can provide clues about where and how planets form, particularly through the accretion of gas and solids across disk snowlines. Since planetary",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.26548v1"
     },
     {
       "type": "energy",
@@ -298,22 +322,6 @@
     },
     {
       "type": "energy",
-      "title": "“青氢一号”松原项目入选国家能源局“中国实践”典型案例 - 世纪新能源网",
-      "date": "2026-11-19",
-      "summary": "“青氢一号”松原项目入选国家能源局“中国实践”典型案例 世纪新能源网",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1WMEdiam5fVHd4LUlfNW4xWEZaT0V5MlFic1pfRXdqb1hjbS02MmZNOFdXQ0ZWRDRYUzVteFR6cUZYTzhUNVVsb2Z1Z3JsdHAzZWZxMw?oc=5"
-    },
-    {
-      "type": "energy",
-      "title": "氢能重卡入选！山西省首批35个省级应用场景清单公布 - 世纪新能源网",
-      "date": "2026-11-19",
-      "summary": "氢能重卡入选！山西省首批35个省级应用场景清单公布 世纪新能源网",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1zdEFBUUx0alBreUxwZ3ZOQkt6SXdHNzFmZkRwb1dPWk9UZnU3QnpPd0lLbUNNdUlPMGxVTGhxbGg3QkdRS1dNb1JQT1hMS1ZPYVRxMg?oc=5"
-    },
-    {
-      "type": "energy",
       "title": "针对性技术共同采用，以兼顾住宅能源转型中的节能与公平收益",
       "date": "2026-11-18",
       "summary": "Nature Energy, Published online: 18 November 2026; doi:10.1038/s41560-026-02164-w Targeting burden reduction realigns technology distribution towards disadvantaged households. The study shows that solar co-adoption for these households can deliver equity gains, highlighting the need for bundled, mul",
@@ -322,11 +330,11 @@
     },
     {
       "type": "policy",
-      "title": "“青氢一号”新成绩！ - 腾讯新闻",
-      "date": "2026-11-18",
-      "summary": "“青氢一号”新成绩！ 腾讯新闻",
+      "title": "储能迎政策与产业大会双催化 多只绩优股获资金加码(名单) - 东方财富网",
+      "date": "2026-11-17",
+      "summary": "储能迎政策与产业大会双催化 多只绩优股获资金加码(名单) 东方财富网",
       "source": "发改委政策",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9odi1JV2sxN0RPLXdjcGVSNkltWXpWZkhvaDlHWXhJd0NVNWJHUk9hTm5ZbVNGd01GLWRyanhjckVzLUJVdlJYSzBNcFY1MHNKTHF6eWtB?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wZzFCY3hNUVRiLTJMa3NUbGh5blZfMFVJdjEzdXo5dHYtcHZIOFhtTlRqRkl2X3NrTkxhdDdCYkUtQ2kzWW4zbURkemFEZXhVTzJuNXZvUElvOE5qY3VTMzg5Tmw4UQ?oc=5"
     },
     {
       "type": "energy",
@@ -354,14 +362,6 @@
     },
     {
       "type": "energy",
-      "title": "数据中心通过批发价格上涨和倒退性电网成本转移，不对称地加剧了能源负担",
-      "date": "2026-11-09",
-      "summary": "Nature Energy, Published online: 09 November 2026; doi:10.1038/s41560-026-02163-x As data centres increase pressure on power systems, the costs of accommodating their growth are becoming a concern. Here the researchers show that data centres raise wholesale prices and shift transmission costs onto h",
-      "source": "Nature Energy",
-      "url": "https://www.nature.com/articles/s41560-026-02163-x"
-    },
-    {
-      "type": "energy",
       "title": "我校举办第二届河北省氢能产业发展研讨会 - 华北电力大学",
       "date": "2026-10-23",
       "summary": "我校举办第二届河北省氢能产业发展研讨会 华北电力大学",
@@ -375,6 +375,14 @@
       "summary": "氢能产业正走向“精选赛道” 中国石化新闻网",
       "source": "Google新闻·能源",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPclFfdWhnN1A4UFZMOHBIM08zTlF4YzJOUFJPbkItWnBVQTg1ektOY19VVlhPY0FDdGM1N0VjY0d2NU1tUFRDTDR2Q29xNk5sOGhFa1lpMGlCaXJjM1VacmVUTEpRclBZcTdjUWlzeDlrMHpOOVhfWnZVVWNUa280bQ?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "一图读懂《中国氢能发展报告（2026）》 - 国家能源局",
+      "date": "2026-08-11",
+      "summary": "一图读懂《中国氢能发展报告（2026）》 国家能源局",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xazk2QTRjNnk3ZlZNQmVqTTJBTUNXcDQwczhqYXZVYTltRTE3QTVSc29rU2ZkQmNRaGkxM3ZMT010dHJFbktwY3hlRklodldXVzZVRlJncWFiTU95alVvZEFvZmd3a3Q3NjFERnlKZVlKRGpaLWZ6N3VRdw?oc=5"
     },
     {
       "type": "policy",
@@ -399,14 +407,6 @@
       "summary": "第十届国际氢能与燃料电池汽车大会举办 中国科学技术协会",
       "source": "Google新闻·能源",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZndNTTJ1aWduV2VIQ1E3OVMtbkV3ZWlmUVlRNzl1aTR1M3BFdDg5TzlmUzVpd1hxbmc2VjVrZ3ZHN1B6ZmxvLVRiZnRnMEpqRVNaMHMzRUZKQUw3R2ZRb0VrUThZUjJaYUJNMm8tR090QUloVkhyTDN6Sk1oSHAtWHNrMndaeHlCN2c?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局召开民营企业座谈会 - 国家能源局",
-      "date": "2026-05-27",
-      "summary": "国家能源局召开民营企业座谈会 国家能源局",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5xQWl6Nm9HeW1RaXg5cTNoQWl3eTlYU3pGQXR3TzBHeEwtS3pNOXBIajZzdDd0b0lnN0ZKVi1zd0U0RUpVMlYwTnVyOFBTbjhpOWI2Sjc2RWRVMG41NTRLR2dZN2F2enlocFNELW5aSzg3N1BLRXhKT0FDZw?oc=5"
     },
     {
       "type": "policy",
@@ -442,14 +442,6 @@
     },
     {
       "type": "energy",
-      "title": "共探未来引擎丨未来能源：推进能源体系“质”的跃升 - 新华网",
-      "date": "2026-03-11",
-      "summary": "共探未来引擎丨未来能源：推进能源体系“质”的跃升 新华网",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBlVUZRekRuMlU3Yk1FenhDaDZJRl83SE9sZ3ZHemlHRGxQd25EUWR5WnJQVFhaN1ZkSXRBSl9VdHBteWJ6V3kzcmVLVUowelpEMWlFN0RfVzZ3WjFmcVlneGt4T0xkMUpIVVdRaU51TnljUFo1LVpB?oc=5"
-    },
-    {
-      "type": "energy",
       "title": "国家能源局新闻发布会文字实录 - 国家能源局",
       "date": "2026-01-30",
       "summary": "国家能源局新闻发布会文字实录 国家能源局",
@@ -458,11 +450,27 @@
     },
     {
       "type": "policy",
+      "title": "国家能源局2025年第四季度新闻发布会文字实录 - 国家能源局",
+      "date": "2025-10-31",
+      "summary": "国家能源局2025年第四季度新闻发布会文字实录 国家能源局",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ldkQ0RWJ2cFl1RU9Mb1hJOTg4dzVFZURzSUxzMm5uUGdzbl9fV0w5VklsTmJrQ1VidXdlbENhS3drN1lnU1dtNlY4ODRrU1FBSGlBWFVtWi1fMmZWUXhVRWNWdTluMmRIQmphU0wzM19IVUpTVWMyQm1sRQ?oc=5"
+    },
+    {
+      "type": "policy",
       "title": "国家能源局：坚持在新型能源体系下谋划推动氢能发展 - 中国能源新闻网",
       "date": "2025-10-27",
       "summary": "国家能源局：坚持在新型能源体系下谋划推动氢能发展 中国能源新闻网",
       "source": "国家能源局",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1sYzI3NjZubWxQQWlzLWRPeGxLLXlmLWxGY0pXQ2J5dUlIZHluZW93RHR1dDZRM1lGVFdlZEliT2dTVTBKaTNtWW1sN1dhMWU5RFNNREk4Ym50Y05GWlh1Z0NvNVZHUnlUeVE0OGYtRDI?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "国家发展改革委 国家能源局关于推进“人工智能+”能源高质量发展的实施意见 - 国家数据局",
+      "date": "2025-09-08",
+      "summary": "国家发展改革委 国家能源局关于推进“人工智能+”能源高质量发展的实施意见 国家数据局",
+      "source": "发改委政策",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hOEZLYkttRFpLR2hXYWZvcTVCdWJES2RBZ2xZWUNtNmN2bWRfZU9KczE0TkxFSHNBQWk4Qm9vUXBSS29YQkcyNkIwMG5tdjUzRklmRWNzLWt4ZXZBRGNVM2tNa1ZiR21Xa0xZTlE3YU5hck92UmVVczNnWTRNZw?oc=5"
     },
     {
       "type": "policy",
@@ -479,14 +487,6 @@
       "summary": "国家能源局：2024全年我国氢能消费生产规模位列世界第一 新华网",
       "source": "国家能源局",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85am1idW9tZWZuLXZmX005TXZESy1tQnB3NVNFRU5hYjdiWThHTWxIU25DV1NwZ0ZBckRyWlM2Zy1BRmY1TFppQTNwdW1BS1dQMTh1VEl3MXdRMzI2Wjl6emFoUjFNeC1IWkRlMTBZNE1XZ0M2MHh0Uk1XQmpaeHM?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家发展改革委高技术司、国家能源局科技司组织召开推进氢能在电力领域示范应用专题座谈会 - 国家能源局",
-      "date": "2022-06-13",
-      "summary": "国家发展改革委高技术司、国家能源局科技司组织召开推进氢能在电力领域示范应用专题座谈会 国家能源局",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fQkxmekxYSS1JdlB0eVROZldEMF9rSFAzWUJlV1RvcWJNT29NTjJVTWZJTFd2Y29LbUpsTDN5RWxMNEYtTmRqVl9pQUEyTXpYdVBxYnY5Y3N4cW9RQUE?oc=5"
     }
   ],
   "writing": [
@@ -561,5 +561,5 @@
       "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86-%E5%AF%B9%E6%88%91%E8%BF%99%E4%B8%AA%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E5%90%AF%E7%A4%BA%EF%BC%882026.04%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
     }
   ],
-  "synced_at": "2026-11-23T15:15:12+00:00"
+  "synced_at": "2026-11-24T00:02:35+00:00"
 }
