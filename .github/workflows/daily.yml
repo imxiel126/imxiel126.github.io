@@ -37,7 +37,8 @@ jobs:
           if git cat-file -e "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null; then
             echo "sent=true" >> "$GITHUB_OUTPUT"
             marker="$(git show "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null || true)"
-            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=news-"* ]]; then
+            expected_report_id="news-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=$expected_report_id"* ]]; then
               echo "已存在新闻联播 SMTP 接受记录；Gmail 最终送达仍由收件验收任务核对"
             else
               echo "::warning::发现旧版或不完整投递标记。为避免重复邮件，本次不自动重发。"
