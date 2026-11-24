@@ -107,6 +107,11 @@ def check_online():
         ("/reading/", 'id="reading-reflections"'),
         ("/reading/reflections-2000.json", '"total":2000'),
         ("/research/", 'id="research-title"'),
+        ("/social/", 'id="real-recommendation-entry"'),
+        ("/notes/", 'id="items"'),
+        ("/library/", 'id="daily-grid"'),
+        ("/journal/", 'id="capture-form"'),
+        ("/brain/", 'id="brain-search"'),
     ]:
         endpoint=SITE+suffix
         problem=None
@@ -125,6 +130,37 @@ def check_online():
         if problem:issues.append(f"线上页面 {suffix} 不可用或不是新版本（{problem}）")
         else:success.append(f"线上页面 {suffix} 可以访问")
     return success,issues
+
+
+def check_morning_editions(now):
+    """Distinguish a configured cron from two actual delivered morning editions."""
+    ok,issues=[],[]
+    token=os.getenv("GH_TOKEN","")
+    repository=os.getenv("GH_REPOSITORY","")
+    if not token or not repository:
+        return ok,["无法核验早间简报运行记录：未提供只读 Actions 凭证"]
+    url="https://api.github.com/repos/"+repository+"/actions/workflows/editions.yml/runs?per_page=30"
+    request=urllib.request.Request(url,headers={
+        "Accept":"application/vnd.github+json",
+        "Authorization":"Bearer "+token,
+        "User-Agent":"PersonalPagesDailyHealth/1.0",
+    })
+    try:
+        with urllib.request.urlopen(request,timeout=20) as response:
+            runs=json.load(response).get("workflow_runs",[])
+        today=[]
+        for entry in runs:
+            stamp=parse_datetime(entry.get("created_at"))
+            if stamp and stamp.astimezone(TZ).date()==now.date():
+                today.append(entry)
+        completed=[x for x in today if x.get("conclusion")=="success"]
+        if len(completed)<2:
+            issues.append("今天主页简报与氢能行业晨报成功运行次数不足 2 次（实际 "+str(len(completed))+" 次）")
+        else:
+            ok.append("早间双简报至少成功运行 2 次；仍须以收件箱确认最终送达")
+    except (urllib.error.URLError,TimeoutError,OSError,ValueError,TypeError) as err:
+        issues.append("早间双简报工作流记录暂时无法查询："+type(err).__name__)
+    return ok,issues
 
 def notify_failure(issues,now):
     # Reuse the same verified private recipient as the daily mail workflow.
@@ -158,6 +194,10 @@ def main():
         site_ok,site_failed=check_online()
     passed.extend(site_ok)
     failed.extend(site_failed)
+    if os.environ.get("GITHUB_EVENT_NAME") in ("schedule","workflow_dispatch") and now.hour>=11:
+        edition_ok,edition_issues=check_morning_editions(now)
+        passed.extend(edition_ok)
+        failed.extend(edition_issues)
     for text in passed:print("OK:",text)
     for text in failed:print("FAILED:",text,file=sys.stderr)
     if failed:
