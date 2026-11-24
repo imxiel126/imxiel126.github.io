@@ -11,10 +11,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ["index.html","brain/index.html","learn/index.html","library/index.html","reading/index.html",
-         "notes/index.html","research/index.html","social/index.html"]
+         "notes/index.html","research/index.html","social/index.html","journal/index.html"]
 REQUIRED = ["assets/site.css","assets/news.js","assets/morning.js","brain/brain.css","brain/app.js",
             "learn/app.js","learn/learn.css","library/app.js","research/app.js",
-            "scripts/first-issue.html","scripts/daily.py"]
+            "scripts/first-issue.html","scripts/daily.py","journal/journal.js","journal/journal.css","journal/data.json"]
 WORKFLOWS = [
     ".github/workflows/daily.yml", ".github/workflows/weread.yml",
     ".github/workflows/research-sync.yml", ".github/workflows/social-pages.yml",
@@ -35,13 +35,13 @@ def main():
             raise AssertionError("Second Brain link missing: "+path)
         if "href=\"/learn/\"" not in body:
             raise AssertionError("Learning nav link missing: "+path)
-        if "href=\"/assets/site.css\"" not in body:
+        if not re.search(r'href="/assets/site\.css(?:\?[^"]*)?"', body):
             raise AssertionError("Shared CSS missing: "+path)
         if "class=\"site-nav\"" not in body:
             raise AssertionError("Shared nav missing: "+path)
     for path in WORKFLOWS:
         content=assert_file(path)
-        if "brain" not in content or "learn" not in content or "assets" not in content:
+        if "brain" not in content or "learn" not in content or "assets" not in content or "journal" not in content:
             raise AssertionError("Deployment misses learning resources: "+path)
         if "actions/upload-pages-artifact@v3" not in content:
             raise AssertionError("Pages upload action missing: "+path)
@@ -66,10 +66,13 @@ def main():
         ids=[r.get("id") for r in rows]
         if len(set(ids))!=len(ids):
             raise AssertionError("Duplicate learning IDs in "+item)
+    journal=json.loads(assert_file("journal/data.json"))
+    if not isinstance(journal.get("items"), list):
+        raise AssertionError("Journal archive records must be a JSON array")
     reflections=json.loads(assert_file("reading/reflections-2000.json"))
     if len(reflections.get("cards",[]))!=2000:
         raise AssertionError("Reading reflections archive is not complete")
-    for path in ["assets/news.js","assets/morning.js","brain/app.js","learn/app.js","library/app.js","research/app.js"]:
+    for path in ["assets/news.js","assets/morning.js","brain/app.js","learn/app.js","library/app.js","research/app.js","journal/journal.js"]:
         result=subprocess.run(["node","--check",str(ROOT/path)],capture_output=True,text=True)
         if result.returncode:
             raise AssertionError("JavaScript syntax error in "+path+": "+result.stderr[:400])
