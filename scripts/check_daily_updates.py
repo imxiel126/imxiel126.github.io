@@ -100,6 +100,9 @@ def check_online():
     for suffix,needle in [
         ("/", 'href="/learn/"'),
         ("/learn/", 'id="daily-items"'),
+        ("/brain/", 'id="brain-inbox-list"'),
+        ("/brain/app.js", "zhixing-brain-v1"),
+        ("/assets/brain-bridge.js", "ZhixingBrain"),
         ("/learn/app.js", "zhixing-days-v1"),
         ("/reading/", 'id="reading-reflections"'),
         ("/reading/reflections-2000.json", '"total":2000'),
