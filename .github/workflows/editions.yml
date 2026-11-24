@@ -11,6 +11,11 @@ on:
         type: choice
         options: [home, hydrogen]
         required: true
+      retry_pending:
+        description: "仅在确认 Gmail 未收到且上次发送结果不确定时重试"
+        type: boolean
+        required: false
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -22,25 +27,30 @@ jobs:
     timeout-minutes: 15
     env:
       EDITION: ${{ inputs.edition || (github.event.schedule == '0,20,40 23,0 * * *' && 'home' || 'hydrogen') }}
+      RETRY_PENDING: ${{ inputs.retry_pending || false }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: 确定北京时间报告日期
         run: echo "ISSUE_DATE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
-      - name: 检查本日报是否已有 SMTP 接受记录
+      - name: 检查本日报投递状态
         id: check
         run: |
           git fetch origin main
           marker_path=".sent/edition-$EDITION-$ISSUE_DATE.txt"
+          expected_report_id="$EDITION-$(TZ=Asia/Shanghai date +%Y%m%d)"
           if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
             marker="$(git show "origin/main:$marker_path")"
-            echo "sent=true" >> "$GITHUB_OUTPUT"
-            expected_report_id="$EDITION-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
-            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=$expected_report_id"* ]]; then
-              echo "本日报已有 SMTP 接受记录，跳过后续补偿运行"
-            else
-              echo "::warning::发现不完整或历史投递记录，为避免重复发送，本次不自动重发"
+            if [[ "$marker" == *"status=smtp_accepted"* && "$marker" == *"report_id=$expected_report_id"* ]]; then
+              echo "sent=true" >> "$GITHUB_OUTPUT"
+              echo "本日报已有 SMTP 接受记录，跳过重复发送"
+            elif [[ "$marker" == *"status=pending"* && "$RETRY_PENDING" != "true" ]]; then
+              echo "sent=true" >> "$GITHUB_OUTPUT"
+              echo "::warning::上次发送结果不确定，先核验 Gmail 报告编号，禁止自动重发"
+            elif [[ "$marker" != *"status=pending"* && "$marker" != *"status=retryable"* ]]; then
+              echo "sent=true" >> "$GITHUB_OUTPUT"
+              echo "::warning::发现旧版或不完整投递记录，为避免重复发送，本次不自动重发"
             fi
           fi
       - name: 安装主页日报浏览器
@@ -53,8 +63,58 @@ jobs:
         run: |
           python3 -m py_compile scripts/daily.py scripts/editions.py scripts/report_mail_utils.py
           python3 scripts/editions.py "$EDITION"
-      - name: 投递邮件并保存独立 SMTP 记录
+      - name: 检查 SMTP 配置
         if: steps.check.outputs.sent != 'true'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          if [ -z "$SMTP_HOST" ] || [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASSWORD" ] || [ -z "$MAIL_TO" ]; then
+            echo "::error::SMTP secrets are missing; no delivery claim was created"
+            exit 1
+          fi
+      - name: 先提交投递声明，防止不确定结果导致重复发送
+        if: steps.check.outputs.sent != 'true'
+        id: claim
+        run: |
+          set -euo pipefail
+          marker_path=".sent/edition-$EDITION-$ISSUE_DATE.txt"
+          report_id="$EDITION-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+          claim_id="$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
+              existing="$(git show "origin/main:$marker_path")"
+              if [[ "$existing" == *"status=smtp_accepted"* && "$existing" == *"report_id=$report_id"* ]]; then
+                echo "claimed=false" >> "$GITHUB_OUTPUT"
+                exit 0
+              elif [[ "$existing" == *"claim_id=$claim_id"* && "$existing" == *"status=pending"* ]]; then
+                echo "claimed=true" >> "$GITHUB_OUTPUT"
+                exit 0
+              elif [[ "$existing" == *"status=pending"* && "$RETRY_PENDING" == "true" ]] || [[ "$existing" == *"status=retryable"* ]]; then
+                :
+              else
+                echo "::error::An unresolved delivery marker exists; refusing to send"
+                exit 1
+              fi
+            fi
+            mkdir -p .sent
+            printf 'report_id=%s\nstatus=pending\nclaim_id=%s\nclaimed_at=%s\n' "$report_id" "$claim_id" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_path"
+            git add "$marker_path"
+            git -c user.name='Daily Editions' -c user.email='github-actions[bot]@users.noreply.github.com' commit -m "声明 $EDITION 晨报投递 $ISSUE_DATE"
+            if git push origin HEAD:main; then
+              echo "claimed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep 4
+          done
+          echo "::error::Could not persist the delivery claim"
+          exit 1
+      - name: 投递邮件并确认 SMTP 接受状态
+        if: steps.check.outputs.sent != 'true' && steps.claim.outputs.claimed == 'true'
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -63,41 +123,42 @@ jobs:
           REPORT_KIND: ${{ env.EDITION }}
         run: |
           set -euo pipefail
-          if [ -z "$SMTP_HOST" ] || [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASSWORD" ] || [ -z "$MAIL_TO" ]; then
-            echo "::error::SMTP secrets are missing; the daily email cannot be sent"
-            exit 1
-          fi
-          send_output="$(python3 scripts/daily.py send)"
+          set +e
+          send_output="$(python3 scripts/daily.py send 2>&1)"
+          send_status=$?
+          set -e
           printf '%s\n' "$send_output"
+          if [ "$send_status" -ne 0 ]; then
+            echo "::error::Mail send did not complete; the pending marker remains to prevent accidental duplicates"
+            exit "$send_status"
+          fi
           report_id="$(printf '%s\n' "$send_output" | sed -n 's/^Report-ID: //p' | tail -n 1)"
           expected_report_id="$EDITION-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
-          if [ "$report_id" != "$expected_report_id" ]; then
-            echo "::error::Report-ID mismatch; refusing to write an invalid delivery marker"
+          if [ "$report_id" != "$expected_report_id" ] || ! printf '%s\n' "$send_output" | grep -q '^SMTP_STAGE=accepted$'; then
+            echo "::error::SMTP did not confirm acceptance; the pending marker remains to prevent accidental duplicates"
             exit 1
           fi
           marker_path=".sent/edition-$EDITION-$ISSUE_DATE.txt"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
-            if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
-              existing="$(git show "origin/main:$marker_path")"
-              if [[ "$existing" == *"smtp_accepted_at="* && "$existing" == *"report_id=$report_id"* ]]; then
-                echo "SMTP acceptance marker already exists; no duplicate marker created"
-                exit 0
-              fi
-              echo "::error::An ambiguous marker exists; manual reconciliation is required"
+            existing="$(git show "origin/main:$marker_path" 2>/dev/null || true)"
+            if [[ "$existing" == *"status=smtp_accepted"* && "$existing" == *"report_id=$report_id"* ]]; then
+              echo "SMTP acceptance already recorded"
+              exit 0
+            fi
+            if [[ "$existing" != *"status=pending"* || "$existing" != *"report_id=$report_id"* ]]; then
+              echo "::error::Pending claim changed unexpectedly; Gmail verification is required"
               exit 1
             fi
-            mkdir -p .sent
-            printf 'report_id=%s\nsmtp_accepted_at=%s\nsmtp_accepted_recipients=1\nfinal_delivery=unverified\n' "$report_id" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_path"
+            printf 'report_id=%s\nstatus=smtp_accepted\nsmtp_accepted_at=%s\nsmtp_accepted_recipients=1\nfinal_delivery=unverified\n' "$report_id" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_path"
             git add "$marker_path"
-            git -c user.name='Daily Editions' -c user.email='github-actions[bot]@users.noreply.github.com' commit -m "记录 $EDITION 晨报 SMTP 接受 $ISSUE_DATE"
+            git -c user.name='Daily Editions' -c user.email='github-actions[bot]@users.noreply.github.com' commit -m "确认 $EDITION 晨报 SMTP 接受 $ISSUE_DATE"
             if git push origin HEAD:main; then
               echo "SMTP acceptance marker committed"
               exit 0
             fi
-            echo "远端有新提交，准备重试投递记录提交第 $attempt 次"
             sleep 4
           done
-          echo "::error::SMTP 已接受邮件，但投递记录连续五次提交失败；请核对 Gmail 后再决定是否补发"
+          echo "::error::SMTP accepted the report but the final marker could not be saved; pending claim prevents auto-resend"
           exit 1
