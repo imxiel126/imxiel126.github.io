@@ -36,7 +36,8 @@ jobs:
           if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
             marker="$(git show "origin/main:$marker_path")"
             echo "sent=true" >> "$GITHUB_OUTPUT"
-            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=$EDITION-"* ]]; then
+            expected_report_id="$EDITION-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=$expected_report_id"* ]]; then
               echo "本日报已有 SMTP 接受记录，跳过后续补偿运行"
             else
               echo "::warning::发现不完整或历史投递记录，为避免重复发送，本次不自动重发"
