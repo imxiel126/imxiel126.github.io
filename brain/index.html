@@ -49,6 +49,7 @@
 <label>主题 <select id="note-area"></select></label>
 <label>关联项目 <select id="note-project"><option value="">不关联项目</option></select></label></div>
 <label>我的理解 <textarea id="note-explain" rows="4" maxlength="8000" placeholder="合上资料，我能如何向同事讲明白？"></textarea></label>
+<label>主动回忆题（可选） <input id="note-question" maxlength="400" placeholder="例如：不用看资料，我能说清楚它的关键前提吗？"></label>
 <label>证据与来源 <textarea id="note-source" rows="2" maxlength="2000" placeholder="论文 / 标准编号 / 链接 / 数据依据；不确定的地方也写下来"></textarea></label>
 <label>下一步如何应用 <textarea id="note-apply" rows="2" maxlength="2000" placeholder="哪项实验、规范、工作决策或生活场景能用到？"></textarea></label>
 <label>关键词（用逗号分隔） <input id="note-tags" maxlength="300" placeholder="量值溯源,测量不确定度,检定"></label>
@@ -67,7 +68,7 @@
 <div class="brain-form-actions"><button type="submit">保存项目</button><button type="button" id="project-cancel" class="brain-ghost">取消</button></div></form>
 <div class="brain-project-tools"><label class="sr-only" for="project-view">筛选项目</label><select id="project-view"><option value="active">进行中</option><option value="all">全部项目</option><option value="archived">已归档</option></select></div>
 <div id="brain-project-list" aria-live="polite"></div>
-<div class="brain-task-add"><h3>直接加入一项行动</h3><form id="task-form"><input id="task-title" maxlength="240" required placeholder="一个能在下一次工作时真正执行的动作"><select id="task-project"><option value="">不关联项目</option></select><input id="task-due" type="date" aria-label="行动截止日期"><button type="submit">添加</button></form></div>
+<div class="brain-task-add"><h3>直接加入一项行动</h3><form id="task-form"><input id="task-title" maxlength="240" required placeholder="一个能在下一次工作时真正执行的动作"><select id="task-project"><option value="">不关联项目</option></select><input id="task-due" type="date" aria-label="行动截止日期"><input id="task-trigger" maxlength="160" placeholder="何时/何处触发？例如：上班打开电脑后" aria-label="行动触发条件"><button type="submit">添加</button></form></div>
 <h3 class="brain-subtitle">待办行动</h3><div id="brain-task-list" aria-live="polite"></div></section>
 <section class="brain-panel" id="panel-search" role="tabpanel" aria-label="全域检索" hidden>
 <div class="brain-title-row"><div><h2>一个搜索入口，调度全部资料</h2><p>先搜索自己的笔记与项目，再按需从书目、典籍、知识卡、阅读和研究来源检索。</p></div><button id="load-public" type="button" class="brain-ghost">载入全部公开资料</button></div>
