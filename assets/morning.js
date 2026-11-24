@@ -35,7 +35,7 @@ function buildNav(header,main){
  const source=el("span","研究动态：正在读取更新日期…");source.id="morning-source-date";
  state.append(cctv,source);header.append(state);
  const actions=el("nav",undefined,"morning-shortcuts");actions.setAttribute("aria-label","晨读快捷入口");
- [["#personal-recommendations","知乎·小红书推荐"],["/learn/","进入学习台"],["#morning-highlights","今日重点"],["#morning-updates","研究新讯"],["#morning-learning","每日学习"],["#overview-wrapper","全部报道"],["/research/","研究中心"],["/library/","知识库"]].forEach(([url,label])=>actions.append(internal(url,label)));
+ [["#personal-recommendations","知乎·小红书推荐"],["#morning-journal","今日想法 · 稍后阅读"],["/learn/","进入学习台"],["#morning-highlights","今日重点"],["#morning-updates","研究新讯"],["#morning-learning","每日学习"],["#overview-wrapper","全部报道"],["/research/","研究中心"],["/library/","知识库"]].forEach(([url,label])=>actions.append(internal(url,label)));
  header.append(actions);
 }
 function reportData(main){
@@ -171,6 +171,45 @@ function placeSocial(main){
  if(hiddenWrapper)hiddenWrapper.replaceWith(social);
  header.insertAdjacentElement("afterend",social);
 }
+function renderJournalModule(main){
+ // A real homepage module. Public notes come from GitHub JSON; private notes stay in this browser.
+ if(document.getElementById("morning-journal"))return;
+ const root=el("section",undefined,"morning-journal");root.id="morning-journal";
+ const top=el("div",undefined,"morning-journal-head");
+ const words=el("div");
+ words.append(el("span","CAPTURE · REVISIT","overline"),el("h2","随手记 · 今日想法与稍后阅读"),
+   el("p","想到就记，看到就收；选择适合公开的内容上传 GitHub，日后随时回顾。"));
+ const controls=el("div",undefined,"morning-journal-actions");
+ const addIdea=internal("/journal/?kind=idea#capture","写下想法 ＋");
+ const addReading=internal("/journal/?kind=later#capture","收藏稍后阅读 ＋");
+ const browse=internal("/journal/#review","进入记录库 ↗");
+ controls.append(addIdea,addReading,browse);top.append(words,controls);
+ const preview=el("div",undefined,"morning-journal-preview");preview.id="morning-journal-preview";
+ const status=el("p","正在读取已公开的个人记录…","morning-journal-status");
+ root.append(top,preview,status);
+ const anchor=main.querySelector("#personal-recommendations")||main.querySelector(":scope > header");
+ if(anchor)anchor.insertAdjacentElement("afterend",root);else main.prepend(root);
+ fetch("/journal/data.json?ts="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json();})
+ .then(data=>{
+  const items=(Array.isArray(data.items)?data.items:[])
+   .filter(x=>x&&(x.kind==="idea"||x.kind==="later")&&typeof x.title==="string")
+   .sort((a,b)=>String(b.updated_at||b.created_at||"").localeCompare(String(a.updated_at||a.created_at||"")));
+  preview.replaceChildren();
+  if(!items.length){
+   preview.append(el("p","暂无已公开的记录。你可以先在学习台记想法或保存链接，再到记录库挑选内容上传。","morning-journal-empty"));
+  }else{
+   for(const item of items.slice(0,4)){
+    const card=el("article",undefined,"morning-journal-card");
+    card.append(el("span",(item.kind==="idea"?"今日想法":"稍后阅读")+" · "+(item.date||"").slice(0,10),"morning-journal-meta"));
+    card.append(el("h3",short(item.title,90)));
+    if(item.body)card.append(el("p",short(item.body,140)));
+    const to=internal("/journal/#review","回顾记录 →");card.append(to);
+    preview.append(card);
+   }
+  }
+  status.textContent="GitHub 已公开 "+items.length+" 条记录 · 私人草稿仅保存在你的浏览器 · 上传需本人确认";
+ }).catch(()=>{preview.replaceChildren(el("p","记录库暂时无法读取，你仍可打开随手记记录和查看本机内容。","morning-journal-empty"));status.textContent="请通过“进入记录库”打开记录中心。";});
+}
 function ready(){
  if(!["/","/index.html"].includes(location.pathname))return;
  const main=document.querySelector("body.site-news main");if(!main||document.getElementById("morning-highlights"))return;
@@ -180,6 +219,7 @@ function ready(){
  createUpdates(main);
  wrapOverview(main);
  placeSocial(main);
+ renderJournalModule(main);
  const sections=[...main.querySelectorAll(":scope > section.report")];
  if(sections.length){const anchor=el("div",undefined,"morning-reports-heading");anchor.id="morning-reports";anchor.append(el("span","FULL REPORT · 逐条回看","overline"),el("h2","新闻联播 · 逐条内容"));main.insertBefore(anchor,sections[0]);const controls=main.querySelector(":scope > .news-actions");if(controls)anchor.after(controls);}
 }
