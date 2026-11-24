@@ -98,6 +98,14 @@
   },
   "news": [
     {
+      "type": "energy",
+      "title": "太阳能行业支持BAAJA，而环保组织则持反对态度",
+      "date": "2026-11-24",
+      "summary": "The Bipartisan American Affordability and Jobs Act (BAAJA) is an interesting piece of legislation. It is getting a ton of support from the solar sector, but it is heavily opposed by environmental organizations. Following the passage of BAAJA in the US Senate the other day, Tim Pawlenty, CEO of the .",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/solar-industry-supports-baaja-while-environmental-orgs-oppose-it/"
+    },
+    {
       "type": "hydrogen",
       "title": "Takenaka Corporation在公寓楼中实现了季节性氢气储存",
       "date": "2026-11-23",
@@ -115,7 +123,7 @@
     },
     {
       "type": "hydrogen",
-      "title": "研究发现，LOHC氢能列车在区域铁路线路上的运营成本可与柴油列车相当",
+      "title": "研究发现，LOHC氢动力列车在区域铁路线路上的运营成本可与柴油列车相媲美",
       "date": "2026-11-23",
       "summary": "",
       "source": "Fuel Cells Works",
@@ -131,7 +139,7 @@
     },
     {
       "type": "hydrogen",
-      "title": "中国燃料电池和氢能新闻要点：2026年11月16-20日",
+      "title": "中国燃料电池和氢能新闻摘要：2026年11月16日至20日",
       "date": "2026-11-23",
       "summary": "",
       "source": "Fuel Cells Works",
@@ -139,7 +147,7 @@
     },
     {
       "type": "hydrogen",
-      "title": "Enapter AG完成增资——润石华集团加入成为战略投资者",
+      "title": "Enapter AG 完成增资 – 润石华集团加入成为战略投资者",
       "date": "2026-11-23",
       "summary": "",
       "source": "Fuel Cells Works",
@@ -155,11 +163,75 @@
     },
     {
       "type": "hydrogen",
-      "title": "Liquid Energy Design与蒂森克虏伯Decarbon Technologies合作，在瑞典东北部开发E-Fuel工厂",
+      "title": "Liquid Energy Design与蒂森克虏伯Decarbon Technologies合作，在瑞典东北部开发合成燃料厂",
       "date": "2026-11-23",
       "summary": "",
       "source": "Fuel Cells Works",
       "url": "https://fuelcellsworks.com/2026/11/23/clean-energy/liquid-energy-design-and-thyssenkrupp-decarbon-technologies-partner-to-develop-e-fuel-plants-in-north-east-sweden"
+    },
+    {
+      "type": "papers",
+      "title": "Ziv：用于正确舍入数学库的语言",
+      "date": "2026-11-23",
+      "summary": "Developing performant, correctly rounded math libraries is challenging. Such implementations often rely on extended-precision arithmetic for correct rounding and precomputed constants for performance. Existing implementation languages, however, provide limited support for (i) high-level abstractions",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30346v1"
+    },
+    {
+      "type": "papers",
+      "title": "对缺陷介导的硼再分布和TiAl合金高温强化的原子级洞察",
+      "date": "2026-11-23",
+      "summary": "Boron (B) microalloying can effectively refine microstructures of as-cast TiAl alloys and regulate their mechanical properties. Yet, how dilute B exists in TiAl and interacts with defects and how these interactions govern high-temperature deformation remain elusive. Here, we systematically elucidate",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30330v1"
+    },
+    {
+      "type": "papers",
+      "title": "矩映射奇点附近的等变Szegő核的缩放极限及其在Kähler约化中的应用",
+      "date": "2026-11-23",
+      "summary": "Suppose that a compact and connected Lie group acts holomorphically on a Hodge manifold, and that the action linearises to the associated Hermitian ample line bundle. Assume that zero is a singular value of the associated moment map. The spaces of global holomorphic sections of powers of the line bu",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30311v1"
+    },
+    {
+      "type": "papers",
+      "title": "空间维度影响着永久冻土的对流融化",
+      "date": "2026-11-23",
+      "summary": "Permafrost thaw is one of the major consequences of ongoing climate change, with potentially far-reaching implications for high-latitude and high-altitude environments. Because permafrost degradation is a subsurface phenomenon, its dynamics and future evolution are primarily investigated through num",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30306v1"
+    },
+    {
+      "type": "papers",
+      "title": "用于瞬态结构响应预测的拓扑优先引导区域隐性动力学",
+      "date": "2026-11-23",
+      "summary": "Predicting the transient nonlinear responses of complex engineering structures remains challenging due to large finite element meshes, heterogeneous structural components, and history-dependent mechanical behavior. This study proposes a topology-prior-guided regional latent dynamics (TPLD) surrogate",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30293v1"
+    },
+    {
+      "type": "papers",
+      "title": "并行化复杂矩阵乘法：3M 解决方案",
+      "date": "2026-11-23",
+      "summary": "We consider the problem of computing the product of two matrices with complex entries, a kernel used in quantum chemistry, electromagnetic simulation, quantum circuit simulation, and FFT-based methods. Standard practice already restructures the local computation using the classical \\emph{3M} (Gauss/",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30275v1"
+    },
+    {
+      "type": "papers",
+      "title": "具有恒星质量三星系统的偏心黑洞双星中引力波暴发时间的偏移",
+      "date": "2026-11-23",
+      "summary": "At present, the formation scenarios producing observed compact binary coalescences (CBCs) are relatively unconstrained. Such mergers are thought to occur efficiently in hierarchical triple systems, with three-body dynamics and stellar interactions from the tertiary inducing mergers in the inner bina",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30271v1"
+    },
+    {
+      "type": "papers",
+      "title": "连续泵浦修正了猎户座星云的金属丰度",
+      "date": "2026-11-23",
+      "summary": "The enrichment of heavy elements in the interstellar medium is central to understanding galaxy evolution. Oxygen, the most abundant element after H and He, provides the principal tracer of gas-phase metallicity, typically measured using nebular emission lines in star-forming regions. However, a long",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2611.30268v1"
     },
     {
       "type": "energy",
@@ -179,6 +251,14 @@
     },
     {
       "type": "energy",
+      "title": "量子计算瞄准能源业务，从电力到氢能 - IDNFinancials",
+      "date": "2026-11-23",
+      "summary": "量子计算瞄准能源业务，从电力到氢能 IDNFinancials",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQUnlYVWZjSm1ERDJIOUdJaVQ4UEtRdm1lbThlckttWjBnbjl1aWtPR3oxOUo5Zko2WldyX2Y4ek02YVlDTjJZMno4NENiQXZFNGR6RG5yNVA3Vm1mbkRoUW03TnNWZ1A0ZDVxNkJFT3Rwb05oMUJIaEJVLVY3bnBHQVpIZVBxMkxGVHB4S3k1ZlBQMlB1NDVEcHI4Mm05dEFmdUdHc1NIanlTTjB4SEtHbDFSd2Vtdm1HYVQ5ZDlDVG9ET3dPMHI1YldPUEM0UlJ2RGVuaG9JQzd2c21VSldSWFN3UEtTVzZsMHhzRnpEWDNFc3dlaWQ5RUFmMFZaaGZILUpDdlJrbnNPaEwxUE9CNV9oWVRfclk?oc=5"
+    },
+    {
+      "type": "energy",
       "title": "卫蓝新能源与煜邦电力签约：涉及储能技术研发、电芯应用等合作！ - 世纪新能源网",
       "date": "2026-11-23",
       "summary": "卫蓝新能源与煜邦电力签约：涉及储能技术研发、电芯应用等合作！ 世纪新能源网",
@@ -187,11 +267,19 @@
     },
     {
       "type": "energy",
-      "title": "量子计算瞄准能源业务，从电力到氢能 - IDNFinancials",
+      "title": "欧洲竞争力基金：现代欧洲投资政策的基石",
       "date": "2026-11-23",
-      "summary": "量子计算瞄准能源业务，从电力到氢能 IDNFinancials",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQUnlYVWZjSm1ERDJIOUdJaVQ4UEtRdm1lbThlckttWjBnbjl1aWtPR3oxOUo5Zko2WldyX2Y4ek02YVlDTjJZMno4NENiQXZFNGR6RG5yNVA3Vm1mbkRoUW03TnNWZ1A0ZDVxNkJFT3Rwb05oMUJIaEJVLVY3bnBHQVpIZVBxMkxGVHB4S3k1ZlBQMlB1NDVEcHI4Mm05dEFmdUdHc1NIanlTTjB4SEtHbDFSd2Vtdm1HYVQ5ZDlDVG9ET3dPMHI1YldPUEM0UlJ2RGVuaG9JQzd2c21VSldSWFN3UEtTVzZsMHhzRnpEWDNFc3dlaWQ5RUFmMFZaaGZILUpDdlJrbnNPaEwxUE9CNV9oWVRfclk?oc=5"
+      "summary": "European businesses call for a robust, well-funded European Competitiveness Fund Dear Chancellors, Prime Ministers, Presidents, Europe is losing ground in technological leadership and struggles to scale strategic technologies, while volatile energy costs and external dependencies continue to dampen",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/the-european-competitiveness-fund-the-backbone-of-a-modern-european-investment-policy/"
+    },
+    {
+      "type": "energy",
+      "title": "COP31对失败的碳捕集技术表示强烈不满",
+      "date": "2026-11-23",
+      "summary": "COP31, the annual UN climate conference that took place this month, ended on a sour note after negotiators were unable to reach an agreement to include language calling for a transition away from fossil fuels in the final communiqué — language that was included two years ago at the conclusion",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/23/cop-31-plants-a-big-wet-kiss-on-failed-carbon-capture-technology/"
     },
     {
       "type": "energy",
@@ -219,7 +307,7 @@
     },
     {
       "type": "energy",
-      "title": "各团体对陆军在爱荷华州实施叠氮化铅起爆计划的反应",
+      "title": "各团体对陆军在爱荷华州实施叠氮化铅爆破计划的反应",
       "date": "2026-11-23",
       "summary": "Army says it plans to detonate degraded lead in Iowa town no later than Nov. 24, despite court stay. Des Moines, IOWA — The Iowa Environmental Council, Sierra Club, and Earthjustice will continue to advocate for accountability from the U.S. Environmental Protection Agency (EPA) and the U.S. Army in",
       "source": "CleanTechnica",
@@ -227,35 +315,19 @@
     },
     {
       "type": "energy",
-      "title": "思考插电式VPP的潜力",
+      "title": "思考插电式 VPP 的潜力",
       "date": "2026-11-23",
       "summary": "I recently discussed the potential of the plug-in VPP from Jackery and Every Electric to transform urban energy storage. But the current program could be just the start. The more I discussed it at RE+, the more it started making me thing about where it could go in the future. ... [continued] The pos",
       "source": "CleanTechnica",
       "url": "https://cleantechnica.com/2026/11/23/pondering-the-potential-of-plug-in-vpp/"
     },
     {
-      "type": "energy",
-      "title": "三个绿色氢能项目躲过了特朗普的“砍刀”",
+      "type": "policy",
+      "title": "绿电跑进来 工厂焕新颜 - 浙江新闻",
       "date": "2026-11-23",
-      "summary": "The startup Plug Power is among the green hydrogen stakeholders carving out more space for renewable energy in the US market, despite last year's sharp U-turn in federal energy policy. The post Three Green Hydrogen Projects Slip Through The Trump Chopper appeared first on CleanTechnica .",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/23/green-hydrogen-us-energy-policy-plug-power-powercell/"
-    },
-    {
-      "type": "energy",
-      "title": "埃隆·马斯克在DealBook峰会上的采访：Starlink具有革命性，并能拯救生命",
-      "date": "2026-11-23",
-      "summary": "Elon Musk, the chief executive of SpaceX and Tesla, said at the DealBook Summit recently that “the number of lives that have been saved” by Starlink connectivity “may be hundreds.” Want to get the correct numbers? Musk asked host Andrew Ross Sorkin, editor of DealBook, a dail",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/23/elon-musk-interview-at-the-dealbook-summit-starlink-is-revolutionary-and-saves-lives/"
-    },
-    {
-      "type": "energy",
-      "title": "LDV eDeliver 5——一款物美价廉的中国车？",
-      "date": "2026-11-23",
-      "summary": "A bargain electric van from China — the LDV eDeliver 5. “The tide is changing; people are more on board with Chinese cars and electric vehicles” in Australia. And it has 50% more cargo space than the Korean competition (6.6 cubic metres). For the same price! On the same day ... [continued] The post",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/22/ldv-edeliver-5-a-chinese-bargain/"
+      "summary": "绿电跑进来 工厂焕新颜 浙江新闻",
+      "source": "发改委政策",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zSXRLaWctU240TlJJUXdTWVlhd05ITlRXVXVZNnJTbDZVQmI0ZWNURnVfVlBvakNRSXhaXzdsSkJoWHRpN19FRkxFSmVoOWFEekFYd2gySnA0eGVIZUlnNTFoekNJZ1NUdHRBOWMyWkEtM0E?oc=5"
     },
     {
       "type": "policy",
@@ -272,70 +344,6 @@
       "summary": "新能源全面入市后，电力交易进入“算小时”时代 21财经",
       "source": "发改委政策",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSkZkUEQ5a3NMbVBTWVJZMEVlQVZQQ0ZjeHBLdExqSlgtUHd4amVGZFVHU1AzMnhrQXdDZUVNeDQ0QmVVVjZsc1JWd0FSNkVKNFN3QWp5b19yN0RFdnRERGdvclk0cG1uU1gwd3pOZWJ3RU5MSllwT3dvTUxmZVpnZno0bE5sVktrNzQ3SGJ0dw?oc=5"
-    },
-    {
-      "type": "papers",
-      "title": "无方差的最佳线性回归",
-      "date": "2026-11-20",
-      "summary": "We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a finite conditional $α$-moment $ν$ for some unknown $α\\in(1,2)$, and the covariates may only have finite moments up to a given order (e.g., 4th moment). We give a black-box reduction tha",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27983v1"
-    },
-    {
-      "type": "papers",
-      "title": "除非加密假设不成立，否则不存在塔尔斯基不动点的多项式时间算法",
-      "date": "2026-11-20",
-      "summary": "We study the time complexity of finding a Tarski fixed point. We provide a subexponential-time reduction from the Unique End of Potential Line (UEOPL) problem to the problem of finding a Tarski fixed point. Using a range of known cryptographic lower bounds for UEOPL, our reduction implies a range of",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27977v1"
-    },
-    {
-      "type": "papers",
-      "title": "晶格量子电动力学基态能量的非微扰边界",
-      "date": "2026-11-20",
-      "summary": "We establish nonperturbative bounds on the ground-state energy of lattice quantum electrodynamics with naive fermions in Coulomb gauge, within the Gaussian photon approximation. Our central result is a spectral comparison theorem showing that, in the thermodynamic limit, the minimum fermionic energy",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27975v1"
-    },
-    {
-      "type": "papers",
-      "title": "重离子碰撞中的软-硬贝叶斯推理",
-      "date": "2026-11-20",
-      "summary": "Bayesian analyses of jet quenching commonly constrain jet--medium interaction parameters using a fixed quark-gluon plasma (QGP) background obtained from a soft-sector calibration. This approach neglects uncertainty in the medium and prevents hard observables from providing additional constraints on",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27971v1"
-    },
-    {
-      "type": "papers",
-      "title": "解释性统计：面向人工智能时代的研究",
-      "date": "2026-11-20",
-      "summary": "AI is dramatically changing the statistical research landscape. I argue that production of a distinct category of statistical knowledge, which I refer to as explicational statistics, is actually becoming more valuable as AI increasingly automates other parts of the research process. I define explica",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27961v1"
-    },
-    {
-      "type": "papers",
-      "title": "配备电池储能的小型模块化反应堆（SMR）动力全电动船舶的负荷跟踪动态",
-      "date": "2026-11-20",
-      "summary": "Small modular reactors (SMRs) are being considered as compact, high-energy-density power sources for future all-electric ships. In such systems, propulsion-load variations can propagate through the electrical network, turbine-generator set, steam generator, and reactor, producing coupled nuclear, th",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27957v1"
-    },
-    {
-      "type": "papers",
-      "title": "亚指数固定参数时间下的聚类编辑",
-      "date": "2026-11-20",
-      "summary": "Cluster Editing asks whether at most $k$ edge additions and deletions turn a given $n$-vertex graph into a disjoint union of cliques. For more than a decade, the fastest algorithm for it was the golden-ratio algorithm of Böcker with running time $O(1.62^k+n^{O(1)})$. Cao and Chen had conjectured tha",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27956v1"
-    },
-    {
-      "type": "papers",
-      "title": "利用机器学习从恒星整体特性中恢复低光度红巨星的浮力异常参数",
-      "date": "2026-11-20",
-      "summary": "Buoyancy glitches in red giants provide localized information on the interior structure near the base of the convective envelope, but their properties are typically inferred from dedicated seismic modelling rather than global properties, limiting large-sample applications. We investigate whether the",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2611.27954v1"
     },
     {
       "type": "energy",
@@ -371,7 +379,7 @@
     },
     {
       "type": "energy",
-      "title": "针对性技术共同采用，以兼顾住宅能源转型中的节能与公平收益",
+      "title": "针对性技术共同采用，以兼顾住宅能源转型中的节能和公平收益",
       "date": "2026-11-18",
       "summary": "Nature Energy, Published online: 18 November 2026; doi:10.1038/s41560-026-02164-w Targeting burden reduction realigns technology distribution towards disadvantaged households. The study shows that solar co-adoption for these households can deliver equity gains, highlighting the need for bundled, mul",
       "source": "Nature Energy",
@@ -379,11 +387,19 @@
     },
     {
       "type": "policy",
-      "title": "储能迎政策与产业大会双催化 多只绩优股获资金加码(名单) - 东方财富网",
-      "date": "2026-11-17",
-      "summary": "储能迎政策与产业大会双催化 多只绩优股获资金加码(名单) 东方财富网",
-      "source": "发改委政策",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wZzFCY3hNUVRiLTJMa3NUbGh5blZfMFVJdjEzdXo5dHYtcHZIOFhtTlRqRkl2X3NrTkxhdDdCYkUtQ2kzWW4zbURkemFEZXhVTzJuNXZvUElvOE5qY3VTMzg5Tmw4UQ?oc=5"
+      "title": "国家发改委国家能源局：积极探索氢储能等新能源非电消纳利用-氢能政策 - 国际氢能网",
+      "date": "2026-11-16",
+      "summary": "国家发改委国家能源局：积极探索氢储能等新能源非电消纳利用-氢能政策 国际氢能网",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1CVkVWTUpmRVVlMGc4R0pkdEhERHI3MHFIOUV1aXh5ZEtMUm5kSklndjJRbXlaQlp0aXBaU3pNTG9NblNXcWgza1dETTlZV0RHbkVEVA?oc=5"
+    },
+    {
+      "type": "energy",
+      "title": "《“十五五”新型储能实施方案》发布 支持氢储能等前沿技术储备 - 21财经",
+      "date": "2026-11-14",
+      "summary": "《“十五五”新型储能实施方案》发布 支持氢储能等前沿技术储备 21财经",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONTktV0tlR2hxSElmMXUycnA3VW5zRkpyaWlYcWRROGhOTTZqR1dQb3g3MUxTVEF1T1E4ak9pM2dTNmM0LVhadFJ0MXllTEpXd1RZNGVsWjFfMklPaEppTEs4YlhEelhhX1N5R0czUUc1VzNtRzJEaExDeTV5VkdHYmtVcW81TjB0V0dUQTBqYw?oc=5"
     },
     {
       "type": "energy",
@@ -410,6 +426,38 @@
       "url": "https://www.nature.com/articles/s41560-026-02181-9"
     },
     {
+      "type": "policy",
+      "title": "国家能源局副局长发文：2030 年可再生能源制氢规模目标达 200 万吨！ - 碳索氢能网",
+      "date": "2026-11-10",
+      "summary": "国家能源局副局长发文：2030 年可再生能源制氢规模目标达 200 万吨！ 碳索氢能网",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GQ2NJVkgwYlJKeFVobmlvUG5XbFdDNlpoOC1lUHc2VVpZT0pmb3RXaUwzSFk3RGE5Y2RuNHUyOGs1LU84aG1qb1lUZGM0bDB4Q1pCMUZfUHNneHEyaUpV?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "国家能源局副局长宋宏坤：氢能将成为新能源增量发展与传统产业转型的重要支撑 - ThePaper.cn",
+      "date": "2026-11-06",
+      "summary": "国家能源局副局长宋宏坤：氢能将成为新能源增量发展与传统产业转型的重要支撑 ThePaper.cn",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PNFF4RGtJMU5aaXZfZ281Wlo3a0ZTVnY2b18teU1VUkJUY01QbC04UmU2WDVJMzVCYzFXX0xXN2J2WmJyYjhvWVp1bHVENVBZWUlJZ0s0UHkwUFdpVEVPYw?oc=5"
+    },
+    {
+      "type": "energy",
+      "title": "上海国际电力展即将举办，新能源、储能或为关键词，这些概念股频获机构调研 - 财联社",
+      "date": "2026-11-04",
+      "summary": "上海国际电力展即将举办，新能源、储能或为关键词，这些概念股频获机构调研 财联社",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA1b2poZ2ZtMndPckRWN25YU0ZZclg5djkwYWlZd0Z2dklZVW9zei1Cb1JydVNiVjhOeDJ4NDhFeGpGaEs1NTE1WA?oc=5"
+    },
+    {
+      "type": "energy",
+      "title": "学校领导为能源电力类专业本科生讲授专业导论课 - 兰州大学新闻网",
+      "date": "2026-11-03",
+      "summary": "学校领导为能源电力类专业本科生讲授专业导论课 兰州大学新闻网",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03bmpYWFJmaFFhMUNVcUtFdXZvWTBfaWtTdnRrM3RldzJZekdRM2txVlRYUkFaaThmSnZLTm1obVRzOS1OVW52TnRrU0tjMlJWMEtwS2hudUw?oc=5"
+    },
+    {
       "type": "energy",
       "title": "我校举办第二届河北省氢能产业发展研讨会 - 华北电力大学",
       "date": "2026-10-23",
@@ -427,11 +475,19 @@
     },
     {
       "type": "policy",
-      "title": "一图读懂《中国氢能发展报告（2026）》 - 国家能源局",
-      "date": "2026-08-11",
-      "summary": "一图读懂《中国氢能发展报告（2026）》 国家能源局",
+      "title": "氢能公司参编的《中国氢能发展报告（2026）》正式发布 - 国家能源集团",
+      "date": "2026-08-17",
+      "summary": "氢能公司参编的《中国氢能发展报告（2026）》正式发布 国家能源集团",
       "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xazk2QTRjNnk3ZlZNQmVqTTJBTUNXcDQwczhqYXZVYTltRTE3QTVSc29rU2ZkQmNRaGkxM3ZMT010dHJFbktwY3hlRklodldXVzZVRlJncWFiTU95alVvZEFvZmd3a3Q3NjFERnlKZVlKRGpaLWZ6N3VRdw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTGMxVDNycGZaMEJvMTBYSnNMdWN2OXVnek5hREp6dTFxOTloNGdXRG1vejJfQzVsUG1iMWdwcXJILXJUeUcwOGNqdG5lZXdkTmZFTUVBLUs1TmpjaVdPaVZNcE4tMERORE50T29yYWZ4dkNXRVJROVJWUWg0bGVjbVphQ1JWWEVldkQtY1pn?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "全球氢能产业平稳增长 中国绿氢产能占比过半 - 人民日报",
+      "date": "2026-08-17",
+      "summary": "全球氢能产业平稳增长 中国绿氢产能占比过半 人民日报",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYU9QSzBYZ0k4bDlrRWhEb3BxVTRkRWJYZHNsYnR2LXZfWmkzb3Rfci1HTURqOHctelo5d0lENlQ0ZzFuVENoZm5VVkp0Q3YwcVBKRTB6QUR5TWdIRHhiRW9yc1pWOXJ1cEd1RFlIbEswaG9oZGxQTTZEZE44UE4zb0pR?oc=5"
     },
     {
       "type": "policy",
@@ -450,20 +506,12 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNm4wczBsU1NMSzI1NnFqOS13b0xCZG1WWi01c0diMmZ6R2J1OXJJcTR1aGNoLTlXaVBEVm02WUNmRmhBdnd0N3BETXVoeWUwMmF3THUxNzBYY0ZPR2Y1X1pYUkdmOUliNGxmM0tWbU5xQUhXanBkdl9xTGotcWFUVEVR?oc=5"
     },
     {
-      "type": "energy",
-      "title": "第十届国际氢能与燃料电池汽车大会举办 - 中国科学技术协会",
-      "date": "2026-06-12",
-      "summary": "第十届国际氢能与燃料电池汽车大会举办 中国科学技术协会",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZndNTTJ1aWduV2VIQ1E3OVMtbkV3ZWlmUVlRNzl1aTR1M3BFdDg5TzlmUzVpd1hxbmc2VjVrZ3ZHN1B6ZmxvLVRiZnRnMEpqRVNaMHMzRUZKQUw3R2ZRb0VrUThZUjJaYUJNMm8tR090QUloVkhyTDN6Sk1oSHAtWHNrMndaeHlCN2c?oc=5"
-    },
-    {
       "type": "policy",
-      "title": "国家能源局新闻发布会文字实录 - 国家能源局",
+      "title": "国家能源局新闻发布会文字实录 - 中国能源新闻网",
       "date": "2026-04-27",
-      "summary": "国家能源局新闻发布会文字实录 国家能源局",
+      "summary": "国家能源局新闻发布会文字实录 中国能源新闻网",
       "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBRR2J2T2ljR19GSFVOUnQ4dlJmeTA1d19PY0JSbElvSlJrYmU3Q3g1RnVqbWphODVTaEtaYnNWWVZOb2ZDRlc3RmItZlRZX05adEFaWTQ5RmkxUU5Fb0NkZ3ZMLVNIYkhUWjVjNEhLZ05iVFNOZ0FERzd2dw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12VkFSUVBGeW8xOTRmS1JSbkNIWmNZUjgySkgzbnhKaWg0MlBXR1h0Tm96cEtEeGRKWUpFQlA2TFNfSzNldTB2dG1MMTVGZnZhV0hxVjBMd0RkOU9Ra0ZnZmNNTHJKbW9RTk1Lc0dQRXU?oc=5"
     },
     {
       "type": "policy",
@@ -482,60 +530,12 @@
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81dzBrY2Ixb1JQTVh2VGFTb2NlVEVYYVZZR1R4dGIxenRiV0dqXzNROURDQ1hpSzl1cEZsSW40RjRmZjdCMzdFQzN2SDAxX1daWkZhY29oT25jbGltaFhVd29GRjFpektRQWhjc0xRN0FGUy1SSU5vbGxIZw?oc=5"
     },
     {
-      "type": "energy",
-      "title": "绿氢：新兴的能源载体（院士讲科普） - 人民日报",
-      "date": "2026-03-21",
-      "summary": "绿氢：新兴的能源载体（院士讲科普） 人民日报",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LRTd0X2hKTW1FMTJVNVFnTWZTdVpzSnQxd0FVYl9vaWxsMU1qZmRRUVpWajF6RVVtTzVRQkJkWFU0M2QwaVppcXhGM2xoZzZfSzBmOTNoZGcxZEdNc2pOWnFDLXpHeEpWWWlvc2JVejdLc2JTRnlGYnlPaEpnSXM?oc=5"
-    },
-    {
-      "type": "energy",
-      "title": "国家能源局新闻发布会文字实录 - 国家能源局",
+      "type": "policy",
+      "title": "国家能源局开年首个发布会！氢能成“十五五”主攻方向 2025年产能已翻番 - 财联社",
       "date": "2026-01-30",
-      "summary": "国家能源局新闻发布会文字实录 国家能源局",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1BR0k1eXlBcWtoRmNkX0RCM01XQldKMUsxdGI1ZVNTREVMbDJZNHJjTS1oV1l5Ujl5MHZETHNlNjVzRXR3YWp2MHNaYVBReFR6SWtiaXR6R0VMWUVfRml1dTJCTzNkOE52MHRKMl9CY29VeENuaW9kbzRMRQ?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局2025年第四季度新闻发布会文字实录 - 国家能源局",
-      "date": "2025-10-31",
-      "summary": "国家能源局2025年第四季度新闻发布会文字实录 国家能源局",
+      "summary": "国家能源局开年首个发布会！氢能成“十五五”主攻方向 2025年产能已翻番 财联社",
       "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ldkQ0RWJ2cFl1RU9Mb1hJOTg4dzVFZURzSUxzMm5uUGdzbl9fV0w5VklsTmJrQ1VidXdlbENhS3drN1lnU1dtNlY4ODRrU1FBSGlBWFVtWi1fMmZWUXhVRWNWdTluMmRIQmphU0wzM19IVUpTVWMyQm1sRQ?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局：坚持在新型能源体系下谋划推动氢能发展 - 中国能源新闻网",
-      "date": "2025-10-27",
-      "summary": "国家能源局：坚持在新型能源体系下谋划推动氢能发展 中国能源新闻网",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1sYzI3NjZubWxQQWlzLWRPeGxLLXlmLWxGY0pXQ2J5dUlIZHluZW93RHR1dDZRM1lGVFdlZEliT2dTVTBKaTNtWW1sN1dhMWU5RFNNREk4Ym50Y05GWlh1Z0NvNVZHUnlUeVE0OGYtRDI?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家发展改革委 国家能源局关于推进“人工智能+”能源高质量发展的实施意见 - 国家数据局",
-      "date": "2025-09-08",
-      "summary": "国家发展改革委 国家能源局关于推进“人工智能+”能源高质量发展的实施意见 国家数据局",
-      "source": "发改委政策",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hOEZLYkttRFpLR2hXYWZvcTVCdWJES2RBZ2xZWUNtNmN2bWRfZU9KczE0TkxFSHNBQWk4Qm9vUXBSS29YQkcyNkIwMG5tdjUzRklmRWNzLWt4ZXZBRGNVM2tNa1ZiR21Xa0xZTlE3YU5hck92UmVVczNnWTRNZw?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局2025年二季度新闻发布会文字实录 - 国家能源局",
-      "date": "2025-04-28",
-      "summary": "国家能源局2025年二季度新闻发布会文字实录 国家能源局",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82cWNzdHh2ZWhFRE0xeDBvT2FpZ1FUdmhnZmVIalNyWmY3S05VVUd5emJDaS1PMk9MZGlDLVEzcVNRQkUwNEJkZEJKWDd3UWdqUEtfdVdTR2FuNnFEU3luVDJkTVhVSmlHQTVpb1B2VG1MYVkzOWtmY3hLQQ?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局：2024全年我国氢能消费生产规模位列世界第一 - 新华网",
-      "date": "2025-04-28",
-      "summary": "国家能源局：2024全年我国氢能消费生产规模位列世界第一 新华网",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85am1idW9tZWZuLXZmX005TXZESy1tQnB3NVNFRU5hYjdiWThHTWxIU25DV1NwZ0ZBckRyWlM2Zy1BRmY1TFppQTNwdW1BS1dQMTh1VEl3MXdRMzI2Wjl6emFoUjFNeC1IWkRlMTBZNE1XZ0M2MHh0Uk1XQmpaeHM?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAySWZBcE1vQW5XcjdtaWk0VjRoUzJQNm5XRDI4bEZoYzdFYVVKcmhVLXJBUmNNSFJfelVrV280T2ljLXJvdHhrMg?oc=5"
     }
   ],
   "writing": [
@@ -610,5 +610,5 @@
       "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86-%E5%AF%B9%E6%88%91%E8%BF%99%E4%B8%AA%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E5%90%AF%E7%A4%BA%EF%BC%882026.04%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
     }
   ],
-  "synced_at": "2026-11-24T03:56:37+00:00"
+  "synced_at": "2026-11-24T17:32:37+00:00"
 }
