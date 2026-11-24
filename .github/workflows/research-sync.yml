@@ -12,10 +12,8 @@ on:
       - '.github/workflows/research-sync.yml'
 permissions:
   contents: write
-  pages: write
-  id-token: write
 concurrency:
-  group: pages-deploy
+  group: research-sync
   cancel-in-progress: false
 jobs:
   sync:
@@ -39,31 +37,3 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: 发布前获取最新版本
-        run: git fetch origin main && git reset --hard origin/main
-      - name: 打包完整个人网站
-        run: |
-          mkdir -p site
-          cp index.html site/
-          for folder in archive notes reading library social research learn brain journal assets; do
-            if [ -d "$folder" ]; then cp -R "$folder" site/; fi
-          done
-          test -s site/research/index.html
-          test -s site/research/data.json
-          test -s site/assets/site.css
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          name: site-${{ github.run_id }}-${{ github.run_attempt }}
-          path: site
-  deploy:
-    needs: sync
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - uses: actions/deploy-pages@v4
-        with:
-          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
