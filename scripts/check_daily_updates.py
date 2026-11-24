@@ -91,7 +91,7 @@ def check_local(root=None, now=None, check_delivery=False):
     except (OSError,ValueError,TypeError) as err:
         issues.append("阅读思考库检查失败："+type(err).__name__)
 
-    if now.hour >= 23:
+    if check_delivery and now.hour >= 23:
         marker=root/".sent"/f"weread-mail-{now:%Y-%m-%d}"
         if not marker.exists():
             issues.append("今日22:00阅读复盘邮件缺少成功投递标记")
