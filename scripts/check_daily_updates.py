@@ -33,7 +33,7 @@ def parse_datetime(value):
     except (ValueError, TypeError):
         return None
 
-def check_local(root=None, now=None):
+def check_local(root=None, now=None, check_delivery=False):
     root = root or ROOT
     now = now or dt.datetime.now(TZ)
     issues = []
@@ -41,12 +41,31 @@ def check_local(root=None, now=None):
     # The prior-evening CCTV issue is generated at 07:37 and retried at 08:47.
     # Before 10:00 China time, requiring yesterday's issue would cause midnight
     # false alarms. Check the latest issue that is actually due for publishing.
-    expected = now.date()-dt.timedelta(days=2 if now.hour < 10 else 1)
+    expected = now.date()-dt.timedelta(days=1 if now.hour >= 9 else 2)
     archive = root / "archive" / f"{expected:%Y-%m-%d}.html"
     if not archive.is_file() or archive.stat().st_size < 500:
         issues.append(f"新闻晨读归档缺失：{archive.name}")
     else:
         success.append("晨读归档已生成")
+
+    if check_delivery and now.hour >= 9:
+        report_date = now.date()-dt.timedelta(days=1)
+        marker = root / ".sent" / f"details-{report_date:%Y-%m-%d}"
+        expected_id = f"news-{report_date:%Y%m%d}"
+        fields = {}
+        if marker.is_file():
+            for line in marker.read_text(encoding="utf-8", errors="replace").splitlines():
+                if "=" in line:
+                    key, value = line.split("=", 1)
+                    fields[key.strip()] = value.strip()
+        if not marker.is_file():
+            issues.append(f"新闻联播邮件缺少 SMTP 接受记录：{marker.name}")
+        elif (fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at")
+              or not fields.get("smtp_accepted_recipients", "").isdigit()
+              or int(fields.get("smtp_accepted_recipients", "0")) < 1):
+            issues.append("新闻联播历史投递标记不含可验证的 SMTP 接受证据；不要据此认定已送达")
+        else:
+            success.append("新闻联播 SMTP 已接受（Gmail 最终收件仍需独立核验）")
 
     try:
         x = json.loads((root/"reading/data.json").read_text(encoding="utf-8"))
@@ -132,35 +151,28 @@ def check_online():
     return success,issues
 
 
-def check_morning_editions(now):
-    """Distinguish a configured cron from two actual delivered morning editions."""
-    ok,issues=[],[]
-    token=os.getenv("GH_TOKEN","")
-    repository=os.getenv("GH_REPOSITORY","")
-    if not token or not repository:
-        return ok,["无法核验早间简报运行记录：未提供只读 Actions 凭证"]
-    url="https://api.github.com/repos/"+repository+"/actions/workflows/editions.yml/runs?per_page=30"
-    request=urllib.request.Request(url,headers={
-        "Accept":"application/vnd.github+json",
-        "Authorization":"Bearer "+token,
-        "User-Agent":"PersonalPagesDailyHealth/1.0",
-    })
-    try:
-        with urllib.request.urlopen(request,timeout=20) as response:
-            runs=json.load(response).get("workflow_runs",[])
-        today=[]
-        for entry in runs:
-            stamp=parse_datetime(entry.get("created_at"))
-            if stamp and stamp.astimezone(TZ).date()==now.date():
-                today.append(entry)
-        completed=[x for x in today if x.get("conclusion")=="success"]
-        if len(completed)<2:
-            issues.append("今天主页简报与氢能行业晨报成功运行次数不足 2 次（实际 "+str(len(completed))+" 次）")
+def check_morning_editions(now, root=None):
+    """Check one accepted-delivery marker for each edition, not just run counts."""
+    root = root or ROOT
+    ok, issues = [], []
+    for kind, label in (("hydrogen", "氢能行业晨报"), ("home", "个人主页晨报")):
+        marker = root / ".sent" / f"edition-{kind}-{now:%Y-%m-%d}.txt"
+        expected_id = f"{kind}-{now:%Y%m%d}"
+        fields = {}
+        if marker.is_file():
+            for line in marker.read_text(encoding="utf-8", errors="replace").splitlines():
+                if "=" in line:
+                    key, value = line.split("=", 1)
+                    fields[key.strip()] = value.strip()
+        if not marker.is_file():
+            issues.append(f"{label}缺少今日 SMTP 接受记录：{marker.name}")
+        elif (fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at")
+              or not fields.get("smtp_accepted_recipients", "").isdigit()
+              or int(fields.get("smtp_accepted_recipients", "0")) < 1):
+            issues.append(f"{label}投递标记不完整，无法证明 SMTP 接受")
         else:
-            ok.append("早间双简报至少成功运行 2 次；仍须以收件箱确认最终送达")
-    except (urllib.error.URLError,TimeoutError,OSError,ValueError,TypeError) as err:
-        issues.append("早间双简报工作流记录暂时无法查询："+type(err).__name__)
-    return ok,issues
+            ok.append(f"{label} SMTP 已接受；Gmail 最终收件仍需独立核验")
+    return ok, issues
 
 def notify_failure(issues,now):
     # Reuse the same verified private recipient as the daily mail workflow.
@@ -185,16 +197,18 @@ def notify_failure(issues,now):
 
 def main():
     now=dt.datetime.now(TZ)
-    passed,failed=check_local(now=now)
+    event_name = os.environ.get("GITHUB_EVENT_NAME")
+    monitor_delivery = event_name in ("schedule", "workflow_dispatch") and now.hour >= 9
+    passed,failed=check_local(now=now, check_delivery=monitor_delivery)
     # A push may start before GitHub Pages finishes; avoid premature website alerts.
-    if os.environ.get("GITHUB_EVENT_NAME") == "push":
+    if event_name == "push":
         print("Online website verification deferred until the next scheduled health check.")
         site_ok,site_failed=[],[]
     else:
         site_ok,site_failed=check_online()
     passed.extend(site_ok)
     failed.extend(site_failed)
-    if os.environ.get("GITHUB_EVENT_NAME") in ("schedule","workflow_dispatch") and now.hour>=11:
+    if monitor_delivery:
         edition_ok,edition_issues=check_morning_editions(now)
         passed.extend(edition_ok)
         failed.extend(edition_issues)

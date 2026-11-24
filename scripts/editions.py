@@ -6,6 +6,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from report_mail_utils import validate_hydrogen_snapshot
+
 esc = html.escape
 parts = []
 def section(title, text):
@@ -50,9 +52,9 @@ if sys.argv[1] == "home":
 else:
     url = "https://raw.githubusercontent.com/xie-l/xie-l.github.io/main/data/news.json"
     data = json.loads(subprocess.check_output(["curl","-fsSL","--retry","3",url]))
-    items = data["hydrogen"]["items"]
-    if not items: raise ValueError("氢能资讯源暂无数据")
-    section("行业动态", "采集时间："+data["hydrogen"]["updated"])
+    updated, items = validate_hydrogen_snapshot(data, max_age_hours=24)
+    section("行业动态", "采集时间："+updated.strftime("%Y-%m-%d %H:%M UTC"))
+    print(f"Validated {len(items)} unique hydrogen articles; source age is within 24 hours.")
     import re
     for item in items:
         section(item.get("title_cn") or item["title"],html.unescape(re.sub("<[^>]+>","",item.get("description",""))) + "\n" + item["link"])

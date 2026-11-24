@@ -1,8 +1,10 @@
 name: 每日自动更新健康检查
 on:
   schedule:
-    # UTC 03:44 / 15:44 = 北京时间 11:44 / 23:44
+    # UTC 01:30 / 03:44 / 07:30 / 15:44 = 北京时间 09:30 / 11:44 / 15:30 / 23:44
+    - cron: '30 1 * * *'
     - cron: '44 3 * * *'
+    - cron: '30 7 * * *'
     - cron: '44 15 * * *'
   workflow_dispatch:
   push:
@@ -10,6 +12,12 @@ on:
     paths:
       - 'scripts/check_daily_updates.py'
       - 'scripts/test_check_daily_updates.py'
+      - 'scripts/test_mail_delivery.py'
+      - 'scripts/report_mail_utils.py'
+      - 'scripts/daily.py'
+      - 'scripts/editions.py'
+      - '.github/workflows/daily.yml'
+      - '.github/workflows/editions.yml'
       - 'scripts/check_site_integrity.py'
       - 'learn/**'
       - 'brain/**'
@@ -27,9 +35,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: 检查监测程序
         run: |
-          python3 -m py_compile scripts/check_daily_updates.py
+          python3 -m py_compile scripts/check_daily_updates.py scripts/daily.py scripts/editions.py scripts/report_mail_utils.py
           python3 scripts/check_site_integrity.py
           python3 -m unittest discover -s scripts -p 'test_check_daily_updates.py' -v
+          python3 -m unittest discover -s scripts -p 'test_mail_delivery.py' -v
       - name: 核查每日资料时效、思考卡轮换和线上页面，失败时发邮件
         env:
           GH_TOKEN: ${{ github.token }}

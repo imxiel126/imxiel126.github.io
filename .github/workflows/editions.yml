@@ -1,34 +1,103 @@
 name: 主页与氢能行业晨报
 on:
   schedule:
-    - cron: '10 23 * * *'
-    - cron: '20 23 * * *'
+    # 每20分钟补偿一次，覆盖北京时间07:00—08:50。
+    # 07:00/07:20/... 为主页；07:10/07:30/... 为氢能。
+    - cron: '10,30,50 23,0 * * *'
+    - cron: '0,20,40 23,0 * * *'
   workflow_dispatch:
     inputs:
       edition:
         type: choice
         options: [home, hydrogen]
+        required: true
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: morning-edition-${{ inputs.edition || (github.event.schedule == '0,20,40 23,0 * * *' && 'home' || 'hydrogen') }}
+  cancel-in-progress: false
 jobs:
   mail:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
-      EDITION: ${{ inputs.edition || (github.event.schedule == '20 23 * * *' && 'home' || 'hydrogen') }}
+      EDITION: ${{ inputs.edition || (github.event.schedule == '0,20,40 23,0 * * *' && 'home' || 'hydrogen') }}
     steps:
       - uses: actions/checkout@v4
-      - if: env.EDITION == 'home'
+        with:
+          fetch-depth: 0
+      - name: 确定北京时间报告日期
+        run: echo "ISSUE_DATE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
+      - name: 检查本日报是否已有 SMTP 接受记录
+        id: check
+        run: |
+          git fetch origin main
+          marker_path=".sent/edition-$EDITION-$ISSUE_DATE.txt"
+          if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
+            marker="$(git show "origin/main:$marker_path")"
+            echo "sent=true" >> "$GITHUB_OUTPUT"
+            expected_report_id="$EDITION-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=$expected_report_id"* ]]; then
+              echo "本日报已有 SMTP 接受记录，跳过后续补偿运行"
+            else
+              echo "::warning::发现不完整或历史投递记录，为避免重复发送，本次不自动重发"
+            fi
+          fi
+      - name: 安装主页日报浏览器
+        if: steps.check.outputs.sent != 'true' && env.EDITION == 'home'
         run: |
           pip install playwright
           python -m playwright install --with-deps chromium
-      - run: |
-          echo "ISSUE_DATE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
-      - run: python scripts/editions.py "$EDITION"
-      - env:
+      - name: 生成日报内容并检查来源
+        if: steps.check.outputs.sent != 'true'
+        run: |
+          python3 -m py_compile scripts/daily.py scripts/editions.py scripts/report_mail_utils.py
+          python3 scripts/editions.py "$EDITION"
+      - name: 投递邮件并保存独立 SMTP 记录
+        if: steps.check.outputs.sent != 'true'
+        env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
+          REPORT_KIND: ${{ env.EDITION }}
         run: |
-          if [ "$EDITION" = home ]; then title=个人主页晨报; else title=氢能行业晨报; fi
-          MAIL_SUBJECT="$title｜$ISSUE_DATE" python scripts/daily.py send
+          set -euo pipefail
+          if [ -z "$SMTP_HOST" ] || [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASSWORD" ] || [ -z "$MAIL_TO" ]; then
+            echo "::error::SMTP secrets are missing; the daily email cannot be sent"
+            exit 1
+          fi
+          send_output="$(python3 scripts/daily.py send)"
+          printf '%s\n' "$send_output"
+          report_id="$(printf '%s\n' "$send_output" | sed -n 's/^Report-ID: //p' | tail -n 1)"
+          expected_report_id="$EDITION-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+          if [ "$report_id" != "$expected_report_id" ]; then
+            echo "::error::Report-ID mismatch; refusing to write an invalid delivery marker"
+            exit 1
+          fi
+          marker_path=".sent/edition-$EDITION-$ISSUE_DATE.txt"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
+              existing="$(git show "origin/main:$marker_path")"
+              if [[ "$existing" == *"smtp_accepted_at="* && "$existing" == *"report_id=$report_id"* ]]; then
+                echo "SMTP acceptance marker already exists; no duplicate marker created"
+                exit 0
+              fi
+              echo "::error::An ambiguous marker exists; manual reconciliation is required"
+              exit 1
+            fi
+            mkdir -p .sent
+            printf 'report_id=%s\nsmtp_accepted_at=%s\nsmtp_accepted_recipients=1\nfinal_delivery=unverified\n' "$report_id" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_path"
+            git add "$marker_path"
+            git -c user.name='Daily Editions' -c user.email='github-actions[bot]@users.noreply.github.com' commit -m "记录 $EDITION 晨报 SMTP 接受 $ISSUE_DATE"
+            if git push origin HEAD:main; then
+              echo "SMTP acceptance marker committed"
+              exit 0
+            fi
+            echo "远端有新提交，准备重试投递记录提交第 $attempt 次"
+            sleep 4
+          done
+          echo "::error::SMTP 已接受邮件，但投递记录连续五次提交失败；请核对 Gmail 后再决定是否补发"
+          exit 1

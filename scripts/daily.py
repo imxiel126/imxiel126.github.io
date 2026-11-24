@@ -13,6 +13,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from report_mail_utils import add_report_footer, make_report_id
+
 day = dt.date.fromisoformat(os.environ["ISSUE_DATE"])
 stamp = day.strftime("%Y%m%d")
 source = f"https://tv.cctv.com/lm/xwlb/day/{stamp}.shtml"
@@ -197,16 +199,26 @@ def generate():
 
 
 def send():
+    report_kind = os.environ.get("REPORT_KIND", "news").strip().lower()
+    report_id = make_report_id(report_kind, day)
     msg = EmailMessage()
     msg["From"] = os.environ["SMTP_USER"]
     msg["To"] = os.environ["MAIL_TO"]
     msg["Subject"] = os.environ.get("MAIL_SUBJECT", f"新闻联播晨读｜{day}")
-    msg["Message-ID"] = f"<news-{stamp}@imxiel126.github.io>"
-    msg["X-Report-ID"] = f"news-{stamp}"
-    content = Path(os.environ["RUNNER_TEMP"], "mail.html").read_text()
+    # Some SMTP providers rewrite Message-ID. The searchable body ID below
+    # remains available after QQ-to-Gmail forwarding.
+    msg["Message-ID"] = f"<{report_id}@imxiel126.github.io>"
+    msg["X-Report-ID"] = report_id
+    msg["X-Report-Type"] = report_kind
+    msg["X-Report-Date"] = day.isoformat()
+    content = Path(os.environ["RUNNER_TEMP"], "mail.html").read_text(encoding="utf-8")
+    content = add_report_footer(content, report_id)
     plain = re.sub(r"<(style|script)\b[^>]*>.*?</\1>", "", content, flags=re.I | re.S)
-    plain = re.sub(r"<br\s*/?>|</(?:p|li|h[1-6]|section)>", "\n", plain, flags=re.I)
-    msg.set_content(html.unescape(re.sub(r"<[^>]+>", "", plain)).strip())
+    plain = re.sub(r"<br\s*/?>|</(?:p|li|h[1-6]|section|footer)>", "\n", plain, flags=re.I)
+    plain_text = html.unescape(re.sub(r"<[^>]+>", "", plain)).strip()
+    if report_id not in plain_text:
+        plain_text += f"\n\n报告编号：{report_id}"
+    msg.set_content(plain_text)
     msg.add_alternative(content, subtype="html")
     recipients = [address for _, address in getaddresses([msg["To"]]) if address]
     if not recipients:
@@ -223,6 +235,7 @@ def send():
                 masked.append((local[:2] + "***" + local[-2:] if len(local) > 4 else "***") + "@" + domain.lower())
         print("SMTP recipient(s), masked: " + ", ".join(sorted(set(masked))))
         print(f"SMTP recipient domain(s): {', '.join(domains) if domains else 'unavailable'}")
+        print(f"Report-ID: {report_id}")
         print(f"Message-ID: {msg['Message-ID']}")
         print(f"SMTP server accepted {accepted}/{len(recipients)} recipient(s); final delivery and inbox placement are not verified.")
         if refused:

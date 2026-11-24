@@ -2,23 +2,32 @@ name: 新闻联播晨读
 on:
   schedule:
     - cron: '37 23 * * *' # 北京时间次日07:37
-    - cron: '47 0 * * *' # 北京时间次日08:47补偿同步
+    - cron: '52 23 * * *' # 07:52补偿
+    - cron: '7 0 * * *'   # 08:07补偿
+    - cron: '22 0 * * *'  # 08:22补偿
+    - cron: '37 0 * * *'  # 08:37补偿
+    - cron: '47 0 * * *'  # 08:47补偿
+    - cron: '57 0 * * *'  # 08:57最后一次早间补偿
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - '.github/workflows/daily.yml'
       - 'scripts/daily.py'
+      - 'scripts/report_mail_utils.py'
 concurrency:
   group: news-digest
   cancel-in-progress: false
 jobs:
   digest:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: 确定播出日期
         run: echo "ISSUE_DATE=$(TZ=Asia/Shanghai date -d yesterday +%F)" >> "$GITHUB_ENV"
       - name: 检查投递记录（以远端最新状态为准）
@@ -28,17 +37,20 @@ jobs:
           if git cat-file -e "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null; then
             echo "sent=true" >> "$GITHUB_OUTPUT"
             marker="$(git show "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null || true)"
-            if [[ "$marker" == *"smtp_accepted_at="* ]]; then
-              echo "已存在结构化 SMTP 接受记录；最终送达仍需收件箱核验"
+            expected_report_id="news-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+            if [[ "$marker" == *"smtp_accepted_at="* && "$marker" == *"report_id=$expected_report_id"* ]]; then
+              echo "已存在新闻联播 SMTP 接受记录；Gmail 最终送达仍由收件验收任务核对"
             else
-              echo "::warning::发现旧版空白投递标记。旧版发送步骤曾成功结束，但未保存 SMTP 明细；为避免重复邮件，本次不自动重发。"
+              echo "::warning::发现旧版或不完整投递标记。为避免重复邮件，本次不自动重发。"
             fi
           fi
       - name: 整理晨报
+        if: steps.check.outputs.sent != 'true'
         run: |
-          python3 -m py_compile scripts/daily.py
+          python3 -m py_compile scripts/daily.py scripts/report_mail_utils.py
           python3 scripts/daily.py generate
       - name: 安全提交晨读与归档（并发改动自动重试）
+        if: steps.check.outputs.sent != 'true'
         run: |
           git config user.name 'News Digest'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
@@ -68,35 +80,51 @@ jobs:
           done
           echo "::error::晨读连续五次提交冲突"
           exit 1
-      - name: 邮件投递
+      - name: 邮件投递并记录 SMTP 接受状态
         if: steps.check.outputs.sent != 'true'
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
+          REPORT_KIND: news
         run: |
+          set -euo pipefail
           if [ -z "$SMTP_HOST" ] || [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASSWORD" ] || [ -z "$MAIL_TO" ]; then
             echo "::error::SMTP secrets are missing; the daily email cannot be sent"
             exit 1
           fi
-          git fetch origin main
-          if git cat-file -e "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null; then
-            echo "已存在当期投递记录，跳过重复发送"
-            exit 0
-          fi
           send_output="$(python3 scripts/daily.py send)"
           printf '%s\n' "$send_output"
-          message_id="$(printf '%s\n' "$send_output" | sed -n 's/^Message-ID: //p' | tail -n 1)"
-          if [ -z "$message_id" ]; then
-            echo "::error::SMTP returned without a traceable Message-ID"
+          report_id="$(printf '%s\n' "$send_output" | sed -n 's/^Report-ID: //p' | tail -n 1)"
+          expected_report_id="news-$(TZ=Asia/Shanghai date -d "$ISSUE_DATE" +%Y%m%d)"
+          if [ "$report_id" != "$expected_report_id" ]; then
+            echo "::error::Report-ID mismatch; refusing to write an invalid delivery marker"
             exit 1
           fi
-          mkdir -p .sent
-          printf 'smtp_accepted_at=%s\nmessage_id=%s\nfinal_delivery=unverified\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$message_id" > ".sent/details-$ISSUE_DATE"
-          git add ".sent/details-$ISSUE_DATE"
-          if ! git diff --cached --quiet; then
-            git commit -m "记录投递 $ISSUE_DATE"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          marker_path=".sent/details-$ISSUE_DATE"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            if git cat-file -e "origin/main:$marker_path" 2>/dev/null; then
+              existing="$(git show "origin/main:$marker_path")"
+              if [[ "$existing" == *"smtp_accepted_at="* && "$existing" == *"report_id=$report_id"* ]]; then
+                echo "SMTP acceptance marker already exists; no duplicate marker created"
+                exit 0
+              fi
+              echo "::error::An ambiguous legacy marker exists; manual reconciliation is required"
+              exit 1
+            fi
+            mkdir -p .sent
+            printf 'report_id=%s\nsmtp_accepted_at=%s\nsmtp_accepted_recipients=1\nfinal_delivery=unverified\n' "$report_id" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$marker_path"
+            git add "$marker_path"
+            git -c user.name='News Digest' -c user.email='github-actions[bot]@users.noreply.github.com' commit -m "记录新闻联播 SMTP 接受 $ISSUE_DATE"
+            if git push origin HEAD:main; then
+              echo "SMTP acceptance marker committed"
+              exit 0
+            fi
+            echo "远端有新提交，准备重试投递记录提交第 $attempt 次"
+            sleep 4
+          done
+          echo "::error::SMTP 已接受邮件，但投递记录连续五次提交失败；请核对 Gmail 后再决定是否补发"
+          exit 1
