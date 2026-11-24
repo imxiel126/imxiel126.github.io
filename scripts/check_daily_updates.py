@@ -39,7 +39,7 @@ def check_local(root=None, now=None, check_delivery=False):
     issues = []
     success = []
     # The prior-evening CCTV issue is generated at 07:37 and retried at 08:47.
-    # Before 10:00 China time, requiring yesterday's issue would cause midnight
+    # Before 09:00 China time, requiring yesterday's issue would cause midnight
     # false alarms. Check the latest issue that is actually due for publishing.
     expected = now.date()-dt.timedelta(days=1 if now.hour >= 9 else 2)
     archive = root / "archive" / f"{expected:%Y-%m-%d}.html"
@@ -60,7 +60,7 @@ def check_local(root=None, now=None, check_delivery=False):
                     fields[key.strip()] = value.strip()
         if not marker.is_file():
             issues.append(f"新闻联播邮件缺少 SMTP 接受记录：{marker.name}")
-        elif (fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at")
+        elif (fields.get("report_id") != expected_id or fields.get("status") != "smtp_accepted" or not fields.get("smtp_accepted_at")
               or not fields.get("smtp_accepted_recipients", "").isdigit()
               or int(fields.get("smtp_accepted_recipients", "0")) < 1):
             issues.append("新闻联播历史投递标记不含可验证的 SMTP 接受证据；不要据此认定已送达")
@@ -166,7 +166,7 @@ def check_morning_editions(now, root=None):
                     fields[key.strip()] = value.strip()
         if not marker.is_file():
             issues.append(f"{label}缺少今日 SMTP 接受记录：{marker.name}")
-        elif (fields.get("report_id") != expected_id or not fields.get("smtp_accepted_at")
+        elif (fields.get("report_id") != expected_id or fields.get("status") != "smtp_accepted" or not fields.get("smtp_accepted_at")
               or not fields.get("smtp_accepted_recipients", "").isdigit()
               or int(fields.get("smtp_accepted_recipients", "0")) < 1):
             issues.append(f"{label}投递标记不完整，无法证明 SMTP 接受")
