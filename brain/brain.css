@@ -83,7 +83,9 @@
 .site-brain .brain-project-next{color:var(--accent)!important;font-weight:680}
 .site-brain .brain-task-add{padding:24px 0 13px;border-top:1px solid var(--line);margin-top:18px}
 .site-brain .brain-task-add h3,.site-brain .brain-subtitle{font:720 18px/1.5 var(--serif);margin:0 0 11px}
-.site-brain .brain-task-add form{display:grid;grid-template-columns:minmax(0,1fr) 150px 148px auto;gap:8px}
+.site-brain .brain-task-add form{display:grid;grid-template-columns:minmax(0,2fr) 150px 135px;gap:8px}
+.site-brain .brain-task-add #task-trigger{grid-column:1/3}
+.site-brain .brain-task-add button{grid-column:3}
 .site-brain .brain-task-add input,.site-brain .brain-task-add select{padding:9px;min-width:0}
 .site-brain .brain-task-add button{font-size:12px}
 .site-brain .brain-subtitle{padding-top:17px}
@@ -119,5 +121,5 @@
 .site-brain .brain-method-grid div{border-top:1px solid var(--line);padding:15px 0}
 .site-brain .brain-method-grid b{font:700 14px var(--serif)}
 .site-brain .brain-citation{font-size:11px!important}
-@media(max-width:850px){.site-brain .brain-task-add form{grid-template-columns:minmax(0,1fr) 140px}.site-brain .brain-task-add #task-title{grid-column:1/-1}.site-brain .brain-task-add button{grid-column:2;grid-row:3}}
+@media(max-width:850px){.site-brain .brain-task-add form{grid-template-columns:minmax(0,1fr) 140px}.site-brain .brain-task-add #task-title{grid-column:1/-1}.site-brain .brain-task-add #task-trigger{grid-column:1}.site-brain .brain-task-add button{grid-column:2;grid-row:3}}
 @media(max-width:660px){.site-brain .brain-wrap{padding:0 19px 55px}.site-brain .brain-hero{padding-top:34px}.site-brain .brain-hero-top{display:block}.site-brain .brain-hero-top>a{display:inline-block;margin-top:11px}.site-brain .brain-metrics{grid-template-columns:repeat(2,1fr)}.site-brain .brain-metrics>div{border-bottom:1px solid var(--line);padding:12px!important}.site-brain .brain-metrics>div:nth-last-child(-n+2){border-bottom:0}.site-brain .brain-metrics>div:nth-child(odd){padding-left:0!important}.site-brain .brain-tabs{top:70px;gap:10px}.site-brain .brain-quick{padding-top:27px}.site-brain .brain-form-grid{grid-template-columns:1fr}.site-brain .brain-form-grid .wide{grid-column:1}.site-brain .brain-capture-bottom .brain-capture-source{flex:1 1 100%}.site-brain .brain-capture-bottom>button{flex:1 1 100%}.site-brain .brain-search-result{grid-template-columns:1fr;gap:2px}.site-brain .brain-week-overview{grid-template-columns:1fr}.site-brain .brain-backup{display:block}.site-brain .brain-backup-actions{margin-top:17px}.site-brain .brain-method-grid{grid-template-columns:1fr;gap:3px}.site-brain .brain-task-add form{grid-template-columns:1fr 1fr}.site-brain .brain-task-add #task-title{grid-column:1/-1}}
