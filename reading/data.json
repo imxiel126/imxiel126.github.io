@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-23T15:56:59.042663+00:00",
+  "updated": "2026-11-24T00:45:39.975761+00:00",
   "books": [
     {
       "id": "41807702",
@@ -7813,9 +7813,14 @@
           "历史典籍"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "回首二十年前，真如隔世。",
+          "highlights": 880
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -7847,9 +7852,14 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "在上古社会中，巫师的活动事实上是人类认知宇宙和生命之崇高精神的方式。",
+          "highlights": 54
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -7881,9 +7891,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "但所有的改革都没有触及中国经济的三大底线：国有企业的所有权、公有土地制度，以及以政府控制发钞权为代表的金融体系。",
+          "highlights": 672
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -7915,9 +7930,18 @@
           "情绪心灵"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "莎士比亚说：“不要因为你的敌人而燃起一把怒火，热得烧伤你自己。”",
+          "highlights": 204
+        },
+        "review": {
+          "text": "have reading value",
+          "author": "PEIDONG YANG",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -7949,9 +7973,14 @@
           "哲学读物"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "他的生活满足可能仅限于感官享受、低俗的社交、浮浅的消费，和安逸但毫无灵性的家庭生活。",
+          "highlights": 1139
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -7983,9 +8012,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "多巴胺的核心功能是为我们制造和渲染可能。",
+          "highlights": 273
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8017,9 +8051,14 @@
           "中国古代"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "总之，他不独是中国人的共祖，并且是中国文化的源头。他的功用是把中国古代史大大地简单化了。",
+          "highlights": 377
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8051,9 +8090,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "第一，重复就是力量。 第二，欧成效说的，非常有启发：数量堆死质量。",
+          "highlights": 1581
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8091,9 +8135,18 @@
             "definition": "描述随机事件发生可能性的数量。"
           }
         ],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "机会永远属于有胆量的人，“敢”往往比“会”更重要。不要去管自己会不会，先去干了再说。",
+          "highlights": 187
+        },
+        "review": {
+          "text": "对想提高领导力的人是可以看看的！有点看头！不虚此读！",
+          "author": "竹里馆",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8125,9 +8178,14 @@
           "人生哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "知识只有表达出来才是属于自己的",
+          "highlights": 117
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8159,9 +8217,14 @@
           "商业"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "消息的不透明，导致总有人抱着侥幸心理一直买，直到所有卡片都被卖光。",
+          "highlights": 108
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8193,9 +8256,14 @@
           "情绪心灵"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "给予时间，充分给予各自所需要的时间，不仅对植物，对我们来说也是十分必要的。",
+          "highlights": 5031
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8227,9 +8295,14 @@
           "认知与行为"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "必须要打得稀烂，必须要浪费掉这些好资源，不然，自己人格的容器，兜不住。",
+          "highlights": 1422
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8261,9 +8334,14 @@
           "东方哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "有时候，勇气与运气倒是青睐那些无知无畏的人。",
+          "highlights": 2210
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8295,9 +8373,14 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "常见的行业分类有四种：证监会行业分类、万德行业分类、申万行业分类以及东方财富行业分类，本书主要介绍前两种。",
+          "highlights": 255
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8329,9 +8412,14 @@
           "商业"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "世界上唯一能影响他人的方法，就是明确告诉他想要的是什么，然后如何快速获得。",
+          "highlights": 400
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8369,9 +8457,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "如果你想要什么，不要等急需的时候才去要，而要提前积累。",
+          "highlights": 8400
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8403,9 +8496,14 @@
           "认知思维"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "所谓认知偏误，是认知的必然结果，是人类当前认知方式的小漏洞。",
+          "highlights": 90
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8437,9 +8535,14 @@
           "社会心理学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "一件事物是否吸引人，很多时候源于周围事物对它的“衬托”。",
+          "highlights": 320
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8471,9 +8574,18 @@
           "财经"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "什么是“营销之树”的根？这个根首先就是这3个基石：需求管理、建立差异化价值和与顾客建立长期价值关系。",
+          "highlights": 90
+        },
+        "review": {
+          "text": "市场营销工作的第一步就是深度理解企业的顾客是谁，顾客有什么样的需求，企业的产品和服务该如何满足顾客的需求。",
+          "author": "陈永利",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8511,9 +8623,14 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
+        "quote": {
+          "text": "当活力能滋养自体时，就是自信；当活力能滋养客体时，就是热情。",
+          "highlights": 15353
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8545,9 +8662,14 @@
           "西方哲学"
         ],
         "terms": [],
-        "quote": null,
+        "quote": {
+          "text": "太阳系的运动依着不变的法则。这些法则便是“理性”，而包藏在所讨论的现象之中。",
+          "highlights": 144
+        },
         "review": null,
-        "checkedOn": "2026-11-23"
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8585,9 +8707,18 @@
             "definition": "研究行为、心理过程及其机制的学科。"
           }
         ],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "死者生前患有失眠症，所以把一些安眠药溶在了酒中，准备每天晚上临睡前喝一点",
+          "highlights": 128
+        },
+        "review": {
+          "text": "很好看的一部探案小说，情节曲折离奇，出人意料，但又合情合理。好评！",
+          "author": "淡定老兵",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -8619,9 +8750,18 @@
           "法律"
         ],
         "terms": [],
-        "quote": null,
-        "review": null,
-        "checkedOn": "2026-11-23"
+        "quote": {
+          "text": "正义也许会迟到，但绝不会缺席。可是迟到的正义还是正义吗？迟到几十年的正义，还是公众所期待的正义吗？正义迟到了，法律还正义吗？",
+          "highlights": 210
+        },
+        "review": {
+          "text": "本书跳出法条实操，用通俗语言拆解法律底层逻辑，探讨法律与正义的关系。没有艰深哲学术语，引导读者理性看待法律运行，是一本轻松易懂、启发思辨的法理入门读物。",
+          "author": "阿金",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
       }
     },
     {
@@ -9421,18 +9561,18 @@
   ],
   "stats": {
     "weekly": {
-      "seconds": 2539,
+      "seconds": 2625,
       "days": 1,
-      "averageSeconds": 2539,
+      "averageSeconds": 1312,
       "readTimes": {
-        "1795363200": 2539
+        "1795363200": 2625
       },
       "categories": []
     },
     "monthly": {
-      "seconds": 160731,
+      "seconds": 160817,
       "days": 23,
-      "averageSeconds": 6988,
+      "averageSeconds": 6700,
       "readTimes": {
         "1793462400": 13558,
         "1793548800": 6866,
@@ -9456,7 +9596,7 @@
         "1795104000": 988,
         "1795190400": 3497,
         "1795276800": 593,
-        "1795363200": 2539
+        "1795363200": 2625
       },
       "categories": [
         {
@@ -9472,6 +9612,9 @@
           "name": "影视原著"
         },
         {
+          "name": "年代小说"
+        },
+        {
           "name": "哲学宗教"
         },
         {
@@ -9479,16 +9622,13 @@
         },
         {
           "name": "社会小说"
-        },
-        {
-          "name": "年代小说"
         }
       ]
     },
     "annually": {
-      "seconds": 1241966,
+      "seconds": 1242052,
       "days": 268,
-      "averageSeconds": 3798,
+      "averageSeconds": 3786,
       "readTimes": {
         "1767196800": 183440,
         "1769875200": 120641,
@@ -9500,7 +9640,7 @@
         "1785513600": 36167,
         "1788192000": 115495,
         "1790784000": 130914,
-        "1793462400": 160731,
+        "1793462400": 160817,
         "1796054400": 0
       },
       "categories": [
@@ -9531,7 +9671,7 @@
       ]
     },
     "overall": {
-      "seconds": 3394323,
+      "seconds": 3394409,
       "days": 781,
       "averageSeconds": 0,
       "readTimes": {
@@ -9543,7 +9683,7 @@
         "1672502400": 223,
         "1704038400": 1359860,
         "1735660800": 782586,
-        "1767196800": 1241966
+        "1767196800": 1242052
       },
       "categories": [
         {
