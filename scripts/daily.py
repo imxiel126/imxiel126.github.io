@@ -213,6 +213,8 @@ def send():
         smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
         refused = smtp.send_message(msg)
         accepted = len(recipients) - len(refused)
+        domains = sorted({address.rsplit("@", 1)[-1].lower() for address in recipients if "@" in address})
+        print(f"SMTP recipient domain(s): {', '.join(domains) if domains else 'unavailable'}")
         print(f"SMTP server accepted {accepted}/{len(recipients)} recipient(s); final delivery and inbox placement are not verified.")
         if refused:
             raise RuntimeError(f"SMTP server refused {len(refused)} recipient(s)")

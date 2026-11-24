@@ -1,0 +1,6 @@
+legacy_record=true
+marker_committed_at=2026-11-24T00:00:12Z
+source_run_id=45293482591
+smtp_submission=send_script_completed_without_reported_error
+recipient=not_recorded_by_legacy_workflow
+final_delivery=unverified

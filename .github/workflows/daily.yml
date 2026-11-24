@@ -27,6 +27,12 @@ jobs:
           git fetch origin main
           if git cat-file -e "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null; then
             echo "sent=true" >> "$GITHUB_OUTPUT"
+            marker="$(git show "origin/main:.sent/details-$ISSUE_DATE" 2>/dev/null || true)"
+            if [[ "$marker" == *"smtp_accepted_at="* ]]; then
+              echo "已存在结构化 SMTP 接受记录；最终送达仍需收件箱核验"
+            else
+              echo "::warning::发现旧版空白投递标记。旧版发送步骤曾成功结束，但未保存 SMTP 明细；为避免重复邮件，本次不自动重发。"
+            fi
           fi
       - name: 整理晨报
         run: |
