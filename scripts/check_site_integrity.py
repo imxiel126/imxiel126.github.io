@@ -10,9 +10,9 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ["index.html","learn/index.html","library/index.html","reading/index.html",
+PAGES = ["index.html","brain/index.html","learn/index.html","library/index.html","reading/index.html",
          "notes/index.html","research/index.html","social/index.html"]
-REQUIRED = ["assets/site.css","assets/news.js","assets/morning.js",
+REQUIRED = ["assets/site.css","assets/news.js","assets/morning.js","brain/brain.css","brain/app.js",
             "learn/app.js","learn/learn.css","library/app.js","research/app.js",
             "scripts/first-issue.html","scripts/daily.py"]
 WORKFLOWS = [
@@ -31,6 +31,8 @@ def main():
         assert_file(path)
     for path in PAGES:
         body=assert_file(path)
+        if 'href="/brain/"' not in body:
+            raise AssertionError("Second Brain link missing: "+path)
         if "href=\"/learn/\"" not in body:
             raise AssertionError("Learning nav link missing: "+path)
         if "href=\"/assets/site.css\"" not in body:
@@ -39,12 +41,14 @@ def main():
             raise AssertionError("Shared nav missing: "+path)
     for path in WORKFLOWS:
         content=assert_file(path)
-        if "learn" not in content or "assets" not in content:
+        if "brain" not in content or "learn" not in content or "assets" not in content:
             raise AssertionError("Deployment misses learning resources: "+path)
         if "actions/upload-pages-artifact@v3" not in content:
             raise AssertionError("Pages upload action missing: "+path)
     first=assert_file("scripts/first-issue.html")
     home=assert_file("index.html")
+    if 'href="/brain/"' not in first or 'href="/brain/"' not in home:
+        raise AssertionError("Daily regeneration or homepage would omit Second Brain navigation")
     if "/assets/morning.js" not in first or "/assets/morning.js" not in home:
         raise AssertionError("Daily generation would omit morning dashboard")
     if 'href="/learn/"' not in first:
@@ -65,7 +69,7 @@ def main():
     reflections=json.loads(assert_file("reading/reflections-2000.json"))
     if len(reflections.get("cards",[]))!=2000:
         raise AssertionError("Reading reflections archive is not complete")
-    for path in ["assets/news.js","assets/morning.js","learn/app.js","library/app.js","research/app.js"]:
+    for path in ["assets/news.js","assets/morning.js","brain/app.js","learn/app.js","library/app.js","research/app.js"]:
         result=subprocess.run(["node","--check",str(ROOT/path)],capture_output=True,text=True)
         if result.returncode:
             raise AssertionError("JavaScript syntax error in "+path+": "+result.stderr[:400])
