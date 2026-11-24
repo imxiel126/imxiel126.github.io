@@ -33,6 +33,13 @@ for(const x of all.slice(0,state.shown)){const article=node("article",undefined,
    }catch(e){save.textContent="保存失败";}
   });
   bottom.append(save);
+  const capture=node("button","＋ 收入第二大脑","research-save-later");capture.type="button";
+  capture.addEventListener("click",()=>{
+   const out=window.ZhixingBrain?.capture({text:x.title+"\n"+trim(x.summary,400),url:x.url,source:x.source||"研究资讯",kind:"source"});
+   capture.textContent=out?.ok?(out.duplicate?"已收集":"已入收集箱"):(out?.reason||"暂时无法保存");
+   if(out?.ok)capture.disabled=true;
+  });
+  bottom.append(capture);
  }
  details.append(head,h,p,bottom);article.append(details);root.append(article);}
 if(all.length>state.shown){const b=node("button","继续查看（剩余 "+(all.length-state.shown)+" 条）","research-show-more");b.type="button";b.addEventListener("click",()=>{state.shown+=8;renderNews();});more.append(b);}}
