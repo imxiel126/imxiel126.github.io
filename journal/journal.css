@@ -1,0 +1,45 @@
+body.site-journal{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 var(--font)}
+.journal-layout{max-width:1050px;margin:0 auto;padding:38px 28px 90px}
+.journal-hero{padding:18px 0 30px;border-bottom:1px solid var(--line)}
+.journal-kicker{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.14em}
+.journal-hero h1{font:740 clamp(33px,5vw,52px)/1.35 var(--serif);margin:13px 0 8px}
+.journal-hero p{color:#62716c;margin:0;max-width:690px}
+.journal-stats{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.journal-stats span{padding:5px 11px;background:#eef4ee;border:1px solid #e0e9df;border-radius:24px;font-size:12px;color:#365c4a}
+.journal-columns{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);gap:16px;margin:21px 0}
+.journal-panel{padding:24px;background:#fff;border:1px solid var(--line);border-radius:15px;min-width:0}
+.journal-title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}
+.journal-panel h2{font:720 23px/1.5 var(--serif);margin:0}
+.journal-hint{font-size:12px;color:#75837a;line-height:1.7}
+.journal-panel label:not(.journal-confirm){display:block;font-weight:650;font-size:13px;margin:14px 0 7px}
+.journal-panel input:not([type=checkbox]):not([type=radio]),.journal-panel textarea,.journal-panel select{box-sizing:border-box;width:100%;border:1px solid #dbe3db;background:#fff;border-radius:9px;padding:10px 12px;font:inherit;font-size:14px;color:var(--ink)}
+.journal-panel input:focus,.journal-panel textarea:focus,.journal-panel select:focus{outline:2px solid #92bda6;outline-offset:1px}
+.journal-panel textarea{resize:vertical;min-height:115px}
+.journal-tabs{display:flex;gap:9px;margin:5px 0 20px}
+.journal-tabs label{font-weight:650!important;border:1px solid #dce6dc;padding:7px 12px;border-radius:9px;margin:0!important;cursor:pointer}
+.journal-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:17px}
+.journal-actions button{border:0;border-radius:9px;padding:9px 15px;background:var(--accent);color:white;font-size:13px;font-weight:650}
+.journal-actions button.secondary{background:#f3f7f3;color:var(--accent);border:1px solid #d7e5d9}
+.journal-actions button:disabled{opacity:.55;cursor:wait}
+.journal-warning{background:#fff7eb;border:1px solid #f0dab3;border-radius:10px;padding:12px 14px;font-size:12px;line-height:1.8;color:#70512b}
+.journal-sync p{font-size:13px;color:#5d6b66}
+.journal-confirm{display:flex;gap:9px;align-items:flex-start;margin-top:15px;font-size:13px}
+.journal-confirm input{margin-top:6px}
+.journal-status{font-size:12px!important;color:var(--accent)!important}
+.journal-toolbar{display:grid;grid-template-columns:150px 1fr 130px;gap:10px;margin-bottom:16px}
+.journal-entries{display:grid;gap:11px}
+.journal-item{padding:17px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.journal-item-head{display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:11px;color:#708078}
+.journal-item h3{font-size:17px;line-height:1.5;margin:10px 0 6px}
+.journal-item p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.85;color:#4e6058;margin:0 0 9px;font-size:13px}
+.journal-tags{display:flex;flex-wrap:wrap;gap:6px}
+.journal-tags span{background:#eff4ee;padding:2px 7px;border-radius:5px;font-size:11px;color:#446957}
+.journal-item-actions{display:flex;gap:15px;flex-wrap:wrap;align-items:center;border-top:1px solid #edf0ec;padding-top:12px;margin-top:12px}
+.journal-item-actions button{border:0;background:transparent;padding:0;font-size:12px;color:var(--accent);cursor:pointer}
+.journal-item-actions a{font-size:12px}
+.journal-pill{background:#ecf5ee;border-radius:5px;padding:2px 7px;color:#396750}
+.journal-pill.local{background:#fff6e7;color:#966d37}
+.journal-empty{text-align:center;padding:35px;color:#78847e;border:1px dashed #cddbd0;border-radius:11px}
+.journal-footer{padding:26px 0;color:#7a8781;font-size:12px}
+.journal-footer a{margin-left:10px}
+@media(max-width:760px){.journal-layout{padding:26px 16px 60px}.journal-columns{grid-template-columns:1fr}.journal-panel{padding:19px}.journal-title-row{flex-direction:column}.journal-toolbar{grid-template-columns:1fr}.journal-tabs{flex-wrap:wrap}}
