@@ -20,6 +20,21 @@ assert "main.append(details)" not in layout, "Social recommendation cannot be ap
 assert '["#personal-recommendations","知乎·小红书推荐"]' in layout, "Direct top navigation missing"
 assert "const mixed=[]" in viewer and "if(xhs[i])mixed.push(xhs[i])" in viewer, "All feed must include both platforms"
 assert 'id=\\"personal-recommendations\\"' in template, "Tomorrow's generated homepage would drop the feed"
+
+# Personal journal must remain accessible on homepage and in every release.
+journal_page = Path("journal/index.html").read_text(encoding="utf-8")
+journal_script = Path("journal/journal.js").read_text(encoding="utf-8")
+journal_data = json.loads(Path("journal/data.json").read_text(encoding="utf-8"))
+learn_page = Path("learn/index.html").read_text(encoding="utf-8")
+assert "function renderJournalModule(main)" in layout, "Homepage journal module missing"
+assert "renderJournalModule(main);" in layout, "Homepage journal module not called"
+assert 'id="capture-form"' in journal_page and 'id="review"' in journal_page, "Journal entry and recall views absent"
+assert 'id="sync-token"' in journal_page and 'id="public-consent"' in journal_page, "Consent-based sync controls absent"
+assert 'selected.has(item.id)' in journal_script, "Per-record publishing selection missing"
+assert 'selection=all().filter' in journal_script, "Selected-only uploading required"
+assert isinstance(journal_data.get("items"), list), "Journal public data must be a list"
+assert 'href="/journal/' in home and 'href="/journal/' in learn_page, "Journal entrypoint missing in homepage or learning desk"
+
 assert isinstance(content.get("items"), list), "Personal feed items must be a list"
 for item in content["items"]:
     assert item.get("platform") in ("zhihu", "xiaohongshu")
