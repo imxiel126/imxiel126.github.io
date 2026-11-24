@@ -12,6 +12,7 @@ on:
       - 'scripts/test_check_daily_updates.py'
       - 'scripts/check_site_integrity.py'
       - 'learn/**'
+      - 'brain/**'
       - '.github/workflows/daily-health.yml'
 permissions:
   contents: read
