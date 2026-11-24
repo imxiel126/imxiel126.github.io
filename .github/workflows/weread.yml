@@ -87,6 +87,7 @@ jobs:
           if [ -d assets ]; then cp -R assets site/; fi
           if [ -d research ]; then cp -R research site/; fi
           if [ -d learn ]; then cp -R learn site/; fi
+          if [ -d brain ]; then cp -R brain site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           name: site-${{ github.run_id }}-${{ github.run_attempt }}
