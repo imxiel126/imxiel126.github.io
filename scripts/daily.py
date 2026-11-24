@@ -6,6 +6,7 @@ import shutil
 import smtplib
 import ssl
 import subprocess
+import time
 from email.utils import getaddresses
 import sys
 from email.message import EmailMessage
@@ -223,9 +224,44 @@ def send():
     recipients = [address for _, address in getaddresses([msg["To"]]) if address]
     if not recipients:
         raise ValueError("MAIL_TO contains no valid recipient address")
-    with smtplib.SMTP_SSL(os.environ["SMTP_HOST"], 465, context=ssl.create_default_context(), timeout=45) as smtp:
-        smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
-        refused = smtp.send_message(msg)
+
+    smtp = None
+    last_error = None
+    # Connection/login retries happen before DATA is submitted, so they cannot
+    # duplicate an accepted message.
+    for attempt in range(3):
+        try:
+            smtp = smtplib.SMTP_SSL(
+                os.environ["SMTP_HOST"], 465,
+                context=ssl.create_default_context(), timeout=45
+            )
+            smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
+            break
+        except (OSError, smtplib.SMTPException) as exc:
+            last_error = exc
+            print(f"SMTP_STAGE=preflight_failed attempt={attempt + 1}/3 error={type(exc).__name__}")
+            if smtp is not None:
+                try:
+                    smtp.close()
+                except Exception:
+                    pass
+                smtp = None
+            if attempt < 2:
+                time.sleep(3 * (attempt + 1))
+    if smtp is None:
+        raise RuntimeError("SMTP connection/login failed after three safe attempts") from last_error
+
+    try:
+        try:
+            refused = smtp.send_message(msg)
+        except smtplib.SMTPRecipientsRefused:
+            print("SMTP_STAGE=recipient_refused")
+            raise
+        except Exception:
+            # Once DATA may have been sent, the outcome is ambiguous. The
+            # workflow leaves a pending claim and will not auto-send again.
+            print("SMTP_STAGE=send_result_unknown")
+            raise
         accepted = len(recipients) - len(refused)
         domains = sorted({address.rsplit("@", 1)[-1].lower() for address in recipients if "@" in address})
         masked = []
@@ -239,7 +275,17 @@ def send():
         print(f"Message-ID: {msg['Message-ID']}")
         print(f"SMTP server accepted {accepted}/{len(recipients)} recipient(s); final delivery and inbox placement are not verified.")
         if refused:
+            print("SMTP_STAGE=partial_recipient_refusal")
             raise RuntimeError(f"SMTP server refused {len(refused)} recipient(s)")
+        print("SMTP_STAGE=accepted")
+    finally:
+        try:
+            smtp.quit()
+        except Exception:
+            try:
+                smtp.close()
+            except Exception:
+                pass
 
 
 if __name__ == "__main__":
