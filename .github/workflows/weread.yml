@@ -16,10 +16,8 @@ on:
     - cron: '47 3 * * *' # 北京时间11:47补偿同步
 permissions:
   contents: write
-  pages: write
-  id-token: write
 concurrency:
-  group: pages-deploy
+  group: weread-sync
   cancel-in-progress: false
 jobs:
   sync:
@@ -74,31 +72,3 @@ jobs:
           done
           echo "::error::Could not safely update WeRead data after five attempts"
           exit 1
-      - name: 发布前获取最新版本
-        run: git fetch origin main && git reset --hard origin/main
-      - name: 打包整个网站
-        run: |
-          mkdir -p site
-          cp index.html site/
-          cp -R archive reading site/
-          if [ -d notes ]; then cp -R notes site/; fi
-          if [ -d library ]; then cp -R library site/; fi
-          if [ -d social ]; then cp -R social site/; fi
-          if [ -d assets ]; then cp -R assets site/; fi
-          if [ -d research ]; then cp -R research site/; fi
-          if [ -d journal ]; then cp -R journal site/; fi
-          if [ -d learn ]; then cp -R learn site/; fi
-          if [ -d brain ]; then cp -R brain site/; fi
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          name: site-${{ github.run_id }}-${{ github.run_attempt }}
-          path: site
-  deploy:
-    needs: sync
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    steps:
-      - uses: actions/deploy-pages@v4
-        with:
-          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}
