@@ -21,7 +21,7 @@ function short(t,n=140){const s=str(t,n+30);return s.length>n?s.slice(0,n)+"…"
 function dtime(s){if(!s)return"";const d=new Date(s);return Number.isNaN(d.getTime())?str(s,24):new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Shanghai",month:"2-digit",day:"2-digit"}).format(d);}
 function escapedQuery(s){return encodeURIComponent(str(s,90));}
 function tag(label){return make("span",label,"brain-item-label");}
-function link(url,text){const a=make("a",text);const safe=validUrl(url);a.href=safe||"/brain/";if(safe){a.target="_blank";a.rel="noopener noreferrer";}return a;}
+function link(url,text){const a=make("a",text);const raw=str(url,1800);if(raw.startsWith("/")&&!raw.startsWith("//")){a.href=raw;return a;}const safe=validUrl(raw);a.href=safe||"/brain/";if(safe){a.target="_blank";a.rel="noopener noreferrer";}return a;}
 function btn(title,handler,danger){const b=make("button",title,danger?"danger":"");b.type="button";b.addEventListener("click",handler);return b;}
 function actions(...items){const box=make("div",undefined,"brain-item-actions");for(const b of items)if(b)box.append(b);return box;}
 function empty(text){return make("p",text,"brain-empty");}
