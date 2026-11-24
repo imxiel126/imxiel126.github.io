@@ -14,7 +14,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from report_mail_utils import add_report_footer, make_report_id
+from report_mail_utils import add_report_footer, make_report_id, make_report_subject
 
 day = dt.date.fromisoformat(os.environ["ISSUE_DATE"])
 stamp = day.strftime("%Y%m%d")
@@ -205,7 +205,7 @@ def send():
     msg = EmailMessage()
     msg["From"] = os.environ["SMTP_USER"]
     msg["To"] = os.environ["MAIL_TO"]
-    msg["Subject"] = os.environ.get("MAIL_SUBJECT", f"新闻联播晨读｜{day}")
+    msg["Subject"] = os.environ.get("MAIL_SUBJECT", make_report_subject(report_kind, day))
     # Some SMTP providers rewrite Message-ID. The searchable body ID below
     # remains available after QQ-to-Gmail forwarding.
     msg["Message-ID"] = f"<{report_id}@imxiel126.github.io>"
