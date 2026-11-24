@@ -121,7 +121,9 @@ const loaders=[
 ["/reading/reflections-2000.json",d=>(d.cards||[]).map(x=>searchRecord("思考卡",x.title,[x.view,x.practice].join(" "),"/reading/#reading-reflections","阅读思考",x.category,"reading"))],
 ["/reading/data.json",d=>(d.books||[]).map(x=>searchRecord("书架",x.title,[x.author,x.category,x.summary,x.guide?.intro].join(" "),validUrl(x.link)||"/reading/","微信读书",x.category,"reading",d.updated))],
 ["/research/data.json",d=>[...(d.news||[]).map(x=>searchRecord("科研资讯",x.title,x.summary,validUrl(x.url)||"/research/",x.source,x.type,"research",x.date)),...(d.academic?.papers||[]).map(x=>searchRecord("论文",x.title,x.venue,x.doi?"https://doi.org/"+x.doi:"/research/","学术索引",x.year,"research")),...(d.writing||[]).map(x=>searchRecord("技术文章",x.title,x.summary,validUrl(x.url)||"/research/","研究札记",x.category,"research",x.date))]],
-["/notes/data.json",d=>(d.items||[]).map(x=>searchRecord("公开笔记",x.title,[x.summary,x.excerpt].join(" "),"/notes/","公开笔记",x.tags?.join(" "), "research",x.date))]
+["/notes/data.json",d=>(d.items||[]).map(x=>searchRecord("公开笔记",x.title,[x.summary,x.excerpt].join(" "),"/notes/","公开笔记",x.tags?.join(" "), "research",x.date))],
+["/social/recommendations.json",d=>(d.items||[]).filter(x=>x.title&&validUrl(x.url)).map(x=>searchRecord("社交参考",x.title,x.summary,validUrl(x.url),x.platform||"公开讨论",x.topic,"social",x.discovered_at))],
+["/journal/data.json",d=>(d.items||[]).filter(x=>x.title).map(x=>searchRecord("公开随手记",x.title,[x.summary,x.content,x.text].join(" "),"/journal/","随手记",x.tags?.join(" "),"journal",x.date))]
 ];
 function loadPublic(){if(SEARCH.status==="loading"||SEARCH.status==="ready")return SEARCH.wait||Promise.resolve();
 SEARCH.status="loading";$("search-status").textContent="正在读取公开知识索引…";
