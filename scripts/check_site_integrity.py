@@ -39,12 +39,20 @@ def main():
             raise AssertionError("Shared CSS missing: "+path)
         if "class=\"site-nav\"" not in body:
             raise AssertionError("Shared nav missing: "+path)
+    # Data collectors must NOT publish Pages independently: their old shared
+    # deployment queue caused cancelled sync runs and stale assets.
+    publisher=assert_file(".github/workflows/social-pages.yml")
+    if "actions/upload-pages-artifact@v3" not in publisher or "actions/deploy-pages@v4" not in publisher:
+        raise AssertionError("Unified Pages publisher is missing build/deploy actions")
+    for folder in ("brain","learn","assets","journal","archive","notes","reading","research","library","social"):
+        if folder not in publisher:
+            raise AssertionError("Unified Pages publisher omits site folder: "+folder)
     for path in WORKFLOWS:
-        content=assert_file(path)
-        if "brain" not in content or "learn" not in content or "assets" not in content or "journal" not in content:
-            raise AssertionError("Deployment misses learning resources: "+path)
-        if "actions/upload-pages-artifact@v3" not in content:
-            raise AssertionError("Pages upload action missing: "+path)
+        if path.endswith("social-pages.yml"):
+            continue
+        workflow=assert_file(path)
+        if "actions/deploy-pages@v4" in workflow:
+            raise AssertionError("Data-only workflow must not deploy Pages: "+path)
     first=assert_file("scripts/first-issue.html")
     home=assert_file("index.html")
     if 'href="/brain/"' not in first or 'href="/brain/"' not in home:
