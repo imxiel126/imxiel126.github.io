@@ -1,0 +1,27 @@
+name: Mail reliability tests
+on:
+  pull_request:
+    paths:
+      - 'scripts/daily.py'
+      - 'scripts/editions.py'
+      - 'scripts/report_mail_utils.py'
+      - 'scripts/check_daily_updates.py'
+      - 'scripts/test_check_daily_updates.py'
+      - 'scripts/test_mail_delivery.py'
+      - '.github/workflows/daily.yml'
+      - '.github/workflows/editions.yml'
+      - '.github/workflows/daily-health.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile report and monitor code
+        run: |
+          python3 -m py_compile scripts/daily.py scripts/editions.py scripts/report_mail_utils.py scripts/check_daily_updates.py
+      - name: Test report identity and source freshness
+        run: python3 -m unittest discover -s scripts -p 'test_mail_delivery.py' -v
+      - name: Test independent delivery markers
+        run: python3 -m unittest discover -s scripts -p 'test_check_daily_updates.py' -v
