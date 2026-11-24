@@ -68,6 +68,13 @@ function showBookDetail(book){
   else reviews.append(el('p','目前没有适合摘录的简短公开评价。'));
   if(g.deepRecommendationPct!==undefined)reviews.append(el('p','资深会员推荐比例：'+g.deepRecommendationPct+'%','knowledge-meta'));
   if(book.summary)sectionFor(body,'AI 导读').append(el('p',book.summary));
+  const capture=el('button','＋ 把这本书加入第二大脑','detail-btn');capture.type='button';
+  capture.addEventListener('click',()=>{
+   const out=window.ZhixingBrain?.capture({text:book.title+' · '+(book.author||'作者未知')+'\n'+String(g.intro||'').slice(0,360),url:link(book.link)||'',source:'微信读书',kind:'source'});
+   capture.textContent=out?.ok?(out.duplicate?'已收集':'已加入第二大脑'):(out?.reason||'暂时无法保存');
+   if(out?.ok)capture.disabled=true;
+  });
+  body.append(capture);
   body.append(el('p','资料来自微信读书公开信息；摘录不代表完整章节或全部读者意见。','smallnote'));
   const dialog=$('book-detail');if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');
 }
