@@ -95,6 +95,8 @@ jobs:
           else:
               raise SystemExit('Pages artifact not available after 60 seconds')
           PY
+      - name: 等待 Pages 产物完成跨服务索引
+        run: sleep 20
       - id: deployment
         uses: actions/deploy-pages@v4
         with:
