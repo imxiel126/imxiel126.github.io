@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          cp -R archive notes reading library social research learn brain assets site/
+          cp -R archive notes reading library social research learn brain journal assets site/
       - uses: actions/upload-pages-artifact@v3
         with:
           name: site-${{ github.run_id }}-${{ github.run_attempt }}
