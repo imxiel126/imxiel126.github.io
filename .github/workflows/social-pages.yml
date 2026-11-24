@@ -7,6 +7,7 @@ on:
       - 'index.html'
       - 'assets/**'
       - 'learn/**'
+      - 'journal/**'
       - 'brain/**'
       - 'library/**'
       - 'scripts/first-issue.html'
@@ -42,6 +43,8 @@ jobs:
           node --check social/recommendations.js
           node --check social/personal-feed.js
           node --check assets/morning.js
+          node --check journal/journal.js
+          python3 -m json.tool journal/data.json > /dev/null
           python3 scripts/check_homepage_feed.py
           python3 -m py_compile scripts/daily.py scripts/social_discover.py
           python3 - <<'PY'
@@ -55,9 +58,11 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          for folder in archive notes reading library social research learn brain assets; do
+          for folder in archive notes reading library social research learn brain journal assets; do
             if [ -d "$folder" ]; then cp -R "$folder" site/; fi
           done
+      - name: 验证个人记录库与首页预览均被打包
+        run: test -s site/journal/index.html && test -s site/journal/journal.js && test -s site/journal/data.json && test -s site/assets/morning.js
       - uses: actions/upload-pages-artifact@v3
         with:
           name: site-${{ github.run_id }}-${{ github.run_attempt }}
