@@ -80,7 +80,7 @@ jobs:
         run: git fetch origin main && git reset --hard origin/main
       - name: 打包公开网页
         if: always() && hashFiles('archive/*.html') != ''
-        run: mkdir -p site && cp -R index.html archive notes reading library social research learn brain assets site/
+        run: mkdir -p site && cp -R index.html archive notes reading library social research learn brain journal assets site/
       - uses: actions/upload-pages-artifact@v3
         if: always() && hashFiles('archive/*.html') != ''
         with:
