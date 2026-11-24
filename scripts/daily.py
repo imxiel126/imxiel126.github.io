@@ -6,6 +6,7 @@ import shutil
 import smtplib
 import ssl
 import subprocess
+from email.utils import getaddresses
 import sys
 from email.message import EmailMessage
 from html.parser import HTMLParser
@@ -205,9 +206,16 @@ def send():
     plain = re.sub(r"<br\s*/?>|</(?:p|li|h[1-6]|section)>", "\n", plain, flags=re.I)
     msg.set_content(html.unescape(re.sub(r"<[^>]+>", "", plain)).strip())
     msg.add_alternative(content, subtype="html")
+    recipients = [address for _, address in getaddresses([msg["To"]]) if address]
+    if not recipients:
+        raise ValueError("MAIL_TO contains no valid recipient address")
     with smtplib.SMTP_SSL(os.environ["SMTP_HOST"], 465, context=ssl.create_default_context(), timeout=45) as smtp:
         smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
-        smtp.send_message(msg)
+        refused = smtp.send_message(msg)
+        accepted = len(recipients) - len(refused)
+        print(f"SMTP server accepted {accepted}/{len(recipients)} recipient(s); final delivery and inbox placement are not verified.")
+        if refused:
+            raise RuntimeError(f"SMTP server refused {len(refused)} recipient(s)")
 
 
 if __name__ == "__main__":
