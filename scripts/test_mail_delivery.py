@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from report_mail_utils import (
     add_report_footer,
     make_report_id,
+    make_report_subject,
     validate_hydrogen_snapshot,
 )
 
@@ -19,6 +20,17 @@ class ReportMailTests(unittest.TestCase):
         self.assertEqual(make_report_id("hydrogen", day), "hydrogen-20261124")
         self.assertEqual(make_report_id("home", day), "home-20261124")
         self.assertEqual(len({make_report_id(k, day) for k in ("news", "hydrogen", "home")}), 3)
+
+    def test_each_report_type_has_its_own_canonical_subject(self):
+        day = dt.date(2026, 11, 25)
+        self.assertEqual(make_report_subject("news", day), "新闻联播晨读｜2026-11-25")
+        self.assertEqual(make_report_subject("hydrogen", day), "氢能行业晨报｜2026-11-25")
+        self.assertEqual(make_report_subject("home", day), "个人主页晨报｜2026-11-25")
+
+    def test_news_digest_is_not_triggered_by_arbitrary_pushes(self):
+        workflow = Path(__file__).parent.parent / ".github" / "workflows" / "daily.yml"
+        content = workflow.read_text(encoding="utf-8")
+        self.assertNotRegex(content, r"(?m)^  push:")
 
     def test_unknown_report_kind_is_rejected(self):
         with self.assertRaises(ValueError):
