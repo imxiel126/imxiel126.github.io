@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - 'social/**'
+      - 'notes/**'
+      - 'research/**'
+      - 'reading/**'
+      - 'archive/**'
       - 'index.html'
       - 'assets/**'
       - 'learn/**'
@@ -14,6 +18,14 @@ on:
       - 'scripts/check_homepage_feed.py'
       - 'scripts/daily.py'
       - '.github/workflows/social-pages.yml'
+  workflow_run:
+    workflows:
+      - "新闻联播晨读"
+      - "同步公开研究主页"
+      - "微信读书阅读中心自动同步"
+      - "Publish approved notes to GitHub Pages"
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '15 */3 * * *' # 约每三小时补偿一次发布，防止暂时性部署失败
@@ -27,6 +39,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
