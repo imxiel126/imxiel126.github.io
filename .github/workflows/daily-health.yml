@@ -16,6 +16,7 @@ on:
       - '.github/workflows/daily-health.yml'
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: personal-site-daily-health
   cancel-in-progress: false
@@ -31,6 +32,8 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_check_daily_updates.py' -v
       - name: 核查每日资料时效、思考卡轮换和线上页面，失败时发邮件
         env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
