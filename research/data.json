@@ -3,47 +3,96 @@
   "source_repository": "xie-l/xie-l.github.io",
   "source_url": "https://xie-l.github.io/",
   "academic": {
-    "author_name": "Liangliang Xie",
-    "paper_count": 5,
-    "citation_count": 93,
-    "h_index": 4,
-    "updated": "2026-11-23 12:04 UTC",
+    "author_name": "Liang Xie",
+    "paper_count": 34,
+    "citation_count": 901,
+    "h_index": 18,
+    "updated": "2026-11-24 01:39 UTC",
     "source": "Semantic Scholar",
     "papers": [
       {
-        "title": "A rapid rice blast detection and identification method based on crop disease spores' diffraction fingerprint texture.",
-        "year": 2020,
-        "venue": "The Journal of the Science of Food and Agriculture",
-        "citations": 38,
-        "doi": "10.1002/jsfa.10383"
+        "title": "Selective H2O2 electrosynthesis by O-doped and transition-metal-O-doped carbon cathodes via O2 electroreduction: A critical review",
+        "year": 2021,
+        "venue": "",
+        "citations": 160,
+        "doi": "10.1016/j.cej.2020.128368"
       },
       {
-        "title": "A novel on‐chip solution enabling rapid analysis of melamine and chloramphenicol in milk by smartphones",
-        "year": 2019,
-        "venue": "Journal of food process engineering",
-        "citations": 30,
-        "doi": "10.1111/JFPE.12976"
+        "title": "Pulsed Electrocatalysis Enables the Stabilization and Activation of Carbon-Based Catalysts Towards H2o2 Production",
+        "year": 2022,
+        "venue": "Social Science Research Network",
+        "citations": 80,
+        "doi": "10.2139/ssrn.4067023"
       },
       {
-        "title": "Pesticide Residues Identification by Optical Spectrum in the Time-Sequence of Enzyme Inhibitors Performed on Microfluidic Paper-Based Analytical Devices (µPADs)",
-        "year": 2019,
-        "venue": "Molecules",
-        "citations": 17,
-        "doi": "10.3390/molecules24132428"
+        "title": "Revealing the In Situ Dynamic Regulation of the Interfacial Microenvironment Induced by Pulsed Electrocatalysis in the Oxygen Reduction Reaction",
+        "year": 2023,
+        "venue": "ACS Energy Letters",
+        "citations": 65,
+        "doi": "10.1021/acsenergylett.3c00758"
       },
       {
-        "title": "A New 3D Cultured Liver Chip and Real-Time Monitoring System Based on Microfluidic Technology",
-        "year": 2020,
-        "venue": "Micromachines",
-        "citations": 6,
-        "doi": "10.3390/mi11121118"
+        "title": "O-doped Graphitic Granular Biochar Enables Pollutants Removal via Simultaneous H2O2 Generation and Activation in Neutral Fe-free Electro-Fenton Process",
+        "year": 2021,
+        "venue": "Separation and Purification Technology",
+        "citations": 47,
+        "doi": "10.1016/J.SEPPUR.2021.118327"
       },
       {
-        "title": "Compensation method of error caused from maladjustment of optical path based on microfluidic chip",
-        "year": 2018,
-        "venue": "Modern physics letters B",
-        "citations": 2,
-        "doi": "10.1142/S021798491840081X"
+        "title": "Pulsed dynamic electrolysis enhanced PEMWE hydrogen production: Revealing the effects of pulsed electric fields on protons mass transport and hydrogen bubble escape",
+        "year": 2024,
+        "venue": "Journal of Energy Chemistry",
+        "citations": 43,
+        "doi": "10.1016/j.jechem.2024.08.033"
+      },
+      {
+        "title": "Pulsed Electrocatalysis Enables Efficient 2-electron Oxygen Reduction Reaction for H2O2 Production",
+        "year": 2021,
+        "venue": "",
+        "citations": 43,
+        "doi": ""
+      },
+      {
+        "title": "Understanding the activity origin of oxygen-doped carbon materials in catalyzing the two-electron oxygen reduction reaction towards hydrogen peroxide generation.",
+        "year": 2021,
+        "venue": "Journal of Colloid and Interface Science",
+        "citations": 42,
+        "doi": "10.1016/j.jcis.2021.11.144"
+      },
+      {
+        "title": "Lanthanum–Bismuth Mixed Oxide Catalyst with Improved Activity for Carbonyl Sulfide Hydrolysis",
+        "year": 2023,
+        "venue": "Journal of Environmental Chemical Engineering",
+        "citations": 36,
+        "doi": "10.1016/j.jece.2023.109830"
+      },
+      {
+        "title": "Rapid, simple and sustainable preparation of N-rich activated carbons with high performance for gas adsorption, via microwave heating",
+        "year": 2023,
+        "venue": "Separation and Purification Technology",
+        "citations": 34,
+        "doi": "10.1016/j.seppur.2023.125464"
+      },
+      {
+        "title": "Experimental and numerical studies on the heating mechanism of millimeter multi-particle system under microwave irradiation",
+        "year": 2022,
+        "venue": "Journal of the Energy Institute",
+        "citations": 29,
+        "doi": "10.1016/j.joei.2022.03.010"
+      },
+      {
+        "title": "Self-sacrificing and self-supporting biomass carbon anode–assisted water electrolysis for low-cost hydrogen production",
+        "year": 2024,
+        "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+        "citations": 27,
+        "doi": "10.1073/pnas.2316352121"
+      },
+      {
+        "title": "Efficient production of activated carbon with well-developed pore structure based on fast pyrolysis-physical activation",
+        "year": 2024,
+        "venue": "Journal of the Energy Institute",
+        "citations": 26,
+        "doi": "10.1016/j.joei.2024.101685"
       }
     ]
   },
@@ -561,5 +610,5 @@
       "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86-%E5%AF%B9%E6%88%91%E8%BF%99%E4%B8%AA%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E5%90%AF%E7%A4%BA%EF%BC%882026.04%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
     }
   ],
-  "synced_at": "2026-11-24T00:02:35+00:00"
+  "synced_at": "2026-11-24T03:56:37+00:00"
 }
