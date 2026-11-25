@@ -5,10 +5,6 @@ on:
     - cron: '7 14 * * *'
     - cron: '37 14 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/weread-mail.yml'
 permissions:
   contents: write
 concurrency:
@@ -28,6 +24,11 @@ jobs:
       - name: 计算北京时间与防止同一天重复发送
         id: sent
         run: |
+          if [[ "$(TZ=Asia/Shanghai date +%H)" != "22" ]]; then
+            echo "already=true" >> "$GITHUB_OUTPUT"
+            echo "Outside the Beijing 22:00–22:59 delivery window; no mail sent."
+            exit 0
+          fi
           echo "REPORT_DATE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
           if [ -f ".sent/weread-mail-$(TZ=Asia/Shanghai date +%F)" ]; then echo "already=true" >> "$GITHUB_OUTPUT"; fi
       - name: 从微信读书生成私人阅读复盘并邮件投递
