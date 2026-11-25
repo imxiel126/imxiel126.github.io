@@ -10,6 +10,7 @@ on:
       - 'archive/**'
       - 'index.html'
       - 'assets/**'
+      - 'growth/**'
       - 'learn/**'
       - 'journal/**'
       - 'brain/**'
@@ -73,11 +74,11 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/
-          for folder in archive notes reading library social research learn brain journal assets; do
+          for folder in archive notes reading library social research learn brain journal assets growth; do
             if [ -d "$folder" ]; then cp -R "$folder" site/; fi
           done
       - name: 验证个人记录库与首页预览均被打包
-        run: test -s site/journal/index.html && test -s site/journal/journal.js && test -s site/journal/data.json && test -s site/assets/morning.js
+        run: test -s site/growth/index.html && test -s site/journal/index.html && test -s site/journal/journal.js && test -s site/journal/data.json && test -s site/assets/morning.js
       - uses: actions/upload-pages-artifact@v3
         with:
           name: site-${{ github.run_id }}-${{ github.run_attempt }}
