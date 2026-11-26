@@ -1,4 +1,5 @@
 report_id=home-20261126
-status=pending
-claim_id=45756505990-1
-claimed_at=2026-11-26T04:39:04Z
+status=smtp_accepted
+smtp_accepted_at=2026-11-26T04:39:09Z
+smtp_accepted_recipients=1
+final_delivery=unverified
