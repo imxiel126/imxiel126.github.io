@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "ready": true,
-  "updated": "2026-11-26T09:40:01.874303+00:00",
+  "updated": "2026-11-26T13:14:53.229843+00:00",
   "books": [
     {
       "id": "41807702",
@@ -7624,7 +7624,7 @@
       "id": "312809",
       "type": "ebook",
       "title": "小公务员之死（契诃夫中短篇小说）",
-      "author": "契诃夫",
+      "author": "[俄]契诃夫",
       "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/809/312809/t6_312809.jpg",
       "link": "https://weread.qq.com/web/reader/2cc32eb054c5e92cc509b01",
       "category": "文学-经典作品",
@@ -9380,13 +9380,13 @@
       }
     },
     {
-      "id": "3300023318",
+      "id": "913053",
       "type": "ebook",
-      "title": "深蓝的故事（《三大队》秦昊剧版、张译电影版原著）（全4册）",
-      "author": "深蓝",
-      "cover": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_gjfxbsebpdlq77nhxyhxjk/t6_cpplatform_gjfxbsebpdlq77nhxyhxjk1706775850.jpg",
-      "link": "https://weread.qq.com/web/reader/e3f329d0813ab6f9bg018b89",
-      "category": "精品小说-悬疑推理",
+      "title": "个人的体验",
+      "author": "大江健三郎",
+      "cover": "https://cdn.weread.qq.com/weread/cover/79/yuewen_913053/t6_yuewen_9130531695728850.jpg",
+      "link": "https://weread.qq.com/web/reader/66032cd05dee9d660783ee9",
+      "category": "精品小说-社会小说",
       "finished": false,
       "lastRead": 0,
       "progress": null,
@@ -9399,18 +9399,145 @@
       "summary": "",
       "summary_hash": "",
       "guide": {
-        "intro": "一线民警真实案件记录，深挖从业多年目睹的大大小小案件。 故事中既有对子女教育问题的深思，也有对养老问题的哭笑不得，医闹与“碰瓷”的乱象，以权谋私最终自食其果的案件；有抓捕犯人不惜“卧底”11年的三大队队长，有平日冷漠脸、甩脸子实则自己连续潜伏60小时殉职的警长，还有为帮女友戒毒、自己当了警察的林所长，另外还有春节致命酒、高招诈骗、校园霸凌引发的误会和悲剧，以及改制、退休等一系列民生热点，也有对一线民警紧急忙碌工作的聚焦；另一方面，也有改过自新、重新做人的故事，活脱脱一番人间悲喜剧。 深蓝用亲身笔触写下这些，让普通读",
-        "publisher": "新星出版社",
+        "intro": "诺贝尔文学奖得主大江健三郎根据亲身经历创作，大江文学的里程碑，一份寻求救赎的深刻记录。随着残疾婴儿的出生，身为父亲的“鸟”陷入了道德困境。梦想去非洲展开探险之旅的他，深怕自己就此被这婴儿拴住，可又不敢亲手了结他的生命，于是选择了逃避。鸟将新生儿弃置于医院，一心盼望他衰弱而死，自己则钻入旧情人火见子的温柔乡，用性与酒麻痹自己。陷入自我炼狱的鸟，该如何找寻人生的出路？“即使是在个人的体验里面，只要一个人渐渐深入那体验的洞穴，最终也一定会走到看得到人类普遍真实的近路上。”",
+        "publisher": "浙江文艺出版社",
         "rating": null,
-        "ratingCount": 6096,
+        "ratingCount": 1226,
         "keywords": [
           "精品小说",
-          "悬疑推理"
+          "社会小说"
         ],
         "terms": [],
         "quote": {
-          "text": "“难道说白书记的落马……” 朋友意味深长地看了我一眼，笑而不答。",
-          "highlights": 2480
+          "text": "我的儿子像阿波利奈尔一样头缠绷带，他在我完全不熟悉的黑暗战场上孤独地负伤。我只能像埋葬战死者那样埋葬我的儿子。鸟热泪不止。",
+          "highlights": 576
+        },
+        "review": null,
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
+      }
+    },
+    {
+      "id": "3300163780",
+      "type": "ebook",
+      "title": "史记•货殖列传（外三种）",
+      "author": "[西汉]司马迁等著 刘子裕译注",
+      "cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_7etlvngv6grznjqkgnyedq/t6_cpplatform_7etlvngv6grznjqkgnyedq1757475744.jpg",
+      "link": "https://weread.qq.com/web/reader/0ba326b0813aba67ag010b03",
+      "category": "历史-历史典籍",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": "",
+      "guide": {
+        "intro": "《史记·货殖列传》是司马迁所著专门从事“货殖”活动的杰出人物的类传，是反映司马迁经济思想的重要典籍。货殖”是指谋求“滋生资货财利”以致富，即利用货物的生产与交换，进行商业活动，从中生财求利。其中包括各种手工业以及农、牧、渔、矿山、冶炼等行业在内的经营。史学界公认其文:“历史思想及于经济，是书盖为创举。”另收录《史记·平准书》《汉书·食货志》《资治通鉴·汉纪》(节选)三种关于汉代经济、财政政策的史料，以全面呈现汉代经济的发展脉络。",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 206,
+        "keywords": [
+          "历史",
+          "历史典籍"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "故善者因之，其次利道之，其次教诲之，其次整齐之，最下者与之争。",
+          "highlights": 408
+        },
+        "review": {
+          "text": "古人对财富、贸易的认知，到现在也有很多启示，让我们看到经济活动在历史长河中的鲜活印记，也为理解古代经济智慧打开了一扇窗。",
+          "author": "📚🌅✨ing✨🌅📚",
+          "stars": 5
+        },
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
+      }
+    },
+    {
+      "id": "3300111722",
+      "type": "ebook",
+      "title": "这就是人性：认知觉醒的底层逻辑",
+      "author": "王心傲",
+      "cover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_qcung4qc49qmod45c9qj1c/t6_cpplatform_qcung4qc49qmod45c9qj1c1724061010.jpg",
+      "link": "https://weread.qq.com/web/reader/f84327c0813ab9224g012fc7",
+      "category": "心理-认知与行为",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": "",
+      "guide": {
+        "intro": "人性千年不变，历史只是重演。 《这就是人性》自上市后深得广大读者的喜爱，作者王心傲将历史史实、现实生活与心理学实验、经济学原理、社会学原理相结合，呈现渗透骨髓的人性透视，帮助读者以更清醒的头脑来面对成长、职场、关系、情绪及利益等人世间问题。 本书是人性系列的精彩续集，作者继续呈现亘古不变的人性法则，更加深入地把人性背后隐藏的真相揭露出来，帮助大家在这个复杂的社会更加清醒地活着。 这本书是一本人间生存手册，为我们呈现认知改变的底层逻辑，它能够帮我们看透人性的底层逻辑，洞悉人生的真相，成为跟“人性”死磕的高手，并在复杂",
+        "publisher": "",
+        "rating": null,
+        "ratingCount": 2358,
+        "keywords": [
+          "心理学",
+          "心理",
+          "认知与行为"
+        ],
+        "terms": [
+          {
+            "name": "心理学",
+            "definition": "研究行为、心理过程及其机制的学科。"
+          }
+        ],
+        "quote": {
+          "text": "当你要判断一个人是否值得深交的时候，不要听他怎么说，而是要看他怎么做，从行为逻辑去界定一个人。",
+          "highlights": 2220
+        },
+        "review": null,
+        "checkedOn": "2026-11-23",
+        "quoteCheckedOn": "2026-11-24",
+        "reviewCheckedOn": "2026-11-24"
+      }
+    },
+    {
+      "id": "918297",
+      "type": "ebook",
+      "title": "激荡十年，水大鱼大：中国企业2008-2018",
+      "author": "吴晓波",
+      "cover": "https://cdn.weread.qq.com/weread/cover/48/YueWen_918297/t6_YueWen_918297.jpg",
+      "link": "https://weread.qq.com/web/reader/6b632f705e03196b61cc59d",
+      "category": "经济理财-财经",
+      "finished": false,
+      "lastRead": 0,
+      "progress": null,
+      "notes": {
+        "highlights": 0,
+        "thoughts": 0,
+        "bookmarks": 0
+      },
+      "excerpts": [],
+      "summary": "",
+      "summary_hash": "",
+      "guide": {
+        "intro": "知名财经作者吴晓波新作，畅销十年的《激荡三十年》续篇，至此完成改革开放四十年企业史完整记录。作为时代记录者，吴晓波有意识地从1978年中国改革开放伊始，记录中国翻天覆地的变化和对我们影响至深的人物与事件，串成一部我们每个人的时代激荡史。而最近这十年，无疑更壮观，也更扑朔迷离。在这十年当中，世界500强的名单中，中国公司的数量从35家增加到了115家，有四家进入到前十大的行列中。在互联网及电子消费类公司中，腾讯和阿里巴巴的市值分别增加了15倍和70倍，闯进全球前十大市值公司之列，在智能手机领域，有四家中国公司进入前六",
+        "publisher": "中信出版社",
+        "rating": null,
+        "ratingCount": 17149,
+        "keywords": [
+          "经济理财",
+          "财经"
+        ],
+        "terms": [],
+        "quote": {
+          "text": "商业是一场持久战，一开始比的是灵感、勇猛和运气，接下来拼的是坚忍、格局和理性。",
+          "highlights": 4728
         },
         "review": null,
         "checkedOn": "2026-11-23",
@@ -9458,13 +9585,13 @@
       }
     },
     {
-      "id": "918297",
+      "id": "3300023318",
       "type": "ebook",
-      "title": "激荡十年，水大鱼大：中国企业2008-2018",
-      "author": "吴晓波",
-      "cover": "https://cdn.weread.qq.com/weread/cover/48/YueWen_918297/t6_YueWen_918297.jpg",
-      "link": "https://weread.qq.com/web/reader/6b632f705e03196b61cc59d",
-      "category": "经济理财-财经",
+      "title": "深蓝的故事（《三大队》秦昊剧版、张译电影版原著）（全4册）",
+      "author": "深蓝",
+      "cover": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_gjfxbsebpdlq77nhxyhxjk/t6_cpplatform_gjfxbsebpdlq77nhxyhxjk1706775850.jpg",
+      "link": "https://weread.qq.com/web/reader/e3f329d0813ab6f9bg018b89",
+      "category": "精品小说-悬疑推理",
       "finished": false,
       "lastRead": 0,
       "progress": null,
@@ -9477,18 +9604,18 @@
       "summary": "",
       "summary_hash": "",
       "guide": {
-        "intro": "知名财经作者吴晓波新作，畅销十年的《激荡三十年》续篇，至此完成改革开放四十年企业史完整记录。作为时代记录者，吴晓波有意识地从1978年中国改革开放伊始，记录中国翻天覆地的变化和对我们影响至深的人物与事件，串成一部我们每个人的时代激荡史。而最近这十年，无疑更壮观，也更扑朔迷离。在这十年当中，世界500强的名单中，中国公司的数量从35家增加到了115家，有四家进入到前十大的行列中。在互联网及电子消费类公司中，腾讯和阿里巴巴的市值分别增加了15倍和70倍，闯进全球前十大市值公司之列，在智能手机领域，有四家中国公司进入前六",
-        "publisher": "中信出版社",
+        "intro": "一线民警真实案件记录，深挖从业多年目睹的大大小小案件。 故事中既有对子女教育问题的深思，也有对养老问题的哭笑不得，医闹与“碰瓷”的乱象，以权谋私最终自食其果的案件；有抓捕犯人不惜“卧底”11年的三大队队长，有平日冷漠脸、甩脸子实则自己连续潜伏60小时殉职的警长，还有为帮女友戒毒、自己当了警察的林所长，另外还有春节致命酒、高招诈骗、校园霸凌引发的误会和悲剧，以及改制、退休等一系列民生热点，也有对一线民警紧急忙碌工作的聚焦；另一方面，也有改过自新、重新做人的故事，活脱脱一番人间悲喜剧。 深蓝用亲身笔触写下这些，让普通读",
+        "publisher": "新星出版社",
         "rating": null,
-        "ratingCount": 17149,
+        "ratingCount": 6096,
         "keywords": [
-          "经济理财",
-          "财经"
+          "精品小说",
+          "悬疑推理"
         ],
         "terms": [],
         "quote": {
-          "text": "商业是一场持久战，一开始比的是灵感、勇猛和运气，接下来拼的是坚忍、格局和理性。",
-          "highlights": 4728
+          "text": "“难道说白书记的落马……” 朋友意味深长地看了我一眼，笑而不答。",
+          "highlights": 2480
         },
         "review": null,
         "checkedOn": "2026-11-23",
@@ -9573,152 +9700,25 @@
         "quoteCheckedOn": "2026-11-24",
         "reviewCheckedOn": "2026-11-24"
       }
-    },
-    {
-      "id": "3300111722",
-      "type": "ebook",
-      "title": "这就是人性：认知觉醒的底层逻辑",
-      "author": "王心傲",
-      "cover": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_qcung4qc49qmod45c9qj1c/t6_cpplatform_qcung4qc49qmod45c9qj1c1724061010.jpg",
-      "link": "https://weread.qq.com/web/reader/f84327c0813ab9224g012fc7",
-      "category": "心理-认知与行为",
-      "finished": false,
-      "lastRead": 0,
-      "progress": null,
-      "notes": {
-        "highlights": 0,
-        "thoughts": 0,
-        "bookmarks": 0
-      },
-      "excerpts": [],
-      "summary": "",
-      "summary_hash": "",
-      "guide": {
-        "intro": "人性千年不变，历史只是重演。 《这就是人性》自上市后深得广大读者的喜爱，作者王心傲将历史史实、现实生活与心理学实验、经济学原理、社会学原理相结合，呈现渗透骨髓的人性透视，帮助读者以更清醒的头脑来面对成长、职场、关系、情绪及利益等人世间问题。 本书是人性系列的精彩续集，作者继续呈现亘古不变的人性法则，更加深入地把人性背后隐藏的真相揭露出来，帮助大家在这个复杂的社会更加清醒地活着。 这本书是一本人间生存手册，为我们呈现认知改变的底层逻辑，它能够帮我们看透人性的底层逻辑，洞悉人生的真相，成为跟“人性”死磕的高手，并在复杂",
-        "publisher": "",
-        "rating": null,
-        "ratingCount": 2358,
-        "keywords": [
-          "心理学",
-          "心理",
-          "认知与行为"
-        ],
-        "terms": [
-          {
-            "name": "心理学",
-            "definition": "研究行为、心理过程及其机制的学科。"
-          }
-        ],
-        "quote": {
-          "text": "当你要判断一个人是否值得深交的时候，不要听他怎么说，而是要看他怎么做，从行为逻辑去界定一个人。",
-          "highlights": 2220
-        },
-        "review": null,
-        "checkedOn": "2026-11-23",
-        "quoteCheckedOn": "2026-11-24",
-        "reviewCheckedOn": "2026-11-24"
-      }
-    },
-    {
-      "id": "3300163780",
-      "type": "ebook",
-      "title": "史记•货殖列传（外三种）",
-      "author": "[西汉]司马迁等著 刘子裕译注",
-      "cover": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_7etlvngv6grznjqkgnyedq/t6_cpplatform_7etlvngv6grznjqkgnyedq1757475744.jpg",
-      "link": "https://weread.qq.com/web/reader/0ba326b0813aba67ag010b03",
-      "category": "历史-历史典籍",
-      "finished": false,
-      "lastRead": 0,
-      "progress": null,
-      "notes": {
-        "highlights": 0,
-        "thoughts": 0,
-        "bookmarks": 0
-      },
-      "excerpts": [],
-      "summary": "",
-      "summary_hash": "",
-      "guide": {
-        "intro": "《史记·货殖列传》是司马迁所著专门从事“货殖”活动的杰出人物的类传，是反映司马迁经济思想的重要典籍。货殖”是指谋求“滋生资货财利”以致富，即利用货物的生产与交换，进行商业活动，从中生财求利。其中包括各种手工业以及农、牧、渔、矿山、冶炼等行业在内的经营。史学界公认其文:“历史思想及于经济，是书盖为创举。”另收录《史记·平准书》《汉书·食货志》《资治通鉴·汉纪》(节选)三种关于汉代经济、财政政策的史料，以全面呈现汉代经济的发展脉络。",
-        "publisher": "",
-        "rating": null,
-        "ratingCount": 206,
-        "keywords": [
-          "历史",
-          "历史典籍"
-        ],
-        "terms": [],
-        "quote": {
-          "text": "故善者因之，其次利道之，其次教诲之，其次整齐之，最下者与之争。",
-          "highlights": 408
-        },
-        "review": {
-          "text": "古人对财富、贸易的认知，到现在也有很多启示，让我们看到经济活动在历史长河中的鲜活印记，也为理解古代经济智慧打开了一扇窗。",
-          "author": "📚🌅✨ing✨🌅📚",
-          "stars": 5
-        },
-        "checkedOn": "2026-11-23",
-        "quoteCheckedOn": "2026-11-24",
-        "reviewCheckedOn": "2026-11-24"
-      }
-    },
-    {
-      "id": "913053",
-      "type": "ebook",
-      "title": "个人的体验",
-      "author": "大江健三郎",
-      "cover": "https://cdn.weread.qq.com/weread/cover/79/yuewen_913053/t6_yuewen_9130531695728850.jpg",
-      "link": "https://weread.qq.com/web/reader/66032cd05dee9d660783ee9",
-      "category": "精品小说-社会小说",
-      "finished": false,
-      "lastRead": 0,
-      "progress": null,
-      "notes": {
-        "highlights": 0,
-        "thoughts": 0,
-        "bookmarks": 0
-      },
-      "excerpts": [],
-      "summary": "",
-      "summary_hash": "",
-      "guide": {
-        "intro": "诺贝尔文学奖得主大江健三郎根据亲身经历创作，大江文学的里程碑，一份寻求救赎的深刻记录。随着残疾婴儿的出生，身为父亲的“鸟”陷入了道德困境。梦想去非洲展开探险之旅的他，深怕自己就此被这婴儿拴住，可又不敢亲手了结他的生命，于是选择了逃避。鸟将新生儿弃置于医院，一心盼望他衰弱而死，自己则钻入旧情人火见子的温柔乡，用性与酒麻痹自己。陷入自我炼狱的鸟，该如何找寻人生的出路？“即使是在个人的体验里面，只要一个人渐渐深入那体验的洞穴，最终也一定会走到看得到人类普遍真实的近路上。”",
-        "publisher": "浙江文艺出版社",
-        "rating": null,
-        "ratingCount": 1226,
-        "keywords": [
-          "精品小说",
-          "社会小说"
-        ],
-        "terms": [],
-        "quote": {
-          "text": "我的儿子像阿波利奈尔一样头缠绷带，他在我完全不熟悉的黑暗战场上孤独地负伤。我只能像埋葬战死者那样埋葬我的儿子。鸟热泪不止。",
-          "highlights": 576
-        },
-        "review": null,
-        "checkedOn": "2026-11-23",
-        "quoteCheckedOn": "2026-11-24",
-        "reviewCheckedOn": "2026-11-24"
-      }
     }
   ],
   "stats": {
     "weekly": {
-      "seconds": 15826,
+      "seconds": 17008,
       "days": 4,
-      "averageSeconds": 3956,
+      "averageSeconds": 4252,
       "readTimes": {
         "1795363200": 2625,
         "1795449600": 2235,
         "1795536000": 5820,
-        "1795622400": 5146
+        "1795622400": 6328
       },
       "categories": []
     },
     "monthly": {
-      "seconds": 174018,
+      "seconds": 175200,
       "days": 26,
-      "averageSeconds": 6693,
+      "averageSeconds": 6738,
       "readTimes": {
         "1793462400": 13558,
         "1793548800": 6866,
@@ -9745,7 +9745,7 @@
         "1795363200": 2625,
         "1795449600": 2235,
         "1795536000": 5820,
-        "1795622400": 5146
+        "1795622400": 6328
       },
       "categories": [
         {
@@ -9775,9 +9775,9 @@
       ]
     },
     "annually": {
-      "seconds": 1255253,
+      "seconds": 1256435,
       "days": 271,
-      "averageSeconds": 3803,
+      "averageSeconds": 3807,
       "readTimes": {
         "1767196800": 183440,
         "1769875200": 120641,
@@ -9789,7 +9789,7 @@
         "1785513600": 36167,
         "1788192000": 115495,
         "1790784000": 130914,
-        "1793462400": 174018,
+        "1793462400": 175200,
         "1796054400": 0
       },
       "categories": [
@@ -9820,7 +9820,7 @@
       ]
     },
     "overall": {
-      "seconds": 3407610,
+      "seconds": 3408792,
       "days": 784,
       "averageSeconds": 0,
       "readTimes": {
@@ -9832,7 +9832,7 @@
         "1672502400": 223,
         "1704038400": 1359860,
         "1735660800": 782586,
-        "1767196800": 1255253
+        "1767196800": 1256435
       },
       "categories": [
         {
