@@ -1,0 +1,4 @@
+report_id=home-20261127
+status=pending
+claim_id=45941525401-1
+claimed_at=2026-11-27T04:43:40Z
