@@ -1,4 +1,5 @@
 report_id=hydrogen-20261127
-status=pending
-claim_id=45942950584-1
-claimed_at=2026-11-27T04:58:02Z
+status=smtp_accepted
+smtp_accepted_at=2026-11-27T04:58:08Z
+smtp_accepted_recipients=1
+final_delivery=unverified
