@@ -99,7 +99,23 @@
   "news": [
     {
       "type": "energy",
-      "title": "混合动力汽车是中转站，而不是终点站",
+      "title": "海底采矿存在价值数十亿美元的冶炼问题",
+      "date": "2026-11-26",
+      "summary": "The Metals Company wants to recover polymetallic nodules from the seabed and sell the nickel, copper, cobalt and manganese they contain. That business needs an industrial processing system before its revenue projections become sales. TMC’s November 2026 update exposed the timing problem. Its p",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/26/seabed-mining-refinery-problem-billions/"
+    },
+    {
+      "type": "energy",
+      "title": "针对美国安全法规的插电式太阳能 UL 认证 — UL 3700 的规定和未规定内容",
+      "date": "2026-11-26",
+      "summary": "Millions of renters, apartment residents, and condo owners can’t put solar on a roof they don’t control. Plug-in solar, also called balcony solar or plug-in PV, offers a workaround: one or more panels connected through a microinverter to an ordinary wall outlet, with no roof work and, in a growing .",
+      "source": "CleanTechnica",
+      "url": "https://cleantechnica.com/2026/11/26/plug-in-solar-ul-certification-for-us-safety-regs-what-ul-3700-does-doesnt-say/"
+    },
+    {
+      "type": "energy",
+      "title": "混合动力汽车是一个中转站，而不是终点",
       "date": "2026-11-26",
       "summary": "An earlier version of this article appeared in The Driven on 15 October 2026. This version has been revised and updated with the most recent registration data. By Ray Wills, Raphael Wellmann, and Peter Newman In January 2024, Toyota chairman Akio Toyoda said battery EVs would reach at most 30% ... [",
       "source": "CleanTechnica",
@@ -131,7 +147,7 @@
     },
     {
       "type": "hydrogen",
-      "title": "随着Fountain Fuel在运输成本方面对柴油发起挑战，荷兰氢气价格下跌42%",
+      "title": "随着Fountain Fuel在运输成本方面对柴油构成挑战，荷兰氢气价格下跌42%",
       "date": "2026-11-25",
       "summary": "",
       "source": "Fuel Cells Works",
@@ -163,7 +179,7 @@
     },
     {
       "type": "hydrogen",
-      "title": "Hynet 在河南美沙划船公园开设第 60 座加氢站——420 巴管式拖车即将推出",
+      "title": "Hynet在河南美沙划船公园开设第60个加氢站——420巴管式拖车即将推出",
       "date": "2026-11-25",
       "summary": "",
       "source": "Fuel Cells Works",
@@ -179,7 +195,7 @@
     },
     {
       "type": "papers",
-      "title": "在玻色-爱因斯坦凝聚体中由莫尔条纹诱导的自陷阱效应",
+      "title": "在玻色-爱因斯坦凝聚体中莫尔条纹诱导的自陷阱效应",
       "date": "2026-11-25",
       "summary": "The effect of moiré modulations on two-dimensional materials flattens their electronic energy bands, which enhances the effects of interactions and has been seen to give rise to several emergent electronic phases. We demonstrate this behavior with a moiré modulation extends to a quasiperiodic hoppin",
       "source": "arXiv",
@@ -219,7 +235,7 @@
     },
     {
       "type": "papers",
-      "title": "关于Zappa--Szép乘法架的乘积",
+      "title": "关于乘法架的Zappa--Szép积",
       "date": "2026-11-25",
       "summary": "We study Zappa--Szép products of multiplicative racks, namely monoids equipped with compatible rack operations. We characterize multiplicative rack structures on Zappa--Szép products of monoids and prove that every exact factorization of multiplicative racks induces a canonical exact factorization o",
       "source": "arXiv",
@@ -240,6 +256,14 @@
       "summary": "The ALTAIR (Airborne Laser for Telescopic Atmospheric Interference Reduction) project provides photometric calibration for ground-based telescopes by flying an integrating sphere as an artificial star-like calibration source on a high-altitude balloon. Because the angular distribution of light from",
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2611.34817v1"
+    },
+    {
+      "type": "energy",
+      "title": "重磅！中国华电集团领导层调整 - 世纪新能源网",
+      "date": "2026-11-25",
+      "summary": "重磅！中国华电集团领导层调整 世纪新能源网",
+      "source": "Google新闻·能源",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE51YlV1VVNRQVpRMUpCUFBOc3h3Z2ZqUVAtYm5rM1dCSC1IRmw1YkZoMW0ySlJxSG1kcXRRR3RRdkpKUGpSank2R2xuOHpyanp3bVlJeg?oc=5"
     },
     {
       "type": "energy",
@@ -275,22 +299,6 @@
     },
     {
       "type": "energy",
-      "title": "关于修订乘用车和厢式货车二氧化碳排放标准的联合函",
-      "date": "2026-11-25",
-      "summary": "Counting combustion vehicles as clean would blur the market signal and bring back the very uncertainty that carmakers, suppliers, and investors cannot afford. Manufacturers could meet their targets without selling a single electric car. Dear Climate and Environment Ministers of the European Union, W",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/25/joint-letter-on-the-revision-of-the-co%e2%82%82-emission-standards-for-cars-vans/"
-    },
-    {
-      "type": "energy",
-      "title": "现代IONIQ 3在2027年TopGear.com大奖中荣膺年度小型汽车奖",
-      "date": "2026-11-25",
-      "summary": "IONIQ 3 receives recognition from one of the UK’s leading automotive publications shortly after its market launch Top Gear’s editorial team praises IONIQ 3 for its value for money, clever packaging, distinctive design, boot space and driving manners The award follows INSTER’s Supermini of the Year t",
-      "source": "CleanTechnica",
-      "url": "https://cleantechnica.com/2026/11/25/hyundai-ioniq-3-crowned-small-car-of-the-year-at-the-topgear-com-awards-2027/"
-    },
-    {
-      "type": "energy",
       "title": "轮廓化可减轻固态电池放电时锂/陶瓷电解质界面的空隙",
       "date": "2026-11-23",
       "summary": "Nature Energy, Published online: 23 November 2026; doi:10.1038/s41560-026-02172-w Discharge-induced voids are a major barrier to practical lithium metal solid-state batteries. Here the authors show that an egg-box-contoured lithium–electrolyte interface increases the voiding threshold by an order of",
@@ -307,11 +315,11 @@
     },
     {
       "type": "energy",
-      "title": "株洲所、三一氢能、淳华氢能等入围！湖南公示氢能产品推介目录 - 世纪新能源网",
+      "title": "投资约50亿！远景能源电力装备制造产业园项目签约落户 - 世纪新能源网",
       "date": "2026-11-23",
-      "summary": "株洲所、三一氢能、淳华氢能等入围！湖南公示氢能产品推介目录 世纪新能源网",
+      "summary": "投资约50亿！远景能源电力装备制造产业园项目签约落户 世纪新能源网",
       "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1TV2dpcktHb2tXaGVQRk5pTmxxOEpMbmdrZVRYb29VZnk4bGtlODdyVHV3NXhsOWItSHZuWkhodlJyUGQweFhBZTVQMnBVNm5rdS1aUg?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1SV0dZMi1QSThlTDFEcFZudjNFM2FQT09kYjZlY1pQSkx3TjJxNmZzTU9FWnRfSG43NVpRWWtGRm5qTlo2QmtwTW1RbnBWdVI3R2ZfUA?oc=5"
     },
     {
       "type": "energy",
@@ -339,7 +347,7 @@
     },
     {
       "type": "energy",
-      "title": "针对性技术共同采用，以协调住宅能源转型中的节能与公平收益",
+      "title": "针对性技术共同采用，以兼顾住宅能源转型中的节能与公平收益",
       "date": "2026-11-18",
       "summary": "Nature Energy, Published online: 18 November 2026; doi:10.1038/s41560-026-02164-w Targeting burden reduction realigns technology distribution towards disadvantaged households. The study shows that solar co-adoption for these households can deliver equity gains, highlighting the need for bundled, mul",
       "source": "Nature Energy",
@@ -355,7 +363,7 @@
     },
     {
       "type": "energy",
-      "title": "用于整体太阳能驱动水分解的有机半导体基光催化剂薄片",
+      "title": "用于全太阳能驱动水分解的有机半导体基光催化剂薄片",
       "date": "2026-11-11",
       "summary": "Nature Energy, Published online: 11 November 2026; doi:10.1038/s41560-026-02160-0 Solar water splitting offers a route to renewable hydrogen, but developing photocatalyst sheets from scalable, solution-processable materials remains a challenge. Here the authors use underlayer engineering to build an",
       "source": "Nature Energy",
@@ -371,19 +379,43 @@
     },
     {
       "type": "policy",
+      "title": "国家能源局：将重点抓好氢能产业七方面工作- 资讯 - 新能源网 - 弗戈工业在线",
+      "date": "2026-11-10",
+      "summary": "国家能源局：将重点抓好氢能产业七方面工作- 资讯 - 新能源网 弗戈工业在线",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VSk9paHJFVWh0N0QxTUJ1ZktCdFg3STB1akI4VWRxLTdlenhLUURPRThxZ0c0aGI2YTFMUGxnZElJRkJZd0NkMlpfdGMzUQ?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "国家能源局副局长发文：2030 年可再生能源制氢规模目标达 200 万吨！ - 碳索氢能网",
+      "date": "2026-11-10",
+      "summary": "国家能源局副局长发文：2030 年可再生能源制氢规模目标达 200 万吨！ 碳索氢能网",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GQ2NJVkgwYlJKeFVobmlvUG5XbFdDNlpoOC1lUHc2VVpZT0pmb3RXaUwzSFk3RGE5Y2RuNHUyOGs1LU84aG1qb1lUZGM0bDB4Q1pCMUZfUHNneHEyaUpV?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "4个！国家能源局公示“人工智能+”氢能试点项目 - 国际氢能网",
+      "date": "2026-11-06",
+      "summary": "4个！国家能源局公示“人工智能+”氢能试点项目 国际氢能网",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhMFlkT2lxclNxZ2N1NXJSUE1NRU9IQUo4VWJ0ZmJNdnVhV1VqZkFsRHljWGt3bHpyNExlZkhxcDVpdFE1Q2tIWE9HcG5jb1dkWTVRTzRn?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "国家能源局副局长宋宏坤：氢能将成为新能源增量发展与传统产业转型的重要支撑 - ThePaper.cn",
+      "date": "2026-11-06",
+      "summary": "国家能源局副局长宋宏坤：氢能将成为新能源增量发展与传统产业转型的重要支撑 ThePaper.cn",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PNFF4RGtJMU5aaXZfZ281Wlo3a0ZTVnY2b18teU1VUkJUY01QbC04UmU2WDVJMzVCYzFXX0xXN2J2WmJyYjhvWVp1bHVENVBZWUlJZ0s0UHkwUFdpVEVPYw?oc=5"
+    },
+    {
+      "type": "policy",
       "title": "国家发改委、能源局正式批准！强调充分挖掘新能源消纳空间 - 国际新能源网",
       "date": "2026-10-28",
       "summary": "国家发改委、能源局正式批准！强调充分挖掘新能源消纳空间 国际新能源网",
       "source": "发改委政策",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PZVl2TGxsM1NlVmkzUGRhbVkwVTFFSEkwYm1faGJMRkcwMmhMNjQ0ZzdKX21MdTZCNGJnYVFwalFwVWpXUE95azJydGp2S2JhVzh0TXVNOHJzcXptZkJtek1QY2hvNFZy?oc=5"
-    },
-    {
-      "type": "energy",
-      "title": "氢能产业正走向“精选赛道” - 中国石化新闻网",
-      "date": "2026-09-23",
-      "summary": "氢能产业正走向“精选赛道” 中国石化新闻网",
-      "source": "Google新闻·能源",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPclFfdWhnN1A4UFZMOHBIM08zTlF4YzJOUFJPbkItWnBVQTg1ektOY19VVlhPY0FDdGM1N0VjY0d2NU1tUFRDTDR2Q29xNk5sOGhFa1lpMGlCaXJjM1VacmVUTEpRclBZcTdjUWlzeDlrMHpOOVhfWnZVVWNUa280bQ?oc=5"
     },
     {
       "type": "policy",
@@ -395,11 +427,19 @@
     },
     {
       "type": "policy",
-      "title": "一图读懂《中国氢能发展报告（2026）》 - 国家能源局",
-      "date": "2026-08-11",
-      "summary": "一图读懂《中国氢能发展报告（2026）》 国家能源局",
+      "title": "氢能公司参编的《中国氢能发展报告（2026）》正式发布 - 国家能源集团",
+      "date": "2026-08-17",
+      "summary": "氢能公司参编的《中国氢能发展报告（2026）》正式发布 国家能源集团",
       "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xazk2QTRjNnk3ZlZNQmVqTTJBTUNXcDQwczhqYXZVYTltRTE3QTVSc29rU2ZkQmNRaGkxM3ZMT010dHJFbktwY3hlRklodldXVzZVRlJncWFiTU95alVvZEFvZmd3a3Q3NjFERnlKZVlKRGpaLWZ6N3VRdw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTGMxVDNycGZaMEJvMTBYSnNMdWN2OXVnek5hREp6dTFxOTloNGdXRG1vejJfQzVsUG1iMWdwcXJILXJUeUcwOGNqdG5lZXdkTmZFTUVBLUs1TmpjaVdPaVZNcE4tMERORE50T29yYWZ4dkNXRVJROVJWUWg0bGVjbVphQ1JWWEVldkQtY1pn?oc=5"
+    },
+    {
+      "type": "policy",
+      "title": "全球氢能产业平稳增长 中国绿氢产能占比过半 - 人民日报",
+      "date": "2026-08-17",
+      "summary": "全球氢能产业平稳增长 中国绿氢产能占比过半 人民日报",
+      "source": "国家能源局",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYU9QSzBYZ0k4bDlrRWhEb3BxVTRkRWJYZHNsYnR2LXZfWmkzb3Rfci1HTURqOHctelo5d0lENlQ0ZzFuVENoZm5VVkp0Q3YwcVBKRTB6QUR5TWdIRHhiRW9yc1pWOXJ1cEd1RFlIbEswaG9oZGxQTTZEZE44UE4zb0pR?oc=5"
     },
     {
       "type": "policy",
@@ -443,14 +483,6 @@
     },
     {
       "type": "policy",
-      "title": "国家能源局召开民营企业座谈会 - 国家能源局",
-      "date": "2026-05-27",
-      "summary": "国家能源局召开民营企业座谈会 国家能源局",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5xQWl6Nm9HeW1RaXg5cTNoQWl3eTlYU3pGQXR3TzBHeEwtS3pNOXBIajZzdDd0b0lnN0ZKVi1zd0U0RUpVMlYwTnVyOFBTbjhpOWI2Sjc2RWRVMG41NTRLR2dZN2F2enlocFNELW5aSzg3N1BLRXhKT0FDZw?oc=5"
-    },
-    {
-      "type": "policy",
       "title": "绿电直连进入“一对多”共享时代 - 人民日报",
       "date": "2026-05-25",
       "summary": "绿电直连进入“一对多”共享时代 人民日报",
@@ -464,14 +496,6 @@
       "summary": "发改委688号文！有序推动多用户绿电直连发展！ 新浪财经",
       "source": "发改委政策",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84Q1pxVjctTFAzRkNPdzJkSGZnc3ZuX2k5bGFLN1NXM3ZxbkFnaDFUdXQ2RHQtMGk0dnh4ZmtFM21oWUx2amZlckhxT0pUT250Qmt1WG9FRXEwVWhHOTBtSkN5TnI1UGI5ZS1Ccnk4VGRKUER0Ykd2MA?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局新闻发布会文字实录 - 国家能源局",
-      "date": "2026-04-27",
-      "summary": "国家能源局新闻发布会文字实录 国家能源局",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBRR2J2T2ljR19GSFVOUnQ4dlJmeTA1d19PY0JSbElvSlJrYmU3Q3g1RnVqbWphODVTaEtaYnNWWVZOb2ZDRlc3RmItZlRZX05adEFaWTQ5RmkxUU5Fb0NkZ3ZMLVNIYkhUWjVjNEhLZ05iVFNOZ0FERzd2dw?oc=5"
     },
     {
       "type": "policy",
@@ -512,30 +536,6 @@
       "summary": "国家能源局新闻发布会文字实录 国家能源局",
       "source": "Google新闻·能源",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1BR0k1eXlBcWtoRmNkX0RCM01XQldKMUsxdGI1ZVNTREVMbDJZNHJjTS1oV1l5Ujl5MHZETHNlNjVzRXR3YWp2MHNaYVBReFR6SWtiaXR6R0VMWUVfRml1dTJCTzNkOE52MHRKMl9CY29VeENuaW9kbzRMRQ?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局：坚持在新型能源体系下谋划推动氢能发展 - 中国能源新闻网",
-      "date": "2025-10-27",
-      "summary": "国家能源局：坚持在新型能源体系下谋划推动氢能发展 中国能源新闻网",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1sYzI3NjZubWxQQWlzLWRPeGxLLXlmLWxGY0pXQ2J5dUlIZHluZW93RHR1dDZRM1lGVFdlZEliT2dTVTBKaTNtWW1sN1dhMWU5RFNNREk4Ym50Y05GWlh1Z0NvNVZHUnlUeVE0OGYtRDI?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局2025年二季度新闻发布会文字实录 - 国家能源局",
-      "date": "2025-04-28",
-      "summary": "国家能源局2025年二季度新闻发布会文字实录 国家能源局",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82cWNzdHh2ZWhFRE0xeDBvT2FpZ1FUdmhnZmVIalNyWmY3S05VVUd5emJDaS1PMk9MZGlDLVEzcVNRQkUwNEJkZEJKWDd3UWdqUEtfdVdTR2FuNnFEU3luVDJkTVhVSmlHQTVpb1B2VG1MYVkzOWtmY3hLQQ?oc=5"
-    },
-    {
-      "type": "policy",
-      "title": "国家能源局：2024全年我国氢能消费生产规模位列世界第一 - 新华网",
-      "date": "2025-04-28",
-      "summary": "国家能源局：2024全年我国氢能消费生产规模位列世界第一 新华网",
-      "source": "国家能源局",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85am1idW9tZWZuLXZmX005TXZESy1tQnB3NVNFRU5hYjdiWThHTWxIU25DV1NwZ0ZBckRyWlM2Zy1BRmY1TFppQTNwdW1BS1dQMTh1VEl3MXdRMzI2Wjl6emFoUjFNeC1IWkRlMTBZNE1XZ0M2MHh0Uk1XQmpaeHM?oc=5"
     }
   ],
   "writing": [
@@ -610,5 +610,5 @@
       "url": "https://xie-l.github.io/blog/tech/%E5%88%98%E5%BC%BA%E4%B8%9C%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86-%E5%AF%B9%E6%88%91%E8%BF%99%E4%B8%AA%E6%B0%A2%E8%83%BD%E7%AE%A1%E5%9F%B9%E7%94%9F%E7%9A%84%E5%90%AF%E7%A4%BA%EF%BC%882026.04%EF%BC%89%EF%BC%88202604%EF%BC%89.html"
     }
   ],
-  "synced_at": "2026-11-26T16:46:53+00:00"
+  "synced_at": "2026-11-27T01:40:36+00:00"
 }
